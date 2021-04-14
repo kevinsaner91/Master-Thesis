@@ -1,0 +1,82 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapters/Chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapters/Chapter2.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapters/Chapter3.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: Appendices/AppendixA.aux
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: main-blx.bib
+Database file #2: example.bib
+I was expecting a `,' or a `}'---line 18 of file example.bib
+ :  
+ :  Url = {https://arxiv.org/pdf/1905.13628.pdf}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Biblatex version: 3.16
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 5 entries,
+            6393 wiz_defined-function locations,
+            1239 strings with 11185 characters,
+and the built_in function-call counts, 26827 in all, are:
+= -- 1771
+> -- 540
+< -- 122
++ -- 627
+- -- 211
+* -- 2078
+:= -- 3034
+add.period$ -- 0
+call.type$ -- 5
+change.case$ -- 43
+chr.to.int$ -- 54
+cite$ -- 8
+duplicate$ -- 2667
+empty$ -- 2474
+format.name$ -- 289
+if$ -- 5491
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 0
+newline$ -- 175
+num.names$ -- 170
+pop$ -- 1447
+preamble$ -- 1
+purify$ -- 66
+quote$ -- 0
+skip$ -- 792
+stack$ -- 0
+substring$ -- 3137
+swap$ -- 706
+text.length$ -- 143
+text.prefix$ -- 4
+top$ -- 1
+type$ -- 158
+warning$ -- 0
+while$ -- 432
+width$ -- 0
+write$ -- 171
+(There was 1 error message)
