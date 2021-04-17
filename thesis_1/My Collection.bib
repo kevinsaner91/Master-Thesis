@@ -1,0 +1,93 @@
+@article{Hochreiter1997,
+abstract = {Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.},
+author = {Hochreiter, Sepp and Schmidhuber, J{\"{u}}rgen},
+doi = {10.1162/neco.1997.9.8.1735},
+issn = {0899-7667},
+journal = {Neural Computation},
+month = {nov},
+number = {8},
+pages = {1735--1780},
+title = {{Long Short-Term Memory}},
+url = {https://direct.mit.edu/neco/article/9/8/1735-1780/6109},
+volume = {9},
+year = {1997}
+}
+@article{Shelhamer2017,
+abstract = {Convolutional networks are powerful visual models that yield hierarchies of features. We show that convolutional networks by themselves, trained end-to-end, pixels-to-pixels, improve on the previous best result in semantic segmentation. Our key insight is to build 'fully convolutional' networks that take input of arbitrary size and produce correspondingly-sized output with efficient inference and learning. We define and detail the space of fully convolutional networks, explain their application to spatially dense prediction tasks, and draw connections to prior models. We adapt contemporary classification networks (AlexNet, the VGG net, and GoogLeNet) into fully convolutional networks and transfer their learned representations by fine-tuning to the segmentation task. We then define a skip architecture that combines semantic information from a deep, coarse layer with appearance information from a shallow, fine layer to produce accurate and detailed segmentations. Our fully convolutional networks achieve improved segmentation of PASCAL VOC (30% relative improvement to 67.2% mean IU on 2012), NYUDv2, SIFT Flow, and PASCAL-Context, while inference takes one tenth of a second for a typical image.},
+author = {Shelhamer, Evan and Long, Jonathan and Darrell, Trevor},
+doi = {10.1109/TPAMI.2016.2572683},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+number = {4},
+title = {{Fully Convolutional Networks for Semantic Segmentation}},
+volume = {39},
+year = {2017}
+}
+@inproceedings{Ronneberger2015,
+abstract = {There is large consent that successful training of deep networks requires many thousand annotated training samples. In this paper, we present a network and training strategy that relies on the strong use of data augmentation to use the available annotated samples more efficiently. The architecture consists of a contracting path to capture context and a symmetric expanding path that enables precise localization. We show that such a network can be trained end-to-end from very few images and outperforms the prior best method (a sliding-window convolutional network) on the ISBI challenge for segmentation of neuronal structures in electron microscopic stacks. Using the same network trained on transmitted light microscopy images (phase contrast and DIC) we won the ISBI cell tracking challenge 2015 in these categories by a large margin. Moreover, the network is fast. Segmentation of a 512x512 image takes less than a second on a recent GPU. The full implementation (based on Caffe) and the trained networks are available at http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net.},
+author = {Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-319-24574-4_28},
+issn = {16113349},
+title = {{U-net: Convolutional networks for biomedical image segmentation}},
+volume = {9351},
+year = {2015}
+}
+@article{Gers2000,
+abstract = {Long short-term memory (LSTM; Hochreiter & Schmidhuber, 1997) can solve numerous tasks not solvable by previous learning algorithms for recurrent neural networks (RNNs). We identify a weakness of LSTM networks processing continual input streams that are not a priori segmented into subsequences with explicitly marked ends at which the network's internal state could be reset. Without resets, the state may grow indefinitely and eventually cause the network to break down. Our remedy is a novel, adaptive "forget gate" that enables an LSTM cell to learn to reset itself at appropriate times, thus releasing internal resources. We review illustrative benchmark problems on which standard LSTM outperforms other RNN algorithms. All algorithms (including LSTM) fail to solve continual versions of these problems. LSTM with forget gates, however, easily solves them, and in an elegant way.},
+author = {Gers, Felix A. and Schmidhuber, J{\"{u}}rgen and Cummins, Fred},
+doi = {10.1162/089976600300015015},
+issn = {08997667},
+journal = {Neural Computation},
+number = {10},
+title = {{Learning to forget: Continual prediction with LSTM}},
+volume = {12},
+year = {2000}
+}
+@article{Thabtah2020,
+abstract = {The advent of Big Data has ushered a new era of scientific breakthroughs. One of the common issues that affects raw data is class imbalance problem which refers to imbalanced distribution of values of the response variable. This issue is present in fraud detection, network intrusion detection, medical diagnostics, and a number of other fields where negatively labeled instances significantly outnumber positively labeled instances. Modern machine learning techniques struggle to deal with imbalanced data by focusing on minimizing the error rate for the majority class while ignoring the minority class. The goal of our paper is demonstrate the effects of class imbalance on classification models. Concretely, we study the impact of varying class imbalance ratios on classifier accuracy. By highlighting the precise nature of the relationship between the degree of class imbalance and the corresponding effects on classifier performance we hope to help researchers to better tackle the problem. To this end, we carry out extensive experiments using 10-fold cross validation on a large number of datasets. In particular, we determine that the relationship between the class imbalance ratio and the accuracy is convex.},
+author = {Thabtah, Fadi and Hammoud, Suhel and Kamalov, Firuz and Gonsalves, Amanda},
+doi = {10.1016/j.ins.2019.11.004},
+issn = {00200255},
+journal = {Information Sciences},
+title = {{Data imbalance in classification: Experimental evaluation}},
+volume = {513},
+year = {2020}
+}
+@misc{Hodge2004,
+abstract = {Outlier detection has been used for centuries to detect and, where appropriate, remove anomalous observations from data. Outliers arise due to mechanical faults, changes in system behaviour, fraudulent behaviour, human error, instrument error or simply through natural deviations in populations. Their detection can identify system faults and fraud before they escalate with potentially catastrophic consequences. It can identify errors and remove their contaminating effect on the data set and as such to purify the data for processing. The original outlier detection methods were arbitrary but now, principled and systematic techniques are used, drawn from the full gamut of Computer Science and Statistics. In this paper, we introduce a survey of contemporary techniques for outlier detection. We identify their respective motivations and distinguish their advantages and disadvantages in a comparative review.},
+author = {Hodge, Victoria J. and Austin, Jim},
+booktitle = {Artificial Intelligence Review},
+doi = {10.1023/B:AIRE.0000045502.10941.a9},
+issn = {02692821},
+number = {2},
+title = {{A survey of outlier detection methodologies}},
+volume = {22},
+year = {2004}
+}
+@inproceedings{Alansari2018,
+abstract = {Health is one of the sustainable development areas in all of the countries. Internet of Things has a variety of use in this sector which was not studied yet. The aim of this research is to prioritize IoT usage in the healthcare sector to achieve sustainable development. The study is an applied descriptive research according to data collection. As per the research methodology which is FAHP, it is a single cross-sectional survey research. After data collection, the agreed paired comparison matrices, allocated to weighted criteria and the priority of IoT usage were determined. Based on the research findings, the two criteria of “Economic Prosperity” and “Quality of Life” achieved the highest priority for IoT sustainable development in the healthcare sector. Moreover, the top priorities for IoT in the area of health, according to the usage, were identified as “Ultraviolet Radiation,” “Dental Health,” and “Fall Detection.”.},
+author = {Alansari, Zainab and Soomro, Safeeullah and Belgaum, Mohammad Riyaz and Shamshirband, Shahaboddin},
+booktitle = {Advances in Intelligent Systems and Computing},
+doi = {10.1007/978-981-10-6875-1_66},
+issn = {21945357},
+title = {{The rise of Internet of Things (IoT) in big healthcare data: Review and open research issues}},
+volume = {564},
+year = {2018}
+}
+@misc{Wen2019,
+abstract = {Time series anomaly detection plays a critical role in automated monitoring systems. Most previous deep learning efforts related to time series anomaly detection were based on recurrent neural networks (RNN). In this paper, we propose a time series segmentation approach based on convolutional neural networks (CNN) for anomaly detection. Moreover, we propose a transfer learning framework that pretrains a model on a large-scale synthetic univariate time series data set and then fine-tunes its weights on small-scale, univariate or multivariate data sets with previously unseen classes of anomalies. For the multivariate case we introduce a novel network architecture. The approach was tested on multiple synthetic and real data sets successfully.},
+author = {Wen, Tailai and Keyes, Roy},
+booktitle = {arXiv},
+issn = {23318422},
+title = {{Time Series Anomaly Detection Using Convolutional Neural Networks and Transfer Learning}},
+year = {2019}
+}
+@article{Hauskrecht2007,
+abstract = {Anomaly detection methods can be very useful in identifying interesting or concerning events. In this work, we develop and examine new probabilistic anomaly detection methods that let us evaluate management decisions for a specific patient and identify those decisions that are highly unusual with respect to patients with the same or similar condition. The statistics used in this detection are derived from probabilistic models such as Bayesian networks that are learned from a database of past patient cases. We evaluate our methods on the problem of detection of unusual hospitalization patterns for patients with community acquired pneumonia. The results show very encouraging detection performance with 0.5 precision at 0.53 recall and give us hope that these techniques may provide the basis of intelligent monitoring systems that alert clinicians to the occurrence of unusual events or decisions.},
+author = {Hauskrecht, Milos and Valko, Michal and Kveton, Branislav and Visweswaran, Shyam and Cooper, Gregory F.},
+issn = {15594076},
+journal = {AMIA ... Annual Symposium proceedings / AMIA Symposium. AMIA Symposium},
+title = {{Evidence-based anomaly detection in clinical domains.}},
+year = {2007}
+}
