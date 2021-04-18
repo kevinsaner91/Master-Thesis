@@ -1,3 +1,40 @@
+@misc{NiklasDonges2020,
+author = {{Niklas Donges}},
+booktitle = {Built-In},
+month = {sep},
+title = {{What is transfer learning? Exploring the popular deep learning approach}},
+url = {https://builtin.com/data-science/transfer-learning},
+urldate = {2021-04-18},
+year = {2020}
+}
+@misc{RichStureborg2019,
+author = {{Rich Stureborg}},
+booktitle = {Towards Data Science},
+month = {jan},
+pages = {--undefined},
+title = {{Conv Nets for dummies}},
+url = {https://towardsdatascience.com/conv-nets-for-dummies-a-bottom-up-approach-c1b754fb14d6},
+urldate = {2021-04-18},
+year = {2019}
+}
+@misc{MichaelPhi2018,
+author = {{Michael Phi}},
+booktitle = {Towards Data Science},
+month = {sep},
+title = {{Illustrated Guide to LSTM's and GRU's: A step by step explanation}},
+url = {https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21},
+urldate = {2021-04-18},
+year = {2018}
+}
+@misc{DennyBritz2015,
+author = {{Denny Britz}},
+booktitle = {WILDML  Artificial Intelligence, Deep Learning, and NLP},
+month = {sep},
+title = {{Implementing a Neural Network from Scratch in Python – An Introduction}},
+url = {http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/},
+urldate = {2021-04-18},
+year = {2015}
+}
 @article{Hochreiter1997,
 abstract = {Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.},
 author = {Hochreiter, Sepp and Schmidhuber, J{\"{u}}rgen},
@@ -11,6 +48,35 @@ title = {{Long Short-Term Memory}},
 url = {https://direct.mit.edu/neco/article/9/8/1735-1780/6109},
 volume = {9},
 year = {1997}
+}
+@article{JunyoungChung2014,
+abstract = {In this paper we compare different types of recurrent units in recurrent neural networks (RNNs). Especially, we focus on more sophisticated units that implement a gating mechanism, such as a long short-term memory (LSTM) unit and a recently proposed gated recurrent unit (GRU). We evaluate these recurrent units on the tasks of polyphonic music modeling and speech signal modeling. Our experiments revealed that these advanced recurrent units are indeed better than more traditional recurrent units such as tanh units. Also, we found GRU to be comparable to LSTM.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1412.3555},
+author = {{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio},
+eprint = {arXiv:1412.3555},
+journal = {NIPS 2014 Deep Learning and Representation Learning Workshop},
+month = {dec},
+title = {{Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling}},
+year = {2014}
+}
+@inproceedings{Fan2016,
+abstract = {In this paper, we present a video-based emotion recognition system submitted to the EmotiW 2016 Challenge. The core module of this system is a hybrid network that combines recurrent neural network (RNN) and 3D convolutional networks (C3D) in a late-fusion fashion. RNN and C3D encode appearance and motion information in different ways. Specifically, RNN takes appearance features extracted by convolutional neural network (CNN) over individual video frames as input and encodes motion later, while C3D models appearance and motion of video simultaneously. Combined with an audio module, our system achieved a recognition accuracy of 59.02% without using any additional emotion-labeled video clips in training set, compared to 53.8% of the winner of EmotiW 2015. Extensive experiments show that combining RNN and C3D together can improve video-based emotion recognition noticeably.},
+author = {Fan, Yin and Lu, Xiangju and Li, Dian and Liu, Yuanliu},
+booktitle = {ICMI 2016 - Proceedings of the 18th ACM International Conference on Multimodal Interaction},
+doi = {10.1145/2993148.2997632},
+title = {{Video-Based emotion recognition using CNN-RNN and C3D hybrid networks}},
+year = {2016}
+}
+@inproceedings{Dutta2018,
+abstract = {The success of deep learning based models have centered around recent architectures and the availability of large scale annotated data. In this work, we explore these two factors systematically for improving handwritten recognition for scanned off-line document images. We propose a modified CNN-RNN hybrid architecture with a major focus on effective training using: (i) efficient initialization of network using synthetic data for pretraining, (ii) image normalization for slant correction and (iii) domain specific data transformation and distortion for learning important invariances. We perform a detailed ablation study to analyze the contribution of individual modules and present state of art results for the task of unconstrained line and word recognition on popular datasets such as IAM, RIMES and GW.},
+author = {Dutta, Kartik and Krishnan, Praveen and Mathew, Minesh and Jawahar, C. V.},
+booktitle = {Proceedings of International Conference on Frontiers in Handwriting Recognition, ICFHR},
+doi = {10.1109/ICFHR-2018.2018.00023},
+issn = {21676453},
+title = {{Improving CNN-RNN hybrid networks for handwriting recognition}},
+volume = {2018-Augus},
+year = {2018}
 }
 @article{Shelhamer2017,
 abstract = {Convolutional networks are powerful visual models that yield hierarchies of features. We show that convolutional networks by themselves, trained end-to-end, pixels-to-pixels, improve on the previous best result in semantic segmentation. Our key insight is to build 'fully convolutional' networks that take input of arbitrary size and produce correspondingly-sized output with efficient inference and learning. We define and detail the space of fully convolutional networks, explain their application to spatially dense prediction tasks, and draw connections to prior models. We adapt contemporary classification networks (AlexNet, the VGG net, and GoogLeNet) into fully convolutional networks and transfer their learned representations by fine-tuning to the segmentation task. We then define a skip architecture that combines semantic information from a deep, coarse layer with appearance information from a shallow, fine layer to produce accurate and detailed segmentations. Our fully convolutional networks achieve improved segmentation of PASCAL VOC (30% relative improvement to 67.2% mean IU on 2012), NYUDv2, SIFT Flow, and PASCAL-Context, while inference takes one tenth of a second for a typical image.},
@@ -90,70 +156,4 @@ issn = {15594076},
 journal = {AMIA ... Annual Symposium proceedings / AMIA Symposium. AMIA Symposium},
 title = {{Evidence-based anomaly detection in clinical domains.}},
 year = {2007}
-}
-@article{JunyoungChung2014,
-abstract = {In this paper we compare different types of recurrent units in recurrent neural networks (RNNs). Especially, we focus on more sophisticated units that implement a gating mechanism, such as a long short-term memory (LSTM) unit and a recently proposed gated recurrent unit (GRU). We evaluate these recurrent units on the tasks of polyphonic music modeling and speech signal modeling. Our experiments revealed that these advanced recurrent units are indeed better than more traditional recurrent units such as tanh units. Also, we found GRU to be comparable to LSTM.},
-archivePrefix = {arXiv},
-arxivId = {arXiv:1412.3555},
-author = {{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio},
-eprint = {arXiv:1412.3555},
-journal = {NIPS 2014 Deep Learning and Representation Learning Workshop},
-month = {dec},
-title = {{Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling}},
-year = {2014}
-}
-@inproceedings{Fan2016,
-abstract = {In this paper, we present a video-based emotion recognition system submitted to the EmotiW 2016 Challenge. The core module of this system is a hybrid network that combines recurrent neural network (RNN) and 3D convolutional networks (C3D) in a late-fusion fashion. RNN and C3D encode appearance and motion information in different ways. Specifically, RNN takes appearance features extracted by convolutional neural network (CNN) over individual video frames as input and encodes motion later, while C3D models appearance and motion of video simultaneously. Combined with an audio module, our system achieved a recognition accuracy of 59.02% without using any additional emotion-labeled video clips in training set, compared to 53.8% of the winner of EmotiW 2015. Extensive experiments show that combining RNN and C3D together can improve video-based emotion recognition noticeably.},
-author = {Fan, Yin and Lu, Xiangju and Li, Dian and Liu, Yuanliu},
-booktitle = {ICMI 2016 - Proceedings of the 18th ACM International Conference on Multimodal Interaction},
-doi = {10.1145/2993148.2997632},
-title = {{Video-Based emotion recognition using CNN-RNN and C3D hybrid networks}},
-year = {2016}
-}
-@inproceedings{Dutta2018,
-abstract = {The success of deep learning based models have centered around recent architectures and the availability of large scale annotated data. In this work, we explore these two factors systematically for improving handwritten recognition for scanned off-line document images. We propose a modified CNN-RNN hybrid architecture with a major focus on effective training using: (i) efficient initialization of network using synthetic data for pretraining, (ii) image normalization for slant correction and (iii) domain specific data transformation and distortion for learning important invariances. We perform a detailed ablation study to analyze the contribution of individual modules and present state of art results for the task of unconstrained line and word recognition on popular datasets such as IAM, RIMES and GW.},
-author = {Dutta, Kartik and Krishnan, Praveen and Mathew, Minesh and Jawahar, C. V.},
-booktitle = {Proceedings of International Conference on Frontiers in Handwriting Recognition, ICFHR},
-doi = {10.1109/ICFHR-2018.2018.00023},
-issn = {21676453},
-title = {{Improving CNN-RNN hybrid networks for handwriting recognition}},
-volume = {2018-Augus},
-year = {2018}
-}
-@misc{NiklasDonges2020,
-author = {{Niklas Donges}},
-booktitle = {Built-In},
-month = {sep},
-title = {{What is transfer learning? Exploring the popular deep learning approach}},
-url = {https://builtin.com/data-science/transfer-learning},
-urldate = {2021-04-18},
-year = {2020}
-}
-@misc{RichStureborg2019,
-author = {{Rich Stureborg}},
-booktitle = {Towards Data Science},
-month = {jan},
-pages = {--undefined},
-title = {{Conv Nets for dummies}},
-url = {https://towardsdatascience.com/conv-nets-for-dummies-a-bottom-up-approach-c1b754fb14d6},
-urldate = {2021-04-18},
-year = {2019}
-}
-@misc{MichaelPhi2018,
-author = {{Michael Phi}},
-booktitle = {Towards Data Science},
-month = {sep},
-title = {{Illustrated Guide to LSTM's and GRU's: A step by step explanation}},
-url = {https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21},
-urldate = {2021-04-18},
-year = {2018}
-}
-@misc{DennyBritz2015,
-author = {{Denny Britz}},
-booktitle = {WILDML  Artificial Intelligence, Deep Learning, and NLP},
-month = {sep},
-title = {{Implementing a Neural Network from Scratch in Python – An Introduction}},
-url = {http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/},
-urldate = {2021-04-18},
-year = {2015}
 }
