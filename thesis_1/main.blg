@@ -9,10 +9,6 @@ Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: Chapters/Chapter1.aux
 Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: Chapters/Chapter2.aux
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: Chapters/Chapter3.aux
-Reallocating 'name_of_file' (item size: 1) to 25 items.
-A level-1 auxiliary file: Appendices/AppendixA.aux
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
@@ -30,53 +26,144 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: main-blx.bib
 Database file #2: example.bib
-I was expecting a `,' or a `}'---line 18 of file example.bib
- :  
- :  Url = {https://arxiv.org/pdf/1905.13628.pdf}}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2697 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2707 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2707 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2707 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2711 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2715 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2715 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2715 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2721 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2721 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2721 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2725 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2725 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2725 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2725 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2725 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2725 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2765 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2765 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2765 of file biblatex.bst
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 5 entries,
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2813 of file biblatex.bst
+Too many commas in name 1 of "{Junyoung Chung}, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio" for entry JunyoungChung2014
+while executing---line 2813 of file biblatex.bst
+You've used 20 entries,
             6393 wiz_defined-function locations,
-            1239 strings with 11185 characters,
-and the built_in function-call counts, 26827 in all, are:
-= -- 1771
-> -- 540
-< -- 122
-+ -- 627
-- -- 211
-* -- 2078
-:= -- 3034
+            1357 strings with 25638 characters,
+and the built_in function-call counts, 118141 in all, are:
+= -- 7516
+> -- 3049
+< -- 550
++ -- 3392
+- -- 1703
+* -- 8996
+:= -- 12871
 add.period$ -- 0
-call.type$ -- 5
-change.case$ -- 43
-chr.to.int$ -- 54
-cite$ -- 8
-duplicate$ -- 2667
-empty$ -- 2474
-format.name$ -- 289
-if$ -- 5491
+call.type$ -- 20
+change.case$ -- 200
+chr.to.int$ -- 144
+cite$ -- 38
+duplicate$ -- 12043
+empty$ -- 10924
+format.name$ -- 1246
+if$ -- 23498
 int.to.chr$ -- 0
-int.to.str$ -- 10
+int.to.str$ -- 38
 missing$ -- 0
-newline$ -- 175
-num.names$ -- 170
-pop$ -- 1447
+newline$ -- 719
+num.names$ -- 779
+pop$ -- 6668
 preamble$ -- 1
-purify$ -- 66
+purify$ -- 297
 quote$ -- 0
-skip$ -- 792
+skip$ -- 3345
 stack$ -- 0
-substring$ -- 3137
-swap$ -- 706
-text.length$ -- 143
-text.prefix$ -- 4
+substring$ -- 13274
+swap$ -- 3217
+text.length$ -- 568
+text.prefix$ -- 19
 top$ -- 1
-type$ -- 158
+type$ -- 668
 warning$ -- 0
-while$ -- 432
+while$ -- 1657
 width$ -- 0
-write$ -- 171
-(There was 1 error message)
+write$ -- 700
+(There were 48 error messages)
