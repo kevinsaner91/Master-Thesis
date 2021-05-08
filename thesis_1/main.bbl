@@ -58,8 +58,10 @@
     \verb{doi}
     \verb 10.1007/978-1-4614-6396-2
     \endverb
+    \field{isbn}{9781461463962}
+    \field{pages}{1\bibrangedash 446}
     \field{title}{{Outlier analysis}}
-    \field{volume}{9781461463962}
+    \field{volume}{9781461463}
     \field{year}{2013}
   \endentry
 
@@ -90,6 +92,7 @@
          giveni={S\bibinitperiod},
       }}%
     }
+    \keyw{Big data,Fuzzy-AHP,Healthcare,Internet of Things (IoT)}
     \strng{namehash}{AZ+1}
     \strng{fullhash}{AZSSBMRSS1}
     \field{labelnamesource}{author}
@@ -117,7 +120,9 @@
     \verb{doi}
     \verb 10.1007/978-981-10-6875-1_66
     \endverb
+    \field{isbn}{9789811068744}
     \field{issn}{21945357}
+    \field{pages}{675\bibrangedash 685}
     \field{title}{{The rise of Internet of Things (IoT) in big healthcare data:
   Review and open research issues}}
     \field{volume}{564}
@@ -165,9 +170,13 @@
   data.%
     }
     \field{booktitle}{arXiv}
+    \verb{eprint}
+    \verb 2004.00433
+    \endverb
     \field{issn}{23318422}
     \field{title}{{Anomaly detection in univariate time-series: A survey on the
   state-of-the-art}}
+    \field{eprinttype}{arXiv}
     \field{year}{2020}
   \endentry
 
@@ -200,6 +209,66 @@
     \field{volume}{41}
     \field{journaltitle}{ACM computing surveys (CSUR)}
     \field{year}{2009}
+  \endentry
+
+  \entry{JunyoungChung2014}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CJ}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={Junyoung},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Gulcehre},
+         familyi={G\bibinitperiod},
+         given={Caglar},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Cho},
+         familyi={C\bibinitperiod},
+         given={KyungHyun},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJ+1}
+    \strng{fullhash}{CJGCCKBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    In this paper we compare different types of recurrent units in recurrent
+  neural networks (RNNs). Especially, we focus on more sophisticated units that
+  implement a gating mechanism, such as a long short-term memory (LSTM) unit
+  and a recently proposed gated recurrent unit (GRU). We evaluate these
+  recurrent units on the tasks of polyphonic music modeling and speech signal
+  modeling. Our experiments revealed that these advanced recurrent units are
+  indeed better than more traditional recurrent units such as tanh units. Also,
+  we found GRU to be comparable to LSTM.%
+    }
+    \verb{eprint}
+    \verb 1412.3555
+    \endverb
+    \field{title}{{Empirical Evaluation of Gated Recurrent Neural Networks on
+  Sequence Modeling}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1412.3555
+    \endverb
+    \field{journaltitle}{NIPS 2014 Deep Learning and Representation Learning
+  Workshop}
+    \field{eprinttype}{arXiv}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{DennyBritz2015}{misc}{}
@@ -258,6 +327,8 @@
          giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
       }}%
     }
+    \keyw{CNN RNN network,Data augmentation,Handwriting recognition,Image
+  pre-processing}
     \strng{namehash}{DK+1}
     \strng{fullhash}{DKKPMMJCV1}
     \field{labelnamesource}{author}
@@ -284,7 +355,9 @@
     \verb{doi}
     \verb 10.1109/ICFHR-2018.2018.00023
     \endverb
+    \field{isbn}{9781538658758}
     \field{issn}{21676453}
+    \field{pages}{80\bibrangedash 85}
     \field{title}{{Improving CNN-RNN hybrid networks for handwriting
   recognition}}
     \field{volume}{2018-Augus}
@@ -318,6 +391,8 @@
          giveni={Y\bibinitperiod},
       }}%
     }
+    \keyw{3d convolutional network,Emotion recognition,Long short term memory
+  network,Model fusion,Recurrent neural network}
     \strng{namehash}{FY+1}
     \strng{fullhash}{FYLXLDLY1}
     \field{labelnamesource}{author}
@@ -345,6 +420,8 @@
     \verb{doi}
     \verb 10.1145/2993148.2997632
     \endverb
+    \field{isbn}{9781450345569}
+    \field{pages}{445\bibrangedash 450}
     \field{title}{{Video-Based emotion recognition using CNN-RNN and C3D hybrid
   networks}}
     \field{year}{2016}
@@ -398,6 +475,7 @@
     \endverb
     \field{issn}{08997667}
     \field{number}{10}
+    \field{pages}{2451\bibrangedash 2471}
     \field{title}{{Learning to forget: Continual prediction with LSTM}}
     \field{volume}{12}
     \field{journaltitle}{Neural Computation}
@@ -461,6 +539,7 @@
   decisions.%
     }
     \field{issn}{15594076}
+    \field{pages}{319\bibrangedash 323}
     \field{title}{{Evidence-based anomaly detection in clinical domains.}}
     \field{journaltitle}{AMIA ... Annual Symposium proceedings / AMIA
   Symposium. AMIA Symposium}
@@ -540,6 +619,7 @@
          giveni={J\bibinitperiod},
       }}%
     }
+    \keyw{Anomaly,Detection,Deviation,Noise,Novelty,Outlier,Recognition}
     \strng{namehash}{HVJAJ1}
     \strng{fullhash}{HVJAJ1}
     \field{labelnamesource}{author}
@@ -569,51 +649,10 @@
     \endverb
     \field{issn}{02692821}
     \field{number}{2}
+    \field{pages}{85\bibrangedash 126}
     \field{title}{{A survey of outlier detection methodologies}}
     \field{volume}{22}
     \field{year}{2004}
-  \endentry
-
-  \entry{JunyoungChung2014}{article}{}
-    \name{author}{1}{}{%
-      {{hash=JKCYBCG}{%
-         family={{Junyoung Chung}},
-         familyi={J\bibinitperiod},
-         suffix={Caglar\bibnamedelima Gulcehre},
-         suffixi={C\bibinitperiod\bibinitdelim G\bibinitperiod},
-         given={KyungHyun Cho Yoshua\bibnamedelima Bengio},
-         giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
-  Y\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{JCGKCYB1}
-    \strng{fullhash}{JCGKCYB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2014}
-    \field{labeldatesource}{}
-    \field{sortinit}{J}
-    \field{sortinithash}{J}
-    \field{abstract}{%
-    In this paper we compare different types of recurrent units in recurrent
-  neural networks (RNNs). Especially, we focus on more sophisticated units that
-  implement a gating mechanism, such as a long short-term memory (LSTM) unit
-  and a recently proposed gated recurrent unit (GRU). We evaluate these
-  recurrent units on the tasks of polyphonic music modeling and speech signal
-  modeling. Our experiments revealed that these advanced recurrent units are
-  indeed better than more traditional recurrent units such as tanh units. Also,
-  we found GRU to be comparable to LSTM.%
-    }
-    \verb{eprint}
-    \verb arXiv:1412.3555
-    \endverb
-    \field{title}{{Empirical Evaluation of Gated Recurrent Neural Networks on
-  Sequence Modeling}}
-    \field{journaltitle}{NIPS 2014 Deep Learning and Representation Learning
-  Workshop}
-    \field{eprinttype}{arXiv}
-    \field{year}{2014}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{MichaelPhi2018}{misc}{}
@@ -783,7 +822,9 @@
     \verb{doi}
     \verb 10.1007/978-3-319-24574-4_28
     \endverb
+    \field{isbn}{9783319245737}
     \field{issn}{16113349}
+    \field{pages}{234\bibrangedash 241}
     \field{title}{{U-net: Convolutional networks for biomedical image
   segmentation}}
     \field{volume}{9351}
@@ -817,6 +858,8 @@
          giveni={A\bibinitperiod},
       }}%
     }
+    \keyw{Class imbalance,Classification,Data analysis,Machine
+  learning,Statistical analysis,Supervised learning}
     \strng{namehash}{TF+1}
     \strng{fullhash}{TFHSKFGA1}
     \field{labelnamesource}{author}
@@ -848,6 +891,7 @@
     \verb 10.1016/j.ins.2019.11.004
     \endverb
     \field{issn}{00200255}
+    \field{pages}{429\bibrangedash 441}
     \field{title}{{Data imbalance in classification: Experimental evaluation}}
     \field{volume}{513}
     \field{journaltitle}{Information Sciences}
@@ -891,10 +935,91 @@
   sets successfully.%
     }
     \field{booktitle}{arXiv}
+    \verb{eprint}
+    \verb 1905.13628
+    \endverb
     \field{issn}{23318422}
     \field{title}{{Time Series Anomaly Detection Using Convolutional Neural
   Networks and Transfer Learning}}
+    \field{eprinttype}{arXiv}
     \field{year}{2019}
+  \endentry
+
+  \entry{Zheng2014}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=ZY}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Yi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LQ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Qi},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Enhong},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Ge},
+         familyi={G\bibinitperiod},
+         given={Yong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZJL}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={J.\bibnamedelima Leon},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZY+1}
+    \strng{fullhash}{ZYLQCEGYZJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    Time series (particularly multivariate) classification has drawn a lot of
+  attention in the literature because of its broad applications for different
+  domains, such as health informatics and bioinformatics. Thus, many algorithms
+  have been developed for this task. Among them, nearest neighbor
+  classification (particularly 1-NN) combined with Dynamic Time Warping (DTW)
+  achieves the state of the art performance. However, when data set grows
+  larger, the time consumption of 1-NN with DTW grows linearly. Compared to
+  1-NN with DTW, the traditional feature-based classification methods are
+  usually more efficient but less effective since their performance is usually
+  dependent on the quality of hand-crafted features. To that end, in this
+  paper, we explore the feature learning techniques to improve the performance
+  of traditional feature-based approaches. Specifically, we propose a novel
+  deep learning framework for multivariate time series classification. We
+  conduct two groups of experiments on real-world data sets from different
+  application domains. The final results show that our model is not only more
+  efficient than the state of the art but also competitive in accuracy. It also
+  demonstrates that feature learning is worth to investigate for time series
+  classification. {\textcopyright} 2014 Springer International Publishing
+  Switzerland.%
+    }
+    \field{booktitle}{Lecture Notes in Computer Science (including subseries
+  Lecture Notes in Artificial Intelligence and Lecture Notes in
+  Bioinformatics)}
+    \verb{doi}
+    \verb 10.1007/978-3-319-08010-9_33
+    \endverb
+    \field{isbn}{9783319080093}
+    \field{issn}{16113349}
+    \field{pages}{298\bibrangedash 310}
+    \field{title}{{Time series classification using multi-channels deep
+  convolutional neural networks}}
+    \field{volume}{8485 LNCS}
+    \field{year}{2014}
   \endentry
 \enddatalist
 \endinput
