@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.1)  8 MAY 2021 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.1)  8 MAY 2021 16:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -1148,7 +1148,7 @@ Short Term Mem-ory (LSTM)
  []
 
 [10]
-<Figures/CNN.png, id=436, 1098.35344pt x 338.76563pt>
+<Figures/CNN.png, id=440, 1098.35344pt x 338.76563pt>
 File: Figures/CNN.png Graphic file (type png)
 <use Figures/CNN.png>
 Package pdftex.def Info: Figures/CNN.png  used on input line 134.
@@ -1171,7 +1171,7 @@ c-tive and con-tex-tual anoma-
  []
 
 [12]
-<Figures/MC-DCNN.png, id=457, 1184.92688pt x 673.76718pt>
+<Figures/MC-DCNN.png, id=462, 1184.92688pt x 673.76718pt>
 File: Figures/MC-DCNN.png Graphic file (type png)
 <use Figures/MC-DCNN.png>
 Package pdftex.def Info: Figures/MC-DCNN.png  used on input line 178.
@@ -1182,7 +1182,7 @@ Overfull \hbox (10.70154pt too wide) in paragraph at lines 178--180
  []
 
 [13 <./Figures/MC-DCNN.png>]
-<Figures/U-Net.png, id=465, 1208.26407pt x 430.60875pt>
+<Figures/U-Net.png, id=470, 1208.26407pt x 430.60875pt>
 File: Figures/U-Net.png Graphic file (type png)
 <use Figures/U-Net.png>
 Package pdftex.def Info: Figures/U-Net.png  used on input line 193.
@@ -1218,10 +1218,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26394 strings out of 479321
- 554004 string characters out of 2856584
- 1071555 words of memory out of 3000000
- 43358 multiletter control sequences out of 15000+600000
+ 26413 strings out of 479321
+ 554538 string characters out of 2856584
+ 1073456 words of memory out of 3000000
+ 43375 multiletter control sequences out of 15000+600000
  461517 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,21n,102p,1820b,2463s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1236,9 +1236,9 @@ pfb><C:/Users/Grace/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr
 8a.pfb><C:/Users/Grace/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/u
 plr8a.pfb><C:/Users/Grace/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on main.pdf (36 pages, 1315563 bytes).
+Output written on main.pdf (36 pages, 1317833 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
  380 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -655,6 +655,63 @@
     \field{year}{2004}
   \endentry
 
+  \entry{Malhotra2015}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=MP}{%
+         family={Malhotra},
+         familyi={M\bibinitperiod},
+         given={Pankaj},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=VL}{%
+         family={Vig},
+         familyi={V\bibinitperiod},
+         given={Lovekesh},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Shroff},
+         familyi={S\bibinitperiod},
+         given={Gautam},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=AP}{%
+         family={Agarwal},
+         familyi={A\bibinitperiod},
+         given={Puneet},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MP+1}
+    \strng{fullhash}{MPVLSGAP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Long Short Term Memory (LSTM) networks have been demonstrated to be
+  particularly useful for learning sequences containing longer term patterns of
+  unknown length, due to their ability to maintain long term memory. Stacking
+  recurrent hidden layers in such networks also enables the learning of higher
+  level temporal features, for faster learning with sparser representations. In
+  this paper, we use stacked LSTM networks for anomaly/fault detection in time
+  series. A network is trained on non-anomalous data and used as a predictor
+  over a number of time steps. The resulting prediction errors are modeled as a
+  multivariate Gaussian distribution, which is used to assess the likelihood of
+  anomalous behavior. The efficacy of this approach is demonstrated on four
+  datasets: ECG, space shuttle, power demand, and multi-sensor engine dataset.%
+    }
+    \field{booktitle}{23rd European Symposium on Artificial Neural Networks,
+  Computational Intelligence and Machine Learning, ESANN 2015 - Proceedings}
+    \field{isbn}{9782875870148}
+    \field{pages}{89\bibrangedash 94}
+    \field{title}{{Long Short Term Memory networks for anomaly detection in
+  time series}}
+    \field{year}{2015}
+  \endentry
+
   \entry{MichaelPhi2018}{misc}{}
     \name{author}{1}{}{%
       {{hash=M}{%
@@ -682,6 +739,88 @@
     \field{urlmonth}{04}
     \field{urlyear}{2021}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Munir2019}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MM}{%
+         family={Munir},
+         familyi={M\bibinitperiod},
+         given={Mohsin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SSA}{%
+         family={Siddiqui},
+         familyi={S\bibinitperiod},
+         given={Shoaib\bibnamedelima Ahmed},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Dengel},
+         familyi={D\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Ahmed},
+         familyi={A\bibinitperiod},
+         given={Sheraz},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Anomaly detection,artificial intelligence,convolutional neural
+  network,deep neural networks,recurrent neural networks,time series analysis}
+    \strng{namehash}{MM+1}
+    \strng{fullhash}{MMSSADAAS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Traditional distance and density-based anomaly detection techniques are
+  unable to detect periodic and seasonality related point anomalies which occur
+  commonly in streaming data, leaving a big gap in time series anomaly
+  detection in the current era of the IoT. To address this problem, we present
+  a novel deep learning-based anomaly detection approach (DeepAnT) for time
+  series data, which is equally applicable to the non-streaming cases. DeepAnT
+  is capable of detecting a wide range of anomalies, i.e., point anomalies,
+  contextual anomalies, and discords in time series data. In contrast to the
+  anomaly detection methods where anomalies are learned, DeepAnT uses unlabeled
+  data to capture and learn the data distribution that is used to forecast the
+  normal behavior of a time series. DeepAnT consists of two modules: time
+  series predictor and anomaly detector. The time series predictor module uses
+  deep convolutional neural network (CNN) to predict the next time stamp on the
+  defined horizon. This module takes a window of time series (used as a
+  context) and attempts to predict the next time stamp. The predicted value is
+  then passed to the anomaly detector module, which is responsible for tagging
+  the corresponding time stamp as normal or abnormal. DeepAnT can be trained
+  even without removing the anomalies from the given data set. Generally, in
+  deep learning-based approaches, a lot of data are required to train a model.
+  Whereas in DeepAnT, a model can be trained on relatively small data set while
+  achieving good generalization capabilities due to the effective parameter
+  sharing of the CNN. As the anomaly detection in DeepAnT is unsupervised, it
+  does not rely on anomaly labels at the time of model generation. Therefore,
+  this approach can be directly applied to real-life scenarios where it is
+  practically impossible to label a big stream of data coming from
+  heterogeneous sensors comprising of both normal as well as anomalous points.
+  We have performed a detailed evaluation of 15 algorithms on 10 anomaly
+  detection benchmarks, which contain a total of 433 real and synthetic time
+  series. Experiments show that DeepAnT outperforms the state-of-the-art
+  anomaly detection methods in most of the cases, while performing on par with
+  others.%
+    }
+    \verb{doi}
+    \verb 10.1109/ACCESS.2018.2886457
+    \endverb
+    \field{issn}{21693536}
+    \field{pages}{1991\bibrangedash 2005}
+    \field{title}{{DeepAnT: A Deep Learning Approach for Unsupervised Anomaly
+  Detection in Time Series}}
+    \field{volume}{7}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2019}
   \endentry
 
   \entry{NiklasDonges2020}{misc}{}
