@@ -655,6 +655,79 @@
     \field{year}{2004}
   \endentry
 
+  \entry{LeCun1998}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LY}{%
+         family={LeCun},
+         familyi={L\bibinitperiod},
+         given={Yann},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Bottou},
+         familyi={B\bibinitperiod},
+         given={L{\'{e}}on},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Haffner},
+         familyi={H\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \keyw{Convolutional neural networks,Document recognition,Finite state
+  transducers,Gradient-based learning,Graph transformer networks,Machine
+  learning,Neural networks,Optical character recognition (OCR)}
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYBLBYHP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Multilayer neural networks trained with the back-propagation algorithm
+  constitute the best example of a successful gradient-based learning
+  technique. Given an appropriate network architecture, gradient-based learning
+  algorithms can be used to synthesize a complex decision surface that can
+  classify high-dimensional patterns, such as handwritten characters, with
+  minimal preprocessing. This paper reviews various methods applied to
+  handwritten character recognition and compares them on a standard handwritten
+  digit recognition task. Convolutional neural networks, which are specifically
+  designed to deal with the variability of two dimensional (2-D) shapes, are
+  shown to outperform all other techniques. Real-life document recognition
+  systems are composed of multiple modules including field extraction,
+  segmentation, recognition, and language modeling. A new learning paradigm,
+  called graph transformer networks (GTN's), allows such multimodule systems to
+  be trained globally using gradient-based methods so as to minimize an overall
+  performance measure. Two systems for online handwriting recognition are
+  described. Experiments demonstrate the advantage of global training, and the
+  flexibility of graph transformer networks. A graph transformer network for
+  reading a bank check is also described. It uses convolutional neural network
+  character recognizers combined with global training techniques to provide
+  record accuracy on business and personal checks. It is deployed commercially
+  and reads several million checks per day. {\textcopyright} 1998 IEEE.%
+    }
+    \verb{doi}
+    \verb 10.1109/5.726791
+    \endverb
+    \field{issn}{00189219}
+    \field{number}{11}
+    \field{pages}{2278\bibrangedash 2323}
+    \field{title}{{Gradient-based learning applied to document recognition}}
+    \field{volume}{86}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{1998}
+  \endentry
+
   \entry{Malhotra2015}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=MP}{%

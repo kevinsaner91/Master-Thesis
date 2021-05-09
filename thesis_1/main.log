@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.1)  8 MAY 2021 16:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.1)  9 MAY 2021 14:58
 entering extended mode
 **./main.tex
 (main.tex
@@ -1066,36 +1066,36 @@ Chapter 1.
 <Figures/layers.png, id=345, 732.7375pt x 495.8525pt>
 File: Figures/layers.png Graphic file (type png)
 <use Figures/layers.png>
-Package pdftex.def Info: Figures/layers.png  used on input line 71.
+Package pdftex.def Info: Figures/layers.png  used on input line 62.
 (pdftex.def)             Requested size: 219.82294pt x 148.7569pt.
  [3 <./Figures/layers.png>]
-<Figures/LSTM.jpg, id=359, 547.2947pt x 575.14874pt>
+<Figures/LSTM.jpg, id=360, 547.2947pt x 575.14874pt>
 File: Figures/LSTM.jpg Graphic file (type jpg)
 <use Figures/LSTM.jpg>
-Package pdftex.def Info: Figures/LSTM.jpg  used on input line 105.
+Package pdftex.def Info: Figures/LSTM.jpg  used on input line 96.
 (pdftex.def)             Requested size: 273.64667pt x 287.57367pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/filter.png, id=365, 330.37714pt x 175.51286pt>
+<Figures/filter.png, id=366, 330.37714pt x 175.51286pt>
 File: Figures/filter.png Graphic file (type png)
 <use Figures/filter.png>
-Package pdftex.def Info: Figures/filter.png  used on input line 121.
+Package pdftex.def Info: Figures/filter.png  used on input line 112.
 (pdftex.def)             Requested size: 231.2624pt x 122.85815pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/pooling.png, id=367, 1330.9725pt x 481.8pt>
+<Figures/pooling.png, id=368, 1330.9725pt x 481.8pt>
 File: Figures/pooling.png Graphic file (type png)
 <use Figures/pooling.png>
-Package pdftex.def Info: Figures/pooling.png  used on input line 132.
+Package pdftex.def Info: Figures/pooling.png  used on input line 123.
 (pdftex.def)             Requested size: 266.18979pt x 96.35829pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
@@ -1148,7 +1148,7 @@ Short Term Mem-ory (LSTM)
  []
 
 [10]
-<Figures/CNN.png, id=440, 1098.35344pt x 338.76563pt>
+<Figures/CNN.png, id=444, 1098.35344pt x 338.76563pt>
 File: Figures/CNN.png Graphic file (type png)
 <use Figures/CNN.png>
 Package pdftex.def Info: Figures/CNN.png  used on input line 134.
@@ -1171,7 +1171,7 @@ c-tive and con-tex-tual anoma-
  []
 
 [12]
-<Figures/MC-DCNN.png, id=462, 1184.92688pt x 673.76718pt>
+<Figures/MC-DCNN.png, id=466, 1184.92688pt x 673.76718pt>
 File: Figures/MC-DCNN.png Graphic file (type png)
 <use Figures/MC-DCNN.png>
 Package pdftex.def Info: Figures/MC-DCNN.png  used on input line 178.
@@ -1182,7 +1182,7 @@ Overfull \hbox (10.70154pt too wide) in paragraph at lines 178--180
  []
 
 [13 <./Figures/MC-DCNN.png>]
-<Figures/U-Net.png, id=470, 1208.26407pt x 430.60875pt>
+<Figures/U-Net.png, id=474, 1208.26407pt x 430.60875pt>
 File: Figures/U-Net.png Graphic file (type png)
 <use Figures/U-Net.png>
 Package pdftex.def Info: Figures/U-Net.png  used on input line 193.
@@ -1218,10 +1218,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26413 strings out of 479321
- 554538 string characters out of 2856584
- 1073456 words of memory out of 3000000
- 43375 multiletter control sequences out of 15000+600000
+ 26429 strings out of 479321
+ 554976 string characters out of 2856584
+ 1076450 words of memory out of 3000000
+ 43390 multiletter control sequences out of 15000+600000
  461517 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,21n,102p,1820b,2463s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1236,9 +1236,9 @@ pfb><C:/Users/Grace/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr
 8a.pfb><C:/Users/Grace/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/u
 plr8a.pfb><C:/Users/Grace/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on main.pdf (36 pages, 1317833 bytes).
+Output written on main.pdf (36 pages, 1319184 bytes).
 PDF statistics:
- 611 PDF objects out of 1000 (max. 8388607)
- 128 named destinations out of 1000 (max. 500000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
  380 words of extra memory for PDF output out of 10000 (max. 10000000)
 
