@@ -1,72 +1,22 @@
-This is BibTeX, Version 0.99d
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-The style file: biblatex.bst
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-Reallocating 'name_of_file' (item size: 1) to 8 items.
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: Chapters/Chapter1.aux
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: Chapters/Chapter2.aux
-Reallocating 'glb_str_end' (item size: 4) to 20 items.
-Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Database file #1: main-blx.bib
-Database file #2: example.bib
-Biblatex version: 3.16
-Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 24 entries,
-            6393 wiz_defined-function locations,
-            1419 strings with 33543 characters,
-and the built_in function-call counts, 150511 in all, are:
-= -- 9867
-> -- 3489
-< -- 639
-+ -- 4388
-- -- 1891
-* -- 11549
-:= -- 16763
-add.period$ -- 0
-call.type$ -- 24
-change.case$ -- 243
-chr.to.int$ -- 144
-cite$ -- 46
-duplicate$ -- 16028
-empty$ -- 13733
-format.name$ -- 1609
-if$ -- 29631
-int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 0
-newline$ -- 967
-num.names$ -- 943
-pop$ -- 8195
-preamble$ -- 1
-purify$ -- 380
-quote$ -- 0
-skip$ -- 3985
-stack$ -- 0
-substring$ -- 17044
-swap$ -- 4162
-text.length$ -- 673
-text.prefix$ -- 23
-top$ -- 1
-type$ -- 804
-warning$ -- 0
-while$ -- 2299
-width$ -- 0
-write$ -- 944
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'main.blg'
+[279] biber-MSWIN64:340> INFO - === 
+[358] Biber.pm:415> INFO - Reading 'main.bcf'
+[474] Biber.pm:952> INFO - Found 24 citekeys in bib section 0
+[492] Biber.pm:4340> INFO - Processing section 0
+[526] Biber.pm:4531> INFO - Looking for bibtex format file 'example.bib' for section 0
+[582] bibtex.pm:1689> INFO - LaTeX decoding ...
+[640] bibtex.pm:1494> INFO - Found BibTeX data source 'example.bib'
+[832] Utils.pm:395> WARN - legacy month field 'sep' in entry 'DennyBritz2015' is not an integer - this will probably not sort properly.
+[837] Utils.pm:395> WARN - legacy month field 'nov' in entry 'Hochreiter1997' is not an integer - this will probably not sort properly.
+[844] Utils.pm:395> WARN - legacy month field 'dec' in entry 'JunyoungChung2014' is not an integer - this will probably not sort properly.
+[858] Utils.pm:395> WARN - legacy month field 'sep' in entry 'MichaelPhi2018' is not an integer - this will probably not sort properly.
+[873] Utils.pm:395> WARN - legacy month field 'jan' in entry 'RichStureborg2019' is not an integer - this will probably not sort properly.
+[878] Utils.pm:395> WARN - legacy month field 'sep' in entry 'NiklasDonges2020' is not an integer - this will probably not sort properly.
+[974] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[975] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[976] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[977] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[1068] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1090] bbl.pm:757> INFO - Output to main.bbl
+[1093] Biber.pm:128> INFO - WARNINGS: 6

@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
 %
 \begingroup
 \makeatletter
@@ -16,1222 +16,1082 @@
   {}
 \endgroup
 
-\datalist[entry]{nyt/global//global/global}
-  \entry{Aggarwal2013}{book}{}
-    \name{author}{1}{}{%
-      {{hash=ACC}{%
-         family={Aggarwal},
-         familyi={A\bibinitperiod},
-         given={Charu\bibnamedelima C.},
-         giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ACC1}
-    \strng{fullhash}{ACC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2013}
-    \field{labeldatesource}{}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{abstract}{%
-    With the increasing advances in hardware technology for data collection,
-  and advances in software technology (databases) for data organization,
-  computer scientists have increasingly participated in the latest advancements
-  of the outlier analysis field. Computer scientists, specifically, approach
-  this field based on their practical experiences in managing large amounts of
-  data, and with far fewer assumptions- the data can be of any type, structured
-  or unstructured, and may be extremely large. Outlier Analysis is a
-  comprehensive exposition, as understood by data mining experts, statisticians
-  and computer scientists. The book has been organized carefully, and emphasis
-  was placed on simplifying the content, so that students and practitioners can
-  also benefit. Chapters will typically cover one of three areas: methods and
-  techniques commonly used in outlier analysis, such as linear methods,
-  proximity-based methods, subspace methods, and supervised methods; data
-  domains, such as, text, categorical, mixed-attribute, time-series, streaming,
-  discrete sequence, spatial and network data; and key applications of these
-  methods as applied to diverse domains such as credit card fraud detection,
-  intrusion detection, medical diagnosis, earth science, web log analytics, and
-  social network analysis are covered.%
-    }
-    \field{booktitle}{Outlier Analysis}
-    \verb{doi}
-    \verb 10.1007/978-1-4614-6396-2
-    \endverb
-    \field{isbn}{9781461463962}
-    \field{pages}{1\bibrangedash 446}
-    \field{title}{{Outlier analysis}}
-    \field{volume}{9781461463}
-    \field{year}{2013}
-  \endentry
 
-  \entry{Alansari2018}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=AZ}{%
-         family={Alansari},
-         familyi={A\bibinitperiod},
-         given={Zainab},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=SS}{%
-         family={Soomro},
-         familyi={S\bibinitperiod},
-         given={Safeeullah},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=BMR}{%
-         family={Belgaum},
-         familyi={B\bibinitperiod},
-         given={Mohammad\bibnamedelima Riyaz},
-         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=SS}{%
-         family={Shamshirband},
-         familyi={S\bibinitperiod},
-         given={Shahaboddin},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \keyw{Big data,Fuzzy-AHP,Healthcare,Internet of Things (IoT)}
-    \strng{namehash}{AZ+1}
-    \strng{fullhash}{AZSSBMRSS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2018}
-    \field{labeldatesource}{}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{abstract}{%
-    Health is one of the sustainable development areas in all of the countries.
-  Internet of Things has a variety of use in this sector which was not studied
-  yet. The aim of this research is to prioritize IoT usage in the healthcare
-  sector to achieve sustainable development. The study is an applied
-  descriptive research according to data collection. As per the research
-  methodology which is FAHP, it is a single cross-sectional survey research.
-  After data collection, the agreed paired comparison matrices, allocated to
-  weighted criteria and the priority of IoT usage were determined. Based on the
-  research findings, the two criteria of “Economic Prosperity” and
-  “Quality of Life” achieved the highest priority for IoT sustainable
-  development in the healthcare sector. Moreover, the top priorities for IoT in
-  the area of health, according to the usage, were identified as “Ultraviolet
-  Radiation,” “Dental Health,” and “Fall Detection.”.%
-    }
-    \field{booktitle}{Advances in Intelligent Systems and Computing}
-    \verb{doi}
-    \verb 10.1007/978-981-10-6875-1_66
-    \endverb
-    \field{isbn}{9789811068744}
-    \field{issn}{21945357}
-    \field{pages}{675\bibrangedash 685}
-    \field{title}{{The rise of Internet of Things (IoT) in big healthcare data:
-  Review and open research issues}}
-    \field{volume}{564}
-    \field{year}{2018}
-  \endentry
-
-  \entry{Braei2020}{misc}{}
-    \name{author}{2}{}{%
-      {{hash=BM}{%
-         family={Braei},
-         familyi={B\bibinitperiod},
-         given={Mohammad},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=WS}{%
-         family={Wagner},
-         familyi={W\bibinitperiod},
-         given={Sebastian},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BMWS1}
-    \strng{fullhash}{BMWS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2020}
-    \field{labeldatesource}{}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{abstract}{%
-    Anomaly detection for time-series data has been an important research field
-  for a long time. Seminal work on anomaly detection methods has been focussing
-  on statistical approaches. In recent years an increasing number of machine
-  learning algorithms have been developed to detect anomalies on time-series.
-  Subsequently, researchers tried to improve these techniques using (deep)
-  neural networks. In the light of the increasing number of anomaly detection
-  methods, the body of research lacks a broad comparative evaluation of
-  statistical, machine learning and deep learning methods. This paper studies
-  20 univariate anomaly detection methods from the all three categories. The
-  evaluation is conducted on publicly available datasets, which serve as
-  benchmarks for time-series anomaly detection. By analyzing the accuracy of
-  each method as well as the computation time of the algorithms, we provide a
-  thorough insight about the performance of these anomaly detection approaches,
-  alongside some general notion of which method is suited for a certain type of
-  data.%
-    }
-    \field{booktitle}{arXiv}
-    \verb{eprint}
-    \verb 2004.00433
-    \endverb
-    \field{issn}{23318422}
-    \field{title}{{Anomaly detection in univariate time-series: A survey on the
-  state-of-the-art}}
-    \field{eprinttype}{arXiv}
-    \field{year}{2020}
-  \endentry
-
-  \entry{Chandola2009}{article}{}
-    \name{author}{2}{}{%
-      {{hash=CA}{%
-         family={{Chandola, Varun, Banerjee}},
-         familyi={C\bibinitperiod},
-         given={Arindam},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=KV}{%
-         family={Kumar},
-         familyi={K\bibinitperiod},
-         given={Vipin},
-         giveni={V\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CAKV1}
-    \strng{fullhash}{CAKV1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2009}
-    \field{labeldatesource}{}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{number}{3}
-    \field{pages}{1\bibrangedash 58}
-    \field{title}{{Anomaly detection: A survey}}
-    \field{volume}{41}
-    \field{journaltitle}{ACM computing surveys (CSUR)}
-    \field{year}{2009}
-  \endentry
-
-  \entry{JunyoungChung2014}{article}{}
-    \name{author}{4}{}{%
-      {{hash=CJ}{%
-         family={Chung},
-         familyi={C\bibinitperiod},
-         given={Junyoung},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=GC}{%
-         family={Gulcehre},
-         familyi={G\bibinitperiod},
-         given={Caglar},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=CK}{%
-         family={Cho},
-         familyi={C\bibinitperiod},
-         given={KyungHyun},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=BY}{%
-         family={Bengio},
-         familyi={B\bibinitperiod},
-         given={Yoshua},
-         giveni={Y\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CJ+1}
-    \strng{fullhash}{CJGCCKBY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2014}
-    \field{labeldatesource}{}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{abstract}{%
-    In this paper we compare different types of recurrent units in recurrent
-  neural networks (RNNs). Especially, we focus on more sophisticated units that
-  implement a gating mechanism, such as a long short-term memory (LSTM) unit
-  and a recently proposed gated recurrent unit (GRU). We evaluate these
-  recurrent units on the tasks of polyphonic music modeling and speech signal
-  modeling. Our experiments revealed that these advanced recurrent units are
-  indeed better than more traditional recurrent units such as tanh units. Also,
-  we found GRU to be comparable to LSTM.%
-    }
-    \verb{eprint}
-    \verb 1412.3555
-    \endverb
-    \field{title}{{Empirical Evaluation of Gated Recurrent Neural Networks on
-  Sequence Modeling}}
-    \verb{url}
-    \verb http://arxiv.org/abs/1412.3555
-    \endverb
-    \field{journaltitle}{NIPS 2014 Deep Learning and Representation Learning
-  Workshop}
-    \field{eprinttype}{arXiv}
-    \field{year}{2014}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{DennyBritz2015}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=D}{%
-         family={{Denny Britz}},
-         familyi={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{D1}
-    \strng{fullhash}{D1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
-    \field{labeldatesource}{}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{booktitle}{WILDML Artificial Intelligence, Deep Learning, and NLP}
-    \field{title}{{Implementing a Neural Network from Scratch in Python – An
-  Introduction}}
-    \verb{url}
-    \verb http://www.wildml.com/2015/09/implementing-a-neural-network-from-scra
-    \verb tch/
-    \endverb
-    \field{year}{2015}
-    \field{urlday}{18}
-    \field{urlmonth}{04}
-    \field{urlyear}{2021}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Dutta2018}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=DK}{%
-         family={Dutta},
-         familyi={D\bibinitperiod},
-         given={Kartik},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=KP}{%
-         family={Krishnan},
-         familyi={K\bibinitperiod},
-         given={Praveen},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=MM}{%
-         family={Mathew},
-         familyi={M\bibinitperiod},
-         given={Minesh},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=JCV}{%
-         family={Jawahar},
-         familyi={J\bibinitperiod},
-         given={C.\bibnamedelima V.},
-         giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
-    }
-    \keyw{CNN RNN network,Data augmentation,Handwriting recognition,Image
-  pre-processing}
-    \strng{namehash}{DK+1}
-    \strng{fullhash}{DKKPMMJCV1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2018}
-    \field{labeldatesource}{}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{abstract}{%
-    The success of deep learning based models have centered around recent
-  architectures and the availability of large scale annotated data. In this
-  work, we explore these two factors systematically for improving handwritten
-  recognition for scanned off-line document images. We propose a modified
-  CNN-RNN hybrid architecture with a major focus on effective training using:
-  (i) efficient initialization of network using synthetic data for pretraining,
-  (ii) image normalization for slant correction and (iii) domain specific data
-  transformation and distortion for learning important invariances. We perform
-  a detailed ablation study to analyze the contribution of individual modules
-  and present state of art results for the task of unconstrained line and word
-  recognition on popular datasets such as IAM, RIMES and GW.%
-    }
-    \field{booktitle}{Proceedings of International Conference on Frontiers in
-  Handwriting Recognition, ICFHR}
-    \verb{doi}
-    \verb 10.1109/ICFHR-2018.2018.00023
-    \endverb
-    \field{isbn}{9781538658758}
-    \field{issn}{21676453}
-    \field{pages}{80\bibrangedash 85}
-    \field{title}{{Improving CNN-RNN hybrid networks for handwriting
-  recognition}}
-    \field{volume}{2018-Augus}
-    \field{year}{2018}
-  \endentry
-
-  \entry{Fan2016}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=FY}{%
-         family={Fan},
-         familyi={F\bibinitperiod},
-         given={Yin},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=LX}{%
-         family={Lu},
-         familyi={L\bibinitperiod},
-         given={Xiangju},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=LD}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Dian},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=LY}{%
-         family={Liu},
-         familyi={L\bibinitperiod},
-         given={Yuanliu},
-         giveni={Y\bibinitperiod},
-      }}%
-    }
-    \keyw{3d convolutional network,Emotion recognition,Long short term memory
-  network,Model fusion,Recurrent neural network}
-    \strng{namehash}{FY+1}
-    \strng{fullhash}{FYLXLDLY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
-    \field{labeldatesource}{}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
-    \field{abstract}{%
-    In this paper, we present a video-based emotion recognition system
-  submitted to the EmotiW 2016 Challenge. The core module of this system is a
-  hybrid network that combines recurrent neural network (RNN) and 3D
-  convolutional networks (C3D) in a late-fusion fashion. RNN and C3D encode
-  appearance and motion information in different ways. Specifically, RNN takes
-  appearance features extracted by convolutional neural network (CNN) over
-  individual video frames as input and encodes motion later, while C3D models
-  appearance and motion of video simultaneously. Combined with an audio module,
-  our system achieved a recognition accuracy of 59.02% without using any
-  additional emotion-labeled video clips in training set, compared to 53.8% of
-  the winner of EmotiW 2015. Extensive experiments show that combining RNN and
-  C3D together can improve video-based emotion recognition noticeably.%
-    }
-    \field{booktitle}{ICMI 2016 - Proceedings of the 18th ACM International
-  Conference on Multimodal Interaction}
-    \verb{doi}
-    \verb 10.1145/2993148.2997632
-    \endverb
-    \field{isbn}{9781450345569}
-    \field{pages}{445\bibrangedash 450}
-    \field{title}{{Video-Based emotion recognition using CNN-RNN and C3D hybrid
-  networks}}
-    \field{year}{2016}
-  \endentry
-
-  \entry{Gers2000}{article}{}
-    \name{author}{3}{}{%
-      {{hash=GFA}{%
-         family={Gers},
-         familyi={G\bibinitperiod},
-         given={Felix\bibnamedelima A.},
-         giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=SJ}{%
-         family={Schmidhuber},
-         familyi={S\bibinitperiod},
-         given={J{\"{u}}rgen},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=CF}{%
-         family={Cummins},
-         familyi={C\bibinitperiod},
-         given={Fred},
-         giveni={F\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GFASJCF1}
-    \strng{fullhash}{GFASJCF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2000}
-    \field{labeldatesource}{}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{abstract}{%
-    Long short-term memory (LSTM; Hochreiter and Schmidhuber, 1997) can solve
-  numerous tasks not solvable by previous learning algorithms for recurrent
-  neural networks (RNNs). We identify a weakness of LSTM networks processing
-  continual input streams that are not a priori segmented into subsequences
-  with explicitly marked ends at which the network's internal state could be
-  reset. Without resets, the state may grow indefinitely and eventually cause
-  the network to break down. Our remedy is a novel, adaptive "forget gate" that
-  enables an LSTM cell to learn to reset itself at appropriate times, thus
-  releasing internal resources. We review illustrative benchmark problems on
-  which standard LSTM outperforms other RNN algorithms. All algorithms
-  (including LSTM) fail to solve continual versions of these problems. LSTM
-  with forget gates, however, easily solves them, and in an elegant way.%
-    }
-    \verb{doi}
-    \verb 10.1162/089976600300015015
-    \endverb
-    \field{issn}{08997667}
-    \field{number}{10}
-    \field{pages}{2451\bibrangedash 2471}
-    \field{title}{{Learning to forget: Continual prediction with LSTM}}
-    \field{volume}{12}
-    \field{journaltitle}{Neural Computation}
-    \field{year}{2000}
-  \endentry
-
-  \entry{Hauskrecht2007}{article}{}
-    \name{author}{5}{}{%
-      {{hash=HM}{%
-         family={Hauskrecht},
-         familyi={H\bibinitperiod},
-         given={Milos},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=VM}{%
-         family={Valko},
-         familyi={V\bibinitperiod},
-         given={Michal},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=KB}{%
-         family={Kveton},
-         familyi={K\bibinitperiod},
-         given={Branislav},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=VS}{%
-         family={Visweswaran},
-         familyi={V\bibinitperiod},
-         given={Shyam},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=CGF}{%
-         family={Cooper},
-         familyi={C\bibinitperiod},
-         given={Gregory\bibnamedelima F.},
-         giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{HM+1}
-    \strng{fullhash}{HMVMKBVSCGF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2007}
-    \field{labeldatesource}{}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{abstract}{%
-    Anomaly detection methods can be very useful in identifying interesting or
-  concerning events. In this work, we develop and examine new probabilistic
-  anomaly detection methods that let us evaluate management decisions for a
-  specific patient and identify those decisions that are highly unusual with
-  respect to patients with the same or similar condition. The statistics used
-  in this detection are derived from probabilistic models such as Bayesian
-  networks that are learned from a database of past patient cases. We evaluate
-  our methods on the problem of detection of unusual hospitalization patterns
-  for patients with community acquired pneumonia. The results show very
-  encouraging detection performance with 0.5 precision at 0.53 recall and give
-  us hope that these techniques may provide the basis of intelligent monitoring
-  systems that alert clinicians to the occurrence of unusual events or
-  decisions.%
-    }
-    \field{issn}{15594076}
-    \field{pages}{319\bibrangedash 323}
-    \field{title}{{Evidence-based anomaly detection in clinical domains.}}
-    \field{journaltitle}{AMIA ... Annual Symposium proceedings / AMIA
-  Symposium. AMIA Symposium}
-    \field{year}{2007}
-  \endentry
-
-  \entry{Hochreiter1997}{article}{}
-    \name{author}{2}{}{%
-      {{hash=HS}{%
-         family={Hochreiter},
-         familyi={H\bibinitperiod},
-         given={Sepp},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=SJ}{%
-         family={Schmidhuber},
-         familyi={S\bibinitperiod},
-         given={J{\"{u}}rgen},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{HSSJ1}
-    \strng{fullhash}{HSSJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1997}
-    \field{labeldatesource}{}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{abstract}{%
-    Learning to store information over extended time intervals by recurrent
-  backpropagation takes a very long time, mostly because of insufficient,
-  decaying error backflow. We briefly review Hochreiter's (1991) analysis of
-  this problem, then address it by introducing a novel, efficient, gradient
-  based method called long short-term memory (LSTM). Truncating the gradient
-  where this does not do harm, LSTM can learn to bridge minimal time lags in
-  excess of 1000 discrete-time steps by enforcing constant error flow through
-  constant error carousels within special units. Multiplicative gate units
-  learn to open and close access to the constant error flow. LSTM is local in
-  space and time; its computational complexity per time step and weight is O.
-  1. Our experiments with artificial data involve local, distributed,
-  real-valued, and noisy pattern representations. In comparisons with real-time
-  recurrent learning, back propagation through time, recurrent cascade
-  correlation, Elman nets, and neural sequence chunking, LSTM leads to many
-  more successful runs, and learns much faster. LSTM also solves complex,
-  artificial long-time-lag tasks that have never been solved by previous
-  recurrent network algorithms.%
-    }
-    \verb{doi}
-    \verb 10.1162/neco.1997.9.8.1735
-    \endverb
-    \field{issn}{0899-7667}
-    \field{number}{8}
-    \field{pages}{1735\bibrangedash 1780}
-    \field{title}{{Long Short-Term Memory}}
-    \verb{url}
-    \verb https://direct.mit.edu/neco/article/9/8/1735-1780/6109
-    \endverb
-    \field{volume}{9}
-    \field{journaltitle}{Neural Computation}
-    \field{year}{1997}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Hodge2004}{misc}{}
-    \name{author}{2}{}{%
-      {{hash=HVJ}{%
-         family={Hodge},
-         familyi={H\bibinitperiod},
-         given={Victoria\bibnamedelima J.},
-         giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=AJ}{%
-         family={Austin},
-         familyi={A\bibinitperiod},
-         given={Jim},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \keyw{Anomaly,Detection,Deviation,Noise,Novelty,Outlier,Recognition}
-    \strng{namehash}{HVJAJ1}
-    \strng{fullhash}{HVJAJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2004}
-    \field{labeldatesource}{}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{abstract}{%
-    Outlier detection has been used for centuries to detect and, where
-  appropriate, remove anomalous observations from data. Outliers arise due to
-  mechanical faults, changes in system behaviour, fraudulent behaviour, human
-  error, instrument error or simply through natural deviations in populations.
-  Their detection can identify system faults and fraud before they escalate
-  with potentially catastrophic consequences. It can identify errors and remove
-  their contaminating effect on the data set and as such to purify the data for
-  processing. The original outlier detection methods were arbitrary but now,
-  principled and systematic techniques are used, drawn from the full gamut of
-  Computer Science and Statistics. In this paper, we introduce a survey of
-  contemporary techniques for outlier detection. We identify their respective
-  motivations and distinguish their advantages and disadvantages in a
-  comparative review.%
-    }
-    \field{booktitle}{Artificial Intelligence Review}
-    \verb{doi}
-    \verb 10.1023/B:AIRE.0000045502.10941.a9
-    \endverb
-    \field{issn}{02692821}
-    \field{number}{2}
-    \field{pages}{85\bibrangedash 126}
-    \field{title}{{A survey of outlier detection methodologies}}
-    \field{volume}{22}
-    \field{year}{2004}
-  \endentry
-
-  \entry{LeCun1998}{article}{}
-    \name{author}{4}{}{%
-      {{hash=LY}{%
-         family={LeCun},
-         familyi={L\bibinitperiod},
-         given={Yann},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=BL}{%
-         family={Bottou},
-         familyi={B\bibinitperiod},
-         given={L{\'{e}}on},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=BY}{%
-         family={Bengio},
-         familyi={B\bibinitperiod},
-         given={Yoshua},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=HP}{%
-         family={Haffner},
-         familyi={H\bibinitperiod},
-         given={Patrick},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \keyw{Convolutional neural networks,Document recognition,Finite state
-  transducers,Gradient-based learning,Graph transformer networks,Machine
-  learning,Neural networks,Optical character recognition (OCR)}
-    \strng{namehash}{LY+1}
-    \strng{fullhash}{LYBLBYHP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1998}
-    \field{labeldatesource}{}
-    \field{sortinit}{L}
-    \field{sortinithash}{L}
-    \field{abstract}{%
-    Multilayer neural networks trained with the back-propagation algorithm
-  constitute the best example of a successful gradient-based learning
-  technique. Given an appropriate network architecture, gradient-based learning
-  algorithms can be used to synthesize a complex decision surface that can
-  classify high-dimensional patterns, such as handwritten characters, with
-  minimal preprocessing. This paper reviews various methods applied to
-  handwritten character recognition and compares them on a standard handwritten
-  digit recognition task. Convolutional neural networks, which are specifically
-  designed to deal with the variability of two dimensional (2-D) shapes, are
-  shown to outperform all other techniques. Real-life document recognition
-  systems are composed of multiple modules including field extraction,
-  segmentation, recognition, and language modeling. A new learning paradigm,
-  called graph transformer networks (GTN's), allows such multimodule systems to
-  be trained globally using gradient-based methods so as to minimize an overall
-  performance measure. Two systems for online handwriting recognition are
-  described. Experiments demonstrate the advantage of global training, and the
-  flexibility of graph transformer networks. A graph transformer network for
-  reading a bank check is also described. It uses convolutional neural network
-  character recognizers combined with global training techniques to provide
-  record accuracy on business and personal checks. It is deployed commercially
-  and reads several million checks per day. {\textcopyright} 1998 IEEE.%
-    }
-    \verb{doi}
-    \verb 10.1109/5.726791
-    \endverb
-    \field{issn}{00189219}
-    \field{number}{11}
-    \field{pages}{2278\bibrangedash 2323}
-    \field{title}{{Gradient-based learning applied to document recognition}}
-    \field{volume}{86}
-    \field{journaltitle}{Proceedings of the IEEE}
-    \field{year}{1998}
-  \endentry
-
-  \entry{Malhotra2015}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=MP}{%
-         family={Malhotra},
-         familyi={M\bibinitperiod},
-         given={Pankaj},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=VL}{%
-         family={Vig},
-         familyi={V\bibinitperiod},
-         given={Lovekesh},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=SG}{%
-         family={Shroff},
-         familyi={S\bibinitperiod},
-         given={Gautam},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=AP}{%
-         family={Agarwal},
-         familyi={A\bibinitperiod},
-         given={Puneet},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MP+1}
-    \strng{fullhash}{MPVLSGAP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
-    \field{labeldatesource}{}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{abstract}{%
-    Long Short Term Memory (LSTM) networks have been demonstrated to be
-  particularly useful for learning sequences containing longer term patterns of
-  unknown length, due to their ability to maintain long term memory. Stacking
-  recurrent hidden layers in such networks also enables the learning of higher
-  level temporal features, for faster learning with sparser representations. In
-  this paper, we use stacked LSTM networks for anomaly/fault detection in time
-  series. A network is trained on non-anomalous data and used as a predictor
-  over a number of time steps. The resulting prediction errors are modeled as a
-  multivariate Gaussian distribution, which is used to assess the likelihood of
-  anomalous behavior. The efficacy of this approach is demonstrated on four
-  datasets: ECG, space shuttle, power demand, and multi-sensor engine dataset.%
-    }
-    \field{booktitle}{23rd European Symposium on Artificial Neural Networks,
-  Computational Intelligence and Machine Learning, ESANN 2015 - Proceedings}
-    \field{isbn}{9782875870148}
-    \field{pages}{89\bibrangedash 94}
-    \field{title}{{Long Short Term Memory networks for anomaly detection in
-  time series}}
-    \field{year}{2015}
-  \endentry
-
-  \entry{MichaelPhi2018}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=M}{%
-         family={{Michael Phi}},
-         familyi={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{M1}
-    \strng{fullhash}{M1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2018}
-    \field{labeldatesource}{}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{booktitle}{Towards Data Science}
-    \field{title}{{Illustrated Guide to LSTM's and GRU's: A step by step
-  explanation}}
-    \verb{url}
-    \verb https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a
-    \verb -step-by-step-explanation-44e9eb85bf21
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{18}
-    \field{urlmonth}{04}
-    \field{urlyear}{2021}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Munir2019}{article}{}
-    \name{author}{4}{}{%
-      {{hash=MM}{%
-         family={Munir},
-         familyi={M\bibinitperiod},
-         given={Mohsin},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=SSA}{%
-         family={Siddiqui},
-         familyi={S\bibinitperiod},
-         given={Shoaib\bibnamedelima Ahmed},
-         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=DA}{%
-         family={Dengel},
-         familyi={D\bibinitperiod},
-         given={Andreas},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=AS}{%
-         family={Ahmed},
-         familyi={A\bibinitperiod},
-         given={Sheraz},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \keyw{Anomaly detection,artificial intelligence,convolutional neural
-  network,deep neural networks,recurrent neural networks,time series analysis}
-    \strng{namehash}{MM+1}
-    \strng{fullhash}{MMSSADAAS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2019}
-    \field{labeldatesource}{}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{abstract}{%
-    Traditional distance and density-based anomaly detection techniques are
-  unable to detect periodic and seasonality related point anomalies which occur
-  commonly in streaming data, leaving a big gap in time series anomaly
-  detection in the current era of the IoT. To address this problem, we present
-  a novel deep learning-based anomaly detection approach (DeepAnT) for time
-  series data, which is equally applicable to the non-streaming cases. DeepAnT
-  is capable of detecting a wide range of anomalies, i.e., point anomalies,
-  contextual anomalies, and discords in time series data. In contrast to the
-  anomaly detection methods where anomalies are learned, DeepAnT uses unlabeled
-  data to capture and learn the data distribution that is used to forecast the
-  normal behavior of a time series. DeepAnT consists of two modules: time
-  series predictor and anomaly detector. The time series predictor module uses
-  deep convolutional neural network (CNN) to predict the next time stamp on the
-  defined horizon. This module takes a window of time series (used as a
-  context) and attempts to predict the next time stamp. The predicted value is
-  then passed to the anomaly detector module, which is responsible for tagging
-  the corresponding time stamp as normal or abnormal. DeepAnT can be trained
-  even without removing the anomalies from the given data set. Generally, in
-  deep learning-based approaches, a lot of data are required to train a model.
-  Whereas in DeepAnT, a model can be trained on relatively small data set while
-  achieving good generalization capabilities due to the effective parameter
-  sharing of the CNN. As the anomaly detection in DeepAnT is unsupervised, it
-  does not rely on anomaly labels at the time of model generation. Therefore,
-  this approach can be directly applied to real-life scenarios where it is
-  practically impossible to label a big stream of data coming from
-  heterogeneous sensors comprising of both normal as well as anomalous points.
-  We have performed a detailed evaluation of 15 algorithms on 10 anomaly
-  detection benchmarks, which contain a total of 433 real and synthetic time
-  series. Experiments show that DeepAnT outperforms the state-of-the-art
-  anomaly detection methods in most of the cases, while performing on par with
-  others.%
-    }
-    \verb{doi}
-    \verb 10.1109/ACCESS.2018.2886457
-    \endverb
-    \field{issn}{21693536}
-    \field{pages}{1991\bibrangedash 2005}
-    \field{title}{{DeepAnT: A Deep Learning Approach for Unsupervised Anomaly
-  Detection in Time Series}}
-    \field{volume}{7}
-    \field{journaltitle}{IEEE Access}
-    \field{year}{2019}
-  \endentry
-
-  \entry{NiklasDonges2020}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=N}{%
-         family={{Niklas Donges}},
-         familyi={N\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{N1}
-    \strng{fullhash}{N1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2020}
-    \field{labeldatesource}{}
-    \field{sortinit}{N}
-    \field{sortinithash}{N}
-    \field{booktitle}{Built-In}
-    \field{title}{{What is transfer learning? Exploring the popular deep
-  learning approach}}
-    \verb{url}
-    \verb https://builtin.com/data-science/transfer-learning
-    \endverb
-    \field{year}{2020}
-    \field{urlday}{18}
-    \field{urlmonth}{04}
-    \field{urlyear}{2021}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Ord1996}{article}{}
-    \name{author}{1}{}{%
-      {{hash=OK}{%
-         family={Ord},
-         familyi={O\bibinitperiod},
-         given={Keith},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{OK1}
-    \strng{fullhash}{OK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1996}
-    \field{labeldatesource}{}
-    \field{sortinit}{O}
-    \field{sortinithash}{O}
-    \field{abstract}{%
-    No abstract is available for this item.%
-    }
-    \field{number}{1}
-    \field{title}{{Outliers in statistical data : V. Barnett and T. Lewis,
-  1994, 3rd edition, (John Wiley and Sons, Chichester), 584 pp., [UK
-  pound]55.00, ISBN 0-471-93094-6}}
-    \field{volume}{12}
-    \field{journaltitle}{International Journal of Forecasting}
-    \field{year}{1996}
-  \endentry
-
-  \entry{RichStureborg2019}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=R}{%
-         family={{Rich Stureborg}},
-         familyi={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{R1}
-    \strng{fullhash}{R1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2019}
-    \field{labeldatesource}{}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \field{booktitle}{Towards Data Science}
-    \field{pages}{\bibrangedash undefined}
-    \field{title}{{Conv Nets for dummies}}
-    \verb{url}
-    \verb https://towardsdatascience.com/conv-nets-for-dummies-a-bottom-up-appr
-    \verb oach-c1b754fb14d6
-    \endverb
-    \field{year}{2019}
-    \field{urlday}{18}
-    \field{urlmonth}{04}
-    \field{urlyear}{2021}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Ronneberger2015}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=RO}{%
-         family={Ronneberger},
-         familyi={R\bibinitperiod},
-         given={Olaf},
-         giveni={O\bibinitperiod},
-      }}%
-      {{hash=FP}{%
-         family={Fischer},
-         familyi={F\bibinitperiod},
-         given={Philipp},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=BT}{%
-         family={Brox},
-         familyi={B\bibinitperiod},
-         given={Thomas},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ROFPBT1}
-    \strng{fullhash}{ROFPBT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
-    \field{labeldatesource}{}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \field{abstract}{%
-    There is large consent that successful training of deep networks requires
-  many thousand annotated training samples. In this paper, we present a network
-  and training strategy that relies on the strong use of data augmentation to
-  use the available annotated samples more efficiently. The architecture
-  consists of a contracting path to capture context and a symmetric expanding
-  path that enables precise localization. We show that such a network can be
-  trained end-to-end from very few images and outperforms the prior best method
-  (a sliding-window convolutional network) on the ISBI challenge for
-  segmentation of neuronal structures in electron microscopic stacks. Using the
-  same network trained on transmitted light microscopy images (phase contrast
-  and DIC) we won the ISBI cell tracking challenge 2015 in these categories by
-  a large margin. Moreover, the network is fast. Segmentation of a 512x512
-  image takes less than a second on a recent GPU. The full implementation
-  (based on Caffe) and the trained networks are available at
-  http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net.%
-    }
-    \field{booktitle}{Lecture Notes in Computer Science (including subseries
-  Lecture Notes in Artificial Intelligence and Lecture Notes in
-  Bioinformatics)}
-    \verb{doi}
-    \verb 10.1007/978-3-319-24574-4_28
-    \endverb
-    \field{isbn}{9783319245737}
-    \field{issn}{16113349}
-    \field{pages}{234\bibrangedash 241}
-    \field{title}{{U-net: Convolutional networks for biomedical image
-  segmentation}}
-    \field{volume}{9351}
-    \field{year}{2015}
-  \endentry
-
-  \entry{Thabtah2020}{article}{}
-    \name{author}{4}{}{%
-      {{hash=TF}{%
-         family={Thabtah},
-         familyi={T\bibinitperiod},
-         given={Fadi},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=HS}{%
-         family={Hammoud},
-         familyi={H\bibinitperiod},
-         given={Suhel},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=KF}{%
-         family={Kamalov},
-         familyi={K\bibinitperiod},
-         given={Firuz},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=GA}{%
-         family={Gonsalves},
-         familyi={G\bibinitperiod},
-         given={Amanda},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \keyw{Class imbalance,Classification,Data analysis,Machine
-  learning,Statistical analysis,Supervised learning}
-    \strng{namehash}{TF+1}
-    \strng{fullhash}{TFHSKFGA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2020}
-    \field{labeldatesource}{}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{abstract}{%
-    The advent of Big Data has ushered a new era of scientific breakthroughs.
-  One of the common issues that affects raw data is class imbalance problem
-  which refers to imbalanced distribution of values of the response variable.
-  This issue is present in fraud detection, network intrusion detection,
-  medical diagnostics, and a number of other fields where negatively labeled
-  instances significantly outnumber positively labeled instances. Modern
-  machine learning techniques struggle to deal with imbalanced data by focusing
-  on minimizing the error rate for the majority class while ignoring the
-  minority class. The goal of our paper is demonstrate the effects of class
-  imbalance on classification models. Concretely, we study the impact of
-  varying class imbalance ratios on classifier accuracy. By highlighting the
-  precise nature of the relationship between the degree of class imbalance and
-  the corresponding effects on classifier performance we hope to help
-  researchers to better tackle the problem. To this end, we carry out extensive
-  experiments using 10-fold cross validation on a large number of datasets. In
-  particular, we determine that the relationship between the class imbalance
-  ratio and the accuracy is convex.%
-    }
-    \verb{doi}
-    \verb 10.1016/j.ins.2019.11.004
-    \endverb
-    \field{issn}{00200255}
-    \field{pages}{429\bibrangedash 441}
-    \field{title}{{Data imbalance in classification: Experimental evaluation}}
-    \field{volume}{513}
-    \field{journaltitle}{Information Sciences}
-    \field{year}{2020}
-  \endentry
-
-  \entry{Wen2019}{misc}{}
-    \name{author}{2}{}{%
-      {{hash=WT}{%
-         family={Wen},
-         familyi={W\bibinitperiod},
-         given={Tailai},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=KR}{%
-         family={Keyes},
-         familyi={K\bibinitperiod},
-         given={Roy},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{WTKR1}
-    \strng{fullhash}{WTKR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2019}
-    \field{labeldatesource}{}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \field{abstract}{%
-    Time series anomaly detection plays a critical role in automated monitoring
-  systems. Most previous deep learning efforts related to time series anomaly
-  detection were based on recurrent neural networks (RNN). In this paper, we
-  propose a time series segmentation approach based on convolutional neural
-  networks (CNN) for anomaly detection. Moreover, we propose a transfer
-  learning framework that pretrains a model on a large-scale synthetic
-  univariate time series data set and then fine-tunes its weights on
-  small-scale, univariate or multivariate data sets with previously unseen
-  classes of anomalies. For the multivariate case we introduce a novel network
-  architecture. The approach was tested on multiple synthetic and real data
-  sets successfully.%
-    }
-    \field{booktitle}{arXiv}
-    \verb{eprint}
-    \verb 1905.13628
-    \endverb
-    \field{issn}{23318422}
-    \field{title}{{Time Series Anomaly Detection Using Convolutional Neural
-  Networks and Transfer Learning}}
-    \field{eprinttype}{arXiv}
-    \field{year}{2019}
-  \endentry
-
-  \entry{Zheng2014}{inproceedings}{}
-    \name{author}{5}{}{%
-      {{hash=ZY}{%
-         family={Zheng},
-         familyi={Z\bibinitperiod},
-         given={Yi},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=LQ}{%
-         family={Liu},
-         familyi={L\bibinitperiod},
-         given={Qi},
-         giveni={Q\bibinitperiod},
-      }}%
-      {{hash=CE}{%
-         family={Chen},
-         familyi={C\bibinitperiod},
-         given={Enhong},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=GY}{%
-         family={Ge},
-         familyi={G\bibinitperiod},
-         given={Yong},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=ZJL}{%
-         family={Zhao},
-         familyi={Z\bibinitperiod},
-         given={J.\bibnamedelima Leon},
-         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ZY+1}
-    \strng{fullhash}{ZYLQCEGYZJL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2014}
-    \field{labeldatesource}{}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \field{abstract}{%
-    Time series (particularly multivariate) classification has drawn a lot of
-  attention in the literature because of its broad applications for different
-  domains, such as health informatics and bioinformatics. Thus, many algorithms
-  have been developed for this task. Among them, nearest neighbor
-  classification (particularly 1-NN) combined with Dynamic Time Warping (DTW)
-  achieves the state of the art performance. However, when data set grows
-  larger, the time consumption of 1-NN with DTW grows linearly. Compared to
-  1-NN with DTW, the traditional feature-based classification methods are
-  usually more efficient but less effective since their performance is usually
-  dependent on the quality of hand-crafted features. To that end, in this
-  paper, we explore the feature learning techniques to improve the performance
-  of traditional feature-based approaches. Specifically, we propose a novel
-  deep learning framework for multivariate time series classification. We
-  conduct two groups of experiments on real-world data sets from different
-  application domains. The final results show that our model is not only more
-  efficient than the state of the art but also competitive in accuracy. It also
-  demonstrates that feature learning is worth to investigate for time series
-  classification. {\textcopyright} 2014 Springer International Publishing
-  Switzerland.%
-    }
-    \field{booktitle}{Lecture Notes in Computer Science (including subseries
-  Lecture Notes in Artificial Intelligence and Lecture Notes in
-  Bioinformatics)}
-    \verb{doi}
-    \verb 10.1007/978-3-319-08010-9_33
-    \endverb
-    \field{isbn}{9783319080093}
-    \field{issn}{16113349}
-    \field{pages}{298\bibrangedash 310}
-    \field{title}{{Time series classification using multi-channels deep
-  convolutional neural networks}}
-    \field{volume}{8485 LNCS}
-    \field{year}{2014}
-  \endentry
-\enddatalist
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Aggarwal2013}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=86d11a07b1bfeac58dc68f7a419b3039}{%
+           family={Aggarwal},
+           familyi={A\bibinitperiod},
+           given={Charu\bibnamedelima C.},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{fullhash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{bibnamehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{authorbibnamehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{authornamehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{authorfullhash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the increasing advances in hardware technology for data collection, and advances in software technology (databases) for data organization, computer scientists have increasingly participated in the latest advancements of the outlier analysis field. Computer scientists, specifically, approach this field based on their practical experiences in managing large amounts of data, and with far fewer assumptions- the data can be of any type, structured or unstructured, and may be extremely large. Outlier Analysis is a comprehensive exposition, as understood by data mining experts, statisticians and computer scientists. The book has been organized carefully, and emphasis was placed on simplifying the content, so that students and practitioners can also benefit. Chapters will typically cover one of three areas: methods and techniques commonly used in outlier analysis, such as linear methods, proximity-based methods, subspace methods, and supervised methods; data domains, such as, text, categorical, mixed-attribute, time-series, streaming, discrete sequence, spatial and network data; and key applications of these methods as applied to diverse domains such as credit card fraud detection, intrusion detection, medical diagnosis, earth science, web log analytics, and social network analysis are covered.}
+      \field{booktitle}{Outlier Analysis}
+      \field{isbn}{9781461463962}
+      \field{title}{{Outlier analysis}}
+      \field{volume}{9781461463}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 446}
+      \range{pages}{446}
+      \verb{doi}
+      \verb 10.1007/978-1-4614-6396-2
+      \endverb
+    \endentry
+    \entry{Alansari2018}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6805746001b30023245fa9e0a3022a83}{%
+           family={Alansari},
+           familyi={A\bibinitperiod},
+           given={Zainab},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4eabb7b52565949633550ff51ac8b286}{%
+           family={Soomro},
+           familyi={S\bibinitperiod},
+           given={Safeeullah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f743cdd3f93ee4e334500c79583460ff}{%
+           family={Belgaum},
+           familyi={B\bibinitperiod},
+           given={Mohammad\bibnamedelima Riyaz},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f88fe5dd342b5ce546d485d6c1e11372}{%
+           family={Shamshirband},
+           familyi={S\bibinitperiod},
+           given={Shahaboddin},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d532eb6ac0adfcf5878455c54df6615c}
+      \strng{fullhash}{34ba20160c15f59c2b4df2aca9b93f89}
+      \strng{bibnamehash}{d532eb6ac0adfcf5878455c54df6615c}
+      \strng{authorbibnamehash}{d532eb6ac0adfcf5878455c54df6615c}
+      \strng{authornamehash}{d532eb6ac0adfcf5878455c54df6615c}
+      \strng{authorfullhash}{34ba20160c15f59c2b4df2aca9b93f89}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Health is one of the sustainable development areas in all of the countries. Internet of Things has a variety of use in this sector which was not studied yet. The aim of this research is to prioritize IoT usage in the healthcare sector to achieve sustainable development. The study is an applied descriptive research according to data collection. As per the research methodology which is FAHP, it is a single cross-sectional survey research. After data collection, the agreed paired comparison matrices, allocated to weighted criteria and the priority of IoT usage were determined. Based on the research findings, the two criteria of “Economic Prosperity” and “Quality of Life” achieved the highest priority for IoT sustainable development in the healthcare sector. Moreover, the top priorities for IoT in the area of health, according to the usage, were identified as “Ultraviolet Radiation,” “Dental Health,” and “Fall Detection.”.}
+      \field{booktitle}{Advances in Intelligent Systems and Computing}
+      \field{isbn}{9789811068744}
+      \field{issn}{21945357}
+      \field{title}{{The rise of Internet of Things (IoT) in big healthcare data: Review and open research issues}}
+      \field{volume}{564}
+      \field{year}{2018}
+      \field{pages}{675\bibrangedash 685}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/978-981-10-6875-1_66
+      \endverb
+      \keyw{Big data,Fuzzy-AHP,Healthcare,Internet of Things (IoT)}
+    \endentry
+    \entry{Braei2020}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2c203cba0db705a473a63d3648ea3ffe}{%
+           family={Braei},
+           familyi={B\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c4a24a585a6ed7ee96e719533882798}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{fullhash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{bibnamehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{authorbibnamehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{authornamehash}{1f4ee61163a6fcde15fa481e46d25740}
+      \strng{authorfullhash}{1f4ee61163a6fcde15fa481e46d25740}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Anomaly detection for time-series data has been an important research field for a long time. Seminal work on anomaly detection methods has been focussing on statistical approaches. In recent years an increasing number of machine learning algorithms have been developed to detect anomalies on time-series. Subsequently, researchers tried to improve these techniques using (deep) neural networks. In the light of the increasing number of anomaly detection methods, the body of research lacks a broad comparative evaluation of statistical, machine learning and deep learning methods. This paper studies 20 univariate anomaly detection methods from the all three categories. The evaluation is conducted on publicly available datasets, which serve as benchmarks for time-series anomaly detection. By analyzing the accuracy of each method as well as the computation time of the algorithms, we provide a thorough insight about the performance of these anomaly detection approaches, alongside some general notion of which method is suited for a certain type of data.}
+      \field{booktitle}{arXiv}
+      \field{eprinttype}{arXiv}
+      \field{issn}{23318422}
+      \field{title}{{Anomaly detection in univariate time-series: A survey on the state-of-the-art}}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2004.00433
+      \endverb
+    \endentry
+    \entry{Chandola2009}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=818074037ed2f89ce51237af38dec11f}{%
+           family={Chandola},
+           familyi={C\bibinitperiod},
+           given={Varun},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ddb7b9c38d8c15a70bc573ba4e51ea9}{%
+           family={Banerjee},
+           familyi={B\bibinitperiod},
+           given={Arindam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efb90d78e35ff61d3bc639f5c6f3d822}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Vipin},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{135c55bbecd240d054a5541e3cf77609}
+      \strng{fullhash}{135c55bbecd240d054a5541e3cf77609}
+      \strng{bibnamehash}{135c55bbecd240d054a5541e3cf77609}
+      \strng{authorbibnamehash}{135c55bbecd240d054a5541e3cf77609}
+      \strng{authornamehash}{135c55bbecd240d054a5541e3cf77609}
+      \strng{authorfullhash}{135c55bbecd240d054a5541e3cf77609}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM computing surveys (CSUR)}
+      \field{number}{3}
+      \field{title}{{Anomaly detection: A survey}}
+      \field{volume}{41}
+      \field{year}{2009}
+      \field{pages}{1\bibrangedash 58}
+      \range{pages}{58}
+    \endentry
+    \entry{JunyoungChung2014}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7a79e6bb4ca772c9b3b38f4e9f45b83c}{%
+           family={Chung},
+           familyi={C\bibinitperiod},
+           given={Junyoung},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2adc0c92c308f233c731321d55efe58f}{%
+           family={Gulcehre},
+           familyi={G\bibinitperiod},
+           given={Caglar},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8dfca934ead3a7cab6b2382a1baaaa1}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={KyungHyun},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2000d0778084bb56905b1654d519f50f}
+      \strng{fullhash}{7f2d21710b1589de5a0a24526a0e0f03}
+      \strng{bibnamehash}{2000d0778084bb56905b1654d519f50f}
+      \strng{authorbibnamehash}{2000d0778084bb56905b1654d519f50f}
+      \strng{authornamehash}{2000d0778084bb56905b1654d519f50f}
+      \strng{authorfullhash}{7f2d21710b1589de5a0a24526a0e0f03}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper we compare different types of recurrent units in recurrent neural networks (RNNs). Especially, we focus on more sophisticated units that implement a gating mechanism, such as a long short-term memory (LSTM) unit and a recently proposed gated recurrent unit (GRU). We evaluate these recurrent units on the tasks of polyphonic music modeling and speech signal modeling. Our experiments revealed that these advanced recurrent units are indeed better than more traditional recurrent units such as tanh units. Also, we found GRU to be comparable to LSTM.}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{NIPS 2014 Deep Learning and Representation Learning Workshop}
+      \field{month}{12}
+      \field{title}{{Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling}}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1412.3555
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1412.3555
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1412.3555
+      \endverb
+    \endentry
+    \entry{Cicek2016}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=92bebfd041b279b80a17edf14c6e2226}{%
+           family={Çiçek},
+           familyi={Ç\bibinitperiod},
+           given={Özgün},
+           giveni={Ö\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd1cd1962dcb1b6e7ba1d5e3269c1a70}{%
+           family={Abdulkadir},
+           familyi={A\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f3f4d0039a4fa548905b16c7a2a088d}{%
+           family={Lienkamp},
+           familyi={L\bibinitperiod},
+           given={Soeren\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b452a32296958371572717940f900884}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e46da9de9e53ea5d37089897d69cdd9}{%
+           family={Ronneberger},
+           familyi={R\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e64aa4ac842b67684c7c812957881c74}
+      \strng{fullhash}{5d78b6035963e7bd3240da1449f99a00}
+      \strng{bibnamehash}{e64aa4ac842b67684c7c812957881c74}
+      \strng{authorbibnamehash}{e64aa4ac842b67684c7c812957881c74}
+      \strng{authornamehash}{e64aa4ac842b67684c7c812957881c74}
+      \strng{authorfullhash}{5d78b6035963e7bd3240da1449f99a00}
+      \field{sortinit}{Ç}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper introduces a network for volumetric segmentation that learns from sparsely annotated volumetric images. We outline two attractive use cases of this method: (1) In a semi-automated setup,the user annotates some slices in the volume to be segmented. The network learns from these sparse annotations and provides a dense 3D segmentation. (2) In a fully-automated setup,we assume that a representative,sparsely annotated training set exists. Trained on this data set,the network densely segments new volumetric images. The proposed network extends the previous u-net architecture from Ronneberger et al. by replacing all 2D operations with their 3D counterparts. The implementation performs on-the-fly elastic deformations for efficient data augmentation during training. It is trained end-to-end from scratch,i.e.,no pre-trained network is required. We test the performance of the proposed method on a complex,highly variable 3D structure,the Xenopus kidney,and achieve good results for both use cases.}
+      \field{booktitle}{Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}
+      \field{issn}{16113349}
+      \field{title}{{3D U-net: Learning dense volumetric segmentation from sparse annotation}}
+      \field{volume}{9901 LNCS}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1007/978-3-319-46723-8_49
+      \endverb
+    \endentry
+    \entry{DennyBritz2015}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7cac4a9239d473644743727b49663e28}{%
+           family={{Denny Britz}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7cac4a9239d473644743727b49663e28}
+      \strng{fullhash}{7cac4a9239d473644743727b49663e28}
+      \strng{bibnamehash}{7cac4a9239d473644743727b49663e28}
+      \strng{authorbibnamehash}{7cac4a9239d473644743727b49663e28}
+      \strng{authornamehash}{7cac4a9239d473644743727b49663e28}
+      \strng{authorfullhash}{7cac4a9239d473644743727b49663e28}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{WILDML Artificial Intelligence, Deep Learning, and NLP}
+      \field{month}{9}
+      \field{title}{{Implementing a Neural Network from Scratch in Python – An Introduction}}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/
+      \endverb
+      \verb{url}
+      \verb http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/
+      \endverb
+    \endentry
+    \entry{Dutta2018}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1d76cefa9da5679858277604332cbe83}{%
+           family={Dutta},
+           familyi={D\bibinitperiod},
+           given={Kartik},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=837a8f1fd024a33720a1ba69b40a2dc0}{%
+           family={Krishnan},
+           familyi={K\bibinitperiod},
+           given={Praveen},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4644481b016093a2a7e0d20663a0391}{%
+           family={Mathew},
+           familyi={M\bibinitperiod},
+           given={Minesh},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c28cbc2901395b4ae713740941e45d6f}{%
+           family={Jawahar},
+           familyi={J\bibinitperiod},
+           given={C.\bibnamedelimi V.},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8e24436ecdadfe1e0f636d1cba24e55e}
+      \strng{fullhash}{5d0b968f697922b9200449c58a1f83b2}
+      \strng{bibnamehash}{8e24436ecdadfe1e0f636d1cba24e55e}
+      \strng{authorbibnamehash}{8e24436ecdadfe1e0f636d1cba24e55e}
+      \strng{authornamehash}{8e24436ecdadfe1e0f636d1cba24e55e}
+      \strng{authorfullhash}{5d0b968f697922b9200449c58a1f83b2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The success of deep learning based models have centered around recent architectures and the availability of large scale annotated data. In this work, we explore these two factors systematically for improving handwritten recognition for scanned off-line document images. We propose a modified CNN-RNN hybrid architecture with a major focus on effective training using: (i) efficient initialization of network using synthetic data for pretraining, (ii) image normalization for slant correction and (iii) domain specific data transformation and distortion for learning important invariances. We perform a detailed ablation study to analyze the contribution of individual modules and present state of art results for the task of unconstrained line and word recognition on popular datasets such as IAM, RIMES and GW.}
+      \field{booktitle}{Proceedings of International Conference on Frontiers in Handwriting Recognition, ICFHR}
+      \field{isbn}{9781538658758}
+      \field{issn}{21676453}
+      \field{title}{{Improving CNN-RNN hybrid networks for handwriting recognition}}
+      \field{volume}{2018-Augus}
+      \field{year}{2018}
+      \field{pages}{80\bibrangedash 85}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICFHR-2018.2018.00023
+      \endverb
+      \keyw{CNN RNN network,Data augmentation,Handwriting recognition,Image pre-processing}
+    \endentry
+    \entry{Fan2016}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a1c99d8aca0d6f4dbaaaea8ce5ab285f}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Yin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54c53af059393e623ba87817d964922b}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Xiangju},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ffe0890efeb416a2767be6ba4e21b725}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Dian},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c842470a28a0817a0e51ae00aed3a2a5}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yuanliu},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{08c038db59ad5baed9b4729f0befcacb}
+      \strng{fullhash}{fb9af1f813f0138e0df2c8bee7abb7dd}
+      \strng{bibnamehash}{08c038db59ad5baed9b4729f0befcacb}
+      \strng{authorbibnamehash}{08c038db59ad5baed9b4729f0befcacb}
+      \strng{authornamehash}{08c038db59ad5baed9b4729f0befcacb}
+      \strng{authorfullhash}{fb9af1f813f0138e0df2c8bee7abb7dd}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we present a video-based emotion recognition system submitted to the EmotiW 2016 Challenge. The core module of this system is a hybrid network that combines recurrent neural network (RNN) and 3D convolutional networks (C3D) in a late-fusion fashion. RNN and C3D encode appearance and motion information in different ways. Specifically, RNN takes appearance features extracted by convolutional neural network (CNN) over individual video frames as input and encodes motion later, while C3D models appearance and motion of video simultaneously. Combined with an audio module, our system achieved a recognition accuracy of 59.02 without using any additional emotion-labeled video clips in training set, compared to 53.8 of the winner of EmotiW 2015. Extensive experiments show that combining RNN and C3D together can improve video-based emotion recognition noticeably.}
+      \field{booktitle}{ICMI 2016 - Proceedings of the 18th ACM International Conference on Multimodal Interaction}
+      \field{isbn}{9781450345569}
+      \field{title}{{Video-Based emotion recognition using CNN-RNN and C3D hybrid networks}}
+      \field{year}{2016}
+      \field{pages}{445\bibrangedash 450}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1145/2993148.2997632
+      \endverb
+      \keyw{3d convolutional network,Emotion recognition,Long short term memory network,Model fusion,Recurrent neural network}
+    \endentry
+    \entry{Gers2000}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=805aa8bd8070a9c87d87ba3588da7bab}{%
+           family={Gers},
+           familyi={G\bibinitperiod},
+           given={Felix\bibnamedelima A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bdd8ffd78b64a16f8c61071ba7af7225}{%
+           family={Cummins},
+           familyi={C\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f90ec3965a97856f5e2b784e9481582a}
+      \strng{fullhash}{f90ec3965a97856f5e2b784e9481582a}
+      \strng{bibnamehash}{f90ec3965a97856f5e2b784e9481582a}
+      \strng{authorbibnamehash}{f90ec3965a97856f5e2b784e9481582a}
+      \strng{authornamehash}{f90ec3965a97856f5e2b784e9481582a}
+      \strng{authorfullhash}{f90ec3965a97856f5e2b784e9481582a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Long short-term memory (LSTM; Hochreiter and Schmidhuber, 1997) can solve numerous tasks not solvable by previous learning algorithms for recurrent neural networks (RNNs). We identify a weakness of LSTM networks processing continual input streams that are not a priori segmented into subsequences with explicitly marked ends at which the network's internal state could be reset. Without resets, the state may grow indefinitely and eventually cause the network to break down. Our remedy is a novel, adaptive "forget gate" that enables an LSTM cell to learn to reset itself at appropriate times, thus releasing internal resources. We review illustrative benchmark problems on which standard LSTM outperforms other RNN algorithms. All algorithms (including LSTM) fail to solve continual versions of these problems. LSTM with forget gates, however, easily solves them, and in an elegant way.}
+      \field{issn}{08997667}
+      \field{journaltitle}{Neural Computation}
+      \field{number}{10}
+      \field{title}{{Learning to forget: Continual prediction with LSTM}}
+      \field{volume}{12}
+      \field{year}{2000}
+      \field{pages}{2451\bibrangedash 2471}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1162/089976600300015015
+      \endverb
+    \endentry
+    \entry{Hauskrecht2007}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=0cb8924849f5a61a603fa1b2e7bd7905}{%
+           family={Hauskrecht},
+           familyi={H\bibinitperiod},
+           given={Milos},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e25b9b55e0d33d8e554fb428b0122ba9}{%
+           family={Valko},
+           familyi={V\bibinitperiod},
+           given={Michal},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=def106a95d5f6398478e12f1de6c6649}{%
+           family={Kveton},
+           familyi={K\bibinitperiod},
+           given={Branislav},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=039552d1a26da0c11fec71189a7e414c}{%
+           family={Visweswaran},
+           familyi={V\bibinitperiod},
+           given={Shyam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae44280700db382c780fe95952f4cb4c}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Gregory\bibnamedelima F.},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c55496dde460922c7855750d1d7272d0}
+      \strng{fullhash}{d822b7cc6149ac3aa540ce2e690dfd66}
+      \strng{bibnamehash}{c55496dde460922c7855750d1d7272d0}
+      \strng{authorbibnamehash}{c55496dde460922c7855750d1d7272d0}
+      \strng{authornamehash}{c55496dde460922c7855750d1d7272d0}
+      \strng{authorfullhash}{d822b7cc6149ac3aa540ce2e690dfd66}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Anomaly detection methods can be very useful in identifying interesting or concerning events. In this work, we develop and examine new probabilistic anomaly detection methods that let us evaluate management decisions for a specific patient and identify those decisions that are highly unusual with respect to patients with the same or similar condition. The statistics used in this detection are derived from probabilistic models such as Bayesian networks that are learned from a database of past patient cases. We evaluate our methods on the problem of detection of unusual hospitalization patterns for patients with community acquired pneumonia. The results show very encouraging detection performance with 0.5 precision at 0.53 recall and give us hope that these techniques may provide the basis of intelligent monitoring systems that alert clinicians to the occurrence of unusual events or decisions.}
+      \field{issn}{15594076}
+      \field{journaltitle}{AMIA ... Annual Symposium proceedings / AMIA Symposium. AMIA Symposium}
+      \field{title}{{Evidence-based anomaly detection in clinical domains.}}
+      \field{year}{2007}
+      \field{pages}{319\bibrangedash 323}
+      \range{pages}{5}
+    \endentry
+    \entry{Hochreiter1997}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=41b31e29fb2bdbf9f5c9c1b0d5b3e815}{%
+           family={Hochreiter},
+           familyi={H\bibinitperiod},
+           given={Sepp},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{fullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{bibnamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authorbibnamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authornamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authorfullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.}
+      \field{issn}{0899-7667}
+      \field{journaltitle}{Neural Computation}
+      \field{month}{11}
+      \field{number}{8}
+      \field{title}{{Long Short-Term Memory}}
+      \field{volume}{9}
+      \field{year}{1997}
+      \field{pages}{1735\bibrangedash 1780}
+      \range{pages}{46}
+      \verb{doi}
+      \verb 10.1162/neco.1997.9.8.1735
+      \endverb
+      \verb{urlraw}
+      \verb https://direct.mit.edu/neco/article/9/8/1735-1780/6109
+      \endverb
+      \verb{url}
+      \verb https://direct.mit.edu/neco/article/9/8/1735-1780/6109
+      \endverb
+    \endentry
+    \entry{Hodge2004}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=46e3481757658b22fd9bf30a3ce12478}{%
+           family={Hodge},
+           familyi={H\bibinitperiod},
+           given={Victoria\bibnamedelima J.},
+           giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b13a3b75a04116c7652e1fc135570be8}{%
+           family={Austin},
+           familyi={A\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{094757fadd40746d239102f4a6e7a4f8}
+      \strng{fullhash}{094757fadd40746d239102f4a6e7a4f8}
+      \strng{bibnamehash}{094757fadd40746d239102f4a6e7a4f8}
+      \strng{authorbibnamehash}{094757fadd40746d239102f4a6e7a4f8}
+      \strng{authornamehash}{094757fadd40746d239102f4a6e7a4f8}
+      \strng{authorfullhash}{094757fadd40746d239102f4a6e7a4f8}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Outlier detection has been used for centuries to detect and, where appropriate, remove anomalous observations from data. Outliers arise due to mechanical faults, changes in system behaviour, fraudulent behaviour, human error, instrument error or simply through natural deviations in populations. Their detection can identify system faults and fraud before they escalate with potentially catastrophic consequences. It can identify errors and remove their contaminating effect on the data set and as such to purify the data for processing. The original outlier detection methods were arbitrary but now, principled and systematic techniques are used, drawn from the full gamut of Computer Science and Statistics. In this paper, we introduce a survey of contemporary techniques for outlier detection. We identify their respective motivations and distinguish their advantages and disadvantages in a comparative review.}
+      \field{booktitle}{Artificial Intelligence Review}
+      \field{issn}{02692821}
+      \field{number}{2}
+      \field{title}{{A survey of outlier detection methodologies}}
+      \field{volume}{22}
+      \field{year}{2004}
+      \field{pages}{85\bibrangedash 126}
+      \range{pages}{42}
+      \verb{doi}
+      \verb 10.1023/B:AIRE.0000045502.10941.a9
+      \endverb
+      \keyw{Anomaly,Detection,Deviation,Noise,Novelty,Outlier,Recognition}
+    \endentry
+    \entry{LeCun1998}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac762f2592005edf6bad58f566967c6c}{%
+           family={Bottou},
+           familyi={B\bibinitperiod},
+           given={Léon},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=844e183692f08a63f99285330fcf90cc}{%
+           family={Haffner},
+           familyi={H\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9e4c6012409dc8dd9b2aa198a2059804}
+      \strng{fullhash}{c397b2e6efe8e5c6ca906410fc9e0ff9}
+      \strng{bibnamehash}{9e4c6012409dc8dd9b2aa198a2059804}
+      \strng{authorbibnamehash}{9e4c6012409dc8dd9b2aa198a2059804}
+      \strng{authornamehash}{9e4c6012409dc8dd9b2aa198a2059804}
+      \strng{authorfullhash}{c397b2e6efe8e5c6ca906410fc9e0ff9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient-based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional (2-D) shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation, recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN's), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank check is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal checks. It is deployed commercially and reads several million checks per day. {©} 1998 IEEE.}
+      \field{issn}{00189219}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{11}
+      \field{title}{{Gradient-based learning applied to document recognition}}
+      \field{volume}{86}
+      \field{year}{1998}
+      \field{pages}{2278\bibrangedash 2323}
+      \range{pages}{46}
+      \verb{doi}
+      \verb 10.1109/5.726791
+      \endverb
+      \keyw{Convolutional neural networks,Document recognition,Finite state transducers,Gradient-based learning,Graph transformer networks,Machine learning,Neural networks,Optical character recognition (OCR)}
+    \endentry
+    \entry{Malhotra2015}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=dcd5dcd4e4f78f96e2f472d3f01ede9c}{%
+           family={Malhotra},
+           familyi={M\bibinitperiod},
+           given={Pankaj},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd153a0cfbbb770a226276234db9aa76}{%
+           family={Vig},
+           familyi={V\bibinitperiod},
+           given={Lovekesh},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11ddfe25cf35d38891cff07417fe10cf}{%
+           family={Shroff},
+           familyi={S\bibinitperiod},
+           given={Gautam},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3552fa0520a6e47f5555c944932844d}{%
+           family={Agarwal},
+           familyi={A\bibinitperiod},
+           given={Puneet},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{188cd65c41d431d5d7edef39504ff5a7}
+      \strng{fullhash}{3ab9a1b07242170a27c892f83383c86c}
+      \strng{bibnamehash}{188cd65c41d431d5d7edef39504ff5a7}
+      \strng{authorbibnamehash}{188cd65c41d431d5d7edef39504ff5a7}
+      \strng{authornamehash}{188cd65c41d431d5d7edef39504ff5a7}
+      \strng{authorfullhash}{3ab9a1b07242170a27c892f83383c86c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Long Short Term Memory (LSTM) networks have been demonstrated to be particularly useful for learning sequences containing longer term patterns of unknown length, due to their ability to maintain long term memory. Stacking recurrent hidden layers in such networks also enables the learning of higher level temporal features, for faster learning with sparser representations. In this paper, we use stacked LSTM networks for anomaly/fault detection in time series. A network is trained on non-anomalous data and used as a predictor over a number of time steps. The resulting prediction errors are modeled as a multivariate Gaussian distribution, which is used to assess the likelihood of anomalous behavior. The efficacy of this approach is demonstrated on four datasets: ECG, space shuttle, power demand, and multi-sensor engine dataset.}
+      \field{booktitle}{23rd European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2015 - Proceedings}
+      \field{isbn}{9782875870148}
+      \field{title}{{Long Short Term Memory networks for anomaly detection in time series}}
+      \field{year}{2015}
+      \field{pages}{89\bibrangedash 94}
+      \range{pages}{6}
+    \endentry
+    \entry{MichaelPhi2018}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f37b93bbf3290ac69fd781822eb1d09}{%
+           family={{Michael Phi}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f37b93bbf3290ac69fd781822eb1d09}
+      \strng{fullhash}{1f37b93bbf3290ac69fd781822eb1d09}
+      \strng{bibnamehash}{1f37b93bbf3290ac69fd781822eb1d09}
+      \strng{authorbibnamehash}{1f37b93bbf3290ac69fd781822eb1d09}
+      \strng{authornamehash}{1f37b93bbf3290ac69fd781822eb1d09}
+      \strng{authorfullhash}{1f37b93bbf3290ac69fd781822eb1d09}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Towards Data Science}
+      \field{month}{9}
+      \field{title}{{Illustrated Guide to LSTM's and GRU's: A step by step explanation}}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
+      \endverb
+    \endentry
+    \entry{Munir2019}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6945d399e7ac6d65de7b69c85b0b2aa3}{%
+           family={Munir},
+           familyi={M\bibinitperiod},
+           given={Mohsin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=74815873173614768c79b41ebcd30fb7}{%
+           family={Siddiqui},
+           familyi={S\bibinitperiod},
+           given={Shoaib\bibnamedelima Ahmed},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39509991baf1f5b54ef9eede853edd37}{%
+           family={Dengel},
+           familyi={D\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7407b7acfa262023851056a7cd752a26}{%
+           family={Ahmed},
+           familyi={A\bibinitperiod},
+           given={Sheraz},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5c527ed0217eba4ef93ae08259f4bd16}
+      \strng{fullhash}{35a921f9a172f4d10a70bbaef85e430d}
+      \strng{bibnamehash}{5c527ed0217eba4ef93ae08259f4bd16}
+      \strng{authorbibnamehash}{5c527ed0217eba4ef93ae08259f4bd16}
+      \strng{authornamehash}{5c527ed0217eba4ef93ae08259f4bd16}
+      \strng{authorfullhash}{35a921f9a172f4d10a70bbaef85e430d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Traditional distance and density-based anomaly detection techniques are unable to detect periodic and seasonality related point anomalies which occur commonly in streaming data, leaving a big gap in time series anomaly detection in the current era of the IoT. To address this problem, we present a novel deep learning-based anomaly detection approach (DeepAnT) for time series data, which is equally applicable to the non-streaming cases. DeepAnT is capable of detecting a wide range of anomalies, i.e., point anomalies, contextual anomalies, and discords in time series data. In contrast to the anomaly detection methods where anomalies are learned, DeepAnT uses unlabeled data to capture and learn the data distribution that is used to forecast the normal behavior of a time series. DeepAnT consists of two modules: time series predictor and anomaly detector. The time series predictor module uses deep convolutional neural network (CNN) to predict the next time stamp on the defined horizon. This module takes a window of time series (used as a context) and attempts to predict the next time stamp. The predicted value is then passed to the anomaly detector module, which is responsible for tagging the corresponding time stamp as normal or abnormal. DeepAnT can be trained even without removing the anomalies from the given data set. Generally, in deep learning-based approaches, a lot of data are required to train a model. Whereas in DeepAnT, a model can be trained on relatively small data set while achieving good generalization capabilities due to the effective parameter sharing of the CNN. As the anomaly detection in DeepAnT is unsupervised, it does not rely on anomaly labels at the time of model generation. Therefore, this approach can be directly applied to real-life scenarios where it is practically impossible to label a big stream of data coming from heterogeneous sensors comprising of both normal as well as anomalous points. We have performed a detailed evaluation of 15 algorithms on 10 anomaly detection benchmarks, which contain a total of 433 real and synthetic time series. Experiments show that DeepAnT outperforms the state-of-the-art anomaly detection methods in most of the cases, while performing on par with others.}
+      \field{issn}{21693536}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{{DeepAnT: A Deep Learning Approach for Unsupervised Anomaly Detection in Time Series}}
+      \field{volume}{7}
+      \field{year}{2019}
+      \field{pages}{1991\bibrangedash 2005}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2018.2886457
+      \endverb
+      \keyw{Anomaly detection,artificial intelligence,convolutional neural network,deep neural networks,recurrent neural networks,time series analysis}
+    \endentry
+    \entry{NiklasDonges2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a270084c42f5bec92e85afcba24881f0}{%
+           family={{Niklas Donges}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{a270084c42f5bec92e85afcba24881f0}
+      \strng{fullhash}{a270084c42f5bec92e85afcba24881f0}
+      \strng{bibnamehash}{a270084c42f5bec92e85afcba24881f0}
+      \strng{authorbibnamehash}{a270084c42f5bec92e85afcba24881f0}
+      \strng{authornamehash}{a270084c42f5bec92e85afcba24881f0}
+      \strng{authorfullhash}{a270084c42f5bec92e85afcba24881f0}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Built-In}
+      \field{month}{9}
+      \field{title}{{What is transfer learning? Exploring the popular deep learning approach}}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://builtin.com/data-science/transfer-learning
+      \endverb
+      \verb{url}
+      \verb https://builtin.com/data-science/transfer-learning
+      \endverb
+    \endentry
+    \entry{Ord1996}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ee468fa036eb380f33a1c72eb969e325}{%
+           family={Ord},
+           familyi={O\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ee468fa036eb380f33a1c72eb969e325}
+      \strng{fullhash}{ee468fa036eb380f33a1c72eb969e325}
+      \strng{bibnamehash}{ee468fa036eb380f33a1c72eb969e325}
+      \strng{authorbibnamehash}{ee468fa036eb380f33a1c72eb969e325}
+      \strng{authornamehash}{ee468fa036eb380f33a1c72eb969e325}
+      \strng{authorfullhash}{ee468fa036eb380f33a1c72eb969e325}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{No abstract is available for this item.}
+      \field{journaltitle}{International Journal of Forecasting}
+      \field{number}{1}
+      \field{title}{{Outliers in statistical data : V. Barnett and T. Lewis, 1994, 3rd edition, (John Wiley and Sons, Chichester), 584 pp., [UK pound]55.00, ISBN 0-471-93094-6}}
+      \field{volume}{12}
+      \field{year}{1996}
+    \endentry
+    \entry{RichStureborg2019}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=747d1c8ed70babf3b74bdc7e3dfdaa52}{%
+           family={{Rich Stureborg}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{747d1c8ed70babf3b74bdc7e3dfdaa52}
+      \strng{fullhash}{747d1c8ed70babf3b74bdc7e3dfdaa52}
+      \strng{bibnamehash}{747d1c8ed70babf3b74bdc7e3dfdaa52}
+      \strng{authorbibnamehash}{747d1c8ed70babf3b74bdc7e3dfdaa52}
+      \strng{authornamehash}{747d1c8ed70babf3b74bdc7e3dfdaa52}
+      \strng{authorfullhash}{747d1c8ed70babf3b74bdc7e3dfdaa52}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Towards Data Science}
+      \field{month}{1}
+      \field{title}{{Conv Nets for dummies}}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{-\bibrangedash undefined}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/conv-nets-for-dummies-a-bottom-up-approach-c1b754fb14d6
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/conv-nets-for-dummies-a-bottom-up-approach-c1b754fb14d6
+      \endverb
+    \endentry
+    \entry{Ronneberger2015}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8e46da9de9e53ea5d37089897d69cdd9}{%
+           family={Ronneberger},
+           familyi={R\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=168e84ce3582cbc6bac5e2ebc3ef8442}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b452a32296958371572717940f900884}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{fullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{bibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authorbibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authornamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authorfullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{There is large consent that successful training of deep networks requires many thousand annotated training samples. In this paper, we present a network and training strategy that relies on the strong use of data augmentation to use the available annotated samples more efficiently. The architecture consists of a contracting path to capture context and a symmetric expanding path that enables precise localization. We show that such a network can be trained end-to-end from very few images and outperforms the prior best method (a sliding-window convolutional network) on the ISBI challenge for segmentation of neuronal structures in electron microscopic stacks. Using the same network trained on transmitted light microscopy images (phase contrast and DIC) we won the ISBI cell tracking challenge 2015 in these categories by a large margin. Moreover, the network is fast. Segmentation of a 512x512 image takes less than a second on a recent GPU. The full implementation (based on Caffe) and the trained networks are available at http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net.}
+      \field{booktitle}{Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}
+      \field{isbn}{9783319245737}
+      \field{issn}{16113349}
+      \field{title}{{U-net: Convolutional networks for biomedical image segmentation}}
+      \field{volume}{9351}
+      \field{year}{2015}
+      \field{pages}{234\bibrangedash 241}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/978-3-319-24574-4_28
+      \endverb
+    \endentry
+    \entry{Thabtah2020}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3c90cdc9332984ba8864cbc3daf37ada}{%
+           family={Thabtah},
+           familyi={T\bibinitperiod},
+           given={Fadi},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6be0b1332b0d817948f241c1412dc625}{%
+           family={Hammoud},
+           familyi={H\bibinitperiod},
+           given={Suhel},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79c373cbec34c079b2306dfa44c29acd}{%
+           family={Kamalov},
+           familyi={K\bibinitperiod},
+           given={Firuz},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b105d86cea2020ac1bd026b82b6e908d}{%
+           family={Gonsalves},
+           familyi={G\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7a62d40795c7185b39008a896eeb9359}
+      \strng{fullhash}{17eebf317d2ad73f26e76598ac45d454}
+      \strng{bibnamehash}{7a62d40795c7185b39008a896eeb9359}
+      \strng{authorbibnamehash}{7a62d40795c7185b39008a896eeb9359}
+      \strng{authornamehash}{7a62d40795c7185b39008a896eeb9359}
+      \strng{authorfullhash}{17eebf317d2ad73f26e76598ac45d454}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The advent of Big Data has ushered a new era of scientific breakthroughs. One of the common issues that affects raw data is class imbalance problem which refers to imbalanced distribution of values of the response variable. This issue is present in fraud detection, network intrusion detection, medical diagnostics, and a number of other fields where negatively labeled instances significantly outnumber positively labeled instances. Modern machine learning techniques struggle to deal with imbalanced data by focusing on minimizing the error rate for the majority class while ignoring the minority class. The goal of our paper is demonstrate the effects of class imbalance on classification models. Concretely, we study the impact of varying class imbalance ratios on classifier accuracy. By highlighting the precise nature of the relationship between the degree of class imbalance and the corresponding effects on classifier performance we hope to help researchers to better tackle the problem. To this end, we carry out extensive experiments using 10-fold cross validation on a large number of datasets. In particular, we determine that the relationship between the class imbalance ratio and the accuracy is convex.}
+      \field{issn}{00200255}
+      \field{journaltitle}{Information Sciences}
+      \field{title}{{Data imbalance in classification: Experimental evaluation}}
+      \field{volume}{513}
+      \field{year}{2020}
+      \field{pages}{429\bibrangedash 441}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.ins.2019.11.004
+      \endverb
+      \keyw{Class imbalance,Classification,Data analysis,Machine learning,Statistical analysis,Supervised learning}
+    \endentry
+    \entry{Wen2019}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=17400085d2ec5cf4c030abcb7603c90c}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Tailai},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c039db480d9e82d3d1499f9ef8cd1bf8}{%
+           family={Keyes},
+           familyi={K\bibinitperiod},
+           given={Roy},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{070b0e555e8bd30eb365b6ad6f746958}
+      \strng{fullhash}{070b0e555e8bd30eb365b6ad6f746958}
+      \strng{bibnamehash}{070b0e555e8bd30eb365b6ad6f746958}
+      \strng{authorbibnamehash}{070b0e555e8bd30eb365b6ad6f746958}
+      \strng{authornamehash}{070b0e555e8bd30eb365b6ad6f746958}
+      \strng{authorfullhash}{070b0e555e8bd30eb365b6ad6f746958}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Time series anomaly detection plays a critical role in automated monitoring systems. Most previous deep learning efforts related to time series anomaly detection were based on recurrent neural networks (RNN). In this paper, we propose a time series segmentation approach based on convolutional neural networks (CNN) for anomaly detection. Moreover, we propose a transfer learning framework that pretrains a model on a large-scale synthetic univariate time series data set and then fine-tunes its weights on small-scale, univariate or multivariate data sets with previously unseen classes of anomalies. For the multivariate case we introduce a novel network architecture. The approach was tested on multiple synthetic and real data sets successfully.}
+      \field{booktitle}{arXiv}
+      \field{eprinttype}{arXiv}
+      \field{issn}{23318422}
+      \field{title}{{Time Series Anomaly Detection Using Convolutional Neural Networks and Transfer Learning}}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1905.13628
+      \endverb
+    \endentry
+    \entry{Zheng2014}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=9e6af3ce4c5063ff98977528f367e685}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b07af422f6616fac129405a8b4b1de4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=439e8d5e114670edea6f746db3c18b5b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Enhong},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85670d97bd4b38184f6db06c023a19e6}{%
+           family={Ge},
+           familyi={G\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd60b268afc40b2e32cd2b86fe4523db}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={J.\bibnamedelimi Leon},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{498dc38c402cb830b0a8bd931030823d}
+      \strng{fullhash}{4ab51548e9a55ecf6a41430e40708149}
+      \strng{bibnamehash}{498dc38c402cb830b0a8bd931030823d}
+      \strng{authorbibnamehash}{498dc38c402cb830b0a8bd931030823d}
+      \strng{authornamehash}{498dc38c402cb830b0a8bd931030823d}
+      \strng{authorfullhash}{4ab51548e9a55ecf6a41430e40708149}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Time series (particularly multivariate) classification has drawn a lot of attention in the literature because of its broad applications for different domains, such as health informatics and bioinformatics. Thus, many algorithms have been developed for this task. Among them, nearest neighbor classification (particularly 1-NN) combined with Dynamic Time Warping (DTW) achieves the state of the art performance. However, when data set grows larger, the time consumption of 1-NN with DTW grows linearly. Compared to 1-NN with DTW, the traditional feature-based classification methods are usually more efficient but less effective since their performance is usually dependent on the quality of hand-crafted features. To that end, in this paper, we explore the feature learning techniques to improve the performance of traditional feature-based approaches. Specifically, we propose a novel deep learning framework for multivariate time series classification. We conduct two groups of experiments on real-world data sets from different application domains. The final results show that our model is not only more efficient than the state of the art but also competitive in accuracy. It also demonstrates that feature learning is worth to investigate for time series classification. {©} 2014 Springer International Publishing Switzerland.}
+      \field{booktitle}{Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}
+      \field{isbn}{9783319080093}
+      \field{issn}{16113349}
+      \field{title}{{Time series classification using multi-channels deep convolutional neural networks}}
+      \field{volume}{8485 LNCS}
+      \field{year}{2014}
+      \field{pages}{298\bibrangedash 310}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/978-3-319-08010-9_33
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
+
