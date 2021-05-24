@@ -31,7 +31,7 @@ A special disciplin in anomaly detection is to find the anomaly in a time series
 
 Currently Neural Networks are regarded the cutting-edge research. Although first approaches to use artificial neural networks exist since 1969. They are popular in research for only about 15 to 20 years, which is why scientist generally expect further improvements on this kind of technology. This promising outlook is why this research paper also purely focusses on Neural Networks for anomaly detection. Especially Recurrent Neural Networks and Convolutional Neural Networks are investigated and compared.
 
-\text{red}{Traditional machine learning methods of anomaly detections in
+\textcolor{red}{Traditional machine learning methods of anomaly detections in
 	sensor data are based on domain-specific feature engineering. A typical approach is to
 	use domain knowledge to analyze sensor data and manually create statistics-based
 	features, which are then used to train the machine learning models to detect and classify
@@ -78,6 +78,9 @@ In neural networks three different kind of layers are distinguished. There are i
 
 \subsubsection{Optimizer Function}
 
+\subsubsection{Supervised vs. Unsupervised Learning}
+Supervised learning refers to a task, where a machine learning algorithm learns on data that is labelled. A time series that contains an anomaly that is labelled as such would be an example of such a data set. In contrast, when a machine learning algorithm is applied to an unlabelled data set, it is called unsupervised learning. The goal of unsupervised learning is to find hidden patterns (clusters) in the data set.
+
 
 \section{Background}
 
@@ -119,7 +122,7 @@ In contrast to RNNs Convolutional Neural Networks are generally used for image c
 	\centering
 	\includegraphics[scale=0.7]{Figures/filter}
 	\decoRule
-	\caption[Kernel]{Example of a Filter used in CNN}
+	\caption[Kernel]{Example of a Filter used in CNN \parencite{RichStureborg2019}}
 	\label{fig:filter}
 \end{figure}
 
@@ -130,7 +133,7 @@ Other typical features of a CNN are the pooling layers. The pooling layers reduc
 	\centering
 	\includegraphics[scale=0.2]{Figures/pooling}
 	\decoRule
-	\caption[Pooling]{Example of max-pooling}
+	\caption[Pooling]{Example of max-pooling \parencite{RichStureborg2019}}
 	\label{fig:pooling}
 \end{figure}
 

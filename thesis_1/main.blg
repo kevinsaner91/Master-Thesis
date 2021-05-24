@@ -1,22 +1,22 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'main.blg'
-[279] biber-MSWIN64:340> INFO - === 
-[358] Biber.pm:415> INFO - Reading 'main.bcf'
-[474] Biber.pm:952> INFO - Found 24 citekeys in bib section 0
-[492] Biber.pm:4340> INFO - Processing section 0
-[526] Biber.pm:4531> INFO - Looking for bibtex format file 'example.bib' for section 0
-[582] bibtex.pm:1689> INFO - LaTeX decoding ...
-[640] bibtex.pm:1494> INFO - Found BibTeX data source 'example.bib'
-[832] Utils.pm:395> WARN - legacy month field 'sep' in entry 'DennyBritz2015' is not an integer - this will probably not sort properly.
-[837] Utils.pm:395> WARN - legacy month field 'nov' in entry 'Hochreiter1997' is not an integer - this will probably not sort properly.
-[844] Utils.pm:395> WARN - legacy month field 'dec' in entry 'JunyoungChung2014' is not an integer - this will probably not sort properly.
-[858] Utils.pm:395> WARN - legacy month field 'sep' in entry 'MichaelPhi2018' is not an integer - this will probably not sort properly.
-[873] Utils.pm:395> WARN - legacy month field 'jan' in entry 'RichStureborg2019' is not an integer - this will probably not sort properly.
-[878] Utils.pm:395> WARN - legacy month field 'sep' in entry 'NiklasDonges2020' is not an integer - this will probably not sort properly.
-[974] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[975] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[976] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[977] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[1068] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1090] bbl.pm:757> INFO - Output to main.bbl
-[1093] Biber.pm:128> INFO - WARNINGS: 6
+[232] biber-MSWIN64:340> INFO - === 
+[342] Biber.pm:415> INFO - Reading 'main.bcf'
+[462] Biber.pm:952> INFO - Found 26 citekeys in bib section 0
+[479] Biber.pm:4340> INFO - Processing section 0
+[508] Biber.pm:4531> INFO - Looking for bibtex format file 'example.bib' for section 0
+[559] bibtex.pm:1689> INFO - LaTeX decoding ...
+[613] bibtex.pm:1494> INFO - Found BibTeX data source 'example.bib'
+[757] Utils.pm:395> WARN - legacy month field 'sep' in entry 'DennyBritz2015' is not an integer - this will probably not sort properly.
+[762] Utils.pm:395> WARN - legacy month field 'nov' in entry 'Hochreiter1997' is not an integer - this will probably not sort properly.
+[768] Utils.pm:395> WARN - legacy month field 'dec' in entry 'JunyoungChung2014' is not an integer - this will probably not sort properly.
+[775] Utils.pm:395> WARN - legacy month field 'sep' in entry 'MichaelPhi2018' is not an integer - this will probably not sort properly.
+[782] Utils.pm:395> WARN - legacy month field 'jan' in entry 'RichStureborg2019' is not an integer - this will probably not sort properly.
+[785] Utils.pm:395> WARN - legacy month field 'sep' in entry 'NiklasDonges2020' is not an integer - this will probably not sort properly.
+[888] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[888] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[889] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[889] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[956] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[979] bbl.pm:757> INFO - Output to main.bbl
+[982] Biber.pm:128> INFO - WARNINGS: 6

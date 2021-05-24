@@ -27,68 +27,78 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Optimizer Function}{3}{section*.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Background}{3}{section.21}%
+\contentsline {subsubsection}{Supervised vs. Unsupervised Learning}{3}{section*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Neural Networks for Anomaly Detection}{4}{subsection.22}%
+\contentsline {section}{\numberline {1.2}Background}{4}{section.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{LSTM}{4}{section*.23}%
+\contentsline {subsection}{\numberline {1.2.1}Neural Networks for Anomaly Detection}{4}{subsection.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{CNN}{4}{section*.29}%
+\contentsline {subsubsection}{LSTM}{4}{section*.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Transfer Learning}{5}{subsection.32}%
+\contentsline {subsubsection}{CNN}{4}{section*.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Problem Statement}{6}{section.33}%
+\contentsline {subsection}{\numberline {1.2.2}Transfer Learning}{6}{subsection.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Thesis Statement}{7}{section.34}%
+\contentsline {section}{\numberline {1.3}Problem Statement}{6}{section.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}Subquestions}{7}{subsection.35}%
+\contentsline {section}{\numberline {1.4}Thesis Statement}{7}{section.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Research Objectives}{7}{subsection.36}%
+\contentsline {subsection}{\numberline {1.4.1}Subquestions}{7}{subsection.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Limitations}{8}{subsection.41}%
+\contentsline {subsection}{\numberline {1.4.2}Research Objectives}{7}{subsection.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.4}Significance}{8}{subsection.42}%
+\contentsline {subsection}{\numberline {1.4.3}Limitations}{8}{subsection.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.5}Chapter Overview}{8}{subsection.43}%
+\contentsline {subsection}{\numberline {1.4.4}Significance}{8}{subsection.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Related Literature}{9}{chapter.44}%
+\contentsline {subsection}{\numberline {1.4.5}Chapter Overview}{8}{subsection.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Anomaly or Outlier?}{9}{section.45}%
+\contentsline {chapter}{\numberline {2}Related Literature}{9}{chapter.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Types of Anomalies}{9}{subsection.46}%
+\contentsline {section}{\numberline {2.1}Anomaly or Outlier?}{9}{section.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Anomaly Detection on Univariate Time Series}{10}{section.50}%
+\contentsline {subsection}{\numberline {2.1.1}Types of Anomalies}{9}{subsection.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}LSTM}{10}{subsection.51}%
+\contentsline {section}{\numberline {2.2}Anomaly Detection on Univariate Time Series}{10}{section.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}CNN}{11}{subsection.52}%
+\contentsline {subsection}{\numberline {2.2.1}LSTM}{10}{subsection.52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Comparison}{11}{subsection.54}%
+\contentsline {subsection}{\numberline {2.2.2}CNN}{11}{subsection.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Comparison of AUC}{12}{section*.55}%
+\contentsline {subsection}{\numberline {2.2.3}Comparison}{11}{subsection.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Computation Time}{12}{section*.57}%
+\contentsline {subsubsection}{Comparison of AUC}{12}{section*.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Anomaly Detection on Multivariate Time Series}{12}{section.58}%
+\contentsline {subsubsection}{Computation Time}{12}{section*.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}LSTM}{12}{subsection.59}%
+\contentsline {section}{\numberline {2.3}Anomaly Detection on Multivariate Time Series}{12}{section.59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Anomaly Detection using LSTM}{12}{section*.60}%
+\contentsline {subsection}{\numberline {2.3.1}LSTM}{12}{subsection.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Time Series Forecasting using LSTM}{13}{section*.61}%
+\contentsline {subsubsection}{Anomaly Detection using LSTM}{12}{section*.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}CNN}{13}{subsection.62}%
+\contentsline {subsubsection}{Time Series Forecasting using LSTM}{13}{section*.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classification of Time Series Data using CNN}{13}{section*.63}%
+\contentsline {subsection}{\numberline {2.3.2}CNN}{13}{subsection.63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{U-Nets for Anomaly Detection}{14}{section*.65}%
+\contentsline {subsubsection}{Classification of Time Series Data using CNN}{14}{section*.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Parameter Settings for fair comparison}{15}{section.67}%
+\contentsline {subsubsection}{U-Nets for Anomaly Detection}{15}{section*.66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Transfer Learning}{15}{section.68}%
+\contentsline {section}{\numberline {2.4}Transfer Learning}{16}{section.68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Research Gap}{15}{section.69}%
+\contentsline {subsection}{\numberline {2.4.1}Transfer Learning with CNN}{16}{subsection.69}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Research Methodology}{17}{chapter.70}%
+\contentsline {subsubsection}{Transfer Learning in Anomaly Detection}{16}{section*.70}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{19}{appendix*.71}%
+\contentsline {subsection}{\numberline {2.4.2}Transfer Learning with RNN}{17}{subsection.72}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Transfer Learning for Time Series Analysis}{17}{section*.73}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Parameter Settings for fair comparison}{18}{section.76}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Research Gap}{19}{section.77}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Research Methodology}{21}{chapter.78}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{23}{appendix*.79}%

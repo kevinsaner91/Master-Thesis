@@ -183,6 +183,78 @@
       \field{pages}{1\bibrangedash 58}
       \range{pages}{58}
     \endentry
+    \entry{Chauhan2015}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2dafea5807425c53f50ebc87eddd5cc7}{%
+           family={Chauhan},
+           familyi={C\bibinitperiod},
+           given={Sucheta},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd153a0cfbbb770a226276234db9aa76}{%
+           family={Vig},
+           familyi={V\bibinitperiod},
+           given={Lovekesh},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{79f2bd5662e222c1039c0c98d65236ca}
+      \strng{fullhash}{79f2bd5662e222c1039c0c98d65236ca}
+      \strng{bibnamehash}{79f2bd5662e222c1039c0c98d65236ca}
+      \strng{authorbibnamehash}{79f2bd5662e222c1039c0c98d65236ca}
+      \strng{authornamehash}{79f2bd5662e222c1039c0c98d65236ca}
+      \strng{authorfullhash}{79f2bd5662e222c1039c0c98d65236ca}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Electrocardiography (ECG) signals are widely used to gauge the health of the human heart, and the resulting time series signal is often analyzed manually by a medical professional to detect any arrhythmia that the patient may have suffered. Much work has been done to automate the process of analyzing ECG signals, but most of the research involves extensive preprocessing of the ECG data to derive vectorized features and subsequently designing a classifier to discriminate between healthy ECG signals and those indicative of an Arrhythmia. This approach requires knowledge and data of the different types of Arrhythmia for training. However, the heart is a complex organ and there are many different and new types of Arrhythmia that can occur which were not part of the original training set. Thus, it may be more prudent to adopt an anomaly detection approach towards analyzing ECG signals. In this paper, we utilize a deep recurrent neural network architecture with Long Short Term Memory (LSTM) units to develop a predictive model for healthy ECG signals. We further utilize the probability distribution of the prediction errors from these recurrent models to indicate normal or abnormal behavior. An added advantage of using LSTM networks is that the ECG signal can be directly fed into the network without any elaborate preprocessing as required by other techniques. Also, no prior information about abnormal signals is needed by the networks as they were trained only on normal data. We have used the MIT-BIH Arrhythmia Database to obtain ECG time series data for both normal periods and for periods during four different types of Arrhythmias, namely Premature Ventricular Contraction (PVC), Atrial Premature Contraction (APC), Paced Beats (PB) and Ventricular Couplet (VC). Results are promising and indicate that Deep LSTM models may be viable for detecting anomalies in ECG signals.}
+      \field{booktitle}{Proceedings of the 2015 IEEE International Conference on Data Science and Advanced Analytics, DSAA 2015}
+      \field{isbn}{9781467382731}
+      \field{title}{{Anomaly detection in ECG time signals via deep long short-term memory networks}}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1109/DSAA.2015.7344872
+      \endverb
+    \endentry
+    \entry{Chollet2018}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=14134a39113404b1f80969c9ccc1f71e}{%
+           family={Chollet},
+           familyi={C\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75703eec4e02a63e8935085c58c7b13b}{%
+           family={Allaire},
+           familyi={A\bibinitperiod},
+           given={Joseph\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Manning Publications}%
+      }
+      \strng{namehash}{7efb515eb6bc4de678395f25ce54306a}
+      \strng{fullhash}{7efb515eb6bc4de678395f25ce54306a}
+      \strng{bibnamehash}{7efb515eb6bc4de678395f25ce54306a}
+      \strng{authorbibnamehash}{7efb515eb6bc4de678395f25ce54306a}
+      \strng{authornamehash}{7efb515eb6bc4de678395f25ce54306a}
+      \strng{authorfullhash}{7efb515eb6bc4de678395f25ce54306a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781617295546}
+      \field{title}{{Deep Learning with R}}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 360}
+      \range{pages}{360}
+    \endentry
     \entry{JunyoungChung2014}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=7a79e6bb4ca772c9b3b38f4e9f45b83c}{%
