@@ -38,12 +38,12 @@ Anomalies come in a variety of shapes and sizes. Anomalies can be divided into t
 
 \begin{enumerate}
 	\item \textbf{Point Anomalies} - A point anomaly occurs when a single point deviates dramatically from the rest of the data.
-	A point anomaly is, for example, a large credit transaction that differs from other transactions.
-	\item \textbf{Collective Anomalies} - Individual points may or may not be anomalous, but a series of points may be. A bank customer, for example, withdraws \$500 from her account per weekday. Although withdrawing \$500 every now and then is common for the consumer, a series of withdrawals is unusual.
+	A point anomaly in a time seris is, for example, a temperature peak in an otherwise, over time, steady temperature.
+	\item \textbf{Collective Anomalies} - Individual points may or may not be anomalous, but a series of points may be. A time series example could look as follows: A bank customer withdraws \$500 from her account per weekday. Although withdrawing \$500 every now and then is common for the consumer, a series of withdrawals is unusual.
 	\item \textbf{Contextual Anomalies} - Some points can appear natural in one context but be identified as anomalous in another: In Germany, a daily temperature of 35 degrees Celsius is considered natural in the summer, but the same temperature in the winter is considered unusual.
 \end{enumerate}
 
-Knowing ahead of time what kind of anomaly the data might contain helps the data analyst choose the best detection process. Some methods for detecting point anomalies fail to detect collective or contextual anomalies entirely \parencite{Braei2020}.
+Knowing ahead of time what kind of anomaly the data might contain helps the data analyst choose the best detection process. Some methods for detecting point anomalies fail to detect collective or contextual anomalies entirely \parencite{Braei2020}. 
 
 %\subsection{Time Series Patterns}
 %
@@ -111,29 +111,27 @@ Knowing ahead of time what kind of anomaly the data might contain helps the data
 
 \section{Anomaly Detection on Univariate Time Series}
 
-First, anomaly detection on univariate time series using deep learning approaches is investigated to gain insight on the used architecture and the overall training and detection process. 
+First, anomaly detection on univariate time series using deep learning approaches is investigated to gain insight into the used architecture and the overall training and detection process. 
 
 \subsection{LSTM}
 
 Because of their ability to retain long term memory, Long Short Term Memory (LSTM) networks have been shown to be especially useful for learning sequences containing longer term patterns. Malhotra et al. \parencite*{Malhotra2015} model normal behavior with a predictor and then use the prediction errors to classify abnormal behavior. This is especially useful in real-world anomaly detection scenarios where instances of normal behavior are plentiful but instances of anomalous behavior are rare. For prediction, multiple time steps into the future are forecasted to ensure that the networks capture the temporal structure of the chain. As a result, each point in the series has multiple corresponding expected values made at various points in the past, resulting in multiple error values. The likelihood of normal behavior on the test data is calculated using the probability distribution of the errors produced when predicting on normal data. For this approach Malhotra et al. use a deep LSTM neural network. The proposed network architecture with two hidden layers is successfully applied on different univariate time series such Electrocardiograms (ECG), a valve time series and a power demand dataset. 
 
-In their experiments, Chauhan and Vig \parencite*{Chauhan2015} used the same approach for different types of anomalies in ECGs such as premature ventricular contractions or atrial premature contractions. 
-
-Especially to mention is the training approach used in both papers. To train the  LSTM based Recurrent Network the data was divided into four sets. a non-anomalous training set, a non-anomalous validation set, a mixture of anomalous and non-anomalous validation set and test set, also consisting of a anomalous and non-anomalous sequences. This approach was chosen to deal with the rare class problem, which is typical in anomaly detection. Since non-anomalous data is plentiful, the model is trained in an unsupervised fashion, predicting the future but not able to classify if anomalous behaviour was present.
+Especially to mention is the training approach used in both papers. To train the  LSTM based Recurrent Network the data was divided into four sets. a non-anomalous training set, a non-anomalous validation set, a mixture of anomalous and non-anomalous validation set and test set, also consisting of a anomalous and non-anomalous sequences. This approach was chosen to deal with the rare class problem, which is typical in anomaly detection. Since non-anomalous data is plentiful, the model is trained in an unsupervised fashion, predicting the future but not able to classify if anomalous behaviour was present. The goal of this approach was to establish a baseline of non-anomalous behaviour with the training set. The learned model was then validated and test with anomalous and non-anomalous data to evaluate its performance.
 
 %https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2015-56.pdf
 
 
 \subsection{CNN} \label{CNN on univariate series}
 
-The use of CNNs for time-series analysis has received interest in recent years. Munir et al. \parencite*{Munir2019} forecast time-series and identify anomalies based on the prediction error using a CNN architecture called deep-learning based anomaly detection method (DeepAnT). DeepAnT uses an architecture that is divided into two modules. The first module is called "Time Series Predictor". The "Time Series Predictor" consists of a CNN. As the name of the module indicates, the CNN is responsible for predicting the future time stamps of a given time series, whereas  the "Anomaly Detector" module is responsible for tagging given data point as anomalous. Figure \ref{fig:CNN} represents the architecture of the CNN-based predictor module. It consists of two convolutional layers, each followed by a max-pooling layer. As the last layer, however, a fully connected layer, where all neurons are connected to all neurons of the previous layer, is used. The last is reponsible for predicting the next time step. The number of output node, hereby, corresponds to the number of predicted time steps. One output node means only the next time step into the future is predicted, whereas three output nodes would imply a sequence of three data points are predicted.     
+The use of CNNs for time-series analysis has received interest in recent years. Munir et al. \parencite*{Munir2019} forecast time-series and identify anomalies based on the prediction error using a CNN architecture called deep-learning based anomaly detection method (DeepAnT). DeepAnT uses an architecture that is divided into two modules. The first module is called "Time Series Predictor". The "Time Series Predictor" consists of a CNN. As the name of the module indicates, the CNN is responsible for predicting the future time stamps of a given time series, whereas  the "Anomaly Detector" module is responsible for tagging given data point as anomalous. Figure \ref{fig:CNN} represents the architecture of the CNN-based predictor module. It consists of two convolutional layers, each followed by a max-pooling layer. As the last layer, however, a fully connected layer, where all neurons are connected to all neurons of the previous layer, is used. The last is reponsible for predicting the next time step. The number of output nodes, hereby, corresponds to the number of predicted time steps. One output node means only the next time step into the future is predicted, whereas three output nodes would imply a sequence of three data points are predicted.     
 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{Figures/CNN}
 	\decoRule
-	\caption[CNN]{CNN \parencite{Munir2019}}
+	\caption[CNN Architecture for Time Series]{CNN Architecture for Time Series \parencite{Munir2019}}
 	\label{fig:CNN}
 	%https://ieeexplore.ieee.org/document/8581424?denied=
 \end{figure}
@@ -152,7 +150,7 @@ In an extensive study Braei and Wagner \parencite*{Braei2020} compared 20 differ
 
 
 \subsubsection{Comparison of AUC}
-The methods were applied on data containing point, collective and contextual anomalies. In order to compare the different approaches, AUC-Values \footnote{An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds. The AUC measures the entire two-dimensional area underneath the entire ROC curve. See \hyperlink{https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc}{ROC and AUC.}} were used. The results showed that the statistical methods generally performed best on point and collective anomalies while deep learning approaches performed rather poorly. On a dataset that contained contextual anomalies, the situation reflected the exact opposite. Deep learning approaches clearly outperformed statistical methods. It was observed that deep learning approaches kept their ability to generalize while statistical methods overfitted on the data \parencite{Braei2020}.
+The methods were applied on data containing point, collective and contextual anomalies. In order to compare the different approaches, AUC-Values \footnote{An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds. The AUC measures the entire two-dimensional area underneath the entire ROC curve. See section \ref{AUROC}} were used. The results showed that the statistical methods generally performed best on point and collective anomalies while deep learning approaches performed rather poorly. On a dataset that contained contextual anomalies, the situation reflected the exact opposite. Deep learning approaches clearly outperformed statistical methods. It was observed that deep learning approaches kept their ability to generalize while statistical methods overfitted on the data \parencite{Braei2020}.
 
 \subsubsection{Computation Time}
 The second parameter that was used to compare the different categories was training and inference time. Inference refers to the time used to classify the test data. Compared to statistical methods and classical machine learning, deep learning approaches once again performed rather poorly regarding training time. Looking at inference time deep learning approches generally perform well, outperforming the other two categories. However, there are huge difference within the deep learning approaches. While CNNs have a very low inference time, and outperform most other algorithms, LSTMs have the highest inference time of all tested algorithms \parencite{Braei2020}.  
@@ -166,7 +164,7 @@ In this chapter, anomaly detection on multivariate time series is investigated. 
 First, relevant works that use LSTMs are investigated. LSTMs will be used to establish a benchmark.
 
 \subsubsection{Anomaly Detection using LSTM} \label{Anomaly Detection using LSTM}
-In his dissertation, Alexander Verner (YEAR), compared different versions of LSTM Neural Networks against traditional machine learning algorithms such as Support Vector Machines (SVM) and Random Forests. The various algorithms were applied to data of sensors that measure blood glucose levels. To measure the blood glucose levels multiple sensors are used for an accurate result, thus a multivariate time series is the outcome. The data set used in Verner's work did not contain anomalies by default, but the anomalies were embedded into the data set artificially. Since the data was also labelled after the type of anomaly it contained, the learning approach can be classified as supervised. Thus, the goal of the study was to correctly classify which anomaly was present. The first approach used a deep or stacked LSTM, with 10 units in the first layer and 35 in the second. The resulting accuracy of only 0.4 was, however, rather dissappointing. This poor performance was explained with an occuring information loss within the deep network. Next, a single layer architecture, with 100 units was proposed. With just a 10\% increase the resulting accuracy was still unacceptable. In a third attempt, the neural network was enriched with an embedding layer. Using this technique, the neural network was able to detect the relationship between the frequencies of measurements that were closely positioned in the time-series. It achieved an accuracy of 98\%. The final architecture then used bidirectional LSTMs (BLSTMs). According to Graves (YEAR), BLSTM outperform LSTM on supervised labelling tasks. A BLSTM can extract even more information from raw data by taking into account the relationship of each measurement to both previous (past) and subsequent (future) measurements in the input time-series. This enhancement resulted in a 99\% accuracy. This impressive accuracy, however, comes at a cost. LSTMs are very time consuming and resource intensive to train. Verner used an Amazon Web Service computing instance with 24 CPUs, 4 GPUs and 128 GB of RAM but the training of an LSTM still took about 10 hours.  
+In his dissertation, Alexander Verner \parencite*{Verner2019}, compared different versions of LSTM Neural Networks against traditional machine learning algorithms such as Support Vector Machines (SVM) and Random Forests. The various algorithms were applied to data of sensors that measure blood glucose levels. To measure the blood glucose levels multiple sensors are used for an accurate result, thus a multivariate time series is the outcome. The data set used in Verner's work did not contain anomalies by default, but the anomalies were embedded into the data set artificially. Since the data was also labelled after the type of anomaly it contained, the learning approach can be classified as supervised. Thus, the goal of the study was to correctly classify which anomaly was present. The first approach used a deep or stacked LSTM, with 10 units in the first layer and 35 in the second. The resulting accuracy of only 0.4 was, however, rather dissappointing. This poor performance was explained with an occuring information loss within the deep network. Next, a single layer architecture, with 100 units was proposed. With just a 10\% increase the resulting accuracy was still unacceptable. In a third attempt, the neural network was enriched with an embedding layer. Using this technique, the neural network was able to detect the relationship between the frequencies of measurements that were closely positioned in the time-series. It achieved an accuracy of 98\%. The final architecture then used bidirectional LSTMs (BLSTMs). According to Graves \parencite*{Graves2005}, BLSTM outperform LSTM on supervised labelling tasks. A BLSTM can extract even more information from raw data by taking into account the relationship of each measurement to both previous (past) and subsequent (future) measurements in the input time-series. This enhancement resulted in a 99\% accuracy. This impressive accuracy, however, comes at a cost. LSTMs are very time consuming and resource intensive to train. Verner used an Amazon Web Service computing instance with 24 CPUs, 4 GPUs and 128 GB of RAM but the training of an LSTM still took about 10 hours.  
 %https://nsuworks.nova.edu/cgi/viewcontent.cgi?article=2075&context=gscis_etd
 
 \subsubsection{Time Series Forecasting using LSTM}
@@ -180,13 +178,14 @@ In this section CNNs for anomaly detection but also for classification of time s
 \subsubsection{Classification of Time Series Data using CNN}
 In their research project Zheng et al. \parencite*{Zheng2014} tried to beat the state of the art classification algorithm for time series, which is the k-Nearest Neighbor algorithm(k-NN). k-NN has been empirically shown to be extremely difficult to beat. The typical problem of the k-NN algorithm, however, is its computation time. Zheng et al. proposed to use their own developed architecture, which is called Multi-Channel Deep CNN (MC-DCNN). Each channel, hereby represents a CNN with convolutional and pooling layers.
 Typically channels in CNN are used to extract features from the different spectra of pictures. A colored picture for example consists of three channels, red, green and blue. Each channel now works as feature extractor on just one color.
-This feature of CNN is now used in time series classification. Every channel learns features independently using a single dimension of the multivariate time series as input. Another difference to image classification is that multivariate time series classification uses multiple 1D subsequences rather than 2D image pixels as data. Because CNN only learn features, no classification can be done. In order to classify, a CNN architecture is combined with a Multilayer Perceptron (MLP) that uses fully connected layers. Figure \ref{fig:MC-DCNN} shows the just described architecture. It is important to note that this architecture does not predict the next time steps in the series but instead a given time series is directly classified. The classification is hereby for example used to classify the physical activity depending on the heartrate and is not used for anomaly detection. In order to use the proposed architecture for anomaly detection however, only the output layer has to be changed. 
+This feature of CNN is now used in time series classification. Every channel learns features independently using a single dimension of the multivariate time series as input. Another difference to image classification is that multivariate time series classification uses multiple 1D subsequences rather than 2D image pixels as data. Because CNN only learn features, no classification can be done. In order to classify, a CNN architecture is combined with a Multilayer Perceptron (MLP) that uses fully connected layers. Figure \ref{fig:MC-DCNN} shows the just described architecture. On the left, the different channels are shown, where every channel takes on its own univariate time series. With the denoted feature maps and pooling layers the features of the time series are learned. In the MLP on the right, finally, the classification of the time series is done. 
+It is important to note that this architecture does not predict the next time steps in the series but instead a given time series is directly classified. The classification is hereby for example used to classify the physical activity depending on the heartrate and is not used for anomaly detection. In order to use the proposed architecture for anomaly detection however, only the output layer has to be changed. 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.35]{Figures/MC-DCNN}
 	\decoRule
-	\caption[MC-DCNN]{MC-DCNN \parencite{Zheng2014}}
+	\caption[Architecture of the MC-DCNN]{Architecture of the MC-DCNN \parencite{Zheng2014}}
 	\label{fig:MC-DCNN}
 	%http://staff.ustc.edu.cn/~cheneh/paper_pdf/2014/Yi-Zheng-WAIM2014.pdf
 \end{figure}
@@ -195,13 +194,13 @@ Zheng et al. state that the used architecture was superior to the k-NN algorithm
 %http://staff.ustc.edu.cn/~cheneh/paper_pdf/2014/Yi-Zheng-WAIM2014.pdf
 
 \subsubsection{U-Nets for Anomaly Detection}
-Wen and Keyes \parencite*{Wen2019} use a special type CNN architecture to detect anomalies. The architecture used is called U-Net. A U-Net consists of so called encoding and decoding layers. The encoding layers work like a standard CNN whereas the decoding layers are used for upsampling. In short, the encoding layers extract the most important features of the time series and decoding layers are using these features to assemble a new time series of the same dimensions as the original one. This encoder-decoder-architecture is often referred to as autoencoder architecture. The main weakness of autoencoders is that in the encoding part through downsampling information is permanently lost. To prevent this information loss, U-Nets introduce so called skip channels also called skip connections. A skip connection, as the name implies, is one that connects an earlier part of the network to a later part of the network and transfers data. The idea is simple: skip channels bring back missing knowledge from some earlier layers so that the network can be properly contextualized. This architecture was proven successful when applied to segmentation of neuronal structures in electron microscopic images in the original paper \parencite{Cicek2016}. In order to handle multivariate time series U-Nets also make use multiple channels. Figure \ref{fig:U-Net} shows the architecture of the above described U-Net.
+Wen and Keyes \parencite*{Wen2019} use a special type CNN architecture to detect anomalies. The architecture used is called U-Net. A U-Net consists of so called encoding and decoding layers. The encoding layers work like a standard CNN whereas the decoding layers are used for upsampling. Upsampling refers to restoring the previously condensed feature maps to its original size. In short, the encoding layers extract the most important features of the time series and decoding layers are using these features to assemble a new time series of the same dimensions as the original one. This encoder-decoder-architecture is often referred to as autoencoder architecture. The main weakness of autoencoders is that in the encoding part through downsampling information is permanently lost. To prevent this information loss, U-Nets introduce so called skip channels also called skip connections. A skip connection, as the name implies, is one that connects an earlier part of the network to a later part of the network and transfers data. The idea is simple: skip channels bring back missing knowledge from some earlier layers so that the network can be properly contextualized. This architecture was proven successful when applied to segmentation of neuronal structures in electron microscopic images in the original paper \parencite{Cicek2016}. In order to handle multivariate time series U-Nets also make use multiple channels. Figure \ref{fig:U-Net} shows the architecture of the above described U-Net. The left part of the picture shows the encoding layer with five convolutional layers. The encoding layer is followed by the decoding layer, in the right part of the picture. The decoding layer consists of 4 upsampling layers. This symmetric architecture is completed by the yellow lines, that represent the skip channels.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.32]{Figures/U-Net}
 	\decoRule
-	\caption[U-Net]{U-Net \parencite{Wen2019}}
+	\caption[U-Net Architecture]{U-Net Architecture \parencite{Wen2019}}
 	\label{fig:U-Net}
 \end{figure}
 
@@ -248,29 +247,65 @@ a wide range of other similar tasks}
 
 
 \subsubsection{Transfer Learning for Time Series Analysis}
-Malhotra et al. used a RNN trained on patient phenotypes \footnote{A clinical phenotype is the presentation of a disease in a given individual} to identify previously unseen phenotypes, but also for as well as for an unrelated task of in-hospital mortality. The idea was to train a RNN on physiological parameters to classify phenotypes. A phenotype could be the decrease in blood glucose levels. Detecting and classifying a phenotpye closely resembles the task of anomaly detection.
+Gupta et al. \parencite*{Gupta2018} used a RNN trained on patient phenotypes \footnote{A clinical phenotype is the presentation of a disease in a given individual} to identify previously unseen phenotypes, but also for as well as for an unrelated task of in-hospital mortality. The idea was to train a RNN on physiological parameters to classify phenotypes. A phenotype could be the decrease in blood glucose levels. Detecting and classifying a phenotpye closely resembles the task of anomaly detection.
 
-To pretrain, Malhotra et al. used time series data such as glucose level or heart rate. The goal was to determine, whether a phenotype was present. Since more than one phenotype can be present, the task can be considered as multi-label classification problem. The neural network used consisted of two layers of GRUs. The output layer was designed to represent all possible phenotypes, as activation function the sigmoid function was used. This network was trained on the labelled data set.
+To pretrain, Gupta et al. used time series data such as glucose level or heart rate. The goal was to determine, whether a phenotype was present. Since more than one phenotype can be present, the task can be considered as multi-label classification problem. The neural network used consisted of two layers of GRUs. The output layer was designed to represent all possible phenotypes, as activation function the sigmoid function was used. This network was trained on the labelled data set.
 
 The pretrained neural network was then applied to two different target tasks. The target tasks were, hereby, sligthly reduced in complexity. Instead of a multi-label classification, the problems were formulated as a binary classification problem, determining in case a), whether or not a phenotype was present and in case b) whether a patient would survive based on the time series observations after Intensive Care Unit (ICU) admission.
 
-On the target domain, training with different size data sets was done. The pretrained network was tuned on the target task with at lowest just five percent of data. As a benchmark, to compare the obtained results a logistic regression (LR) and a RNN classifier (RNN-C) were used. The two benchmarks, hereby, only operate on the target domain data set. The performances were compared using AUC for all used algorithms per data set (Case a \& Case b). Figure \ref{fig:AUC Transfer} shows the results of the experiments. The names MN-LR-1 and MN-LR-2 hereby refer to the pretrained networks with one respectively two GRU layers.    
+On the target domain, training with different size data sets was done. The pretrained network was tuned on the target task with at lowest just five percent of data. As a benchmark, to compare the obtained results a logistic regression (LR) and a RNN classifier (RNN-C) were used. The two benchmarks, hereby, only operate on the target domain data set. The performances were compared using AUC (see section \ref{AUROC}) for all used algorithms per data set (Case a \& Case b). Figure \ref{fig:AUC Transfer} shows the results of the experiments. The names MN-LR-1 and MN-LR-2 hereby refer to the pretrained networks with one respectively two GRU layers.    
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=00.25]{Figures/AUROC}
 	\decoRule
-	\caption[AUC]{AUC}
+	\caption[AUC and ROC in Transfer Learning]{AUC and ROC (AUROC) in Transfer Learning \parencite{Gupta2018}}
 	\label{fig:AUC Transfer}
 \end{figure}
 
 From the ROC curves of case a) it can be seen that when the training set for the target task is small, the performance gains from transfer learning are greater. Interestingly, in case b) the benchmark RNN is able perform similarly as the two pretrained networks, indicating that better results are obtained the closer related source and target domain are.
 
 \section{Parameter Settings for fair comparison}
-In this section it is investigated how CNNs and RNNs can be compared fairly. Since the two's architectures fundamentally differ it is difficult to establish a baseline, where both networks are of similar complexity. In their work Braei and Wagner \parencite*{Braei2020} chose another approach. Instead of trying to build networks with similar complexity, they fine tuned each evaluated neural network to its full potential and compared their scores as well as their training and inference time. To compare the scores, Braei and Wagner introduced an anomaly threshold (similar as in section \ref{CNN on univariate series})  
+In this section it is investigated how CNNs and RNNs can be compared fairly. Since the two's architectures fundamentally differ it is difficult to establish a baseline, where both networks are of similar complexity. In their work Braei and Wagner \parencite*{Braei2020} chose another approach. Instead of trying to build networks with similar complexity, they fine tuned each evaluated neural network to its full potential and compared their scores as well as their training and inference time. To compare the scores, Braei and Wagner introduced an anomaly threshold (similar as in section \ref{CNN on univariate series}). To find out the optimal threshold, it is varied to optimize sensitivity (true positive rate) and specificity (true negative rate). Varying the threshold and drawing the false positives against the true positives results in the so called Receiver Operating Characteristics Curve (ROC-Curve), which is used to find the optimal threshold for a certain model. How the ROC-Curve is used to compared different is explained in the next section.
 
+\subsection{ROC and AUC} \label{AUROC}
 
+The receiver operating characteristic curve, ROC-Curve, and the associated metric area under the curve (AUC), together also calles AUROC, which is the area under the ROC-Curve, are two metrics that are frequently used. This metric is highly useful, especially for detecting anomalies. The ROC-Curve depicts the relationship between the true positive rate and the false positive rate at various threshold values. The variables needed for the calculations are:
 
+\begin{itemize}
+	\item TP: True Positives
+	\item FN: False Negatives
+	\item FP: False Positives
+	\item TN: True Negatives	 
+\end{itemize}
 
+	
+	The true positive rate is defined as follows: \[TPR = TP/(TP+FN)\]
+	
+	The false positive rate is defines as: \[FPR = FP/(FP+TN)\]
+
+Typically, lowering the classification threshold causes more items to be classified as positive, which increases both False Positives and True Positives. A typical ROC curve is depicted in figure \ref{fig:ROC}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=00.4]{Figures/ROC}
+	\decoRule
+	\caption[Example ROC-Curve]{Example ROC-Curve \parencite{Google2020}}
+	\label{fig:ROC}
+	%https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc
+\end{figure}
+
+The area under the above shown curve, however, is classification-threshold-invariant. It measures the quality of the model's predictions irrespective of what classification threshold is chosen. The AUC in anomaly detection expressed the likelihood that the measured algorithm assigns a random anomalous point in the time-series a higher anomaly score than a random normal point. As a result, AUC is a good way to compare different anomaly detection methods \parencite{Braei2020}.
+
+\subsection{Computation Time}
+Another approach to compare the performances is to compare the computation times. To compare the computation times Braei and Wagner \parencite*{Braei2020} looked at the average training and inference time of traditional machine learning models as well as  statistical models and neural networks on univariate time series. Generally, neural networks are expected to invest most of their computation time in training and are able to outperform the traditional machine learning on inference time. However, the practical results showed that Recurrent Neural Networks (LSTM \& GRU) not only needed a long time to train but also had a large inference time on certain data sets. With LSTM performing second best on the given data set, behind k-means clustering, it can be concluded that this comes with a tradeoff. On the same data set a CNN was trained. The CNN achieved an AUC-Value of 0.818, compared to 0,84 of the LSTM, which is not much worse than LSTM. Looking at the training and inference time, the CNN is far superior. The LSTM takes about 1000 seconds for training and also inference. The CNN, however, trains for 50 seconds, with an inference time of under one second. Making the CNN the better choice, when relying on small inference times.
 
 \section{Research Gap}
+Anomaly detection on time series data has been widely researched. There are comprehensive comparisons of statistical methods, traditional machine learning approaches and neural networks such as the works of Braei and Wagner \parencite*{Braei2020} or Verner \parencite*{Verner2019}. Braei and Wager, focus thereby only on univariate time  series. Complementary, Verner only investigated multivariate time series. In their work, Braei and Wagner could show that CNN and RNN are able to achieve similar performances, while CNNs are superior in computation time. Verner faced a similar drawback in his research, where the training of the RNN took approximately 10 hours. 
+
+Since CNNs are only very recently investigated for anomaly detection in time series, Verner did not include them in his research. The approaches presented by Zheng et al. \parencite*{Zheng2014} and Wen and Keyes \parencite*{Wen2019}, however, show promising results, when using CNNs for time series classification respectively anomaly detection. 
+
+As research gap it has been identified that there is currently no research on how well CNNs perform when used in the field of anomaly detection. The works mentioned above do not establish a state of the art baseline, to compare the achieved results. It is therefore currently not assessable, how useful CNNs are for anomaly detection.
+
+Further, since the use of neural networks steadily increases, it can be anticipated that transfer learning approaches to save training time and improve accuracy will become more popular. Both papers, than compare the different approaches for anomaly detection do not take advantage of this approach.
+

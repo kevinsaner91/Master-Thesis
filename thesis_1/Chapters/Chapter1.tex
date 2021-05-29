@@ -29,15 +29,8 @@ A special disciplin in anomaly detection is to find the anomaly in a time series
 	\item Neural Networks 
 \end{itemize}
 
-Currently Neural Networks are regarded the cutting-edge research. Although first approaches to use artificial neural networks exist since 1969. They are popular in research for only about 15 to 20 years, which is why scientist generally expect further improvements on this kind of technology. This promising outlook is why this research paper also purely focusses on Neural Networks for anomaly detection. Especially Recurrent Neural Networks and Convolutional Neural Networks are investigated and compared.
+Currently Neural Networks are regarded the cutting-edge research. Although first approaches to use artificial neural networks exist since 1969. They are popular in research for only about 15 to 20 years. Neural networks are well-suited for assisting people in solving complex problems in real-world situations. They can learn and model nonlinear and complex relationships between inputs and outputs; make generalizations and inferences; uncover hidden relationships, patterns, and predictions; and model highly volatile data (such as financial time series data) and variances required to predict rare events (such as fraud detection). Since neural networks do not require time intensive feature engineering, but instead learn the features themselves a lot of time can be saved setting up a model compared to traditional machine learning approaches. At the moment, there is a lot of research focussing on neural networks, which is why scientist generally expect further improvements on this kind of technology. This promising outlook is why this research paper also purely focusses on Neural Networks for anomaly detection. Especially Recurrent Neural Networks and Convolutional Neural Networks are investigated and compared.
 
-\textcolor{red}{Traditional machine learning methods of anomaly detections in
-	sensor data are based on domain-specific feature engineering. A typical approach is to
-	use domain knowledge to analyze sensor data and manually create statistics-based
-	features, which are then used to train the machine learning models to detect and classify
-	the anomalies. Although this methodology is used in practice, it has a significant
-	drawback due to the fact that feature extraction is usually labor intensive and requires
-	considerable effort from domain experts. }
 
 \section{Definitions}
 Following, the most important terms in the context of anomaly detection using neural networks are elaborated and defined. 
@@ -69,7 +62,7 @@ In neural networks three different kind of layers are distinguished. There are i
 	\centering
 	\includegraphics[scale=0.3]{Figures/layers}
 	\decoRule
-	\caption[Layers]{Input, Hidden and Output Layers \parencite{DennyBritz2015}}
+	\caption[Input, Hidden and Output Layers]{Input, Hidden and Output Layers \parencite{DennyBritz2015}}
 	\label{fig:layers}
 	%https://blog.csdn.net/mydear_11000/article/details/51087980
 \end{figure}
@@ -88,7 +81,7 @@ Following, it is explained how different kinds of neural networks work and what 
 
 \subsection{Neural Networks for Anomaly Detection} \label{NN}
 
-Out of the three most popular neural network architectures, convolutional neural networks (CNN), recurrent neural networks (RNN) and deep neural networks (DNN), only RNN are typically used for anomaly detection in time series. RNNs have built-in memory and are therefore able to anticipate the next value in a time series based on current and past data. Classic or vanilla RNNs can theoretically keep track of arbitrary long-term dependencies in input sequences. There, however, is a computational issue: when using back-propagation to train a vanilla RNN, the back-propagated gradients can "vanish" or "explode" due to the computations involved in the process, which use finite-precision numbers. Because LSTM units allow gradients to flow unchanged, RNNs using LSTM unit or Gated Recurrent units (GRU) partially solve the vanishing gradient problem and therefore drastically improve accuracy \parencite{Hochreiter1997}.
+Out of the three most popular neural network architectures, convolutional neural networks (CNN), recurrent neural networks (RNN) and deep neural networks (DNN), RNNs are typically used for anomaly detection in time series [e.g \parencite{Malhotra2015}, \parencite{Verner}]. RNNs have built-in memory and are therefore able to anticipate the next value in a time series based on current and past data. Classic or vanilla RNNs can theoretically keep track of arbitrary long-term dependencies in input sequences. There, however, is a computational issue: when using back-propagation to train a vanilla RNN, the back-propagated gradients can "vanish" or "explode" due to the computations involved in the process, which use finite-precision numbers. Because Long Short Term Memory (LSTM) units allow gradients to flow unchanged, RNNs using LSTM unit or Gated Recurrent units (GRU) partially solve the vanishing gradient problem and therefore drastically improve accuracy \parencite{Hochreiter1997}.
 
 Specially to mention in this context are LSTM (Long-Short Term Memory) and GRU (Gated Recurrent Units). Both achieved outstanding performance when used for tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems) \parencite{JunyoungChung2014}
 
@@ -106,7 +99,7 @@ LSTM was first proposed in 1997 by Schmidhuber and Hochreiter \parencite{Hochrei
 	\centering
 	\includegraphics[scale=0.5]{Figures/LSTM}
 	\decoRule
-	\caption[LSTM]{Gates and Cell of LSTM  \parencite{MichaelPhi2018}}
+	\caption[Gates and Cell of LSTM]{Gates and Cell of LSTM  \parencite{MichaelPhi2018}}
 	\label{fig:LSTM}
 \end{figure}
 
@@ -122,7 +115,7 @@ In contrast to RNNs Convolutional Neural Networks are generally used for image c
 	\centering
 	\includegraphics[scale=0.7]{Figures/filter}
 	\decoRule
-	\caption[Kernel]{Example of a Filter used in CNN \parencite{RichStureborg2019}}
+	\caption[Example of a Filter used in CNN]{Example of a Filter used in CNN \parencite{RichStureborg2019}}
 	\label{fig:filter}
 \end{figure}
 
@@ -133,7 +126,7 @@ Other typical features of a CNN are the pooling layers. The pooling layers reduc
 	\centering
 	\includegraphics[scale=0.2]{Figures/pooling}
 	\decoRule
-	\caption[Pooling]{Example of max-pooling \parencite{RichStureborg2019}}
+	\caption[Example of max-pooling]{Example of max-pooling \parencite{RichStureborg2019}}
 	\label{fig:pooling}
 \end{figure}
 
