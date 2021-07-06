@@ -105,7 +105,7 @@
       \endverb
       \keyw{Big data,Fuzzy-AHP,Healthcare,Internet of Things (IoT)}
     \endentry
-    \entry{Braei2020}{misc}{}
+    \entry{Braei2020}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2c203cba0db705a473a63d3648ea3ffe}{%
            family={Braei},
@@ -182,42 +182,6 @@
       \field{year}{2009}
       \field{pages}{1\bibrangedash 58}
       \range{pages}{58}
-    \endentry
-    \entry{Chauhan2015}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2dafea5807425c53f50ebc87eddd5cc7}{%
-           family={Chauhan},
-           familyi={C\bibinitperiod},
-           given={Sucheta},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=dd153a0cfbbb770a226276234db9aa76}{%
-           family={Vig},
-           familyi={V\bibinitperiod},
-           given={Lovekesh},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{79f2bd5662e222c1039c0c98d65236ca}
-      \strng{fullhash}{79f2bd5662e222c1039c0c98d65236ca}
-      \strng{bibnamehash}{79f2bd5662e222c1039c0c98d65236ca}
-      \strng{authorbibnamehash}{79f2bd5662e222c1039c0c98d65236ca}
-      \strng{authornamehash}{79f2bd5662e222c1039c0c98d65236ca}
-      \strng{authorfullhash}{79f2bd5662e222c1039c0c98d65236ca}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Electrocardiography (ECG) signals are widely used to gauge the health of the human heart, and the resulting time series signal is often analyzed manually by a medical professional to detect any arrhythmia that the patient may have suffered. Much work has been done to automate the process of analyzing ECG signals, but most of the research involves extensive preprocessing of the ECG data to derive vectorized features and subsequently designing a classifier to discriminate between healthy ECG signals and those indicative of an Arrhythmia. This approach requires knowledge and data of the different types of Arrhythmia for training. However, the heart is a complex organ and there are many different and new types of Arrhythmia that can occur which were not part of the original training set. Thus, it may be more prudent to adopt an anomaly detection approach towards analyzing ECG signals. In this paper, we utilize a deep recurrent neural network architecture with Long Short Term Memory (LSTM) units to develop a predictive model for healthy ECG signals. We further utilize the probability distribution of the prediction errors from these recurrent models to indicate normal or abnormal behavior. An added advantage of using LSTM networks is that the ECG signal can be directly fed into the network without any elaborate preprocessing as required by other techniques. Also, no prior information about abnormal signals is needed by the networks as they were trained only on normal data. We have used the MIT-BIH Arrhythmia Database to obtain ECG time series data for both normal periods and for periods during four different types of Arrhythmias, namely Premature Ventricular Contraction (PVC), Atrial Premature Contraction (APC), Paced Beats (PB) and Ventricular Couplet (VC). Results are promising and indicate that Deep LSTM models may be viable for detecting anomalies in ECG signals.}
-      \field{booktitle}{Proceedings of the 2015 IEEE International Conference on Data Science and Advanced Analytics, DSAA 2015}
-      \field{isbn}{9781467382731}
-      \field{title}{{Anomaly detection in ECG time signals via deep long short-term memory networks}}
-      \field{year}{2015}
-      \verb{doi}
-      \verb 10.1109/DSAA.2015.7344872
-      \endverb
     \endentry
     \entry{Chollet2018}{book}{}
       \name{author}{2}{}{%
@@ -361,6 +325,8 @@
       \field{title}{{3D U-net: Learning dense volumetric segmentation from sparse annotation}}
       \field{volume}{9901 LNCS}
       \field{year}{2016}
+      \field{pages}{424\bibrangedash 432}
+      \range{pages}{9}
       \verb{doi}
       \verb 10.1007/978-3-319-46723-8_49
       \endverb
@@ -384,7 +350,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{WILDML Artificial Intelligence, Deep Learning, and NLP}
-      \field{month}{9}
+      \field{month}{09}
       \field{title}{{Implementing a Neural Network from Scratch in Python – An Introduction}}
       \field{urlday}{18}
       \field{urlmonth}{4}
@@ -442,7 +408,7 @@
       \field{isbn}{9781538658758}
       \field{issn}{21676453}
       \field{title}{{Improving CNN-RNN hybrid networks for handwriting recognition}}
-      \field{volume}{2018-Augus}
+      \field{volume}{2018-August}
       \field{year}{2018}
       \field{pages}{80\bibrangedash 85}
       \range{pages}{6}
@@ -510,12 +476,12 @@
            given={Felix\bibnamedelima A.},
            giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+        {{un=2,uniquepart=given,hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
            family={Schmidhuber},
            familyi={S\bibinitperiod},
            given={Jürgen},
            giveni={J\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
         {{un=0,uniquepart=base,hash=bdd8ffd78b64a16f8c61071ba7af7225}{%
            family={Cummins},
            familyi={C\bibinitperiod},
@@ -546,6 +512,135 @@
       \range{pages}{21}
       \verb{doi}
       \verb 10.1162/089976600300015015
+      \endverb
+    \endentry
+    \entry{Google2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Machine Learning Crash Course}
+      \field{title}{{Classification: ROC Curve and AUC}}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc
+      \endverb
+      \verb{url}
+      \verb https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc
+      \endverb
+    \endentry
+    \entry{Graves2005}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=dfca94b0427da7f9088af596e23b46c0}{%
+           family={Graves},
+           familyi={G\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=299d87a73d184d0f2be5c0710ab298e8}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={Santiago},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=2333709f91a1b22edafa71582c31e391}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Juergen},
+           giveni={J\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{ac5d69a0291559eef12498e85076f76e}
+      \strng{fullhash}{ac5d69a0291559eef12498e85076f76e}
+      \strng{bibnamehash}{ac5d69a0291559eef12498e85076f76e}
+      \strng{authorbibnamehash}{ac5d69a0291559eef12498e85076f76e}
+      \strng{authornamehash}{ac5d69a0291559eef12498e85076f76e}
+      \strng{authorfullhash}{ac5d69a0291559eef12498e85076f76e}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we carry out two experiments on the TIMIT speech corpus with bidirectional and unidirectional Long Short Term Memory (LSTM) networks. In the first experiment (framewise phoneme classification) we find that bidirectional LSTM outperforms both unidirectional LSTM and conventional Recurrent Neural Networks (RNNs). In the second (phoneme recognition) we find that a hybrid BLSTM-HMM system improves on an equivalent traditional HMM system, as well as unidirectional LSTM-HMM.}
+      \field{booktitle}{Artificial Neural Networks: Formal Models and Their Applications -- ICANN 2005}
+      \field{isbn}{978-3-540-28756-8}
+      \field{title}{Bidirectional LSTM Networks for Improved Phoneme Classification and Recognition}
+      \field{year}{2005}
+      \field{pages}{799\bibrangedash 804}
+      \range{pages}{6}
+    \endentry
+    \entry{Gupta2018}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b8fd75d19b941ee7f8195d46f8daeda4}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Priyanka},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dcd5dcd4e4f78f96e2f472d3f01ede9c}{%
+           family={Malhotra},
+           familyi={M\bibinitperiod},
+           given={Pankaj},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd153a0cfbbb770a226276234db9aa76}{%
+           family={Vig},
+           familyi={V\bibinitperiod},
+           given={Lovekesh},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11ddfe25cf35d38891cff07417fe10cf}{%
+           family={Shroff},
+           familyi={S\bibinitperiod},
+           given={Gautam},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{00c25df7d589c741fcdfb82369da0014}
+      \strng{fullhash}{fedf3ee575147d0cd1c2f956be747448}
+      \strng{bibnamehash}{00c25df7d589c741fcdfb82369da0014}
+      \strng{authorbibnamehash}{00c25df7d589c741fcdfb82369da0014}
+      \strng{authornamehash}{00c25df7d589c741fcdfb82369da0014}
+      \strng{authorfullhash}{fedf3ee575147d0cd1c2f956be747448}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep neural networks have shown promising results for various clinical prediction tasks such as diagnosis, mortality prediction, predicting duration of stay in hospital, etc. However, training deep networks - such as those based on Recurrent Neural Networks (RNNs) - requires large labeled data, high computational resources, and significant hyperparameter tuning effort. In this work, we investigate as to what extent can transfer learning address these issues when using deep RNNs to model multivariate clinical time series. We consider transferring the knowledge captured in an RNN trained on several source tasks simultaneously using a large labeled dataset to build the model for a target task with limited labeled data. An RNN pre-trained on several tasks provides generic features, which are then used to build simpler linear models for new target tasks without training task-specific RNNs. For evaluation, we train a deep RNN to identify several patient phenotypes on time series from MIMIC-III database, and then use the features extracted using that RNN to build classifiers for identifying previously unseen phenotypes, and also for a seemingly unrelated task of in-hospital mortality. We demonstrate that (i) models trained on features extracted using pre-trained RNN outperform or, in the worst case, perform as well as task-specific RNNs; (ii) the models using features from pre-trained models are more robust to the size of labeled data than task-specific RNNs; and (iii) features extracted using pre-trained RNN are generic enough and perform better than typical statistical hand-crafted features.}
+      \field{journaltitle}{Journal of Healthcare Informatics Research}
+      \field{title}{{Transfer learning for clinical time series analysis using recurrent neural networks}}
+      \field{volume}{4}
+      \field{year}{2020}
+      \field{pages}{112\bibrangedash 137}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1007/s41666-019-00062-3
       \endverb
     \endentry
     \entry{Hauskrecht2007}{article}{}
@@ -601,6 +696,50 @@
       \field{pages}{319\bibrangedash 323}
       \range{pages}{5}
     \endentry
+    \entry{Hevner2010}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d9ddca3b1b7af0f96d62a62424bd939a}{%
+           family={Hevner},
+           familyi={H\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edf3e165ce4429b30d49e353a7d1417a}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Samir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{aec596f25e71075259e73bc2be95a95e}
+      \strng{fullhash}{aec596f25e71075259e73bc2be95a95e}
+      \strng{bibnamehash}{aec596f25e71075259e73bc2be95a95e}
+      \strng{authorbibnamehash}{aec596f25e71075259e73bc2be95a95e}
+      \strng{authornamehash}{aec596f25e71075259e73bc2be95a95e}
+      \strng{authorfullhash}{aec596f25e71075259e73bc2be95a95e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Design activities are central to most applied disciplines. Research in design has a long history in many fields including architecture, engineering, education, psychology, and the fine arts (Cross 2001). The computing and information technology (CIT) field since its advent in the late 1940s has appropriated many of the ideas, concepts, and methods of design science that have originated in these other disciplines. However, information systems (IS) as composed of inherently mutable and adaptable hardware, software, and human interfaces provide many unique and challenging design problems that call for new and creative ideas.}
+      \field{booktitle}{Design Research in Information Systems: Theory and Practice}
+      \field{isbn}{978-1-4419-5653-8}
+      \field{title}{Design Science Research in Information Systems}
+      \field{year}{2010}
+      \field{pages}{9\bibrangedash 22}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/978-1-4419-5653-8_2
+      \endverb
+    \endentry
     \entry{Hochreiter1997}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=41b31e29fb2bdbf9f5c9c1b0d5b3e815}{%
@@ -609,12 +748,12 @@
            given={Sepp},
            giveni={S\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+        {{un=2,uniquepart=given,hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
            family={Schmidhuber},
            familyi={S\bibinitperiod},
            given={Jürgen},
            giveni={J\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
       }
       \strng{namehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
       \strng{fullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
@@ -641,14 +780,8 @@
       \verb{doi}
       \verb 10.1162/neco.1997.9.8.1735
       \endverb
-      \verb{urlraw}
-      \verb https://direct.mit.edu/neco/article/9/8/1735-1780/6109
-      \endverb
-      \verb{url}
-      \verb https://direct.mit.edu/neco/article/9/8/1735-1780/6109
-      \endverb
     \endentry
-    \entry{Hodge2004}{misc}{}
+    \entry{Hodge2004}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=46e3481757658b22fd9bf30a3ce12478}{%
            family={Hodge},
@@ -808,7 +941,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Towards Data Science}
-      \field{month}{9}
+      \field{month}{09}
       \field{title}{{Illustrated Guide to LSTM's and GRU's: A step by step explanation}}
       \field{urlday}{18}
       \field{urlmonth}{4}
@@ -893,7 +1026,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Built-In}
-      \field{month}{9}
+      \field{month}{09}
       \field{title}{{What is transfer learning? Exploring the popular deep learning approach}}
       \field{urlday}{18}
       \field{urlmonth}{4}
@@ -929,11 +1062,13 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{No abstract is available for this item.}
+      \field{isbn}{0-471-93094-6}
       \field{journaltitle}{International Journal of Forecasting}
-      \field{number}{1}
-      \field{title}{{Outliers in statistical data : V. Barnett and T. Lewis, 1994, 3rd edition, (John Wiley and Sons, Chichester), 584 pp., [UK pound]55.00, ISBN 0-471-93094-6}}
+      \field{title}{Outliers in statistical data : V. Barnett and T. Lewis, 1994, 3rd edition, (John Wiley and Sons, Chichester)}
       \field{volume}{12}
       \field{year}{1996}
+      \field{pages}{175\bibrangedash 176}
+      \range{pages}{2}
     \endentry
     \entry{RichStureborg2019}{misc}{}
       \name{author}{1}{}{%
@@ -954,7 +1089,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Towards Data Science}
-      \field{month}{1}
+      \field{month}{01}
       \field{title}{{Conv Nets for dummies}}
       \field{urlday}{18}
       \field{urlmonth}{4}
@@ -1068,7 +1203,43 @@
       \endverb
       \keyw{Class imbalance,Classification,Data analysis,Machine learning,Statistical analysis,Supervised learning}
     \endentry
-    \entry{Wen2019}{misc}{}
+    \entry{Verner2019}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=397e87b82799922c18ba86e5ba070a6f}{%
+           family={Verner},
+           familyi={V\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Nova Southeastern University}%
+      }
+      \strng{namehash}{397e87b82799922c18ba86e5ba070a6f}
+      \strng{fullhash}{397e87b82799922c18ba86e5ba070a6f}
+      \strng{bibnamehash}{397e87b82799922c18ba86e5ba070a6f}
+      \strng{authorbibnamehash}{397e87b82799922c18ba86e5ba070a6f}
+      \strng{authornamehash}{397e87b82799922c18ba86e5ba070a6f}
+      \strng{authorfullhash}{397e87b82799922c18ba86e5ba070a6f}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{LSTM Networks for Detection and Classification of Anomalies in Raw Sensor Data}}
+      \field{type}{phdthesis}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 131}
+      \range{pages}{131}
+      \verb{urlraw}
+      \verb https://nsuworks.nova.edu/gscis_etd/1074.
+      \endverb
+      \verb{url}
+      \verb https://nsuworks.nova.edu/gscis_etd/1074.
+      \endverb
+    \endentry
+    \entry{Wen2019}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=17400085d2ec5cf4c030abcb7603c90c}{%
            family={Wen},
@@ -1099,7 +1270,9 @@
       \field{booktitle}{arXiv}
       \field{eprinttype}{arXiv}
       \field{issn}{23318422}
+      \field{journaltitle}{CoRR}
       \field{title}{{Time Series Anomaly Detection Using Convolutional Neural Networks and Transfer Learning}}
+      \field{volume}{abs/1905.13628}
       \field{year}{2019}
       \verb{eprint}
       \verb 1905.13628
@@ -1164,6 +1337,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{own}
 \endrefsection
 \endinput
 
