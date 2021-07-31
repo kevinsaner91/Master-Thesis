@@ -115,4 +115,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.6}Conclusion - Recommendations}{24}{subsection.85}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{25}{appendix*.86}%
+\contentsline {chapter}{\numberline {4}Suggestion}{25}{chapter.86}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Critics}{25}{section.87}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Anomalies}{25}{section.88}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{27}{appendix*.90}%

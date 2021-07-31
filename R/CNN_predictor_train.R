@@ -35,16 +35,28 @@ generator <- function(data, lookback, delay, min_index, max_index,
     samples <- array(0, dim = c(length(rows), 
                                 lookback / step,
                                 dim(data)[[-1]]))
-    targets <- array(0, dim = c(length(rows),delay, dim(data)[-1]))
+    
+    output1 <- array(0, dim = c(length(rows),delay, 1))
+    output2 <- array(0, dim = c(length(rows),delay, 1))
+    output3 <- array(0, dim = c(length(rows),delay, 1))
+    output4 <- array(0, dim = c(length(rows),delay, 1))
     
     for (j in 1:length(rows)) {
       indices <- seq(rows[[j]] - lookback, rows[[j]], 
                      length.out = dim(samples)[[2]])
       samples[j,,] <- data[indices,]
-      targets[j,,] <- data[rows[[j]] + delay,] 
+      output1[j,,] <- data[rows[[j]] + delay,1] 
+      output2[j,,] <- data[rows[[j]] + delay,2] 
+      output3[j,,] <- data[rows[[j]] + delay,3] 
+      output4[j,,] <- data[rows[[j]] + delay,4] 
+      
+      array1 <- array(output1, dim = dim(output1))
+      array2 <- array(output2, dim = dim(output2))
+      array3 <- array(output3, dim = dim(output3))
+      array4 <- array(output4, dim = dim(output4))
     }            
     
-    list(samples, targets)
+    list(samples, c(array1, array2, array3, array4))
   }
 }
 
@@ -95,16 +107,30 @@ test_gen <- generator(
 )
 
 val_steps <- (12000 - 10000 - lookback) / batch_size
-test_steps <- (12051 - 12000 - lookback) / 1
+test_steps <- (12051 - 12000 - lookback) / batch_size
+  
+input <- layer_input(shape(lookback,ncol(data)))
 
-model <- keras_model_sequential() %>% 
-  layer_gru(units = 32,input_shape = list(NULL, ncol(data)), return_sequences = TRUE) %>%
-  layer_gru(units = 32, return_sequences = TRUE) %>%
-  layer_dense(units = 4)
+model <- input %>% 
+  layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", input_shape = c(lookback,ncol(data))) %>%
+  layer_max_pooling_1d(pool_size = 2) %>%
+  layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", padding = "same") %>%
+  layer_max_pooling_1d(pool_size = 2) %>%
+  layer_flatten()
+
+
+output1 <- model %>% layer_dense(units = 1)
+output2 <- model %>% layer_dense(units = 1)
+output3 <- model %>% layer_dense(units = 1)
+output4 <- model %>%layer_dense(units = 1)
+
+model <- keras_model(inputs = input, outputs = c(output1, output2, output3, output4))
+
+
 
 model %>% compile(
   optimizer = optimizer_adam(),
-  loss = "mae",
+  loss = "categorical_crossentropy",
   metrics = "mae"
 )
 
@@ -121,7 +147,7 @@ loss <- model %>% evaluate(test_gen, steps = test_steps, verbose = TRUE)
 denorm_loss = loss * std
 
 
-save_model_hdf5 (model, "GRU_Predictor", include_optimizer = TRUE)
+save_model_hdf5 (model, "CNN_Predictor", include_optimizer = TRUE)
 
 
 

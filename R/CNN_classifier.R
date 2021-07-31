@@ -64,7 +64,7 @@ generator <- function(data, lookback, delay, min_index, max_index,
 #* `step` -- The period, in timesteps, at which you sample data. You'll set it 6 in order to draw one data point every hour.
 
 lookback <- 6 # 1h in the past
-step <- 1
+step <- 2
 delay <- 3 # 1/2h in the future
 batch_size <- 36
 

@@ -49,7 +49,7 @@ generator <- function(data, lookback, delay, min_index, max_index,
 }
 
 lookback <- 50
-step <- 1
+step <- 50
 delay <- 1 
 batch_size <- 1
 
@@ -58,22 +58,18 @@ test_gen <- generator(
   lookback = lookback,
   delay = delay,
   min_index = 12000,
-  max_index = 12051,
+  max_index = 12100,
   step = step,
   batch_size = batch_size
 )
 
-
-test_steps <- (12051 - 12000 - lookback) / batch_size
+test_steps <- (12100 - 12000 - lookback) / batch_size
 
 model <- load_model_hdf5("GRU_Predictor", compile = TRUE)
 
+summary(model)
+
 predictions <- model %>% predict(test_gen, steps = test_steps, verbose = TRUE)
 
-predictions <- model %>% predict_generator(test_gen, steps = test_steps, verbose = TRUE)
-length(predictions[1,,])
 
-length(data[12000:12049,])
-
-mae(predictions[1,,], data[12000:12049,])
 
