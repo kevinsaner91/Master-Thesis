@@ -16,12 +16,11 @@ library(vcd)
 
 rm(list = ls()) # clear workspace, use if needed
 
+setwd("~/MSCBIS/MT/trunk/datasets/InterstateTraffic")
+
 data <- read.csv("Metro_Interstate_Traffic_Volume.csv")
 
 data$date_time <- as.POSIXct(data$date_time,format="%Y-%m-%d %H:%M:%S",,tz=Sys.timezone())
-
-data$weather_main <- as.factor(data$weather_main)
-data$weather_description <- as.factor(data$weather_description)
 
 data <- data[match(as.POSIXct("2015-06-26 00:00:00",format="%Y-%m-%d %H:%M:%S",tz=Sys.timezone()),data$date_time):nrow(data),]
 rownames(data) <- 1:nrow(data) # reindex
@@ -60,6 +59,13 @@ for(k in 1:12){
   rownames(data) <- 1:nrow(data) # reindex
 }
 
+# remove week after 27.10 - too many missing values
+data <- data[-c(match(as.POSIXct("2015-10-05 00:00:00",format="%Y-%m-%d %H:%M:%S",tz=Sys.timezone()),data$date_time):
+               match(as.POSIXct("2015-11-01 23:00:00",format="%Y-%m-%d %H:%M:%S",tz=Sys.timezone()),data$date_time)),]
+
+data <- data[1:match(as.POSIXct("2018-09-30 23:00:00",format="%Y-%m-%d %H:%M:%S",tz=Sys.timezone()),data$date_time),]
+
+#check for missing values
 for (i in 1:n) {
   row <- data[i,]
   row_next <- row$date_time + 3600 #plus 1 hour
@@ -67,14 +73,6 @@ for (i in 1:n) {
     print(row_next)
   }
 }
-
-
-# remove week after 27.10 - too many missing values
-data <- data[-c(match(as.POSIXct("2015-10-05 00:00:00",format="%Y-%m-%d %H:%M:%S",tz=Sys.timezone()),data$date_time):
-               match(as.POSIXct("2015-11-01 23:00:00",format="%Y-%m-%d %H:%M:%S",tz=Sys.timezone()),data$date_time)),]
-
-data <- data[1:match(as.POSIXct("2018-09-30 23:00:00",format="%Y-%m-%d %H:%M:%S",tz=Sys.timezone()),data$date_time),]
-
 # # entfernen 24.12.2012 - 06.01.2013
 # #           23.12.2013 - 05.01.2014
 # #           22.12.2014 - 04.01.2015 not there
@@ -123,9 +121,21 @@ g.4
 
 barplot(table(data$weather_description[336:672]))
 
+#data <- dummy_cols(data,select_columns = c("weather_main","weather_description"))
 
-data <- dummy_cols(data,select_columns = c("weather_main","weather_description"))
+data <- data[-10]
 
+data$temp <- smooth(data$temp)
+data$traffic_volume <- smooth(data$traffic_volume)
+data$rain_1h <- smooth(data$rain_1h)
+data$snow_1h <- smooth(data$snow_1h)
+data$clouds_all <- smooth(data$clouds_all)
+
+data$weather_main <- ifelse(data$clouds_all < 2, "Clear", data$weather_main)
+data$weather_description <- ifelse(data$weather_main == "Clear", "sky is clear", data$weather_description)
+
+data$weather_main <- as.factor(data$weather_main)
+data$weather_description <- as.factor(data$weather_description)
 
 save(data, file ="C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/InterstateTraffic/Metro_Interstate_Traffic")
 
