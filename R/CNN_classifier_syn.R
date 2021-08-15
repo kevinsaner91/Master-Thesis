@@ -7,6 +7,8 @@ rm(list = ls()) # clear workspace, use if needed
 
 load("C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/synthetic_dataset_with_anomalies")
 
+data$anomaly <- ifelse(data$anomaly > 0, TRUE, FALSE)
+
 data <- data.matrix(data[,-1])
 anomaly <- data[,6]
 
