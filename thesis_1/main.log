@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.30)  30 JUL 2021 16:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.30)  15 AUG 2021 16:38
 entering extended mode
 **./main.tex
 (main.tex
@@ -740,11 +740,7 @@ LaTeX Font Info:    Trying to load font information for T1+ppl on input line 91
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
-(Chapters/Chapter3.aux) (Chapters/Chapter4.aux
-
-LaTeX Warning: Label `fig:CNN' multiply defined.
-
-))
+(Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
@@ -1010,18 +1006,18 @@ Chapter 1.
 
 
 ] [2]
-<Figures/layers.png, id=417, 732.7375pt x 495.8525pt>
+<Figures/layers.png, id=432, 732.7375pt x 495.8525pt>
 File: Figures/layers.png Graphic file (type png)
 <use Figures/layers.png>
 Package pdftex.def Info: Figures/layers.png  used on input line 63.
 (pdftex.def)             Requested size: 219.82294pt x 148.7569pt.
  [3 <./Figures/layers.png>] [4]
-<Figures/LSTM.jpg, id=443, 547.2947pt x 575.14874pt>
+<Figures/LSTM.jpg, id=458, 547.2947pt x 575.14874pt>
 File: Figures/LSTM.jpg Graphic file (type jpg)
 <use Figures/LSTM.jpg>
 Package pdftex.def Info: Figures/LSTM.jpg  used on input line 101.
 (pdftex.def)             Requested size: 273.64667pt x 287.57367pt.
-<Figures/filter.png, id=449, 330.37714pt x 175.51286pt>
+<Figures/filter.png, id=464, 330.37714pt x 175.51286pt>
 File: Figures/filter.png Graphic file (type png)
 <use Figures/filter.png>
 Package pdftex.def Info: Figures/filter.png  used on input line 117.
@@ -1031,7 +1027,7 @@ Package pdftex.def Info: Figures/filter.png  used on input line 117.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./Figures/LSTM.jpg>]
-<Figures/pooling.png, id=464, 1330.9725pt x 481.8pt>
+<Figures/pooling.png, id=479, 1330.9725pt x 481.8pt>
 File: Figures/pooling.png Graphic file (type png)
 <use Figures/pooling.png>
 Package pdftex.def Info: Figures/pooling.png  used on input line 128.
@@ -1090,7 +1086,7 @@ Short Term Mem-ory (LSTM)
  []
 
 [10]
-<Figures/CNN.png, id=522, 1098.35344pt x 338.76563pt>
+<Figures/CNN.png, id=537, 1098.35344pt x 338.76563pt>
 File: Figures/CNN.png Graphic file (type png)
 <use Figures/CNN.png>
 Package pdftex.def Info: Figures/CNN.png  used on input line 132.
@@ -1113,7 +1109,7 @@ c-tive and con-tex-tual anoma-
  []
 
 [12] [13]
-<Figures/MC-DCNN.png, id=552, 1184.92688pt x 673.76718pt>
+<Figures/MC-DCNN.png, id=567, 1184.92688pt x 673.76718pt>
 File: Figures/MC-DCNN.png Graphic file (type png)
 <use Figures/MC-DCNN.png>
 Package pdftex.def Info: Figures/MC-DCNN.png  used on input line 196.
@@ -1124,13 +1120,13 @@ Overfull \hbox (10.70154pt too wide) in paragraph at lines 196--198
  []
 
 [14 <./Figures/MC-DCNN.png>]
-<Figures/U-Net.png, id=563, 1208.26407pt x 430.60875pt>
+<Figures/U-Net.png, id=578, 1208.26407pt x 430.60875pt>
 File: Figures/U-Net.png Graphic file (type png)
 <use Figures/U-Net.png>
 Package pdftex.def Info: Figures/U-Net.png  used on input line 211.
 (pdftex.def)             Requested size: 386.6524pt x 137.7976pt.
  [15 <./Figures/U-Net.png>]
-<Figures/Synthetic Time Series.png, id=577, 798.73407pt x 855.94781pt>
+<Figures/Synthetic Time Series.png, id=592, 798.73407pt x 855.94781pt>
 File: Figures/Synthetic Time Series.png Graphic file (type png)
 <use Figures/Synthetic Time Series.png>
 Package pdftex.def Info: Figures/Synthetic Time Series.png  used on input line 
@@ -1141,7 +1137,7 @@ Package pdftex.def Info: Figures/Synthetic Time Series.png  used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [16] [17 <./Figures/Synthetic Time Series.png>]
-<Figures/ROC.png, id=601, 436.63126pt x 348.55219pt>
+<Figures/ROC.png, id=616, 436.63126pt x 348.55219pt>
 File: Figures/ROC.png Graphic file (type png)
 <use Figures/ROC.png>
 Package pdftex.def Info: Figures/ROC.png  used on input line 289.
@@ -1173,7 +1169,7 @@ Overfull \hbox (15.35057pt too wide) in paragraph at lines 315--316
 
  (Chapters/Chapter3.tex
 Chapter 3.
-<Figures/Thesis Map.png, id=627, 596.2275pt x 388.45125pt>
+<Figures/Thesis Map.png, id=642, 596.2275pt x 388.45125pt>
 File: Figures/Thesis Map.png Graphic file (type png)
 <use Figures/Thesis Map.png>
 Package pdftex.def Info: Figures/Thesis Map.png  used on input line 25.
@@ -1202,7 +1198,7 @@ Chapter 4.
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Anomaly_types_t.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Anomaly_types_t.pdf, id=657, 845.07718pt x 597.55246pt>
+<Figures/Anomaly_types_t.pdf, id=672, 845.07718pt x 597.55246pt>
 File: Figures/Anomaly_types_t.pdf Graphic file (type pdf)
 <use Figures/Anomaly_types_t.pdf>
 Package pdftex.def Info: Figures/Anomaly_types_t.pdf  used on input line 12.
@@ -1219,7 +1215,19 @@ Overfull \hbox (103.02113pt too wide) in paragraph at lines 12--14
 
 
 
- <./Figures/Anomaly_types_t.pdf>] [26
+ <./Figures/Anomaly_types_t.pdf>]
+\openout2 = `Chapters/Chapter5.aux'.
+
+ (Chapters/Chapter5.tex [26
+
+
+
+
+]
+Chapter 5.
+)
+1: section
+[27] [28
 
 
 
@@ -1244,7 +1252,7 @@ Overfull \hbox (4.54192pt too wide) in paragraph at lines 292--292
  []
 
 1: section
-[27]
+[29]
 Overfull \hbox (8.78593pt too wide) in paragraph at lines 292--292
 [][]\T1/ppl/m/n/10.95 Rich Sture-borg (Jan. 2019). \T1/ppl/m/it/10.95 Conv Nets
  for dum-mies\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]
@@ -1257,22 +1265,19 @@ Overfull \hbox (9.86049pt too wide) in paragraph at lines 292--292
 ion and Clas-si-fi-ca-tion of Anoma-
  []
 
-[28] [29] (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
-(Chapters/Chapter3.aux) (Chapters/Chapter4.aux))
-
-LaTeX Warning: There were multiply-defined labels.
-
+[30] [31] (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
+(Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B659D36EFDC295AF869F1AF220018851;9558.
+(rerunfilecheck)             Checksum: D70DDF458C7A51E3763BE236380D9F34;9930.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27868 strings out of 478847
- 599126 string characters out of 2848386
- 1139832 words of memory out of 3000000
- 45262 multiletter control sequences out of 15000+600000
+ 27890 strings out of 478847
+ 599672 string characters out of 2848386
+ 1142326 words of memory out of 3000000
+ 45272 multiletter control sequences out of 15000+600000
  459400 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  96i,21n,95p,2350b,2491s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1284,9 +1289,9 @@ no/uplb8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/pal
 atino/uplr8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 palatino/uplr8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/u
 rw/palatino/uplri8a.pfb>
-Output written on main.pdf (43 pages, 2277058 bytes).
+Output written on main.pdf (45 pages, 2280023 bytes).
 PDF statistics:
- 844 PDF objects out of 1000 (max. 8388607)
- 164 named destinations out of 1000 (max. 500000)
- 544 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 868 PDF objects out of 1000 (max. 8388607)
+ 169 named destinations out of 1000 (max. 500000)
+ 568 words of extra memory for PDF output out of 10000 (max. 10000000)
 
