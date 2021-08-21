@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.30)  15 AUG 2021 16:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.30)  21 AUG 2021 09:12
 entering extended mode
 **./main.tex
 (main.tex
@@ -700,7 +700,7 @@ package with kernel methods
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 57.
+(scrhack)             need that hack, on input line 54.
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
@@ -726,41 +726,187 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip78
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 91.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 91.
-Package hyperref Info: Option `colorlinks' set `true' on input line 91.
-Package hyperref Info: Option `unicode' set `true' on input line 91.
-Package hyperref Info: Option `breaklinks' set `true' on input line 91.
+(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier.sty
+Package: fourier 2020/03/03 2.2 fourier-GUTenberg package
+Now handling font encoding FML ...
+... no UTF-8 mapping file for font encoding FML
+Now handling font encoding FMS ...
+... no UTF-8 mapping file for font encoding FMS
+Now handling font encoding FMX ...
+... no UTF-8 mapping file for font encoding FMX
+
+(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+futs on input line 1
+12.
+
+(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/fourier\t1futs.fd
+File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
+))
+(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier-orns.st
+y
+Package: fourier-orns 2020/03/03 2.2 fourier-ornaments package
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/ppl/m/n --> T1/futs/m/n on input line 63.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/ppl/b/n --> T1/futs/m/n on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 64.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 72.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `normal' on input line 72.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/zplm/m/it --> FML/futmi/m/it on input line 72.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `bold' on input line 72.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/zplm/b/it --> FML/futmi/m/it on input line 72.
+\symotherletters=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 74.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 76.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 80.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 81.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 85.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 86.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 126.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 126.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/zplm/m/n --> FMS/futm/m/n on input line 126.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 126.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/zplm/b/n --> FMS/futm/m/n on input line 126.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 127.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+27.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/zplm/m/n --> FMX/futm/m/n on input line 127.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 127
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/zplm/m/n --> FMX/futm/m/n on input line 127.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/zplm/b/n --> T1/futs/bx/n on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/zplm/b/n --> T1/futs/bx/n on input line 128.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 129.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 130.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/ppl/m/it --> T1/futs/m/it on input line 130.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/ppl/b/it --> T1/futs/m/it on input line 130.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 199.
+LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 200.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 223.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 228.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 238.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 240.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 242.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 244.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 246.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 248.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 250.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 252.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 254.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 256.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 260.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 261.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 262.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 263.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 264.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 265.
+LaTeX Font Info:    Redeclaring math accent \check on input line 266.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 267.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 268.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
+\symUfutm=\mathgroup6
+)
+(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen183
+\c@nlinenum=\count425
+\TeXr@lab=\toks24
+)
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 100.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 100.
+Package hyperref Info: Option `colorlinks' set `true' on input line 100.
+Package hyperref Info: Option `unicode' set `true' on input line 100.
+Package hyperref Info: Option `breaklinks' set `true' on input line 100.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 91
-.
 
-(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
-File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-)
 (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
-(Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux))
+(Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux)
+(Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 100.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 
+100.
+
+(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
+File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+)
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 100.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
+100.
+
+(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 100.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
+100.
+
+(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 100.
 
 (C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
 slations-basic-dictionary-english.trsl
@@ -768,22 +914,22 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 91.
+or `english'. on input line 100.
 
 (C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count425
-\scratchdimen=\dimen183
+\scratchcounter=\count426
+\scratchdimen=\dimen184
 \scratchbox=\box65
-\nofMPsegments=\count426
-\nofMParguments=\count427
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count428
-\MPscratchDim=\dimen184
-\MPnumerator=\count429
-\makeMPintoPDFobject=\count430
-\everyMPtoPDFconversion=\toks25
+\nofMPsegments=\count427
+\nofMParguments=\count428
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count429
+\MPscratchDim=\dimen185
+\MPnumerator=\count430
+\makeMPintoPDFobject=\count431
+\everyMPtoPDFconversion=\toks26
 )
 (C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -813,11 +959,11 @@ Package caption Info: End \AtBeginDocument code.
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=404.02908pt
-* \textheight=693.49821pt
+* \textheight=693.07988pt
 * \oddsidemargin=13.08826pt
 * \evensidemargin=35.85056pt
 * \topmargin=-29.59087pt
-* \headheight=18.85364pt
+* \headheight=19.27197pt
 * \headsep=19.8738pt
 * \topskip=11.0pt
 * \footskip=27.46295pt
@@ -835,15 +981,15 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 91.
-Package scrbase Info: activating english \abbrevname on input line 91.
-Package scrbase Info: activating english \byname on input line 91.
-Package scrbase Info: activating english \acknowledgementname on input line 91.
-
-Package scrbase Info: activating english \authorshipname on input line 91.
-Package scrbase Info: activating english \constantsname on input line 91.
-Package scrbase Info: activating english \symbolsname on input line 91.
-\big@size=\dimen185
+(scrlayer)             \begin{document} on input line 100.
+Package scrbase Info: activating english \abbrevname on input line 100.
+Package scrbase Info: activating english \byname on input line 100.
+Package scrbase Info: activating english \acknowledgementname on input line 100
+.
+Package scrbase Info: activating english \authorshipname on input line 100.
+Package scrbase Info: activating english \constantsname on input line 100.
+Package scrbase Info: activating english \symbolsname on input line 100.
+\big@size=\dimen186
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -880,9 +1026,9 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 91.
-Package biblatex Info: Reference segment=0 on input line 91.
-Package hyperref Info: Link coloring ON on input line 91.
+Package biblatex Info: Reference section=0 on input line 100.
+Package biblatex Info: Reference segment=0 on input line 100.
+Package hyperref Info: Link coloring ON on input line 100.
  (C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -893,11 +1039,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count431
+\c@section@level=\count432
 )
-LaTeX Info: Redefining \ref on input line 91.
-LaTeX Info: Redefining \pageref on input line 91.
-LaTeX Info: Redefining \nameref on input line 91.
+LaTeX Info: Redefining \ref on input line 100.
+LaTeX Info: Redefining \pageref on input line 100.
+LaTeX Info: Redefining \nameref on input line 100.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -905,11 +1051,11 @@ LaTeX Info: Redefining \nameref on input line 91.
 
 1: section
 
-Package hyperref Warning: Suppressing link with empty target on input line 115.
+Package hyperref Warning: Suppressing link with empty target on input line 124.
 
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 121.
+Package hyperref Warning: Suppressing link with empty target on input line 130.
 
 
 [1
@@ -922,45 +1068,46 @@ Package hyperref Warning: Suppressing link with empty target on input line 121.
 --------------------
  Declaration of Authorship
 --------------------
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
-49.
-(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
+158.
+(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Overfull \hbox (2.67442pt too wide) in paragraph at lines 160--161
+[]\T1/futs/m/n/10.95 Where I have con-sulted the pub-lished work of oth-ers, th
+is is al-ways clearly at-tributed. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 1: section
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
-64.
-(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line
+ 173.
+(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-164.
-
-(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-164.
-
-(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-164.
-
-(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 173.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 173.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 173.
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-164.
+173.
 
 (C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 173.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 173.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 173.
+
 [3] [4
 
 ] [5] [6
@@ -970,7 +1117,7 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
  Abstract
 --------------------
 
-Package hyperref Warning: Suppressing empty link on input line 181.
+Package hyperref Warning: Suppressing empty link on input line 190.
 
 1: section
 [7] [8
@@ -991,9 +1138,17 @@ Package hyperref Warning: Suppressing empty link on input line 181.
 
 ] [12
 
-]
+] (main.lot)
+\tf@lot=\write7
+\openout7 = `main.lot'.
+
+
 1: section
 [13] [14
+
+]
+1: section
+[15] [16
 
 ]
 1: section
@@ -1006,28 +1161,35 @@ Chapter 1.
 
 
 ] [2]
-<Figures/layers.png, id=432, 732.7375pt x 495.8525pt>
+Overfull \hbox (0.75133pt too wide) in paragraph at lines 55--56
+\T1/futs/m/n/10.95 usu-ally re-ceives sep-a-rately weighted in-puts which it su
+ms. The sum is then passed through
+ []
+
+<Figures/layers.png, id=523, 732.7375pt x 495.8525pt>
 File: Figures/layers.png Graphic file (type png)
 <use Figures/layers.png>
 Package pdftex.def Info: Figures/layers.png  used on input line 63.
 (pdftex.def)             Requested size: 219.82294pt x 148.7569pt.
- [3 <./Figures/layers.png>] [4]
-<Figures/LSTM.jpg, id=458, 547.2947pt x 575.14874pt>
+[3 <./Figures/layers.png>]
+Overfull \hbox (9.4311pt too wide) in paragraph at lines 87--88
+\T1/futs/m/n/10.95 such as un-seg-mented, con-nected hand-writ-ing recog-ni-tio
+n, speech recog-ni-tion and anomaly
+ []
+
+[4]
+<Figures/LSTM.jpg, id=552, 547.2947pt x 575.14874pt>
 File: Figures/LSTM.jpg Graphic file (type jpg)
 <use Figures/LSTM.jpg>
 Package pdftex.def Info: Figures/LSTM.jpg  used on input line 101.
 (pdftex.def)             Requested size: 273.64667pt x 287.57367pt.
-<Figures/filter.png, id=464, 330.37714pt x 175.51286pt>
+<Figures/filter.png, id=558, 330.37714pt x 175.51286pt>
 File: Figures/filter.png Graphic file (type png)
 <use Figures/filter.png>
 Package pdftex.def Info: Figures/filter.png  used on input line 117.
 (pdftex.def)             Requested size: 231.2624pt x 122.85815pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5 <./Figures/LSTM.jpg>]
-<Figures/pooling.png, id=479, 1330.9725pt x 481.8pt>
+ [5 <./Figures/LSTM.jpg> <./Figures/filter.png>]
+<Figures/pooling.png, id=572, 1330.9725pt x 481.8pt>
 File: Figures/pooling.png Graphic file (type png)
 <use Figures/pooling.png>
 Package pdftex.def Info: Figures/pooling.png  used on input line 128.
@@ -1037,11 +1199,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-[6 <./Figures/filter.png> <./Figures/pooling.png (PNG copy)>] [7]) [8]
+[6 <./Figures/pooling.png (PNG copy)>] [7]) [8]
 \openout2 = `Chapters/Chapter2.aux'.
 
-
-(Chapters/Chapter2.tex
+ (Chapters/Chapter2.tex
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 13--14
@@ -1079,14 +1240,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 
 
-]
-Overfull \hbox (3.974pt too wide) in paragraph at lines 118--119
-\T1/ppl/m/n/10.95 Because of their abil-ity to re-tain long term mem-ory, Long 
-Short Term Mem-ory (LSTM)
- []
-
-[10]
-<Figures/CNN.png, id=537, 1098.35344pt x 338.76563pt>
+] [10]
+<Figures/CNN.png, id=629, 1098.35344pt x 338.76563pt>
 File: Figures/CNN.png Graphic file (type png)
 <use Figures/CNN.png>
 Package pdftex.def Info: Figures/CNN.png  used on input line 132.
@@ -1096,20 +1251,17 @@ Overfull \hbox (35.30452pt too wide) in paragraph at lines 132--134
  [][] 
  []
 
-
-Overfull \hbox (3.77151pt too wide) in paragraph at lines 139--140
-[]\T1/ppl/m/n/10.95 Once the next time steps are pre-dicted, the val-ues are th
-en passed to the "Anomaly
- []
-
 [11 <./Figures/CNN.png>]
-Overfull \hbox (4.80579pt too wide) in paragraph at lines 153--154
-\T1/ppl/m/n/10.95 The meth-ods were ap-plied on data con-tain-ing point, col-le
-c-tive and con-tex-tual anoma-
- []
-
-[12] [13]
-<Figures/MC-DCNN.png, id=567, 1184.92688pt x 673.76718pt>
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 153.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 153.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 153.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 153.
+ [12]
+<Figures/MC-DCNN.png, id=652, 1184.92688pt x 673.76718pt>
 File: Figures/MC-DCNN.png Graphic file (type png)
 <use Figures/MC-DCNN.png>
 Package pdftex.def Info: Figures/MC-DCNN.png  used on input line 196.
@@ -1119,57 +1271,61 @@ Overfull \hbox (10.70154pt too wide) in paragraph at lines 196--198
  [][] 
  []
 
-[14 <./Figures/MC-DCNN.png>]
-<Figures/U-Net.png, id=578, 1208.26407pt x 430.60875pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (3.40071pt too wide) in paragraph at lines 203--205
+\T1/futs/m/n/10.95 more ro-bust high-level fea-tures. Fur-ther, the MC-DCNN ar-
+chi-tec-ture per-forms much faster
+ []
+
+[13]
+<Figures/U-Net.png, id=664, 1208.26407pt x 430.60875pt>
 File: Figures/U-Net.png Graphic file (type png)
 <use Figures/U-Net.png>
 Package pdftex.def Info: Figures/U-Net.png  used on input line 211.
 (pdftex.def)             Requested size: 386.6524pt x 137.7976pt.
- [15 <./Figures/U-Net.png>]
-<Figures/Synthetic Time Series.png, id=592, 798.73407pt x 855.94781pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <./Figures/MC-DCNN.png>] [15 <./Figures/U-Net.png>]
+<Figures/Synthetic Time Series.png, id=684, 798.73407pt x 855.94781pt>
 File: Figures/Synthetic Time Series.png Graphic file (type png)
 <use Figures/Synthetic Time Series.png>
 Package pdftex.def Info: Figures/Synthetic Time Series.png  used on input line 
 241.
 (pdftex.def)             Requested size: 255.60013pt x 273.90889pt.
+ [16 <./Figures/Synthetic Time Series.png>]
+Overfull \hbox (0.54945pt too wide) in paragraph at lines 261--262
+\T1/futs/m/n/10.95 mark, to com-pare the ob-tained re-sults a lo-gis-tic re-gre
+s-sion (LR) and a RNN clas-si-fier (RNN-
+ []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16] [17 <./Figures/Synthetic Time Series.png>]
-<Figures/ROC.png, id=616, 436.63126pt x 348.55219pt>
+[17]
+<Figures/ROC.png, id=707, 436.63126pt x 348.55219pt>
 File: Figures/ROC.png Graphic file (type png)
 <use Figures/ROC.png>
 Package pdftex.def Info: Figures/ROC.png  used on input line 289.
 (pdftex.def)             Requested size: 174.6494pt x 139.4184pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (21.1052pt too wide) in paragraph at lines 296--297
-[]\T1/ppl/m/n/10.95 The area un-der the above shown curve, how-ever, is classif
-ication-threshold-invariant.
+Overfull \hbox (1.16371pt too wide) in paragraph at lines 296--297
+\T1/futs/m/n/10.95 It mea-sures the qual-ity of the model's pre-dic-tions ir-re
+-spec-tive of what clas-si-fi-ca-tion thresh-
  []
 
-[18]
-Overfull \hbox (3.1306pt too wide) in paragraph at lines 312--313
-\T1/ppl/m/n/10.95 Another ap-proach to com-pare the per-for-mances is to com-pa
-re the com-pu-ta-tion times.
- []
-
-
-Overfull \hbox (15.35057pt too wide) in paragraph at lines 315--316
-\T1/ppl/m/n/10.95 pre-hen-sive com-par-isons of sta-tis-ti-cal meth-ods, tra-di
--tional ma-chine learn-ing ap-proaches
- []
-
-[19 <./Figures/ROC.png>]) [20]
+[18 <./Figures/ROC.png>]) [19]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (Chapters/Chapter3.tex
+ (Chapters/Chapter3.tex [20
+
+
+
+
+]
 Chapter 3.
-<Figures/Thesis Map.png, id=642, 596.2275pt x 388.45125pt>
+<Figures/Thesis Map.png, id=733, 596.2275pt x 388.45125pt>
 File: Figures/Thesis Map.png Graphic file (type png)
 <use Figures/Thesis Map.png>
 Package pdftex.def Info: Figures/Thesis Map.png  used on input line 25.
@@ -1178,120 +1334,203 @@ Package pdftex.def Info: Figures/Thesis Map.png  used on input line 25.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 1: section
-[21
-
-
-
-
-] [22 <./Figures/Thesis Map.png>]
-Overfull \hbox (10.74028pt too wide) in paragraph at lines 53--54
-\T1/ppl/m/n/10.95 The sec-tion Re-sults Anal-y-sis is ded-i-cated to the ex-am-
-i-na-tion of the pre-vi-ously achieved
+[21] [22 <./Figures/Thesis Map.png>]
+Overfull \hbox (5.31369pt too wide) in paragraph at lines 45--46
+\T1/futs/m/n/10.95 Part [][]2[][] Re-lated Lit-er-a-ture showed that there are 
+var-i-ous ap-proaches on how to de-tect anoma-
  []
 
-[23]) [24]
+) [23]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (Chapters/Chapter4.tex
+ (Chapters/Chapter4.tex [24
+
+
+
+
+]
 Chapter 4.
 
+LaTeX Warning: Citation 'YEAR' on page 25 undefined on input line 5.
 
-pdfTeX warning: pdflatex.exe (file ./Figures/Anomaly_types_t.pdf): PDF inclusio
-n: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Anomaly_types_t.pdf, id=672, 845.07718pt x 597.55246pt>
-File: Figures/Anomaly_types_t.pdf Graphic file (type pdf)
-<use Figures/Anomaly_types_t.pdf>
-Package pdftex.def Info: Figures/Anomaly_types_t.pdf  used on input line 12.
-(pdftex.def)             Requested size: 507.05022pt x 358.53424pt.
 
-Overfull \hbox (103.02113pt too wide) in paragraph at lines 12--14
- [][] 
+Overfull \hbox (13.18697pt too wide) in paragraph at lines 8--9
+[]\T1/futs/b/n/10.95 Triviality: \T1/futs/m/n/10.95 Sur-pris-ingly, a siz-able 
+pro-por-tion of the prob-lems in the bench-mark datasets
  []
 
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
+
+ []
+
+
+LaTeX Warning: Citation 'YEAR' on page 25 undefined on input line 18.
+
 1: section
-[25
+[25]
+<Figures/series_anomaly.png, id=772, 438.8897pt x 315.42844pt>
+File: Figures/series_anomaly.png Graphic file (type png)
+<use Figures/series_anomaly.png>
+Package pdftex.def Info: Figures/series_anomaly.png  used on input line 22.
+(pdftex.def)             Requested size: 263.33585pt x 189.25851pt.
 
 
+LaTeX Warning: Citation 'Foorthuis' on page 26 undefined on input line 24.
 
 
- <./Figures/Anomaly_types_t.pdf>]
+LaTeX Warning: Citation 'Foorthuis' on page 26 undefined on input line 24.
+
+[26 <./Figures/series_anomaly.png>]) [27]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (Chapters/Chapter5.tex [26
+ (Chapters/Chapter5.tex [28
 
 
 
 
 ]
 Chapter 5.
-)
+<Figures/synthetic data.png, id=789, 507.39563pt x 465.99094pt>
+File: Figures/synthetic data.png Graphic file (type png)
+<use Figures/synthetic data.png>
+Package pdftex.def Info: Figures/synthetic data.png  used on input line 14.
+(pdftex.def)             Requested size: 304.43973pt x 279.59671pt.
 1: section
-[27] [28
+[29 <./Figures/synthetic data.png>]
+<Figures/Anomalies.png, id=796, 612.78937pt x 439.6425pt>
+File: Figures/Anomalies.png Graphic file (type png)
+<use Figures/Anomalies.png>
+Package pdftex.def Info: Figures/Anomalies.png  used on input line 24.
+(pdftex.def)             Requested size: 367.67645pt x 263.78752pt.
+ [30 <./Figures/Anomalies.png>]) [31]
+\openout2 = `Appendices/AppendixA.aux'.
+
+
+(Appendices/AppendixA.tex [32
+
 
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-92.
+Appendix A.
 
-(C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+
+pdfTeX warning: pdflatex.exe (file ./Figures/summary_CNN_pred_syn.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figures/summary_CNN_pred_syn.pdf, id=815, 597.55246pt x 845.07724pt>
+File: Figures/summary_CNN_pred_syn.pdf Graphic file (type pdf)
+<use Figures/summary_CNN_pred_syn.pdf>
+Package pdftex.def Info: Figures/summary_CNN_pred_syn.pdf  used on input line 1
+2.
+(pdftex.def)             Requested size: 298.7755pt x 422.53758pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figures/summary_GRU_pred_syn.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figures/summary_GRU_pred_syn.pdf, id=816, 597.55246pt x 845.07724pt>
+File: Figures/summary_GRU_pred_syn.pdf Graphic file (type pdf)
+<use Figures/summary_GRU_pred_syn.pdf>
+Package pdftex.def Info: Figures/summary_GRU_pred_syn.pdf  used on input line 2
+0.
+(pdftex.def)             Requested size: 298.7755pt x 422.53758pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+1: section
+[33 <./Figures/summary_CNN_pred_syn.pdf>] [34 <./Figures/summary_GRU_pred_syn.p
+df>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+01.
+ (C:\Users\Kevin\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (35.36867pt too wide) in paragraph at lines 292--292
-[][]\T1/ppl/m/n/10.95 Aggarwal, Charu C. (2013). \T1/ppl/m/it/10.95 Out-lier an
-al-y-sis\T1/ppl/m/n/10.95 . Vol. 9781461463, pp. 1446. \T1/ppl/m/sc/10.95 isbn
-\T1/ppl/m/n/10.95 : 9781461463962.
+Overfull \hbox (12.14264pt too wide) in paragraph at lines 301--301
+[][]\T1/futs/m/n/10.95 Aggarwal, Charu C. (2013). \T1/futs/m/it/10.95 Out-lier 
+anal-y-sis\T1/futs/m/n/10.95 . Vol. 9781461463, pp. 1446. \T1/futs/m/sc/10.95 
+isbn\T1/futs/m/n/10.95 : 9781461463962.
  []
 
 
-Overfull \hbox (4.54192pt too wide) in paragraph at lines 292--292
-[][]\T1/ppl/m/n/10.95 Google (2020). \T1/ppl/m/it/10.95 Clas-si-fi-ca-tion: ROC
- Curve and AUC\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][
-]$\T1/cmtt/m/n/10.95 https : / / developers . google .
+Overfull \hbox (0.79219pt too wide) in paragraph at lines 301--301
+\T1/futs/m/n/10.95 works on Se-quence Mod-el-ing. In: \T1/futs/m/it/10.95 NIPS
+ 2014 Deep Learn-ing and Rep-re-sen-ta-tion Learn-
+ []
+
+
+Overfull \hbox (3.85527pt too wide) in paragraph at lines 301--301
+[][]\T1/futs/m/n/10.95 Çiçek, Özgün et al. (2016).   3D U-net: Learn-ing dense
+ vol-u-met-ric seg-men-ta-tion from sparse
+ []
+
+
+Overfull \hbox (6.59953pt too wide) in paragraph at lines 301--301
+\T1/futs/m/it/10.95 ni-tion, ICFHR\T1/futs/m/n/10.95 . Vol. 2018-August, pp. 80
+85. \T1/futs/m/sc/10.95 isbn\T1/futs/m/n/10.95 : 9781538658758. \T1/futs/m/sc/
+10.95 doi\T1/futs/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1109 / ICFHR -[]
+ []
+
+
+Overfull \hbox (24.27736pt too wide) in paragraph at lines 301--301
+\T1/futs/m/n/10.95 tin-ual pre-dic-tion with LSTM. In: \T1/futs/m/it/10.95 Neu
+-ral Com-pu-ta-tion \T1/futs/m/n/10.95 12.10, pp. 24512471. \T1/futs/m/sc/10.9
+5 issn\T1/futs/m/n/10.95 : 08997667.
  []
 
 1: section
-[29]
-Overfull \hbox (8.78593pt too wide) in paragraph at lines 292--292
-[][]\T1/ppl/m/n/10.95 Rich Sture-borg (Jan. 2019). \T1/ppl/m/it/10.95 Conv Nets
- for dum-mies\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]
-$\T1/cmtt/m/n/10.95 https : / / towardsdatascience .
+[35
+
+
+
+]
+Overfull \hbox (15.23232pt too wide) in paragraph at lines 301--301
+[][]\T1/futs/m/n/10.95 Munir, Mohsin et al. (2019).   Deep-AnT: A Deep Learn-i
+ng Ap-proach for Un-su-per-vised Anomaly
  []
 
 
-Overfull \hbox (9.86049pt too wide) in paragraph at lines 292--292
-[][]\T1/ppl/m/n/10.95 Verner, Alexan-der (2019).   LSTM Net-works for De-tec-t
-ion and Clas-si-fi-ca-tion of Anoma-
+Overfull \hbox (2.48285pt too wide) in paragraph at lines 301--301
+\T1/futs/m/n/10.95 (John Wi-ley and Sons, Chich-ester). In: \T1/futs/m/it/10.9
+5 In-ter-na-tional Jour-nal of Fore-cast-ing \T1/futs/m/n/10.95 12, pp. 175
  []
 
-[30] [31] (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
-(Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux))
+[36] [37] (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
+(Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux)
+(Appendices/AppendixA.aux))
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D70DDF458C7A51E3763BE236380D9F34;9930.
+(rerunfilecheck)             Checksum: D0EABEEF47373721FABD1267D176C5A3;11938.
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27890 strings out of 478847
- 599672 string characters out of 2848386
- 1142326 words of memory out of 3000000
- 45272 multiletter control sequences out of 15000+600000
- 459400 words of font info for 114 fonts, out of 8000000 for 9000
+ 28516 strings out of 478847
+ 608814 string characters out of 2848386
+ 1151207 words of memory out of 3000000
+ 45802 multiletter control sequences out of 15000+600000
+ 557897 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,21n,95p,2350b,2491s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 96i,21n,95p,2350b,2493s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Kevin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk>{C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.e
-nc}<C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palati
-no/uplb8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/pal
-atino/uplr8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-palatino/uplr8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/u
-rw/palatino/uplri8a.pfb>
-Output written on main.pdf (45 pages, 2280023 bytes).
+nc}<C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fou
+rier-ms.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/uto
+pia/putb8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/
+utopia/putr8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/ado
+be/utopia/putr8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/
+adobe/utopia/putri8a.pfb>
+Output written on main.pdf (53 pages, 2331747 bytes).
 PDF statistics:
- 868 PDF objects out of 1000 (max. 8388607)
- 169 named destinations out of 1000 (max. 500000)
- 568 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1029 PDF objects out of 1200 (max. 8388607)
+ 203 named destinations out of 1000 (max. 500000)
+ 700 words of extra memory for PDF output out of 10000 (max. 10000000)
 

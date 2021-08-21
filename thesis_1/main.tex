@@ -51,6 +51,15 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{graphicx}
 
 \usepackage{hyperref}
+
+\usepackage{fourier} 
+\usepackage{array}
+\usepackage{makecell}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
@@ -201,7 +210,7 @@ In the age of Big Data, data analysis becomes ever more important. To analize th
 
 \listoffigures % Prints the list of figures
 
-%\listoftables % Prints the list of tables
+\listoftables % Prints the list of tables
 
 %----------------------------------------------------------------------------------------
 %	ABBREVIATIONS
@@ -281,7 +290,7 @@ In the age of Big Data, data analysis becomes ever more important. To analize th
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-%\include{Appendices/AppendixA}
+\include{Appendices/AppendixA}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 
