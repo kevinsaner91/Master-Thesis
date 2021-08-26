@@ -7,6 +7,7 @@ rm(list = ls()) # clear workspace, use if needed
 
 load("D:/dev/Master Thesis Proposal/root/datasets/energy_data/energy_data_with_anomalies")
 
+data <- data.matrix(data)
 
 train_data <- data[1:10000,1:6]
 mean <- apply(train_data, 2, mean)
@@ -84,7 +85,7 @@ val_gen = generator(
 val_steps <- (19735 - 18000 - lookback) / batch_size
 
 model <- keras_model_sequential() %>% 
-  layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", input_shape = c(lookback,ncol(data))) %>%
+  layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", input_shape = c(lookback,(ncol(data)-1))) %>%
   layer_max_pooling_1d(pool_size = 2) %>%
   layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", padding = "same") %>%
   layer_max_pooling_1d(pool_size = 2) %>%
