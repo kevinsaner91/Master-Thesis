@@ -98,7 +98,7 @@ plot(x, data[2592:5184,]$Windspeed, type = "l", col="red", ylab = "Wind Speed (m
 # two each
 
 #1
-par(mfrow=c(1,1))
+par(mfrow=c(2,1))
 x <- 14581:15157
 plot(x,data[14581:15157,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,27))
 lines(x,data[14581:15157,]$T2,type="l",col="green")
@@ -113,7 +113,7 @@ for (i in 1:74) {
 }
 data[14620:14770,]$anomaly <- TRUE
 
-par(mfrow=c(1,1))
+
 x <- 14581:15157
 plot(x,data[14581:15157,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,27))
 lines(x,data[14581:15157,]$T2,type="l",col="green")
@@ -121,7 +121,7 @@ lines(x,data[14581:15157,]$T3,type="l",col="red")
 
 
 #2
-par(mfrow=c(1,1))
+par(mfrow=c(2,1))
 x <- 9301:9877
 plot(x,data[9301:9877,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,27))
 lines(x,data[9301:9877,]$T2,type="l",col="green")
@@ -135,14 +135,13 @@ for (i in 1:39) {
 }
 data[9640:9720,]$anomaly <- TRUE
 
-par(mfrow=c(1,1))
 x <- 9301:9877
 plot(x,data[9301:9877,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,27))
 lines(x,data[9301:9877,]$T2,type="l",col="green")
 lines(x,data[9301:9877,]$T3,type="l",col="red")
 
 #3
-par(mfrow=c(1,1))
+par(mfrow=c(2,1))
 x <- 17511:18000
 plot(x,data[17511:18000,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(20,29))
 lines(x,data[17511:18000,]$T2,type="l",col="green")
@@ -153,29 +152,26 @@ for (i in 1:130) {
 }
 data[17650:17780,]$anomaly <- TRUE
 
-par(mfrow=c(1,1))
+
 x <- 17511:18000
 plot(x,data[17511:18000,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(20,29))
 lines(x,data[17511:18000,]$T2,type="l",col="green")
 lines(x,data[17511:18000,]$T3,type="l",col="red")
 
 #4
-par(mfrow=c(1,1))
-x <- 12690:13266
-plot(x,data[12690:13266,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,24))
-lines(x,data[12690:13266,]$T2,type="l",col="green")
-lines(x,data[12690:13266,]$T3,type="l",col="red")
+par(mfrow=c(2,1))
+x <- 8500:9076
+plot(x,data[8500:9076,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,24))
+lines(x,data[8500:9076,]$T2,type="l",col="green")
+lines(x,data[8500:9076,]$T3,type="l",col="red")
 
-for (i in 1:100) {
-  data[13050+i,]$T1 <- jitter(22 + i * 0.001, factor = 0.1)
-}
-data[13050:13150,]$anomaly <- TRUE
+data[8730:8890,]$T2 <- (data[8730:8890,]$T2 - 16) / 5 +16 
+data[8730:8890,]$anomaly <- TRUE
 
-par(mfrow=c(1,1))
-x <- 12690:13266
-plot(x,data[12690:13266,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,24))
-lines(x,data[12690:13266,]$T2,type="l",col="green")
-lines(x,data[12690:13266,]$T3,type="l",col="red")
+x <-  8500:9076
+plot(x,data[ 8500:9076,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,24))
+lines(x,data[ 8500:9076,]$T2,type="l",col="green")
+lines(x,data[ 8500:9076,]$T3,type="l",col="red")
 
 #2 deviant cycle room temperatures dont rise as expected, all 3 are affected
 # two
@@ -222,8 +218,6 @@ lines(x,data[7767:8343,]$T2,type="l",col="green")
 lines(x,data[7767:8343,]$T3,type="l",col="red")
 
 
-#3 temporary change, odd behaviour in energy use
-# 3 peaks where curve is flat
 
 #4 distribution based aggregate anomaly, difference between T2 and T3
 # 3 difference between T1 and T3 is too high
@@ -268,7 +262,7 @@ par(mfrow=c(1,1))
 x <- 3456:4032
 plot(x,data[3456:4032,]$Appliances, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps")
 
-data[3804:3816,]$Appliances <- 10
+data[3804:3816,]$Appliances <- 20
 data[3804:3816,]$anomaly <- TRUE
 
 plot(x,data[3456:4032,]$Appliances, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps")
@@ -294,11 +288,74 @@ data[16242:16254,]$anomaly <- TRUE
 
 plot(x,data[16000:16576,]$Appliances, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps")
 
+#12
+par(mfrow=c(1,1))
+x <- 11000:11576
+plot(x,data[11000:11576,]$Appliances, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps")
+
+data[11154:11166,]$Appliances <- 30
+data[11154:11166,]$anomaly <- TRUE
+
+plot(x,data[11000:11576,]$Appliances, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps")
 
 summary(data)
 
-# 5% are anomalous
+# 5% are anomalous in training
 
+
+# Validation Set
+
+#1
+par(mfrow=c(2,1))
+x <- 18000:18576
+plot(x,data[18000:18576,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(19,27))
+lines(x,data[18000:18576,]$T2,type="l",col="green")
+lines(x,data[18000:18576,]$T3,type="l",col="red")
+
+data[18400:18550,]$T3 <- data[18220:18370,]$T2 +3.4
+data[18400:18550,]$anomaly <- TRUE
+
+plot(x,data[18000:18576,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(19,30))
+lines(x,data[18000:18576,]$T2,type="l",col="green")
+lines(x,data[18000:18576,]$T3,type="l",col="red")
+
+#2
+x <- 19000:19576
+plot(x,data[19000:19576,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(19,27))
+lines(x,data[19000:19576,]$T2,type="l",col="green")
+lines(x,data[19000:19576,]$T3,type="l",col="red")
+
+data[19240:19385,]$T2 <- (data[19240:19385,]$T2 - 21.7) / 5 + 21.5
+data[19240:19385,]$T1 <- (data[19240:19385,]$T1 - 24) / 5 + 23.7
+data[19240:19385,]$anomaly <- TRUE
+
+plot(x,data[19000:19576,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(19,27))
+lines(x,data[19000:19576,]$T2,type="l",col="green")
+lines(x,data[19000:19576,]$T3,type="l",col="red")
+
+#3
+x <- 19000:19576
+plot(x,data[19000:19576,]$Appliances, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps")
+
+data[19350:19362,]$Appliances <- 20
+data[19350:19362,]$anomaly <- TRUE
+
+plot(x,data[19000:19576,]$Appliances, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps")
+
+
+#4
+x <- 19576:19735
+plot(x,data[19576:19735,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(19,27))
+lines(x,data[19576:19735,]$T3,type="l",col="red")
+
+
+data[19580:19620,]$T1 <- (data[19580:19620,]$T3 - 26) * -1.5 + 24.5
+data[19580:19620,]$anomaly <- TRUE
+
+plot(x,data[19576:19735,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(19,27))
+lines(x,data[19576:19735,]$T3,type="l",col="red")
+
+save(data, file = "D:/dev/Master Thesis Proposal/root/datasets/energy_data/energy_data_with_anomalies")
 
 
 
