@@ -93,66 +93,82 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.1}ROC and AUC}{17}{subsection.72}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Computation Time}{18}{subsection.74}%
+\contentsline {subsection}{\numberline {2.5.2}F-Score}{18}{subsection.74}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Research Gap}{19}{section.75}%
+\contentsline {subsection}{\numberline {2.5.3}Computation Time}{19}{subsection.75}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Research Methodology}{21}{chapter.76}%
+\contentsline {section}{\numberline {2.6}Research Gap}{19}{section.76}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduction}{21}{section.77}%
+\contentsline {chapter}{\numberline {3}Research Methodology}{21}{chapter.77}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Research Design}{21}{section.78}%
+\contentsline {section}{\numberline {3.1}Introduction}{21}{section.78}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Awareness of the Problem - Literature Review}{22}{subsection.80}%
+\contentsline {section}{\numberline {3.2}Research Design}{21}{section.79}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Suggestion - Data Selection}{22}{subsection.81}%
+\contentsline {subsection}{\numberline {3.2.1}Awareness of the Problem - Literature Review}{22}{subsection.81}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Suggestion - Design of Experiments}{23}{subsection.82}%
+\contentsline {subsection}{\numberline {3.2.2}Suggestion - Data Selection}{22}{subsection.82}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Development - Experiments}{23}{subsection.83}%
+\contentsline {subsection}{\numberline {3.2.3}Suggestion - Design of Experiments}{23}{subsection.83}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Evaluation - Results Analysis}{23}{subsection.85}%
+\contentsline {subsection}{\numberline {3.2.4}Development - Experiments}{23}{subsection.84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.6}Conclusion - Recommendations}{23}{subsection.86}%
+\contentsline {subsection}{\numberline {3.2.5}Evaluation - Results Analysis}{23}{subsection.86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Suggestion}{25}{chapter.87}%
+\contentsline {subsection}{\numberline {3.2.6}Conclusion - Recommendations}{23}{subsection.87}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Problems of Existing Benchmarks}{25}{section.88}%
+\contentsline {chapter}{\numberline {4}Suggestion}{25}{chapter.88}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Anomalies}{26}{section.93}%
+\contentsline {section}{\numberline {4.1}Problems of Existing Benchmarks}{25}{section.89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Dataset Selection}{26}{section.95}%
+\contentsline {section}{\numberline {4.2}Anomalies}{26}{section.94}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}1. Dataset}{26}{subsection.96}%
+\contentsline {section}{\numberline {4.3}Dataset Selection}{26}{section.96}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}2. Dataset}{26}{subsection.97}%
+\contentsline {subsection}{\numberline {4.3.1}1. Dataset}{26}{subsection.97}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}3. Dataset}{26}{subsection.98}%
+\contentsline {subsection}{\numberline {4.3.2}2. Dataset}{26}{subsection.98}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Design of Experiments}{27}{section.99}%
+\contentsline {subsection}{\numberline {4.3.3}3. Dataset}{26}{subsection.99}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}1. Experiment}{27}{subsection.100}%
+\contentsline {section}{\numberline {4.4}Design of Experiments}{27}{section.100}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Development}{29}{chapter.101}%
+\contentsline {subsection}{\numberline {4.4.1}1. Experiment}{27}{subsection.101}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Experiment Design}{29}{section.102}%
+\contentsline {chapter}{\numberline {5}Development}{29}{chapter.102}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Experiment 1}{29}{subsection.103}%
+\contentsline {section}{\numberline {5.1}Experiment Design}{29}{section.103}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dataset}{29}{section*.104}%
+\contentsline {subsection}{\numberline {5.1.1}Title}{29}{subsection.104}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Neural Networks}{30}{section*.107}%
+\contentsline {subsubsection}{Datasets}{29}{section*.105}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Results}{31}{section*.111}%
+\contentsline {subsubsection}{Neural Networks}{29}{section*.106}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Experiment 2}{31}{subsection.112}%
+\contentsline {subsubsection}{Supervised Learning}{29}{section*.107}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Experiment 3}{31}{subsection.113}%
+\contentsline {subsubsection}{Unsupervised Learning}{29}{section*.108}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Model Summaries}{33}{appendix.114}%
+\contentsline {subsubsection}{Results}{30}{section*.109}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{33}{section.115}%
+\contentsline {subsection}{\numberline {5.1.2}Experiment 1}{30}{subsection.110}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}Unsupervised Learning}{33}{subsection.116}%
+\contentsline {subsubsection}{Dataset}{30}{section*.111}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{35}{appendix*.119}%
+\contentsline {subsubsection}{Neural Networks}{31}{section*.114}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Results}{32}{section*.118}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.3}Experiment 2}{33}{subsection.120}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Dataset}{33}{section*.121}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.4}Experiment 3}{34}{subsection.124}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Model Summaries}{35}{appendix.125}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{35}{section.126}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.1}Unsupervised Learning}{35}{subsection.127}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{37}{appendix*.130}%

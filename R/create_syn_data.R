@@ -18,12 +18,12 @@ data <- as.data.frame(data)
 
 data$x <- 1:nrow(data)
 
-
-plot(data[1:72,]$x,data[1:72,]$y, type="l")
-plot(data[1:72,]$x,data[1:72,]$y2, type="l")
-plot(data[1:72,]$x,data[1:72,]$y3, type="l")
-plot(data[1:72,]$x,data[1:72,]$y4, type="l")
-plot(data[1:72,]$x,data[1:72,]$y5, type="l")
+par(mfrow=c(5,1))
+plot(data[1:96,]$x,data[1:96,]$y, type="l", ylab = "y1", xlab = "hours", col = "blue")
+plot(data[1:96,]$x,data[1:96,]$y2, type="l", ylab = "y2", xlab = "hours", col = "blue")
+plot(data[1:96,]$x,data[1:96,]$y3, type="l", ylab = "y3", xlab = "hours", col = "blue")
+plot(data[1:96,]$x,data[1:96,]$y4, type="l" ,ylab = "y4", xlab = "hours", col = "blue")
+plot(data[1:96,]$x,data[1:96,]$y5, type="l", ylab = "y5", xlab = "hours", col = "blue")
 
 
 save(data, file ="C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/synthetic_dataset")

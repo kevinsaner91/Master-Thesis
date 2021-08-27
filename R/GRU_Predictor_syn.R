@@ -104,13 +104,15 @@ model %>% compile(
   metrics = "mae"
 )
 
+tic()
 history <- model %>% fit(
   train_gen,
   steps_per_epoch = 200,
-  epochs = 5,
+  epochs = 10,
   validation_data = val_gen,
   validation_steps = val_steps
 )
+toc()
 
 summary(model)
 
@@ -187,6 +189,7 @@ test_gen = generator(
 test_steps <- (48000 - 45600 - lookback) / batch_size
 
 result <- predict(model, test_gen, steps = 72, verbose = TRUE)
+
 
 result <- as.data.frame(result)
 colnames(result)[1] <- "y"
@@ -291,7 +294,9 @@ test_gen = generator(
 )
 
 
+tic()
 result <- predict(model, test_gen, steps = 47880, verbose = TRUE)
+toc()
 
 load("C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/GRU_Result")
 
@@ -411,6 +416,33 @@ anomaly.y3 <- subset(anomaly$V3, anomaly$V3 > 0.5)
 anomaly.y4 <- subset(anomaly$V4, anomaly$V4 > 0.35) # 2 false positives
 anomaly.y5 <- subset(anomaly$V5, anomaly$V5 > 1.3) # one miss
 
+
+anomaly_predicted1 <- ifelse(anomaly$V1 > 0.4, TRUE, FALSE)
+anomaly_predicted2 <- ifelse(anomaly$V2 > 0.64, TRUE, FALSE)
+anomaly_predicted3 <- ifelse(anomaly$V3 > 0.4, TRUE, FALSE)
+anomaly_predicted4 <- ifelse(anomaly$V4 > 0.3, TRUE, FALSE)
+anomaly_predicted5 <- ifelse(anomaly$V5 > 1.2, TRUE, FALSE)
+
+anomaly_predicted <- anomaly_predicted1 | anomaly_predicted2 | anomaly_predicted3 | anomaly_predicted4 | anomaly_predicted5
+sum(anomaly_predicted == 1)
+
+load("C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/synthetic_dataset_with_anomalies")
+
+data <- data[121:48000,]
+
+anomaly_actual <- NULL
+for (i in 1:1994) {
+  index_end <- i *24
+  index_start <- index_end - 23
+  anomaly_actual <- rbind(anomaly_actual, mean(data[index_start:index_end,7]))
+}
+
+anomaly_actual <- as.data.frame(anomaly_actual)
+
+anomaly_actual <- ifelse(anomaly_actual > 0.5, TRUE, FALSE)
+
+
+F1_Score(anomaly_actual,anomaly_predicted)
 
 
 

@@ -5,7 +5,7 @@ library(tictoc)
 
 rm(list = ls()) # clear workspace, use if needed
 
-load("D:/dev/Master Thesis Proposal/root/datasets/energy_data/energy_data_with_anomalies")
+load("C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/energy_data/energy_data_with_anomalies")
 
 data <- data.matrix(data)
 
@@ -32,13 +32,13 @@ generator <- function(data, lookback, delay, min_index, max_index,
     
     samples <- array(0, dim = c(length(rows), 
                                 lookback / step,
-                                dim(data)[[-1]] -1))
+                                dim(data)[[-1]] -2))
     targets <- array(0, dim = c(length(rows)))
     
     for (j in 1:length(rows)) {
       indices <- seq(rows[[j]] - lookback, rows[[j]], 
                      length.out = dim(samples)[[2]])
-      samples[j,,] <- data[indices,1:6]
+      samples[j,,] <- data[indices,1:5]
       targets[[j]] <- data[rows[[j]] - delay,7] # changed from + to -
     }            
     

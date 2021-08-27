@@ -195,7 +195,9 @@ test_gen = generator(
   batch_size = batch_size
 )
 
+tic()
 result <- predict(model, test_gen, steps = 47880, verbose = TRUE)
+toc()
 
 save(result,file ="C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/CNN_Classifier_result")
 
@@ -226,7 +228,7 @@ for (i in 1:1994) {
 anomaly_actual <- as.data.frame(anomaly_actual)
 
 anomaly_actual <- ifelse(anomaly_actual > 0.5, TRUE, FALSE)
-anomaly_predicted <- ifelse(anomaly_predicted > 0.004, TRUE, FALSE)
+anomaly_predicted <- ifelse(anomaly_predicted > 0.04, TRUE, FALSE)
 
 sum(anomaly_predicted == 1)
 sum(anomaly_actual == 1)
@@ -234,6 +236,9 @@ sum(anomaly_actual == 1)
 par(mfrow=c(2,1))
 plot(1:1994,anomaly_predicted[,], type = "l", col="red",xlab = "Timesteps", ylab = "Anomaly Score Predicted")
 plot(1:1994,anomaly_actual[,], type = "l", col="red",xlab = "Timesteps", ylab = "Anomaly Score Actual")
+
+anomalies <- cbind(anomaly_actual, anomaly_predicted)
+
 
 trivial_null_classifier <- 1:1994
 trivial_null_classifier[1:1994] <- FALSE

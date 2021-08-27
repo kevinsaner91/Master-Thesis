@@ -130,11 +130,19 @@ for (i in 1:3){
 
 summary(data)
 
-
-save(data, file ="C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/synthetic_dataset_with_anomalies")
+#save(data, file ="C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/synthetic_dataset_train_classifier")
+#save(data, file ="C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/synthetic_dataset_with_anomalies")
 
 
 load("C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/synthetic_dataset_with_anomalies")
+
+
+par(mfrow=c(3,1))
+plot(data[18264:18336,]$x,data[18264:18336,]$y, type="l", ylab = "y1", xlab = "hours", col = "blue")
+plot(data[2952:3024,]$x,data[2952:3024,]$y2, type="l", ylab = "y2", xlab = "hours", col = "blue")
+plot(data[721:793,]$x,data[721:793,]$y3, type="l", ylab = "y3", xlab = "hours", col = "blue")
+
+
 
 y5.1 <- 7104 /24
 y5.2 <- 9792 /24
