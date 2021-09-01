@@ -2412,6 +2412,24 @@
     <bcf:citekey order="65">own</bcf:citekey>
     <bcf:citekey order="66">own</bcf:citekey>
     <bcf:citekey order="67">Braei2020</bcf:citekey>
+    <bcf:citekey order="68">YEAR</bcf:citekey>
+    <bcf:citekey order="69">YEAR</bcf:citekey>
+    <bcf:citekey order="70">Foorthuis</bcf:citekey>
+    <bcf:citekey order="71">Foorthuis</bcf:citekey>
+    <bcf:citekey order="72">AUTHOR</bcf:citekey>
+    <bcf:citekey order="72">YEAR</bcf:citekey>
+    <bcf:citekey order="73">own</bcf:citekey>
+    <bcf:citekey order="74">own</bcf:citekey>
+    <bcf:citekey order="75">own</bcf:citekey>
+    <bcf:citekey order="76">own</bcf:citekey>
+    <bcf:citekey order="77">Own or UCI???</bcf:citekey>
+    <bcf:citekey order="78">Own or UCI???</bcf:citekey>
+    <bcf:citekey order="79">Own</bcf:citekey>
+    <bcf:citekey order="80">Own</bcf:citekey>
+    <bcf:citekey order="81">own</bcf:citekey>
+    <bcf:citekey order="82">own</bcf:citekey>
+    <bcf:citekey order="83">own</bcf:citekey>
+    <bcf:citekey order="84">own</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

@@ -125,7 +125,7 @@ The best score was achieved with a CNN applied in an unsupervised fashion. The C
 In a second experiment, a real dataset was used as base. The anomalies were embedded manually. Since, the unsupervised approach with RNN in Experiment 1 proved useless it was not included in the second experiment. Since the anomalies in training and test set were the same in Experiment 1, the CNN supervised was able to recognize some of the anomalies. In the second approach, it should be checked if this is approach could be of any use, if the anomalies consist of a hitherto unknown pattern.
 
 \subsubsection{Dataset}
-The dataset used was derived from the "Appliances Energy Prediction Dataset" available on the UCI Machine Learning Repository. The dataset consists of 9 room temperatures and corresponding humidity levels, energy in use of ligth and appliances, two random variables as well as six variables containing weather information. The dataset consists of 19735 datapoints, where 6 datapoints are drawn per hour. To reduce complexity only 6 variables were used for the anomaly detection task. The variables used are kitchen temperature, living room temperature, laundry room temperature, energy use, outside temperature and wind speed. The variables were selected because they show a dependency. For example, a high outside temperature and energy use result in high temperatures in the different rooms. Figure \ref{fig:temp_dataset} provides an insight on the used dataset. 
+The dataset used was derived from the "Appliances Energy Prediction Dataset" available on the UCI Machine Learning Repository. The dataset consists of 9 room temperatures and corresponding humidity levels, energy in use of ligth and appliances, two random variables as well as six variables containing weather information. The dataset consists of 19735 datapoints, where 6 datapoints are drawn per hour. Of the available variables only 10 variables were used for the anomaly detection task. The variables used are 5 room temperatures, energy use, outside temperature, air pressure and wind speed. The variables were selected because they show a dependency. For example, a high outside temperature and energy use result in high temperatures in the different rooms. Figure \ref{fig:temp_dataset} provides an insight on the used dataset. 
 
 \begin{figure}[h]
 	\centering
@@ -145,7 +145,7 @@ Again, the anomalies were embedded manually into the dataset. The anomalies are 
 	\label{fig:temp_anomalies}
 \end{figure}
 
-12000 of the datapoints are used for training and validation. The remaining datapoints are part of the test set. Overall, approximately 5 percent of the datapoints are marked as anomalous, which represents a relatively high anomaly density.
+
 
 
 \subsection{Experiment 3}
