@@ -1,9 +1,9 @@
-
+rm(list = ls()) # clear workspace, use if needed
 
 library(dplyr)
 
-data <- read.csv("D:/dev/Master Thesis Proposal/root/datasets/energy_data/energydata_complete.csv")
-data <- subset(data, select = c("T1", "T2", "T3", "Appliances", "T_out", "Windspeed"))
+data <- read.csv("../datasets/energy_data/energydata_complete.csv")
+data <- subset(data, select = c("T1", "T2", "T3","T4","T5", "Appliances","lights", "T_out","Press_mm_hg", "Windspeed"))
 # anomalies
 data$anomaly <- FALSE
 
@@ -81,6 +81,18 @@ plot(x,data[2592:5184,]$T_out, type="l", col="red", ylab = "Outside Temp. (C°) "
 plot(x, data[2592:5184,]$Windspeed, type = "l", col="red", ylab = "Wind Speed (m/s)", xlab = "Timesteps")
 
 
+#Plot 4
+x <- 16000:19000
+par(mfrow=c(4,1))
+plot(x,data[16000:19000,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(20,27))
+lines(x,data[16000:19000,]$T2,type="l",col="green")
+lines(x,data[16000:19000,]$T3,type="l",col="red")
+
+plot(x,data[16000:19000,]$Appliances, type="l", col="red", ylab = "Energy Use (W/h)", xlab = "Timesteps")
+
+plot(x,data[16000:19000,]$T_out, type="l", col="red", ylab = "Outside Temp. (C°) ", xlab = "Timesteps")
+
+plot(x, data[16000:19000,]$Windspeed, type = "l", col="red", ylab = "Wind Speed (m/s)", xlab = "Timesteps")
 
 
 
@@ -98,7 +110,7 @@ plot(x, data[2592:5184,]$Windspeed, type = "l", col="red", ylab = "Wind Speed (m
 # two each
 
 #1
-par(mfrow=c(2,1))
+par(mfrow=c(4,1))
 x <- 14581:15157
 plot(x,data[14581:15157,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,27))
 lines(x,data[14581:15157,]$T2,type="l",col="green")
@@ -159,7 +171,7 @@ lines(x,data[17511:18000,]$T2,type="l",col="green")
 lines(x,data[17511:18000,]$T3,type="l",col="red")
 
 #4
-par(mfrow=c(2,1))
+par(mfrow=c(4,1))
 x <- 8500:9076
 plot(x,data[8500:9076,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,24))
 lines(x,data[8500:9076,]$T2,type="l",col="green")
@@ -217,6 +229,22 @@ plot(x,data[7767:8343,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab
 lines(x,data[7767:8343,]$T2,type="l",col="green")
 lines(x,data[7767:8343,]$T3,type="l",col="red")
 
+
+#6.1
+par(mfrow=c(2,1))
+x <- 13000:13576
+plot(x,data[13000:13576,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,26))
+lines(x,data[13000:13576,]$T2,type="l",col="green")
+lines(x,data[13000:13576,]$T3,type="l",col="red")
+
+data[13200:13340,]$T2 <- (data[13200:13340,]$T2 -19.8) / 5 +19.5
+data[13200:13350,]$T3 <- (data[13200:13350,]$T3 -23) / 5 +22.8
+data[13200:13300,]$T1 <- (data[13200:13300,]$T1 - 22) / 5 + 21.8
+data[13200:13350,]$anomaly <- TRUE
+
+plot(x,data[13000:13576,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(16,26))
+lines(x,data[13000:13576,]$T2,type="l",col="green")
+lines(x,data[13000:13576,]$T3,type="l",col="red")
 
 
 #4 distribution based aggregate anomaly, difference between T2 and T3
@@ -355,7 +383,7 @@ data[19580:19620,]$anomaly <- TRUE
 plot(x,data[19576:19735,]$T1, type="l", col="blue", ylab = "Room Temp. (C°)", xlab = "Timesteps", ylim = c(19,27))
 lines(x,data[19576:19735,]$T3,type="l",col="red")
 
-save(data, file = "D:/dev/Master Thesis Proposal/root/datasets/energy_data/energy_data_with_anomalies")
+save(data, file = "../datasets/energy_data/energy_data_with_anomalies")
 
 
 
