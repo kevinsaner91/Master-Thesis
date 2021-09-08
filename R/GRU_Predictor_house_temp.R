@@ -1,19 +1,18 @@
-library(ggplot2)
+library(tictoc)
 library(keras)
 library(tidyverse)
-library(tictoc)
 
 rm(list = ls()) # clear workspace, use if needed
 
-data <- read.csv("../datasets/energy_data/energydata_complete.csv")
-data <- subset(data, select = c("T1", "T2", "T3", "Appliances", "T_out", "Windspeed"))
+load(file = "../datasets/energy_data/energy_data_train")
 
-data <- data.matrix(data[,-7])
 
-train_data <- data[1:45600,1:6]
+data <- data.matrix(data_train)
+
+train_data <- data[1:13152,1:10]
 mean <- apply(train_data, 2, mean)
 std <- apply(train_data, 2, sd)
-data[,1:6] <- scale(data[,1:6], center = mean, scale = std)
+data[,1:10] <- scale(data[,1:10], center = mean, scale = std)
 
 generator <- function(data, lookback, delay, min_index, max_index,
                       shuffle = FALSE, batch_size = 128, step = 6) {
@@ -26,22 +25,35 @@ generator <- function(data, lookback, delay, min_index, max_index,
     } else {
       if (i + batch_size >= max_index)
         i <<- min_index + lookback
-      rows <- c(i:min(i+batch_size-1, max_index))
+      rows <- c(i:min(i+batch_size, max_index))
       i <<- i + length(rows)
     }
     
-    samples <- array(0, dim = c(length(rows),
+    samples <- array(0, dim = c(length(rows), 
                                 lookback / step,
                                 dim(data)[[-1]]))
-    targets <- array(0, dim = c(length(rows), dim(data)[[-1]]-2))
+    
+    output1 <- array(0, dim = c(length(rows),delay, 1))
+    output2 <- array(0, dim = c(length(rows),delay, 1))
+    output3 <- array(0, dim = c(length(rows),delay, 1))
+    output4 <- array(0, dim = c(length(rows),delay, 1))
     
     for (j in 1:length(rows)) {
-      indices <- seq(rows[[j]] - lookback, rows[[j]]-1,
+      indices <- seq(rows[[j]] - lookback, rows[[j]], 
                      length.out = dim(samples)[[2]])
       samples[j,,] <- data[indices,]
-      targets[j,] <- data[rows[[j]] + delay,1:4]
-    }           
-    list(samples, targets)
+      output1[j,,] <- data[rows[[j]] + delay,1] 
+      output2[j,,] <- data[rows[[j]] + delay,2] 
+      output3[j,,] <- data[rows[[j]] + delay,3] 
+      output4[j,,] <- data[rows[[j]] + delay,6]
+      
+      array1 <- array(output1, dim = dim(output1))
+      array2 <- array(output2, dim = dim(output2))
+      array3 <- array(output3, dim = dim(output3))
+      array4 <- array(output4, dim = dim(output4))
+    }            
+    
+    list(samples, list(array1, array2, array3, array4))
   }
 }
 
@@ -53,11 +65,11 @@ generator <- function(data, lookback, delay, min_index, max_index,
 #* `min_index` and `max_index` -- Indices in the `data` array that delimit which timesteps to draw from. This is useful for keeping a segment of the data for validation and another for testing.
 #* `shuffle` -- Whether to shuffle the samples or draw them in chronological order.
 #* `batch_size` -- The number of samples per batch.
-#* `step` -- The period, in timesteps, at which you sample data. You'll set it 6 in order to draw one data point every hour.
+#* `step` -- The period, in timesteps, at which you sample data.
 
-lookback <- 120 # 5d in the past
+lookback <- 288 # 5d in the past
 step <- 1
-delay <- 1 # 1d in the future
+delay <- 1 # 1h in the future
 batch_size <- 128
 
 train_gen <- generator(
@@ -65,7 +77,7 @@ train_gen <- generator(
   lookback = lookback,
   delay = delay,
   min_index = 1,
-  max_index = 10000,
+  max_index = 13152,
   shuffle = FALSE,
   step = step, 
   batch_size = batch_size
@@ -75,13 +87,13 @@ val_gen = generator(
   data,
   lookback = lookback,
   delay = delay,
-  min_index = 18000,
-  max_index = 19735,
+  min_index = 13152,
+  max_index = 16438,
   step = step,
   batch_size = batch_size
 )
 
-val_steps <- (45600 - 43200 - lookback) / batch_size
+val_steps <- (16438 - 13152 - lookback) / batch_size
 
 model <- keras_model_sequential() %>% 
   layer_gru(units = 32,input_shape = list(NULL, ncol(data)), return_sequences = TRUE) %>%
