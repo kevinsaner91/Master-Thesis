@@ -1,32 +1,9 @@
-\chapter{Development}
-
-\section{Experiment Design}
-The following section explains how the different experiments were conducted in detail. When desinging the experiments, the focus on put on comparability rather than optimally tuned neural networks.  Further, it is shown how the datasets and anomalies were engineered.
-
-\subsection{Title}
-The following subsection give information on the chosen setups of the experiments that apply to all experiments, except where specifically stated otherwise.
-
-\subsubsection{Datasets}
-With all datasets the classical train, validation and test dataset approach was chosen. For the supervised approach, the training data was enriched with anomalies, whereas for the unsupervised approach a "clean" dataset was used. The final evaluation was done on a test dataset, which was the same for all approaches.
-
-\subsubsection{Neural Networks}
-When designing the neural networks as activation function "ReLu" (Rectified Linear Unit) is used. The non-linear function is widely used and generally yields good results. As optimizer, the often default choice in machine learning, ADAM (Adaptive Moment Estimation), with the proposed default values, is used \parencite{AUTHOR,YEAR} .
-%https://www.deeplearning.ai/ai-notes/optimization/ 
-
-\subsubsection{Supervised Learning}
-The supervised learning approach refers to training the neural network on a labelled dataset. The dataset used for training already has the anomalies embedded. The task of finding the anomalies can also be described as a classification task, where the neural networks classifies a sequence as normal or anomalous. In such a case binary crossentropy and a sigmoid activation function are used as loss function and last layer activation.
-
-\subsubsection{Unsupervised Learning}
-The unsupervised learning approach refers to the training the neural network on a dataset that is free of anomalies. The neural network merely learns the cycliy pattern of the data. When learning the pattern the loss function applied is Mean Absolute Error (MAE), so the learning task is a regression. The actual anomaly detection hereby is done in a second step. As proposed in section \ref{CNN on univariate series}, the anomaly detector module calculates the Euclidean distance between predicted and actual value, where a large value corresponds to an anomaly.
-
-\subsubsection{Results}
-As results three metrics are reported. First and most important, is the F1-Score which gives insight on the models ability to recognize anomalies. Second and third, the training and inference time are reported.
-   
-
-\subsection{Experiment 1}
+\chapter{Experiments}
+ 
+\section{Experiment 1}
 The first experiment was conducted on a fully synthetic dataset. Supervised and unsupervised learning approaches were used to detect the anomalies. 
 
-\subsubsection{Dataset}
+\subsection{Dataset}
 The dataset, that was created for this first task consisted of five variables. The dataset was created under the assumption, that one measurement was drawn per hour on totally 2000 days, resulting in 48000 datapoints. The variables all follow a cyclic pattern shown in figure \ref{fig:synthetic data} but are not dependent on each other. 
 
 \begin{figure}[h]
@@ -49,7 +26,7 @@ In a second step the dataset was enriched with six different kinds of anomalies.
 
 For the supervised learning approach the dataset was also labelled. In each case the whole day was marked as an anomaly. In total 30 anomalous days were embedded into the dataset, this corresponds to 1.5 percent of anomalous datapoints.
 
-\subsubsection{Neural Networks}
+\subsection{Neural Networks}
 In the first experiment, a CNN was tested against a RNN in a supervised and also in an unsupervised fashion. As RNN, the type GRU was chosen. As some first attempts showed, that it showed sufficient results with improved computation time compared to the more complex LSTM. 
 
 For the supervised learning approach, the chosen architecture can be seen in table \ref{Tab:Supervised Learning1}. 
@@ -89,7 +66,7 @@ The architecture used for the unsupervised learning approach, displayed in table
 	\end{center}
 \end{table}
 
-\subsubsection{Results}
+\subsection{Results}
 
 Inference time and F1-Score are, for all models, calculated on the same test dataset. As the initial dataset, it consists of 48000 datapoints, with 30 anomalous days embedded. For the supervised approach using a RNN, no F1-Score is reported, as the model, just like the trivial null classifier, always predicted no anomaly. Since the anomalies span over a whole day, for all approaches, the results were averaged per day. Resulting in normal or anomalous days. The reported F1-Score was finally calculated on this data. 
 
@@ -121,10 +98,10 @@ The best score was achieved with a CNN applied in an unsupervised fashion. The C
 
 \newpage
 
-\subsection{Experiment 2}
+\section{Experiment 2}
 In a second experiment, a real dataset was used as base. The anomalies were embedded manually. Since, the unsupervised approach with RNN in Experiment 1 proved useless it was not included in the second experiment. Since the anomalies in training and test set were the same in Experiment 1, the CNN supervised was able to recognize some of the anomalies. In the second approach, it should be checked if this is approach could be of any use, if the anomalies consist of a hitherto unknown pattern.
 
-\subsubsection{Dataset}
+\subsection{Dataset}
 The dataset used was derived from the "Appliances Energy Prediction Dataset" available on the UCI Machine Learning Repository. The dataset consists of 9 room temperatures and corresponding humidity levels, energy in use of ligth and appliances, two random variables as well as six variables containing weather information. The dataset consists of 19735 datapoints, where 6 datapoints are drawn per hour. Of the available variables only 10 variables were used for the anomaly detection task. The variables used are 5 room temperatures, energy use, outside temperature, air pressure and wind speed. The variables were selected because they show a dependency. For example, a high outside temperature and energy use result in high temperatures in the different rooms. Figure \ref{fig:temp_dataset} provides an insight on the used dataset. 
 
 \begin{figure}[h]
@@ -145,7 +122,9 @@ Again, the anomalies were embedded manually into the dataset. The anomalies are 
 	\label{fig:temp_anomalies}
 \end{figure}
 
+\subsection{Neural Networks}
+
+\subsection{Results}
 
 
-
-\subsection{Experiment 3}
+\section{Experiment 3}

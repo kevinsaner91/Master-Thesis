@@ -6,19 +6,19 @@
 This section describes which research approach was chosen and why. Further, it elaborates, how the research approach is implemented and what work is done in the corresponding sections. 
 
 \section{Research Design}
-As research methodology design science research was chosen. Design science research typically focuses on the creation and performance of artifacts with the explicit goal of improving the artifact's functional performance. It is often applied to artifact categories such as algorithms, human/computer interfaces and design techniques and therefore optimally suits the purpose of this research project \parencite{Hevner2010}.
-
-Design science research knows five process steps. These are:
+As research methodology experimental research was chosen. Experimental research typically focuses on systematically testing a hypothesis. It is often applied to research fields such as physics and chemistry but also psychology. In the this research project, the hypothesis to test is formulated as the thesis statement (see section \ref{thesisstatement}.\\
+\\
+Experimental research knows five process steps. These are:
 
 \begin{itemize}
 	\item Awareness of the Problem
-	\item Suggestion
-	\item Development
+	\item Design of Experiments
+	\item Experiments
 	\item Evaluation
 	\item Conclusion
 \end{itemize}
 
-Following, it is outlined what will be done in the different process steps and how it is going to help answering the research question. Figure \ref{Thesis Map} hereby, graphically illustrates the different steps. The work performed within the framework of the Master Thesis Proposal relates to the part introduction. 
+Following, it is outlined what will be done in the different process steps and how it is going to help answering the research question and test the thesis statement. Figure \ref{Thesis Map} hereby, graphically illustrates the different steps. The work performed within the framework of the Master Thesis Proposal relates to the part introduction. 
 
 \begin{figure}[h]
 	\centering
@@ -36,23 +36,26 @@ Further, the part Related Literature should deliver insights on how CNN and RNN 
 
 At last, to be able to answer the research question it is investigated how the different architectures, RNN and CNN, can be compared and what measures are important. 
 
-\subsection{Suggestion - Data Selection}
-As described in section \ref{anomalies} Anomaly or Outlier, there are different kinds of anomalies, which are more or less difficult to detect. Section \ref{Transferlearning} Transfer Learning further shows that the relationship of the source domain and target domain data set is of significant importance for the quality of the results. These two facts indicate that the data sets used for the experiments need to be carefully selected. In the suggestion phase suitable data sets are evaluated. At least, three different data sets are selected to conduct experiments. One of these data sets represents the source domain for transfer learning and another one the target domain. To learn the generic features necessary for transfer learning the data set used as source domain needs to consist of a large amount of data.
+\subsection{Design of Experiments}
+In the section Design of Experiments, it is outlined how the experiments are designed. It is described how and why datasets are selected as well as which architecture principles are followed when designing the neural networks.
+
+\subsubsection{Data Selection}
+As described in section \ref{anomalies} Anomaly or Outlier, there are different kinds of anomalies, which are more or less difficult to detect. Section \ref{Transferlearning} Transfer Learning further shows that the relationship of the source domain and target domain data set is of significant importance for the quality of the results. These two facts indicate that the data sets used for the experiments need to be carefully selected. In the Section Design of Experiments suitable data sets are proposed. At least, three different data sets are selected to conduct experiments. One of these data sets represents the source domain for transfer learning and another one the target domain. To learn the generic features necessary for transfer learning the data set used as source domain needs to consist of a large amount of data.
 
 Further, the selected data sets have a direct impact on how the experiments have to be designed. Here the decision has to made, whether an unsupervised or supervised approach is applied. A supervised approach hereby requires a data set where the anomalies are labelled. In contrast, an unsupervised approach can investigate any time series data for anomalies but it is difficult to validate the achieved results. 
 
-\subsection{Suggestion - Design of Experiments}
-In the section Design of Experiments the general setup of the experiments is elaborated. Part \ref{relatedLiterature} Related Literature showed that there are various approaches on how to detect anomalies. Anomalies can either be directly classified by the neural network or detected via an anomaly threshold. This decision has to made based on the chosen data set, since only in a supervised approach a network can be designed to directly classify whether an anomaly is present. In the section Design of Experiments a suitable method to answer the research questions is proposed. In addition, the advantages of the proposed setup, especially with an outlook on how the achieved results can be compared, are elucidated.   
+\subsubsection{Setup of Experiments}
+In the section Setup of Experiments the general setup of the experiments is elaborated. Part \ref{relatedLiterature} Related Literature showed that there are various approaches on how to detect anomalies. Anomalies can either be directly classified by the neural network or detected via an anomaly threshold. This decision has to made based on the chosen data set, since only in a supervised approach a network can be designed to directly classify whether an anomaly is present. In the section Setup of Experiments a suitable method to answer the research questions is proposed. In addition, the advantages of the proposed setup, especially with an outlook on how the achieved results can be compared, are elucidated.   
 
-\subsection{Development - Experiments}
+\subsection{Experiments}
 Finally, in the section Experiments the proposed experimental setup is implemented. The experiments, hereby, focus on multivariate time series, since Braei and Wagner \parencite*{Braei2020} already issued a comprehensive study comparing different approaches for anomaly detection on univariate time series. Since transfer learning was not part of the referred study, the experiments on transfer learning can, however, also be done on univariate time series. 
 
 In the section Experiments, the design of the neural networks is described. It includes the determination of the basic architecture, which is specific to the proposed data set, further, it also includes a lot of tuning work to figure out the best parameters for each neural network. To test the performance of the neural networks, also a baseline classifier is established. The baseline classifier is of a very simple nature. Inspired by the trivial null classifier \footnote{The trivial null classifier always predicts the majority class and thus represents the minimum precision every useful model should surpass.} the established baseline will figure as the benchmark to beat for the deep learning approaches. 
 
 \subsection{Evaluation - Results Analysis}
-The section Results Analysis is dedicated to the examination of the previously achieved results. The results are compared using predefined metrics such as training time, inference time and AUC-value. Looking at these metrics helps to compare the neural network architectures and to determine whether CNN are actually superior to RNN when applied for anomaly detection. Comparing the neural networks to the baseline algorithm further gives some insight on how useful neural netoworks are in general for anomaly detection.
+The section Results Analysis is dedicated to the examination of the previously achieved results. The results are compared using predefined metrics such as training time, inference time and F1-Score. Looking at these metrics helps to compare the neural network architectures and to determine whether CNN are actually superior to RNN when applied for anomaly detection. Comparing the neural networks to the baseline algorithm further gives some insight on how useful neural netoworks are in general for anomaly detection.
 
-\subsection{Conclusion - Recommendations}
-When comparing the neural networks on an anomaly detection task, it is expected that no architecture is overall superior. For example, the high accuracy of RNN comes with the drawback of long training and inference times whereas a CNN with possibly lower accuracy outperforms the RNN escpecially on inference time. Thus, the decision which architecture to use depends on the use case. Therefore, as conclusion a set of recommendations, that show what architecture is best suited for a certain use case, is compiled.
+\subsection{Conclusion}
+When comparing the neural networks on an anomaly detection task, it is expected that no architecture is overall superior. For example, the high accuracy of RNN comes with the drawback of long training and inference times whereas a CNN with possibly lower accuracy outperforms the RNN escpecially on inference time. Thus, the decision which architecture to use depends on the use case. Therefore, as conclusion a set of recommendations, that shows what architecture is best suited for a certain use case, is compiled.
 
 
