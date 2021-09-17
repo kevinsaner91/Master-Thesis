@@ -109,7 +109,7 @@ LSTM was first proposed in 1997 by Schmidhuber and Hochreiter \parencite{Hochrei
 %\subsubsection{GRU}
 % maybe not necessary
 
-\subsubsection{CNN}
+\subsubsection{CNN} \label{CNN}
 In contrast to RNNs Convolutional Neural Networks are generally used for image classification. CNNs work as feature extractors and are able to recognize patterns . CNNs use layers that are not fully connected, to reduce complexity (compare to \ref{NN}). In a CNN, a set number of neurons forms a filter. These filters or kernels are the actual feature extractors. A filter may represent a line or pattern (see Figure \ref{fig:filter}) \parencite{LeCun1998}.
 
 \begin{figure}[h]
@@ -131,7 +131,7 @@ Other typical features of a CNN are the pooling layers. The pooling layers reduc
 	\label{fig:pooling}
 \end{figure}
 
-The idea of max-pooling is to only keep the maximum value of an activation map. In the orange region 7 represents the maximum value, so it is kept while the other values are discarded \parencite{RichStureborg2019}.
+The idea of max-pooling is to only keep the maximum value of an activation map,. In the orange region 7 represents the maximum value, so it is kept while the other values are discarded \parencite{RichStureborg2019}. Using this technique the sharpest features are extracted.
 
 In 2019, Wen and Keys proposed to use CNN also for anomaly detection in time series since it shares many common aspects with image segmentation. A univariate time series is therefore viewed as a one-dimensional image.\\ 
 

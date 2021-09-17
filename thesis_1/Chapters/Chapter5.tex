@@ -3,7 +3,7 @@
 \section{Experiment 1}
 The first experiment was conducted on a fully synthetic dataset. Supervised and unsupervised learning approaches were used to detect the anomalies. 
 
-\subsection{Dataset}
+\subsection{Dataset} \label{dataset1}
 The dataset, that was created for this first task consisted of five variables. The dataset was created under the assumption, that one measurement was drawn per hour on totally 2000 days, resulting in 48000 datapoints. The variables all follow a cyclic pattern shown in figure \ref{fig:synthetic data} but are not dependent on each other. 
 
 \begin{figure}[h]
@@ -29,7 +29,7 @@ For the supervised learning approach the dataset was also labelled. In each case
 \subsection{Neural Networks}
 In the first experiment, a CNN was tested against a RNN in a supervised and also in an unsupervised fashion. As RNN, the type GRU was chosen. As some first attempts showed, that it showed sufficient results with improved computation time compared to the more complex LSTM. 
 
-For the supervised learning approach, the chosen architecture can be seen in table \ref{Tab:Supervised Learning1}. 
+For the supervised learning approach, the chosen architecture can be seen in table \ref{Tab:Supervised Learning1}. The architecture with two hidden layers, first presented in Section \ref{Anomaly Detection on Univariate Time Series}, served as example for the RNN. Supplementary, the CNN was built to match the number of layers used for the RNN, where each convolutional layer was followed by a max-pooling layer (explained in Section \ref{CNN}.     
 
 \begin{table}[h]
 \caption{Supervised Learning}
@@ -48,7 +48,7 @@ For the supervised learning approach, the chosen architecture can be seen in tab
 \end{table}
 
  
-The architecture used for the unsupervised learning approach, displayed in table \ref{Tab:Unupervised Learning1}, looked very similar. The main difference between the two architectures was that the CNN was not built as a sequential model. Instead of having one output layer, the CNN has five parallel output layers, each predicting a time series \footnote{More detailed summaries of the models can be found in appendix \ref{AppendixA}}.     
+The architecture used for the unsupervised learning approach, displayed in table \ref{Tab:Unupervised Learning1}, looked very similar to the architecture of the supervised approach. The main difference between the two architectures was that the CNN was not built as a sequential model, because the used software does not support such an architecture. Instead of having one output layer, the CNN had to be designed with five parallel output layers, each predicting one time series \footnote{More detailed summaries of the models can be found in appendix \ref{AppendixA}}. In comparison, the RNN has just one output layer with 5 neurons, each used to predict a time series.    
 
 \begin{table}[h]
 	\caption{Unupervised Learning}

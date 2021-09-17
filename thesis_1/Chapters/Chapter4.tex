@@ -1,8 +1,18 @@
 \chapter{Design of Experiments}
 In the Chapter Design of Experiments the datasets are selected, general design ideas are explained and established and at last the experiments and their goals are described.
 
-\section{Datasets}
+\section{Tools}
+The following Sections provide insight on what tools, such as software and hardware, is used to conduct the experiments.
 
+\subsection{Hardware}
+All experiments are conducted on a HP Probook equipped with a Intel Core i7 with 2.8GHz and 32GB of RAM installed.
+
+\subsection{Software}
+All necessary code is written in R (Version 4.1.0). To design the neural networks, the library Keras (Version 2.4.0) together with the Tensorflow (Version 2.5.0) backend is used.
+
+
+\section{Datasets}
+Following, it is motivated how and why the proposed data sets are used.
 
 \subsection{Problems of Existing Benchmarks} \label{Problems of Existing Benchmarks}
 In order to find out, which Neural Network architecture is better suited for anomaly detection, first, suitable datasets have to be evaluated. Most of the papers on anomaly detection test on one of the popular benchmark datasets such as the ones created by Numenta, Yahoo, NASA, or Pei's Lab. These benchmark datasets are, however, declared as flawed by Wu and Keogh \parencite{YEAR}. Wu and Keogh state that the benchmark datasets suffer from at least one of the following flaws:
@@ -32,7 +42,7 @@ The neural networks should be used to detect various types of anomalies, in orde
 In the following subsections, it is proposed how and why the datasets are selected for the different experiments.
 
 \subsubsection{1. Dataset}
-The dataset, which should be used for the first experiment will be of synthetic nature. It consists of various cyclic patterns. In a second step, the dataset is enriched with anomalies. This way, two dataset are produced. The dataset without anomalies is used for an unsupervised learning approach whereas the dataset with labelled anomalies is used for a supervised approach. Comparing the two approaches should deliver some first insights on the abilities and learning behavior of the different neural network architectures.   
+The dataset, which should be used for the first experiment will be of synthetic nature. It consists of various cyclic patterns. In a second step, the dataset is enriched with anomalies. This way, two dataset are produced. The dataset without anomalies is used for an unsupervised learning approach whereas the dataset with labelled anomalies is used for a supervised approach. Further information, on how the dataset is created, what it looks like and what the anomalies look like can be found in Section \ref{dataset1} 
 
 \subsubsection{2. Dataset}
 The second dataset, which is used for anomaly detection, should consist of real data. To make sure, that the requirements, mentioned in section \ref{Problems of Existing Benchmarks} are met, the anomalies are embedded manually into the dataset. 
@@ -50,28 +60,33 @@ The following section explains how the different experiments are conducted in de
 The following subsections give information on the chosen setups of the experiments that apply to all experiments, except where specifically stated otherwise.
 
 \subsection{Supervised Learning}
-The supervised learning approach refers to training the neural network on a labelled dataset. The dataset used for training already has the anomalies embedded. The task of finding the anomalies can also be described as a classification task, where the neural networks classifies a sequence as normal or anomalous. In such a case binary crossentropy and a sigmoid activation function are used as loss function and last layer activation fuction. The described loss 
+The supervised learning approach refers to training the neural network on a labelled dataset. The dataset used for training already has the anomalies embedded. The task of finding the anomalies can also be described as a classification task, where the neural networks classifies a sequence as normal or anomalous. In such a case binary crossentropy and a sigmoid activation function are used as loss function and last layer activation fuction. The aforementioned combination means that in the last layer a logistic regression is done, where a threshold is determined to classify the sequences into normal and anomalous.
+
+Supervised classification tasks are used and function well when sufficient samples of all classes are available. In anomaly detection, this is generally not the case, as the anomalous is per definition underrepresented. In the literature (e.g. \parencite{Wen2019}), however, the supervised approach is still successfully used. There are two explanation for this: First, as explained in Section \ref{Problems of Existing Benchmarks}, the density of anomalies is unrealistic and second, the anomalies are of the same kind and always look very similar, so a neural network is able to learn the pattern of the anomaly. In the experiments it is investigated, how the neural networks react when presented with anomalies that are similar to the ones in the training data, but also to previously unseen anomalies of the same kind (e.g. level shift). It is expected, that any neural network will fail when there are not enough similar anomalies in the training data.
 
 \subsection{Unsupervised Learning}
-The unsupervised learning approach refers to the training the neural network on a dataset that is free of anomalies. The neural network merely learns the cyclic pattern of the data. When learning the pattern the loss function applied is Mean Absolute Error (MAE), so the learning task is a regression. The actual anomaly detection hereby is done in a second step. As proposed in section \ref{CNN on univariate series}, the anomaly detector module calculates the Euclidean distance between predicted and actual value, where a large value corresponds to an anomaly.
+The unsupervised learning approach refers to the training of a neural network on a dataset that is free of anomalies. The neural network merely learns the cyclic pattern of the data. When learning the pattern the loss function applied is Mean Absolute Error (MAE), so the learning task is a regression, which itself is supervised. The actual anomaly detection hereby is done in a second step. As proposed in section \ref{CNN on univariate series}, the anomaly detector module, which is also used in this experiment, calculates the Euclidean distance between predicted and actual value, where a large value corresponds to an anomaly.
+
+A unsupervised approach is the more reliable choice when trying to detect anomalies, because the model does not need to know what anomalies might look like. However, setting up this approach is more time consuming, especially when dealing with multivariate time series, as for every variable, a separate detector module and corresponding threshold needs to be set up. It is yet to be expected, that both neural network architectures, CNN and RNN, will outperform their supervised counterparts. 
 
 \subsection{Neural Networks}
+The following Sections describe principles that will be generally used in the design of the neural networks.
 
 \subsubsection{Activation Function}
-When designing the neural networks, as activation function "ReLu" (Rectified Linear Unit) is used. The function is non-linear and basically just returns the input if it is bigger than 0 and otherwise 0. This function is widely used, because of its simplicity and generally yields good results with little computation expenses.  
+When designing the neural networks, as activation function generally "ReLu" (Rectified Linear Unit) is used. The function is non-linear and basically just returns the input if it is bigger than 0 and otherwise 0. This function is widely used, because of its simplicity and generally yields good results with little computation expenses.  
 
 \subsubsection{Optimizer}
-As optimizer, the often used default choice in machine learning, ADAM (Adaptive Moment Estimation), with the proposed default values, is applied \parencite{AUTHOR,YEAR}. ADAM update the learning rate when training making it faster than other optimizer such a Gradient Descent. On the downside, however, ADAM uses the memory for a given batch size and is found to generalize poorly in late stages of training.
+As optimizer, the often used default choice in machine learning, ADAM (Adaptive Moment Estimation), with the proposed default values, is applied \parencite{AUTHOR,YEAR}. ADAM updates the learning rate when training, making it faster than other optimizers such a Gradient Descent. On the downside, however, ADAM uses a lot memory for a given batch size and is found to generalize poorly in late stages of training.
 %https://www.deeplearning.ai/ai-notes/optimization/ 
 
 \subsection{Experiments}
 In the following, it is suggested how the experiments on the 3 different datasets are conducted.
 
 \subsubsection{1. Experiment}
-In a first experiment the learning abilities of RNN and CNN are compared. It is investigated how useful the architectures are in a supervised and in an unsupervised setup. This experiment gives general insight on which setups and approaches work under which conditions. These insights are then investigated further in the second experiment.
+In a first experiment the learning abilities of RNN and CNN are compared. It is investigated how useful the architectures are in a supervised and in an unsupervised setup. This experiment gives general insight on which setups and approaches work under which conditions. As the anomalies embedded are similar in the training and test set, the supervised approaches should yield good results, whereas the unsupervised approaches, given the simplicity of the dataset, are not expected to miss any anomalies.
 
 \subsubsection{2. Experiment}
-The second experiment is conducted on a more challenging dataset. Also the embedded anomalies are of a more challenging nature. The experiment delivers insight on what anomaly types can be detected with neural networks and which types are better to be detected with other (machine learning) approaches.
+The second experiment is conducted on a more challenging dataset. Also the embedded anomalies are of a more challenging nature. All approaches that have been found successful in Experiment 1, are investigated further on the new dataset. Since the dataset consists of more, partially dependent, variables, and more challanging cyclic patterns the architectures used in Experiment 1 have to be extended for example by adding additional layers. 
 
 \subsection{Results}
 As results three metrics are reported. First and most important, is the F1-Score which gives insight on the models ability to recognize anomalies. Second and third, the training and inference time are reported.
