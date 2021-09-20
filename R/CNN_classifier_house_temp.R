@@ -89,9 +89,11 @@ val_steps <- (16440 - 13152 - lookback) / batch_size
 model <- keras_model_sequential() %>% 
   layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", input_shape = c(lookback,(ncol(data)-1))) %>%
   layer_max_pooling_1d(pool_size = 2) %>%
-  layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", padding = "same") %>%
+  layer_conv_1d(filters = 16, kernel_size = 3, activation = "relu", padding = "same") %>%
   layer_max_pooling_1d(pool_size = 2) %>%
+  layer_upsampling_1d() %>%
   layer_flatten() %>%
+  
   layer_dense(units = 16, activation = "relu") %>%
   layer_dense(units = 1, activation = "sigmoid")
 
@@ -105,7 +107,7 @@ tic("start")
 history <- model %>% fit(
   train_gen,
   steps_per_epoch = 200,
-  epochs = 5,
+  epochs = 25,
   validation_data = val_gen,
   validation_steps = val_steps
 )

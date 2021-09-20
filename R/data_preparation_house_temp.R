@@ -170,9 +170,9 @@ plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(18,25), ylab = "Ro
 lines(x, data_test[x,]$T2, type = "l", col = "blue")
 lines(x, data_test[x,]$T3, type = "l", col = "red")
 
-data_test[670:690,]$T1 <- (data_test[670:690,]$T1 - 21) / 2.8 + 21
-data_test[670:690,]$T2 <- (data_test[670:690,]$T2 - 20) / 2.8 + 20
-data_test[670:690,]$T3 <- (data_test[670:690,]$T3 - 22) / 2.8 + 22
+data_test[670:690,]$T1 <- (data_test[670:690,]$T1 - 21) / 5 + 21
+data_test[670:690,]$T2 <- (data_test[670:690,]$T2 - 20) / 5 + 20
+data_test[670:690,]$T3 <- (data_test[670:690,]$T3 - 22) / 5 + 22
 data_test[670:690,]$anomaly <- TRUE
 
 plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(18,25), ylab = "Room Temp (C°)", xlab = "Timesteps (h)")
@@ -185,8 +185,8 @@ plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(18,25), ylab = "Ro
 lines(x, data_test[x,]$T2, type = "l", col = "blue")
 lines(x, data_test[x,]$T3, type = "l", col = "red")
 
-data_test[2340:2365,]$T1 <- (data_test[2340:2365,]$T1 - 21) / 2 + 21
-data_test[2340:2365,]$T2 <- (data_test[2340:2365,]$T2 - 18) / 2.8 + 18
+data_test[2340:2365,]$T1 <- (data_test[2340:2365,]$T1 - 21) / 4 + 21
+data_test[2340:2365,]$T2 <- (data_test[2340:2365,]$T2 - 18) / 5 + 18
 data_test[2340:2365,]$T3 <- (data_test[2340:2365,]$T3 - 22.1) / 2.8 + 22.1
 data_test[2340:2365,]$anomaly <- TRUE
 
@@ -200,9 +200,9 @@ plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(18,25), ylab = "Ro
 lines(x, data_test[x,]$T2, type = "l", col = "blue")
 lines(x, data_test[x,]$T3, type = "l", col = "red")
 
-data_test[2010:2030,]$T1 <- (data_test[2010:2030,]$T1 - 22) / 2.8 + 22
-data_test[2010:2030,]$T2 <- (data_test[2010:2030,]$T2 - 20) / 2.8 + 20
-data_test[2010:2030,]$T3 <- (data_test[2010:2030,]$T3 - 23) / 2.8 + 23
+data_test[2010:2030,]$T1 <- (data_test[2010:2030,]$T1 - 22) / 4 + 22
+data_test[2010:2030,]$T2 <- (data_test[2010:2030,]$T2 - 20) / 5 + 20
+data_test[2010:2030,]$T3 <- (data_test[2010:2030,]$T3 - 23) / 4 + 23
 data_test[2010:2030,]$anomaly <- TRUE
 
 plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(18,25), ylab = "Room Temp (C°)", xlab = "Timesteps (h)")
@@ -242,7 +242,7 @@ save(data_test, file = "../datasets/energy_data/energy_data_test_with_anomalies_
 rm(list = ls()) # clear workspace, use if needed
 
 load(file = "../datasets/energy_data/energy_data_test")
-
+par(mfrow = c(1,1))
 
 diff <- as.data.frame( data_test$T1 - data_test$T2)
 index <- 1450
@@ -251,7 +251,7 @@ plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(16,23), ylab = "Ro
 lines(x, data_test[x,]$T2, type = "l", col = "blue")
 
 data_test[1505:1526,]$T1 <- (data_test[1505:1526,]$T1 - 20.2) * 1.5 + 20.2
-data_test[1505:1526,]$T2 <- (data_test[1505:1526,]$T2 - 16.5) / 1.5 + 16.5
+data_test[1505:1526,]$T2 <- (data_test[1505:1526,]$T2 - 16.5) / 3 + 16.5
 data_test[1505:1526,]$anomaly <- TRUE
 
 plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(16,23), ylab = "Room Temp (C°)", xlab = "Timesteps (h)")
@@ -259,14 +259,14 @@ lines(x, data_test[x,]$T2, type = "l", col = "blue")
 
 index <- 2270
 x <- index:(index + 288)
-plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(16,23), ylab = "Room Temp (C°)", xlab = "Timesteps (h)")
+plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(16,25), ylab = "Room Temp (C°)", xlab = "Timesteps (h)")
 lines(x, data_test[x,]$T2, type = "l", col = "blue")
 
-data_test[2320:2340,]$T1 <- (data_test[2320:2340,]$T1 - 21.5) * 1.2 + 21.5
-data_test[2325:2350,]$T2 <- (data_test[2325:2350,]$T2 - 22) * 1.2 + 22
+data_test[2320:2340,]$T1 <- (data_test[2320:2340,]$T1 - 21.5) * 1.5 + 21.5
+data_test[2325:2350,]$T2 <- (data_test[2325:2350,]$T2 - 22) * 1.5 + 22
 data_test[2320:2350,]$anomaly <- TRUE
 
-plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(16,23), ylab = "Room Temp (C°)", xlab = "Timesteps (h)")
+plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(16,25), ylab = "Room Temp (C°)", xlab = "Timesteps (h)")
 lines(x, data_test[x,]$T2, type = "l", col = "blue")
 
 index <- 2754

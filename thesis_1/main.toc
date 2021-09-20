@@ -177,16 +177,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}Dataset}{34}{subsection.128}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Neural Networks}{34}{subsection.131}%
+\contentsline {subsubsection}{Sampling}{34}{section*.130}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Results}{34}{subsection.132}%
+\contentsline {subsubsection}{Anomalies}{35}{section*.131}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Experiment 3}{34}{section.133}%
+\contentsline {subsection}{\numberline {5.2.2}Neural Networks}{35}{subsection.133}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Model Summaries}{37}{appendix.134}%
+\contentsline {subsection}{\numberline {5.2.3}Results}{35}{subsection.134}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{37}{section.135}%
+\contentsline {section}{\numberline {5.3}Experiment 3}{35}{section.135}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}Unsupervised Learning}{37}{subsection.136}%
+\contentsline {chapter}{\numberline {A}Model Summaries}{37}{appendix.136}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{39}{appendix*.139}%
+\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{37}{section.137}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.1}Unsupervised Learning}{37}{subsection.138}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{39}{appendix*.141}%

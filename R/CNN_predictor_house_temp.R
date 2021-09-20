@@ -98,12 +98,10 @@ val_steps <- (16438 - 13152 - lookback) / batch_size
 input <- layer_input(shape(lookback,ncol(data)))
 
 model <- input %>% 
-  layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", input_shape = c(lookback,ncol(data))) %>%
+  layer_conv_1d(filters = 48, kernel_size = 3, activation = "relu", input_shape = c(lookback,ncol(data))) %>%
   layer_max_pooling_1d(pool_size = 2) %>%
   layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", padding = "same") %>%
-  layer_max_pooling_1d(pool_size = 2) %>%
-  layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", padding = "same") %>%
-  layer_max_pooling_1d(pool_size = 2) %>%
+  layer_conv_1d(filters = 16, kernel_size = 3, activation = "relu", padding = "same") %>%
   layer_flatten()
 
 output1 <- model %>% layer_dense(units = 1)
@@ -212,6 +210,9 @@ toc()
 
 save(result,file ="../datasets/energy_data/CNN_result_house_temp")
 
+
+### Evaluate
+
 rm(list = ls()) # clear workspace, use if needed
 
 load("../datasets/energy_data/CNN_result_house_temp")
@@ -271,7 +272,9 @@ diff2 <- as.data.frame(diff2)
 diff3 <- as.data.frame(diff3)
 diff4 <- as.data.frame(diff4)
 
-par(mfrow= c(4,1))
+sum_diff <- diff + diff2 + diff3
+
+par(mfrow= c(5,1))
 x <- 1:2999
 plot(x,diff[x,], type = "l")
 lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
@@ -284,6 +287,12 @@ lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
 
 plot(x,diff4[x,], type = "l")
 lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
+
+x <- 1:2999
+plot(x,sum_diff[x,], type = "l")
+lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
+
+
 
 
 

@@ -1,6 +1,7 @@
 library(tictoc)
 library(keras)
 library(tidyverse)
+library(tensorflow)
 
 rm(list = ls()) # clear workspace, use if needed
 
@@ -95,11 +96,18 @@ val_gen = generator(
 
 val_steps <- (16438 - 13152 - lookback) / batch_size
 
-model <- keras_model_sequential() %>% 
-  layer_gru(units = 32,input_shape = list(NULL, ncol(data)), return_sequences = TRUE) %>%
-  layer_gru(units = 32, return_sequences = TRUE) %>%
-  layer_gru(units = 32) %>%
+# model <- keras_model_sequential() %>%
+#   layer_gru(units = 64,input_shape = list(NULL, ncol(data)), return_sequences = TRUE) %>%
+#   layer_gru(units = 32, return_sequences = TRUE) %>%
+#   layer_gru(units = 16) %>%
+#   layer_dense(units = 4)
+
+model <- keras_model_sequential() %>%
+  layer_lstm(units = 64,input_shape = list(NULL, ncol(data)), return_sequences = TRUE) %>%
+  layer_lstm(units = 32, return_sequences = TRUE) %>%
+  layer_lstm(units = 16) %>%
   layer_dense(units = 4)
+  
 
 model %>% compile(
   optimizer = optimizer_adam(),
@@ -110,7 +118,7 @@ model %>% compile(
 history <- model %>% fit(
   train_gen,
   steps_per_epoch = 200,
-  epochs = 5,
+  epochs = 1,
   validation_data = val_gen,
   validation_steps = val_steps
 )
@@ -121,7 +129,7 @@ loss <- model %>% evaluate(test_gen, steps = test_steps, verbose = TRUE)
 
 
 
-save_model_hdf5 (model, "GRU_Predictor_house_temp", include_optimizer = TRUE)
+save_model_hdf5 (model, "LSTM_Predictor_house_temp", include_optimizer = TRUE)
 
 
 ####
@@ -130,123 +138,24 @@ save_model_hdf5 (model, "GRU_Predictor_house_temp", include_optimizer = TRUE)
 ##
 ####
 
-rm(list = ls()) # clear workspace, use if needed
-
-model <- load_model_hdf5("GRU_Predictor_syn", compile = TRUE)
-
-load("C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/synthetic_dataset")
-
-data <- data.matrix(data[,-1])
-
-train_data <- data[1:45600,1:5]
-mean <- apply(train_data, 2, mean)
-std <- apply(train_data, 2, sd)
-data[,1:5] <- scale(data[,1:5], center = mean, scale = std)
-
-generator <- function(data, lookback, delay, min_index, max_index,
-                      shuffle = FALSE, batch_size = 128, step = 6) {
-  if (is.null(max_index))
-    max_index <- nrow(data) - delay - 1
-  i <- min_index + lookback
-  function() {
-    if (shuffle) {
-      rows <- sample(c((min_index+lookback):max_index), size = batch_size)
-    } else {
-      if (i + batch_size >= max_index)
-        i <<- min_index + lookback
-      rows <- c(i:min(i+batch_size, max_index))
-      i <<- i + length(rows)
-    }
-    
-    samples <- array(0, dim = c(length(rows), 
-                                lookback / step,
-                                dim(data)[[-1]]))
-    
-    for (j in 1:length(rows)) {
-      indices <- seq(rows[[j]] - lookback, rows[[j]], 
-                     length.out = dim(samples)[[2]])
-      samples[j,,] <- data[indices,]
-    }            
-    
-    list(samples)
-  }
-}
-
-lookback <- 120 # 5d in the past
-step <- 1
-delay <- 1 # 1h in the future
-batch_size <- 0
-
-test_gen = generator(
-  data,
-  lookback = lookback,
-  delay = delay,
-  min_index = 45600,
-  max_index = 48000,
-  step = step,
-  batch_size = batch_size
-)
-
-test_steps <- (48000 - 45600 - lookback) / batch_size
-
-result <- predict(model, test_gen, steps = 72, verbose = TRUE)
-
-result <- as.data.frame(result)
-colnames(result)[1] <- "y"
-colnames(result)[2] <- "y2"
-colnames(result)[3] <- "y3"
-colnames(result)[4] <- "y4"
-colnames(result)[5] <- "y5"
-
-result$x <- 1:nrow(result)
-
-data <- as.data.frame(data)
-data$x <- 1:nrow(data)
-plot(data[45721:45792,]$x,data[45721:45792,]$y,type = "l")
-plot(data[1:72,]$x,data[1:72,]$y,type = "l" )
-
-
-plot(result[1:72,]$x,result[1:72,]$y, type="l", col="red")
-lines(result[1:72,]$x,data[45721:45792,]$y,type="l",col="green")
-
-plot(result[1:72,]$x,result[1:72,]$y2, type="l", col="red")
-lines(result[1:72,]$x,data[45721:45792,]$y2,type="l",col="green")
-
-plot(result[1:72,]$x,result[1:72,]$y3, type="l", col="red")
-lines(result[1:72,]$x,data[45721:45792,]$y3,type="l",col="green")
-
-plot(result[1:72,]$x,result[1:72,]$y4, type="l", col="red")
-lines(result[1:72,]$x,data[45721:45792,]$y4,type="l",col="green")
-
-plot(result[1:72,]$x,result[1:72,]$y5, type="l", col="red")
-lines(result[1:72,]$x,data[45721:45792,]$y5,type="l",col="green")
-
-
-
-
-####
-##
-## Apply the model to the Anomaly Dataset
-##
-####
-
 
 rm(list = ls()) # clear workspace, use if needed
 
-model <- load_model_hdf5("GRU_Predictor_syn", compile = TRUE)
+model <- load_model_hdf5("LSTM_Predictor_house_temp", compile = TRUE)
 
-load("C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/synthetic_dataset")
+load("../datasets/energy_data/energy_data_test_with_anomalies_2")
+load("../datasets/energy_data/energy_data_train")
 
-data <- data.matrix(data[,-1])
+data_test <- data.matrix(data_test)
+data_train <- data.matrix(data_train)
 
-train_data <- data[1:45600,1:5]
+train_data <- data_train[1:13152,1:10]
 mean <- apply(train_data, 2, mean)
 std <- apply(train_data, 2, sd)
 
-load("C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/synthetic_dataset_with_anomalies")
+data_test[,1:10] <- scale(data_test[,1:10], center = mean, scale = std)
 
-data <- data.matrix(data[,c(-1,-7)])
-data[,1:5] <- scale(data[,1:5], center = mean, scale = std)
+data <- data_test
 
 generator <- function(data, lookback, delay, min_index, max_index,
                       shuffle = FALSE, batch_size = 128, step = 6) {
@@ -278,7 +187,7 @@ generator <- function(data, lookback, delay, min_index, max_index,
 }
 
 
-lookback <- 120 # 5d in the past
+lookback <- 288 # 5d in the past
 step <- 1
 delay <- 1 # 1h in the future
 batch_size <- 0
@@ -288,133 +197,99 @@ test_gen = generator(
   lookback = lookback,
   delay = delay,
   min_index = 1,
-  max_index = 48000,
+  max_index = 3288,
   step = step,
   batch_size = batch_size
 )
 
+tic()
+result <- predict(model, test_gen, steps = 3000, verbose = TRUE)
+toc()
 
-result <- predict(model, test_gen, steps = 47880, verbose = TRUE)
+save(result,file ="../datasets/energy_data/LSTM_result_house_temp")
 
-load("C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/GRU_Result")
+
+### Evaluate
+
+
+rm(list = ls()) # clear workspace, use if needed
+
+load("../datasets/energy_data/GRU_result_house_temp")
 
 result <- as.data.frame(result)
-colnames(result)[1] <- "y"
-colnames(result)[2] <- "y2"
-colnames(result)[3] <- "y3"
-colnames(result)[4] <- "y4"
-colnames(result)[5] <- "y5"
+colnames(result)[1] <- "T1"
+colnames(result)[2] <- "T2"
+colnames(result)[3] <- "T3"
+colnames(result)[4] <- "Appliances"
 
 result$x <- 1:nrow(result)
 
-load("C:/Users/Kevin/Documents/MSCBIS/MT/trunk/datasets/SyntheticData/synthetic_dataset_with_anomalies")
+load("../datasets/energy_data/energy_data_train")
+data_train <- data_train[!is.na(data_train$T1),]
 
-data <- data.matrix(data[,c(-1,-7)])
-data[,1:5] <- scale(data[,1:5], center = mean, scale = std)
+data_train <- data.matrix(data_train)
 
-data <- as.data.frame(data)
+train_data <- data_train[1:13152,1:10]
+mean <- apply(train_data, 2, mean)
+std <- apply(train_data, 2, sd)
 
-par(mfrow=c(1,1))
-plot(result[1:72,]$x,result[1:72,]$y, type="l", col="red")
-lines(result[1:72,]$x,data[122:193,]$y,type="l",col="green")
+result[1] <- result[1]*std[1] + mean[1] 
+result[2] <- result[2]*std[2] + mean[2] 
+result[3] <- result[3]*std[3] + mean[3] 
+result[4] <- result[4]*std[6] + mean[6] 
 
-plot(result[1:72,]$x,result[1:72,]$y2, type="l", col="red")
-lines(result[1:72,]$x,data[122:193,]$y2,type="l",col="green")
+load("../datasets/energy_data/energy_data_test_with_anomalies_2")
 
-plot(result[1:72,]$x,result[1:72,]$y3, type="l", col="red")
-lines(result[1:72,]$x,data[122:193,]$y3,type="l",col="green")
+row.names(data_test) <- 1:nrow(data_test)
+data <- as.data.frame(data_test)
 
-plot(result[1:72,]$x,result[1:72,]$y4, type="l", col="red")
-lines(result[1:72,]$x,data[122:193,]$y4,type="l",col="green")
+par(mfrow=c(4,1))
+plot(result[1:576,]$x,result[1:576,]$T1, type="l", col="red")
+lines(result[1:576,]$x,data[289:864,]$T1,type="l",col="green")
 
-plot(result[1:72,]$x,result[1:72,]$y5, type="l", col="red")
-lines(result[1:72,]$x,data[122:193,]$y5,type="l",col="green")
+plot(result[1:576,]$x,result[1:576,]$T2, type="l", col="red")
+lines(result[1:576,]$x,data[289:864,]$T2,type="l",col="green")
 
-diff <- sqrt((data[122:nrow(data),]$y - result[1:nrow(result)-1,]$y)^2)
-diff2 <- sqrt((data[122:nrow(data),]$y2 - result[1:nrow(result)-1,]$y2)^2)
-diff3 <- sqrt((data[122:nrow(data),]$y3 - result[1:nrow(result)-1,]$y3)^2)
-diff4 <- sqrt((data[122:nrow(data),]$y4 - result[1:nrow(result)-1,]$y4)^2)
-diff5 <- sqrt((data[122:nrow(data),]$y5 - result[1:nrow(result)-1,]$y5)^2)
+plot(result[1:576,]$x,result[1:576,]$T3, type="l", col="red")
+lines(result[1:576,]$x,data[289:864,]$T3,type="l",col="green")
+
+plot(result[1:576,]$x,result[1:576,]$Appliances, type="l", col="red")
+lines(result[1:576,]$x,data[289:864,]$Appliances,type="l",col="green")
+
+
+plot(result[2200:2600,]$x,result[2200:2600,]$T2, type="l", col="red")
+lines(result[2200:2600,]$x,data[2489:2889,]$T2,type="l",col="green")
+
+diff <- sqrt((data[289:3287,]$T1 - result[1:nrow(result)-1,]$T1)^2)
+diff2 <- sqrt((data[289:3287,]$T2 - result[1:nrow(result)-1,]$T2)^2)
+diff3 <- sqrt((data[289:3287,]$T3 - result[1:nrow(result)-1,]$T3)^2)
+diff4 <- sqrt((data[289:3287,]$Appliances - result[1:nrow(result)-1,]$Appliances)^2)
+
 
 diff <- as.data.frame(diff)
 diff2 <- as.data.frame(diff2)
 diff3 <- as.data.frame(diff3)
 diff4 <- as.data.frame(diff4)
-diff5 <- as.data.frame(diff5)
 
+sum_diff <- diff*2.5  + diff2 /2 + diff3/2
 
-par(mfrow=c(2,1))
-plot(result[18264:18336,]$x,result[18264:18336,]$y, type="l", col="blue", xlab = "Timesteps", ylab = "Predicted vs. Real")
-lines(result[18264:18336,]$x,data[18265:18337,]$y,type="l",col="green")
+par(mfrow= c(5,1))
+x <- 1:2999
+plot(x,diff[x,], type = "l")
+lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
 
+plot(x,diff2[x,], type = "l")
+lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
 
-plot(result[18264:18336,]$x,diff[18145:18217,], type = "l", col="red", xlab = "Timesteps", ylab = "Anomaly Score")
+plot(x,diff3[x,], type = "l")
+lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
 
+plot(x,diff4[x,], type = "l")
+lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
 
-
-par(mfrow=c(2,1))
-plot(result[21720:21792,]$x,data[21721:21793,]$y,type="l",col="green", xlab = "Timesteps", ylab = "Predicted vs. Real")
-lines(result[21720:21792,]$x,result[21720:21792,]$y, type="l", col="blue")
-
-plot(result[21600:21672,]$x,diff[21600:21672,], type = "l", col="red", xlab = "Timesteps", ylab = "Anomaly Score")
-
-
-###
-#
-# Indicate the anomalies
-#
-###
-anomaly <- NULL
-anomaly2 <- NULL
-anomaly3 <- NULL
-anomaly4 <- NULL
-anomaly5 <- NULL
-
-
-for (i in 1:1994) {
-  index_end <- i *24
-  index_start <- index_end - 23
-  anomaly <- rbind(anomaly, mean(diff[index_start:index_end,]))
-}
-for (i in 1:1994) {
-  index_end <- i *24
-  index_start <- index_end - 23
-  anomaly2 <- rbind(anomaly2, mean(diff2[index_start:index_end,]))
-}
-for (i in 1:1994) {
-  index_end <- i *24
-  index_start <- index_end - 23
-  anomaly3 <- rbind(anomaly3, mean(diff3[index_start:index_end,]))
-}
-for (i in 1:1994) {
-  index_end <- i *24
-  index_start <- index_end - 23
-  anomaly4 <- rbind(anomaly4, mean(diff4[index_start:index_end,]))
-}
-for (i in 1:1994) {
-  index_end <- i *24
-  index_start <- index_end - 23
-  anomaly5 <- rbind(anomaly5, mean(diff5[index_start:index_end,]))
-}
-
-anomaly <- cbind(anomaly,anomaly2,anomaly3,anomaly4,anomaly5)
-anomaly <- as.data.frame(anomaly)
-
-
-par(mfrow=c(5,1))
-plot(1:1994,anomaly$V1, type = "l", col="red",xlab = "Timesteps", ylab = "Anomaly Score y")
-plot(1:1994,anomaly$V2, type = "l", col="red",xlab = "Timesteps", ylab = "Anomaly Score y2")
-plot(1:1994,anomaly$V3, type = "l", col="red",xlab = "Timesteps", ylab = "Anomaly Score y3")
-plot(1:1994,anomaly$V4, type = "l", col="red",xlab = "Timesteps", ylab = "Anomaly Score y4")
-plot(1:1994,anomaly$V5, type = "l", col="red",xlab = "Timesteps", ylab = "Anomaly Score y5")
-
-anomaly.y1 <- subset(anomaly$V1, anomaly$V1 > 0.5)
-anomaly.y2 <- subset(anomaly$V2, anomaly$V2 > 0.64)
-anomaly.y3 <- subset(anomaly$V3, anomaly$V3 > 0.5)
-anomaly.y4 <- subset(anomaly$V4, anomaly$V4 > 0.35) # 2 false positives
-anomaly.y5 <- subset(anomaly$V5, anomaly$V5 > 1.3) # one miss
-
-
+x <- 1:2999
+plot(x,sum_diff[x,], type = "l")
+lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
 
 
 
