@@ -86,14 +86,12 @@ Inference time and F1-Score are, for all models, calculated on the same test dat
 			\hline
 			\thead{RNN Unsupervised} &  0.9979613  & 300s   & 793s   \\
 			\hline
-			\thead{Trivial Null Classifier} &  0.9924204  & -  & -  \\
-			\hline
 		\end{tabular}
 		\label{Tab:Results1}
 	\end{center}
 \end{table}
 
-From the table \ref{Tab:Results1}, it can be seen that the supervised learning approach takes longer to train. This can be explained by the fact that a CNN must first learn the patterns and only then begins to recognise the anomalies. Further, it shows that despite promising results when training, the trivial null classifier achieves a higher F1-Score than the supervised CNN approach. 
+From the table \ref{Tab:Results1}, it can be seen that the supervised learning approach takes longer to train. This can be explained by the fact that a CNN must first learn the patterns and only then begins to recognise the anomalies. \textcolor{red}{Further, it shows that despite promising results when training, the trivial null classifier achieves a higher F1-Score than the supervised CNN approach.}
 The best score was achieved with a CNN applied in an unsupervised fashion. The CNN reported just one false negative and a false positive, compared to one false negative and two false positives of the RNN.
 
 \newpage
