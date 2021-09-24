@@ -115,7 +115,7 @@ The dataset used was derived from the "Appliances Energy Prediction Dataset" ava
 The data set contains datapoints measured between November and May. During this time period, it is observed, that the base temperature steadily rises. This poses the problem, that if the model is trained on data from November to March, with April as validation and May as test period, it is biased on the prevailing colder temperatures. To overcome this problem a special sampling technique was applied. In total six samples of the data set were created. A sample was created by randomly drawing one data point per hour over all datapoints. Four of these sample are then used for training, one for validation and one for testing. Using this sampling technique, the model is no longer biased on certain weather conditions but with the drawback, that the test set is not independent of the test and validation set.   
 
 \subsubsection{Anomalies}
-Again, the anomalies were embedded manually into the dataset. The anomalies are of type level shift, deviant cycles, variaton change and distribution-based aggregate anomaly. The anomalies were embedded into the room temperature variables and the energy use variable. Figure \ref{fig:temp_anomalies} shows examples of the mentioned anomalies.
+Again, the anomalies were embedded manually into the dataset. The anomalies are of type level shift, deviant cycles, variaton change and distribution-based aggregate anomaly. The anomalies were embedded into the room temperature variables (T1, T2, and T3) and the energy use variable. Figure \ref{fig:temp_anomalies} shows examples of the mentioned anomalies.
 
 \begin{figure}[h]
 	\centering
@@ -125,9 +125,52 @@ Again, the anomalies were embedded manually into the dataset. The anomalies are 
 	\label{fig:temp_anomalies}
 \end{figure}
 
+Since the test dataset only consists of around 3000 data points. It was used 3 times so that it does not have an usual high density of anomalies. In the first instance, anomalies that only affected one variable were embedded. In the second instance, anomalies, that affected all 3 temperature variables, such as a deviant cycle, were embedded. On top, in the energy use variable, variation change anomalies were embedded.  In the third instance, distribution based anomalies, which affected T1 and T2, were embedded.
+
 \subsection{Neural Networks}
 
+
+\begin{table}[h]
+	\caption{Unupervised Learning}
+	\begin{center}
+		\begin{tabular}{ | c | c | c | c |}
+			\hline
+			\thead{} & \thead{Input} & \thead{NN-Architecture} & \thead{Output} \\
+			\hline
+			\thead{CNN} &  288 past datapoints  & \makecell{3 1D-Convolutional Layers \\ 1 Max-Pooling Layers }  & \makecell{ 4 Dense Layers with \\ 1 regression outputs}   \\
+			\hline
+			\thead{RNN} &  288 past datapoints  & \makecell{3 LSTM Layers}  & \makecell{ 1 Dense Layers with \\ 4 regression outputs}  \\
+			\hline
+		\end{tabular}
+		\label{Tab:Unupervised Learning1}
+	\end{center}
+\end{table}
+
+Because of the complexity of the dataset, in the second experiment it was decided to use LSTM units instead of GRU in the RNN architecture. LSTM units generally provide more accurate results but use more memory and therefore more computation time.
+%https://analyticsindiamag.com/lstm-vs-gru-in-recurrent-neural-network-a-comparative-study/  
+
 \subsection{Results}
+Because the dataset was much more challenging, the reported scores are clearly inferior to Experiment 1. 
+
+\begin{table}[h]
+	\caption{Results}
+	\begin{center}
+		\begin{tabular}{ | c | c | c | c |}
+			\hline
+			\thead{} & \thead{F1-Score} & \thead{Training Time} & \thead{Inference Time} \\
+			\hline
+			\thead{CNN Unsupervised} & 0.666666 & 172s   & 24s   \\
+			\hline
+			\thead{RNN Unsupervised} & 0.727272 & 5420s   & 93s   \\
+			\hline
+		\end{tabular}
+		\label{Tab:Results2}
+	\end{center}
+\end{table}
+* the inference time reported is on just one instance of the test dataset
+
+\subsubsection{Test Set 1}
+
 
 
 \section{Experiment 3}

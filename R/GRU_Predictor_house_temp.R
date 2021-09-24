@@ -118,7 +118,7 @@ model %>% compile(
 history <- model %>% fit(
   train_gen,
   steps_per_epoch = 200,
-  epochs = 1,
+  epochs = 20,
   validation_data = val_gen,
   validation_steps = val_steps
 )
@@ -143,7 +143,7 @@ rm(list = ls()) # clear workspace, use if needed
 
 model <- load_model_hdf5("LSTM_Predictor_house_temp", compile = TRUE)
 
-load("../datasets/energy_data/energy_data_test_with_anomalies_2")
+load("../datasets/energy_data/energy_data_test_with_anomalies_3")
 load("../datasets/energy_data/energy_data_train")
 
 data_test <- data.matrix(data_test)
@@ -238,7 +238,7 @@ result[2] <- result[2]*std[2] + mean[2]
 result[3] <- result[3]*std[3] + mean[3] 
 result[4] <- result[4]*std[6] + mean[6] 
 
-load("../datasets/energy_data/energy_data_test_with_anomalies_2")
+load("../datasets/energy_data/energy_data_test_with_anomalies_3")
 
 row.names(data_test) <- 1:nrow(data_test)
 data <- as.data.frame(data_test)
@@ -271,15 +271,19 @@ diff2 <- as.data.frame(diff2)
 diff3 <- as.data.frame(diff3)
 diff4 <- as.data.frame(diff4)
 
-sum_diff <- diff*2.5  + diff2 /2 + diff3/2
+sum_diff <- diff  + diff2  + diff3
 
 par(mfrow= c(5,1))
 x <- 1:2999
 plot(x,diff[x,], type = "l")
 lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
+x2 <- rep(1, 2999)
+lines(x, x2 , type = "l", col = "blue")
 
 plot(x,diff2[x,], type = "l")
 lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
+x2 <- rep(3.5, 2999)
+lines(x, x2 , type = "l", col = "blue")
 
 plot(x,diff3[x,], type = "l")
 lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
@@ -290,7 +294,51 @@ lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
 x <- 1:2999
 plot(x,sum_diff[x,], type = "l")
 lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
+x2 <- rep(6.2, 2999)
+lines(x, x2 , type = "l", col = "blue")
 
+
+# Score energy_data_test_with_anomalies_1
+anomaly1 <- ifelse(diff > 1.1, TRUE, FALSE) # 2 correct, 1 FP
+anomaly2 <- ifelse(diff2 > 3.5, TRUE, FALSE) # 2 FN or 1 TP and 12 FP
+
+# Score energy_data_test_with_anomalies_2
+anomaly1 <- ifelse(diff > 1.0, TRUE, FALSE)
+#anomaly2 <- ifelse(diff2 > 3.5, TRUE, FALSE) #irrelevant
+#anomaly3 <- ifelse(diff3 > )                 #irrelevant
+#anomaly_sum <- ifelse(sum_diff > 4.58, TRUE, FALSE)  #irrelevant
+# 3 out of 6 anomalies correctly identified, with one false positive
+
+# Score energy_data_test_with_anomalies_3
+anomaly1 <- ifelse(diff > 1.5, TRUE, FALSE)
+anomaly2<- ifelse(diff2 > 3.3, TRUE, FALSE)
+anomaly_sum <- ifelse(sum_diff > 6.2, TRUE, FALSE) 
+# all (3) anomalies are correctly idenfied in the sum variable, no false positives
+
+
+# Score Total
+####################
+
+# 13 Anomalies
+# 1 False Positive
+# 8 Correctly Classified -> true positives
+# 5 Anomalies missed -> False Negatives 
+
+# 375 days -> 375 instances 
+375 - 13 # 362 true negatives
+
+precision <- 8/(8+1)
+recall <- 8/(8+5)
+f1_score <- 2*(precision * recall)/(precision+recall)
+
+########
+# Trivial Null Classifier
+########
+
+# False negatives 13
+# True Positives 0
+# False Positives 0
+# True Negatives 362
 
 
 

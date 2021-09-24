@@ -292,14 +292,45 @@ x <- 1:2999
 plot(x,sum_diff[x,], type = "l")
 lines(x, data[289:3287,]$anomaly, type = "l", col = "red")
 
+# Score energy_data_test_with_anomalies_1
+anomaly1 <- ifelse(diff > 1.5, TRUE, FALSE) # 2 correct, 1 FP
+anomaly2 <- ifelse(diff2 > 3.3, TRUE, FALSE) # 1 correct, 1 FN
+
+# Score energy_data_test_with_anomalies_2
+anomaly1 <- ifelse(diff > 1.5, TRUE, FALSE)
+#anomaly2 <- ifelse(diff2 > 3.5, TRUE, FALSE) #irrelevant
+#anomaly3 <- ifelse(diff3 > )                 #irrelevant
+#anomaly_sum <- ifelse(sum_diff > 4.58, TRUE, FALSE)  #irrelevant
+# one out of 6 anomalies correctly identified, with one false positive
+
+# Score energy_data_test_with_anomalies_3
+anomaly1 <- ifelse(diff > 1.5, TRUE, FALSE)
+anomaly2<- ifelse(diff2 > 3.3, TRUE, FALSE)
+anomaly_sum <- ifelse(sum_diff > 4.58, TRUE, FALSE) 
+# all (3) anomalies are correctly idenfied in the sum variable, no false positives
 
 
+# Score Total
+####################
 
+# 13 Anomalies
+# 1 False Positive
+# 7 Correctly Classified -> true positives
+# 6 Anomalies missed -> False Negatives 
 
-anomaly_actual <- as.data.frame(anomaly_actual)
+# 375 days -> 375 instances 
+375 - 13 # 362 true negatives
 
-anomaly_actual <- ifelse(anomaly_actual > 0.5, TRUE, FALSE)
+precision <- 7/(7+1)
+recall <- 7/(7+6)
+f1_score <- 2*(precision * recall)/(precision+recall)
 
+########
+# Trivial Null Classifier
+########
 
-F1_Score(anomaly_actual,anomaly_predicted)
+# False negatives 13
+# True Positives 0
+# False Positives 0
+# True Negatives 362
 
