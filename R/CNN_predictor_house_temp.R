@@ -145,7 +145,7 @@ rm(list = ls()) # clear workspace, use if needed
 
 model <- load_model_hdf5("CNN_Predictor_house_temp", compile = TRUE)
 
-load("../datasets/energy_data/energy_data_test_with_anomalies_3")
+load("../datasets/energy_data/energy_data_test_with_anomalies_1")
 load("../datasets/energy_data/energy_data_train")
 
 data_test <- data.matrix(data_test)
@@ -273,6 +273,11 @@ diff3 <- as.data.frame(diff3)
 diff4 <- as.data.frame(diff4)
 
 sum_diff <- diff + diff2 + diff3
+
+mean(diff) #0.2712066
+mean(diff2) #0.5236905
+mean(diff3) #0.3210329
+mean(diff4) #29.64146
 
 par(mfrow= c(5,1))
 x <- 1:2999

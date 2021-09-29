@@ -143,7 +143,7 @@ rm(list = ls()) # clear workspace, use if needed
 
 model <- load_model_hdf5("LSTM_Predictor_house_temp", compile = TRUE)
 
-load("../datasets/energy_data/energy_data_test_with_anomalies_3")
+load("../datasets/energy_data/energy_data_test_with_anomalies_1")
 load("../datasets/energy_data/energy_data_train")
 
 data_test <- data.matrix(data_test)
@@ -238,7 +238,7 @@ result[2] <- result[2]*std[2] + mean[2]
 result[3] <- result[3]*std[3] + mean[3] 
 result[4] <- result[4]*std[6] + mean[6] 
 
-load("../datasets/energy_data/energy_data_test_with_anomalies_3")
+load("../datasets/energy_data/energy_data_test_with_anomalies_1")
 
 row.names(data_test) <- 1:nrow(data_test)
 data <- as.data.frame(data_test)
@@ -265,6 +265,10 @@ diff2 <- sqrt((data[289:3287,]$T2 - result[1:nrow(result)-1,]$T2)^2)
 diff3 <- sqrt((data[289:3287,]$T3 - result[1:nrow(result)-1,]$T3)^2)
 diff4 <- sqrt((data[289:3287,]$Appliances - result[1:nrow(result)-1,]$Appliances)^2)
 
+mean(diff) #0.1741582
+mean(diff2) #0.9009765
+mean(diff3) #0.7244096
+mean(diff4) #72.91079
 
 diff <- as.data.frame(diff)
 diff2 <- as.data.frame(diff2)

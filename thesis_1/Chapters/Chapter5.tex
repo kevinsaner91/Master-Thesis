@@ -66,6 +66,18 @@ The architecture used for the unsupervised learning approach, displayed in table
 	\end{center}
 \end{table}
 
+\subsubsection{Learning}
+The learning on the data was done using a so called generator function, which iterates over the dataset in predefined steps. The generator function takes the following parameters:
+
+\begin{itemize}
+	\item Lookback - How many data points are considered
+	\item Step - How the data is sampled
+	\item Delay - How many time steps in the future is the target
+	\item Batch Size - The number of samples per batch
+\end{itemize}
+
+For this experiment, the parameter lookback was set to 120 data points in the past, which represent the last 5 days. The parameters step and delay were set to one and as batch size 128 was chosen. This setup can be described as follows: There are 128 ordered samples taken from the the whole dataset. Each of these samples consist of 120 data point of past data. With the step parameter set to one, there is not further subsampling done. With delay set to one, the task for the neural network is to predict the next data point in the future per sample for each variable in the data set. This task is done simultaneously for all samples of batch, which speeds up training.
+
 \subsection{Results}
 
 Inference time and F1-Score are, for all models, calculated on the same test dataset. As the initial dataset, it consists of 48000 datapoints, with 30 anomalous days embedded. For the supervised approach using a RNN, no F1-Score is reported, as the model, just like the trivial null classifier, always predicted no anomaly. Since the anomalies span over a whole day, for all approaches, the results were averaged per day. Resulting in normal or anomalous days. The reported F1-Score was finally calculated on this data. 
@@ -100,7 +112,7 @@ The best score was achieved with a CNN applied in an unsupervised fashion. The C
 In a second experiment, a real dataset was used as base. The anomalies were embedded manually. Since, the unsupervised approach with RNN in Experiment 1 proved useless it was not included in the second experiment. Since the anomalies in training and test set were looked very similar in Experiment 1, the supervised approach with the CNN was able to recognize some of the anomalies. In the second approach, it should be investigated if this is approach could be of any use, if the anomalies consist of a hitherto unknown pattern.
 
 \subsection{Dataset}
-The dataset used was derived from the "Appliances Energy Prediction Dataset" available on the UCI Machine Learning Repository. The dataset consists of 9 room temperatures and corresponding humidity levels, energy in use of ligth and appliances, two random variables as well as six variables containing weather information. The dataset consists of 19735 datapoints, where 6 datapoints are drawn per hour. Of the available variables only 10 variables were used for the anomaly detection task. The variables used are 5 room temperatures, energy use, outside temperature, air pressure and wind speed. The variables were selected because they show a dependency. For example, a high outside temperature and energy use result in high temperatures in the different rooms. Figure \ref{fig:temp_dataset} provides an insight on the used dataset.
+The dataset used was derived from the "Appliances Energy Prediction Dataset" available on the UCI Machine Learning Repository. The dataset consists of 9 room temperatures (T1 to T9) and corresponding humidity levels, energy in use of ligth and appliances, two random variables for testing regression models as well as six variables containing weather information. The dataset consists of 19735 datapoints, where 6 datapoints are drawn per hour. Of the available variables only 10 variables were used for the anomaly detection task. The variables used are 5 room temperatures, energy use, outside temperature, air pressure and wind speed. The variables were selected because they show a dependency. For example, a high outside temperature and energy use result in high temperatures in the different rooms. Figure \ref{fig:temp_dataset} provides an insight on the used dataset.
 
 
 \begin{figure}[h]
@@ -125,10 +137,10 @@ Again, the anomalies were embedded manually into the dataset. The anomalies are 
 	\label{fig:temp_anomalies}
 \end{figure}
 
-Since the test dataset only consists of around 3000 data points. It was used 3 times so that it does not have an usual high density of anomalies. In the first instance, anomalies that only affected one variable were embedded. In the second instance, anomalies, that affected all 3 temperature variables, such as a deviant cycle, were embedded. On top, in the energy use variable, variation change anomalies were embedded.  In the third instance, distribution based anomalies, which affected T1 and T2, were embedded.
+Since the test dataset only consists of around 3000 data points. It was used 3 times so that it does not have an unusual high density of anomalies. In the first instance, anomalies that only affected one variable were embedded. In the second instance, anomalies, that affected all 3 temperature variables, such as a deviant cycle, were embedded. On top, in the energy use variable, variation change anomalies were embedded.  In the third instance, distribution based anomalies, which affected T1 and T2, were embedded.
 
 \subsection{Neural Networks}
-
+Since the RNN did not show sufficient results in Experiment 1 when given a classification task, it was excluded from Experiment 2. The CNN, however, which had probably learned the patterns of the anomalies, was tested again. Since the anomalies in the training and test set are not as similar anymore as in Experiment 1, it is expected that the CNN classifier performs very poorly. 
 
 \begin{table}[h]
 	\caption{Unupervised Learning}
@@ -142,15 +154,30 @@ Since the test dataset only consists of around 3000 data points. It was used 3 t
 			\thead{RNN} &  288 past datapoints  & \makecell{3 LSTM Layers}  & \makecell{ 1 Dense Layers with \\ 4 regression outputs}  \\
 			\hline
 		\end{tabular}
-		\label{Tab:Unupervised Learning1}
+		\label{Tab:Unupervised Learning2}
 	\end{center}
 \end{table}
 
-Because of the complexity of the dataset, in the second experiment it was decided to use LSTM units instead of GRU in the RNN architecture. LSTM units generally provide more accurate results but use more memory and therefore more computation time.
+Because of the complexity of the dataset, in the second experiment it was decided to use LSTM units instead of GRU in the RNN architecture. LSTM units generally provide more accurate results but use more memory and therefore more computation time. The designed neural network architecture consisted of 3 sequential layers of LSTM layers and one dense layer with four neurons. 
 %https://analyticsindiamag.com/lstm-vs-gru-in-recurrent-neural-network-a-comparative-study/  
 
+The CNN was designed as follows, three layers of one-dimensional convolutional layers were used. After the first layer, a max-pooling layer was added, to reduce the feature space and improve computation time. Since the CNN is expected to predict a time series, the feature space was not further reduced through max-pooling layers, since it would negatively affect the accuracy.  
+
+\subsubsection{Learning}
+The generator function for this experiment was configured as follows:
+
+\begin{itemize}
+	\item Lookback - 288 past data points: 12 days in the past
+	\item Step - 1: no further subsampling is done
+	\item Delay - 1: the next time step in the future is predicted
+	\item Batch Size - 128 samples per batch
+\end{itemize}
+
+First experiments were done only using data from T1, T2, T3, energy use and outside temperature to predict T1 to T3 and energy use. However as the result were not satisfactory to predict accurate enough results to find the embedded anomalies, further variables were added for training. Finally, the following variables were used to make predictions: T1 to T5, Appliances and Ligths, Outside Temperature, Air Pressure and Windspeed. As the anomlies, however, were only embedded into 4 out of the 10 variables, only the affected 4 were predicted.
+
+
 \subsection{Results}
-Because the dataset was much more challenging, the reported scores are clearly inferior to Experiment 1. 
+Because the dataset was much more challenging, the reported scores are clearly inferior to Experiment 1. In total there were 13 anomalies to be detected in the test sets. The difference in F1-Score between the CNN and the RNN results from one anomaly which was not recognized by the CNN. However, training the RNN takes over 30 times longer than the CNN.
 
 \begin{table}[h]
 	\caption{Results}
@@ -159,9 +186,9 @@ Because the dataset was much more challenging, the reported scores are clearly i
 			\hline
 			\thead{} & \thead{F1-Score} & \thead{Training Time} & \thead{Inference Time} \\
 			\hline
-			\thead{CNN Unsupervised} & 0.666666 & 172s   & 24s   \\
+			\thead{CNN Unsupervised} & 0.666666 & 172s   & 24s*   \\
 			\hline
-			\thead{RNN Unsupervised} & 0.727272 & 5420s   & 93s   \\
+			\thead{RNN Unsupervised} & 0.727272 & 5420s   & 93s*   \\
 			\hline
 		\end{tabular}
 		\label{Tab:Results2}
@@ -169,7 +196,31 @@ Because the dataset was much more challenging, the reported scores are clearly i
 \end{table}
 * the inference time reported is on just one instance of the test dataset
 
-\subsubsection{Test Set 1}
+The above reported results show the overall performance. Since the dataset was more complex than in the first experiment, the results are investigated further to show how the different architecture performed on the various anomalies and how accurate the predictions were on the different variables. First of all, the average error of the predicted variables are investigated further. The below results are reported from the first test set.
+
+\begin{table}[h]
+	\caption{Results}
+	\begin{center}
+		\begin{tabular}{ | c | c | c | c |}
+			\hline
+			\thead{} & \thead{CNN} & \thead{RNN} \\
+			\hline
+			\thead{T1} & 0.2712066° C   & 0.1741582° C    \\
+			\hline
+			\thead{T2} & 0.5236905° C    & 0.9009765° C    \\
+			\hline
+			\thead{T3} & 0.3210329° C    & 0.7244096° C    \\
+			\hline
+			\thead{Appliances} & 29.64146 Wh   & 72.91079 Wh   \\
+			\hline
+		\end{tabular}
+		\label{Tab:Average_error}
+	\end{center}
+\end{table}
+
+From Table \ref{Tab:Average_error}, it can be seen that the CNN outperforms the RNN on all variables except T1. The RNN, however, performs exceptionally well on T1. Comparing these results to the performance of the different architectures on the first test set
+
+
 
 
 
