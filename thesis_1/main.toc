@@ -191,18 +191,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Experiment 3}{38}{section.140}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Model Summaries}{39}{appendix.141}%
+\contentsline {subsubsection}{Dataset}{38}{section*.141}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{39}{section.142}%
+\contentsline {chapter}{\numberline {A}Model Summaries}{41}{appendix.143}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}Supervised Learning}{39}{subsection.143}%
+\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{41}{section.144}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}Unsupervised Learning}{40}{subsection.146}%
+\contentsline {subsection}{\numberline {A.1.1}Supervised Learning}{41}{subsection.145}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Summary of Models of Experiment 2}{40}{section.149}%
+\contentsline {subsection}{\numberline {A.1.2}Unsupervised Learning}{42}{subsection.148}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Supervised Learning}{40}{subsection.150}%
+\contentsline {section}{\numberline {A.2}Summary of Models of Experiment 2}{42}{section.151}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Unsupervised Learning}{40}{subsection.151}%
+\contentsline {subsection}{\numberline {A.2.1}Supervised Learning}{42}{subsection.152}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{45}{appendix*.154}%
+\contentsline {subsection}{\numberline {A.2.2}Unsupervised Learning}{42}{subsection.153}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{47}{appendix*.156}%
