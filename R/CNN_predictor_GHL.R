@@ -69,7 +69,7 @@ generator <- function(data, lookback, delay, min_index, max_index,
 #* `batch_size` -- The number of samples per batch.
 #* `step` -- The period, in timesteps, at which you sample data.
 
-lookback <- 500 # 5d in the past
+lookback <- 1000 # 5d in the past
 step <- 1
 delay <- 1 # 1h in the future
 batch_size <- 128
@@ -100,10 +100,12 @@ val_steps <- (1535118 - 1381606 - lookback) / batch_size
 input <- layer_input(shape(lookback,ncol(data)))
 
 model <- input %>% 
-  layer_conv_1d(filters = 48, kernel_size = 3, activation = "relu", input_shape = c(lookback,ncol(data))) %>%
+  layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", input_shape = c(lookback,ncol(data))) %>%
   layer_max_pooling_1d(pool_size = 2) %>%
-  layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", padding = "same") %>%
+  layer_dropout(rate = 0.5) %>%
+  layer_conv_1d(filters = 24, kernel_size = 3, activation = "relu", padding = "same") %>%
   layer_max_pooling_1d(pool_size = 2) %>%
+  layer_dropout(rate = 0.5) %>%
   layer_conv_1d(filters = 16, kernel_size = 3, activation = "relu", padding = "same") %>%
   layer_max_pooling_1d(pool_size = 2) %>%
   layer_flatten()
@@ -128,11 +130,13 @@ tic()
 history <- model %>% fit(
   train_gen,
   steps_per_epoch = 200,
-  epochs = 10,
+  epochs = 8,
   validation_data = val_gen,
   validation_steps = val_steps
 )
 toc()
+
+# dropout 0.2 -> 1.8022
 
 summary(model)
 
@@ -198,7 +202,7 @@ generator <- function(data, lookback, delay, min_index, max_index,
 }
 
 
-lookback <- 500 # 5d in the past
+lookback <- 1000 # 5d in the past
 step <- 1
 delay <- 1 # 1h in the future
 batch_size <- 0
