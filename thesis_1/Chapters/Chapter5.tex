@@ -1,10 +1,10 @@
-\chapter{Experiments}
+\chapter{Experiments} \label{Experiments}
  
 \section{Experiment 1}
 The first experiment was conducted on a fully synthetic dataset. Supervised and unsupervised learning approaches were used to detect the anomalies. 
 
 \subsection{Dataset} \label{dataset1}
-The dataset, that was created for this first task consisted of five variables. The dataset was created under the assumption, that one measurement was drawn per hour on totally 2000 days, resulting in 48000 datapoints. The variables all follow a cyclic pattern shown in figure \ref{fig:synthetic data} but are not dependent on each other. 
+The dataset, that was created for this first task consisted of five variables. The dataset was created under the assumption, that one measurement was drawn per hour on totally 2000 days, resulting in 48000 datapoints. The variables all follow a cyclic pattern shown in Figure \ref{fig:synthetic data} but are not dependent on each other. 
 
 \begin{figure}[h]
 	\centering
@@ -109,10 +109,10 @@ The best score was achieved with a CNN applied in an unsupervised fashion. The C
 \newpage
 
 \section{Experiment 2}
-In a second experiment, a real dataset was used as base. The anomalies were embedded manually. Since, the unsupervised approach with RNN in Experiment 1 proved useless it was not included in the second experiment. Since the anomalies in training and test set were looked very similar in Experiment 1, the supervised approach with the CNN was able to recognize some of the anomalies. In the second approach, it should be investigated if this is approach could be of any use, if the anomalies consist of a hitherto unknown pattern.
+In a second experiment, a real dataset was used as base. The anomalies were embedded manually. Since, the unsupervised approach with RNN in Experiment 1 proved useless it was not included in the second experiment. Since the anomalies in training and test set looked very similar as in Experiment 1, the supervised approach with the CNN was able to recognize some of the anomalies. In the second approach, it should be investigated if this is approach could be of any use, if the anomalies consist of a hitherto unknown pattern.
 
 \subsection{Dataset}
-The dataset used was derived from the "Appliances Energy Prediction Dataset" available on the UCI Machine Learning Repository. The dataset consists of 9 room temperatures (T1 to T9) and corresponding humidity levels, energy in use of ligth and appliances, two random variables for testing regression models as well as six variables containing weather information. The dataset consists of 19735 datapoints, where 6 datapoints are drawn per hour. Of the available variables only 10 variables were used for the anomaly detection task. The variables used are 5 room temperatures, energy use, outside temperature, air pressure and wind speed. The variables were selected because they show a dependency. For example, a high outside temperature and energy use result in high temperatures in the different rooms. Figure \ref{fig:temp_dataset} provides an insight on the used dataset.
+The dataset used was derived from the "Appliances Energy Prediction Dataset" available on the UCI Machine Learning Repository. The dataset consists of 9 room temperatures (T1 to T9) and corresponding humidity levels, energy in use of ligth and appliances, two random variables for testing regression models as well as six variables containing weather information. The dataset consists of 19735 datapoints, where 6 datapoints are drawn per hour. Of the available variables only 10 variables were used for the anomaly detection task. The variables used are 5 room temperatures, energy use, outside temperature, air pressure and wind speed. The variables were selected because they show a dependency. For example, a high outside temperature and energy use result in high temperatures in the different rooms. Figure \ref{fig:temp_dataset} shows an extract from the used dataset.
 
 
 \begin{figure}[h]
@@ -218,13 +218,20 @@ The above reported results show the overall performance. Since the dataset was m
 	\end{center}
 \end{table}
 
-From Table \ref{Tab:Average_error}, it can be seen that the CNN outperforms the RNN on all variables except T1. The RNN, however, performs exceptionally well on T1. Comparing these results to the performance of the different architectures on the first test set
+From Table \ref{Tab:Average_error}, it can be seen that the CNN outperforms the RNN on all variables except T1. The RNN, however, performs exceptionally well on T1. 
+Comparing these results to the performance of the RNN on the first test set shows that only the anomalies that were embedded in T1 are detected. A similar picture emerges in the second test set, since the anomalies affect all 3 variables, a deflection should be visible on all three reported anomaly scores. However, the anomalies detected by the RNN were only visible in the anomaly score reported off T1. While the CNN is not as accurate on any of the variables as the RNN is on T1, this is how the CNN was outperformed. Out off the six anomalies embedded in the second test set, the CNN only recognized one, while the RNN recognized three out of six. On the third test set, both architecture types were able to recognize all anomalies.
 
+Further, as expected, both architecture types were not able to find the variation change anomalies embedded in the variable appliances. The anomaly was constructed as when too many times the exact same value is reported. This anomaly type is with the necessary domain knowledge relatively easy to find.
 
 \section{Experiment 3}
+In the third experiment, a dataset that was dedicated to anomaly detection tasks was used. The achieved results can therefore be verified on previously achieved results.
 
-\subsubsection{Dataset}
-The first three variables are the sensors of RT level , RT temperature and HT temperature. The last two variables correspond to gasoil source on/off and heater on/off control signals.
+\subsection{Dataset}
+%https://arxiv.org/pdf/1612.06676.pdf
+The dataset was introduced by Filonov et al. \parencite{Filonov2016}. The data was created by modelling a gasoil plant heating loop The GHL model has three reservoirs: a receiving tank (RT), a heating tank (HT), and a collection tank (CT). The technological challenge is to heat gasoil in RT to 60 degrees Celsius, resulting in a viscosity sufficient for transmission to CT. In the model, the heating is done in stages. A fraction of gasoil is heated to 60 degrees Celsius in HT and then pumped back into RT to relax for a while. This technique is done until the RT temperature reaches 60 degrees Celsius. After that, the RT is poured into the CT. Following that, RT is refilled from an infinite source.
+
+The training dataset consists of 19 variables with no anomalies, the most important, according to Filonov et al. \parencite{Filonov2016} are shown in Figure \ref{fig:GHL_data}. The sensors for RT level, RT temperature, and HT temperature are the first three variables. The remaining two variables relate to control signals for turning on/off the gasoil supply and turning on/off the heater.
+
 
 \begin{figure}[h]
 	\centering
@@ -234,4 +241,10 @@ The first three variables are the sensors of RT level , RT temperature and HT te
 	\label{fig:GHL_data}
 \end{figure}
 
+\subsubsection{Anomalies}
+As anomalies cyber attacks were introduced. The anomalies each concern the variable RT Level, which had been changed without authorisation. By setting the value for RT Level to different levels and varying the the time of attack many test sets were created.  
+
+\subsection{Neural Networks}
+
+\subsection{Results}
 
