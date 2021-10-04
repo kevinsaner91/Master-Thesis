@@ -103,7 +103,9 @@ model <- input %>%
   layer_conv_1d(filters = 48, kernel_size = 3, activation = "relu", input_shape = c(lookback,ncol(data))) %>%
   layer_max_pooling_1d(pool_size = 2) %>%
   layer_conv_1d(filters = 32, kernel_size = 3, activation = "relu", padding = "same") %>%
+  layer_max_pooling_1d(pool_size = 2) %>%
   layer_conv_1d(filters = 16, kernel_size = 3, activation = "relu", padding = "same") %>%
+  layer_max_pooling_1d(pool_size = 2) %>%
   layer_flatten()
 
 output1 <- model %>% layer_dense(units = 1)
@@ -143,22 +145,26 @@ save_model_hdf5 (model, "CNN_Predictor_GHL", include_optimizer = TRUE)
 ##
 ####
 
-
 rm(list = ls()) # clear workspace, use if needed
 
-model <- load_model_hdf5("CNN_Predictor_house_temp", compile = TRUE)
+model <- load_model_hdf5("CNN_Predictor_GHL", compile = TRUE)
 
-load("../datasets/energy_data/energy_data_test_with_anomalies_1")
-load("../datasets/energy_data/energy_data_train")
+load("../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23")
+data_test <- data
+data_test <- subset(data_test, select = c("RT_level", "RT_temperature.T", "HT_temperature.T","inj_valve_act","heater_act"))
+
+
+load("../datasets/GHL/GHL_training_data")
+data_train <- data
 
 data_test <- data.matrix(data_test)
 data_train <- data.matrix(data_train)
 
-train_data <- data_train[1:13152,1:10]
+train_data <- data_train[1:1381606,]
 mean <- apply(train_data, 2, mean)
 std <- apply(train_data, 2, sd)
 
-data_test[,1:10] <- scale(data_test[,1:10], center = mean, scale = std)
+data_test[,1:5] <- scale(data_test[,1:5], center = mean, scale = std)
 
 data <- data_test
 
@@ -192,7 +198,7 @@ generator <- function(data, lookback, delay, min_index, max_index,
 }
 
 
-lookback <- 288 # 5d in the past
+lookback <- 500 # 5d in the past
 step <- 1
 delay <- 1 # 1h in the future
 batch_size <- 0
@@ -202,67 +208,66 @@ test_gen = generator(
   lookback = lookback,
   delay = delay,
   min_index = 1,
-  max_index = 3288,
+  max_index = 204560,
   step = step,
   batch_size = batch_size
 )
 
 tic()
-result <- predict(model, test_gen, steps = 3000, verbose = TRUE)
+result <- predict(model, test_gen, steps = 204060, verbose = TRUE)
 toc()
 
-save(result,file ="../datasets/energy_data/CNN_result_house_temp")
+save(result,file ="../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23_result")
 
 
 ### Evaluate
 
 rm(list = ls()) # clear workspace, use if needed
 
-load("../datasets/energy_data/CNN_result_house_temp")
+load("../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23_result")
 
 result <- as.data.frame(result)
-colnames(result)[1] <- "T1"
-colnames(result)[2] <- "T2"
-colnames(result)[3] <- "T3"
-colnames(result)[4] <- "Appliances"
+colnames(result)[1] <- "RT_level"
+colnames(result)[2] <- "RT_temperature.T"
+colnames(result)[3] <- "HT_temperature.T"
+colnames(result)[4] <- "inj_valve_act"
+colnames(result)[5] <- "heater_act"
+
 
 result$x <- 1:nrow(result)
 
-load("../datasets/energy_data/energy_data_train")
-data_train <- data_train[!is.na(data_train$T1),]
+load("../datasets/GHL/GHL_training_data")
+data_train <- data
 
 data_train <- data.matrix(data_train)
 
-train_data <- data_train[1:13152,1:10]
+train_data <- data_train[1:1381606,]
 mean <- apply(train_data, 2, mean)
 std <- apply(train_data, 2, sd)
 
 result[1] <- result[1]*std[1] + mean[1] 
 result[2] <- result[2]*std[2] + mean[2] 
 result[3] <- result[3]*std[3] + mean[3] 
-result[4] <- result[4]*std[6] + mean[6] 
+result[4] <- result[4]*std[4] + mean[4] 
+result[5] <- result[5]*std[5] + mean[5] 
 
-load("../datasets/energy_data/energy_data_test_with_anomalies_3")
+load("../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23")
 
-row.names(data_test) <- 1:nrow(data_test)
-data <- as.data.frame(data_test)
+par(mfrow=c(5,1))
+plot(result[1:5000,]$x,result[1:5000,]$RT_level, type="l", col="red")
+lines(result[1:5000,]$x,data[501:5500,]$RT_level,type="l",col="green")
 
-par(mfrow=c(4,1))
-plot(result[1:576,]$x,result[1:576,]$T1, type="l", col="red")
-lines(result[1:576,]$x,data[289:864,]$T1,type="l",col="green")
+plot(result[1:5000,]$x,result[1:5000,]$RT_temperature.T, type="l", col="red")
+lines(result[1:5000,]$x,data[501:5500,]$RT_temperature.T,type="l",col="green")
 
-plot(result[1:576,]$x,result[1:576,]$T2, type="l", col="red")
-lines(result[1:576,]$x,data[289:864,]$T2,type="l",col="green")
+plot(result[1:5000,]$x,result[1:5000,]$HT_temperature.T, type="l", col="red")
+lines(result[1:5000,]$x,data[501:5500,]$HT_temperature.T,type="l",col="green")
 
-plot(result[1:576,]$x,result[1:576,]$T3, type="l", col="red")
-lines(result[1:576,]$x,data[289:864,]$T3,type="l",col="green")
+plot(result[1:5000,]$x,result[1:5000,]$inj_valve_act, type="l", col="red")
+lines(result[1:5000,]$x,data[501:5500,]$inj_valve_act,type="l",col="green")
 
-plot(result[1:576,]$x,result[1:576,]$Appliances, type="l", col="red")
-lines(result[1:576,]$x,data[289:864,]$Appliances,type="l",col="green")
-
-
-plot(result[2200:2600,]$x,result[2200:2600,]$T2, type="l", col="red")
-lines(result[2200:2600,]$x,data[2489:2889,]$T2,type="l",col="green")
+plot(result[1:5000,]$x,result[1:5000,]$heater_act, type="l", col="red")
+lines(result[1:5000,]$x,data[501:5500,]$heater_act,type="l",col="green")
 
 diff <- sqrt((data[289:3287,]$T1 - result[1:nrow(result)-1,]$T1)^2)
 diff2 <- sqrt((data[289:3287,]$T2 - result[1:nrow(result)-1,]$T2)^2)
