@@ -3,56 +3,58 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Input, Hidden and Output Layers}}{3}{figure.caption.17}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Input, Hidden and Output Layers}}{3}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Gates and Cell of LSTM}}{5}{figure.caption.27}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Gates and Cell of LSTM}}{5}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Example of a Filter used in CNN}}{5}{figure.caption.29}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Example of a Filter used in CNN}}{5}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Example of max-pooling}}{6}{figure.caption.30}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces CNN Architecture for Time Series}}{11}{figure.caption.51}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Architecture of the MC-DCNN}}{14}{figure.caption.61}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces U-Net Architecture}}{15}{figure.caption.63}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Synthetic Time Series}}{16}{figure.caption.67}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Example ROC-Curve}}{18}{figure.caption.73}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Example of max-pooling}}{6}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Thesis Map}}{22}{figure.caption.80}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces CNN Architecture for Time Series}}{11}{figure.caption.49}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Architecture of the MC-DCNN}}{14}{figure.caption.59}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces U-Net Architecture}}{15}{figure.caption.61}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Example ROC-Curve}}{16}{figure.caption.64}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Quantitative Anomalies}}{26}{figure.caption.100}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Thesis Map}}{20}{figure.caption.71}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Synthetic Dataset}}{31}{figure.caption.119}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Synthetic Anomalies}}{32}{figure.caption.120}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Temperature Dataset}}{35}{figure.caption.130}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Temperature Dataset Anomalies}}{36}{figure.caption.133}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Temperature Dataset Anomalies}}{39}{figure.caption.142}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Quantitative Anomalies}}{24}{figure.caption.91}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Synthetic Anomalies}}{41}{figure.caption.146}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Synthetic Dataset}}{29}{figure.caption.112}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Synthetic Anomalies}}{42}{figure.caption.147}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Synthetic Anomalies}}{30}{figure.caption.113}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Synthetic Anomalies}}{43}{figure.caption.149}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Temperature Dataset}}{33}{figure.caption.123}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Synthetic Anomalies}}{44}{figure.caption.150}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Temperature Dataset Anomalies}}{34}{figure.caption.126}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Synthetic Anomalies}}{45}{figure.caption.154}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Temperature Dataset Anomalies}}{38}{figure.caption.135}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Synthetic Anomalies}}{46}{figure.caption.155}%
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Experiment 1: Summary of CNNs for supervised learning}}{43}{figure.caption.144}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Experiment 1: Summary of GRU for supervised learning}}{44}{figure.caption.145}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Experiment 1: Summary of CNN for unsupervised learning}}{45}{figure.caption.147}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Experiment 1: Summary of GRU for unsupervised learning}}{46}{figure.caption.148}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Experiment 2: Summary of CNN for unsupervised learning}}{47}{figure.caption.152}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Experiment 2: Summary of LSTM for unsupervised learning}}{48}{figure.caption.153}%
