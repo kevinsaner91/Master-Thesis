@@ -39,7 +39,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Temperature Dataset Anomalies}}{34}{figure.caption.126}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Temperature Dataset Anomalies}}{38}{figure.caption.135}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Most important var}}{37}{figure.caption.135}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Effect of Downsampling}}{38}{figure.caption.137}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Attack on max-RT-level set point}}{39}{figure.caption.140}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Unauthorized change of max HT temperature}}{39}{figure.caption.141}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -47,14 +53,14 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Experiment 1: Summary of CNNs for supervised learning}}{43}{figure.caption.144}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Experiment 1: Summary of CNNs for supervised learning}}{45}{figure.caption.150}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Experiment 1: Summary of GRU for supervised learning}}{44}{figure.caption.145}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Experiment 1: Summary of GRU for supervised learning}}{46}{figure.caption.151}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Experiment 1: Summary of CNN for unsupervised learning}}{45}{figure.caption.147}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Experiment 1: Summary of CNN for unsupervised learning}}{47}{figure.caption.153}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Experiment 1: Summary of GRU for unsupervised learning}}{46}{figure.caption.148}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Experiment 1: Summary of GRU for unsupervised learning}}{48}{figure.caption.154}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Experiment 2: Summary of CNN for unsupervised learning}}{47}{figure.caption.152}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Experiment 2: Summary of CNN for unsupervised learning}}{49}{figure.caption.158}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Experiment 2: Summary of LSTM for unsupervised learning}}{48}{figure.caption.153}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Experiment 2: Summary of LSTM for unsupervised learning}}{50}{figure.caption.159}%

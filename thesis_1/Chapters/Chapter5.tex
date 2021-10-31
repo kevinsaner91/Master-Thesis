@@ -237,14 +237,56 @@ The training dataset consists of 19 variables with no anomalies, the most import
 	\centering
 	\includegraphics[scale=0.7]{Figures/GHL_data}
 	\decoRule
-	\caption[Temperature Dataset Anomalies]{Examples of Embedded Anomalies \parencite{Own}}
+	\caption[Most important var]{Examples of Embedded Anomalies \parencite{Own}}
 	\label{fig:GHL_data}
 \end{figure}
 
+\subsubsection{Sampling}
+The dataset intended for training contains 1.5 million data points, on top all 48 available test sets contain around 200'000 data points. The training of the neural networks and the evaluation of the test sets would therefore take a lot of time. Inspired by the work of Wen and Keyes \parencite*{Wen2019}, who took snapshots of length 50'000 and then downsampled them to a length of 1'024, the data should also be downsampled to save time. Since the data contains many repeating data points, which have the same value, only every 10th datapoint was kept. This greatly reduces the computation time, since the training dataset now contains only 150'000 data points while a test set contains 20'000 data points. On the downside, using this technique to downsample information is lost, which possibly effects the results of the chosen anomaly detection methods. Figure \ref{fig:downsample} shows how the variable RT Level behaves on 5'000 data points pre- and post-downsampling.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{Figures/downsample}
+	\decoRule
+	\caption[Effect of Downsampling]{Effect of Downsampling on RT Level \parencite{Own}}
+	\label{fig:downsample}
+\end{figure}
+
+\newpage
 \subsubsection{Anomalies}
-As anomalies cyber attacks were introduced. The anomalies each concern the variable RT Level, which had been changed without authorisation. By setting the value for RT Level to different levels and varying the the time of attack many test sets were created.  
+As anomalies cyber attacks were introduced. The anomalies each concern the variables RT Level and HT Temperature, which had been changed without authorisation. By setting the value for RT Level or HT Temperature to different levels and varying the the time of attack 48 test sets were created. Each test set contains one anomaly of either type. Figure \ref{fig:anomaly_max_RT_level} and Figure \ref{fig:anomaly_max_HT_temp} give an example of the anomalies look like. In red, the variable Danger, which is the control variable that indicates the anomaly, is shown \footnote{In Figure \ref{fig:anomaly_max_HT_temp} the variable Danger was artificially lifted to a base level of 290 instead of 0}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{Figures/anomaly_max_RT_level}
+	\decoRule
+	\caption[Attack on max-RT-level set point]{Attack on max-RT-level set point \parencite{Own}}
+	\label{fig:anomaly_max_RT_level}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{Figures/anomaly_max_HT_temp}
+	\decoRule
+	\caption[Unauthorized change of max HT temperature]{Unauthorized change of max HT temperature \parencite{Own}}
+	\label{fig:anomaly_max_HT_temp}
+\end{figure}
+
 
 \subsection{Neural Networks}
 
+
+
+\subsubsection{Learning}
+
+
 \subsection{Results}
+
+% Discuss labelling of Anomalies somewhere in respect to mislabelled ground truth. 
+
+% Discuss influence of threshold on delay of recognition of anomaly
+
+% Discuss importance of recognizing anomaly as fast as possible
+
+
 
