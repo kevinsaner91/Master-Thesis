@@ -32,7 +32,7 @@ In the first experiment, a CNN was tested against a RNN in a supervised and also
 For the supervised learning approach, the chosen architecture can be seen in table \ref{Tab:Supervised Learning1}. The architecture with two hidden layers, first presented in Section \ref{Anomaly Detection on Univariate Time Series}, served as example for the RNN. Supplementary, the CNN was built to match the number of layers used for the RNN, where each convolutional layer was followed by a max-pooling layer (explained in Section \ref{CNN}.     
 
 \begin{table}[h]
-\caption{Supervised Learning}
+\caption{Configuration of Supervised Learning in Exp. 1 }
 	\begin{center}
 		\begin{tabular}{ | c | c | c | c |}
 			\hline
@@ -51,7 +51,7 @@ For the supervised learning approach, the chosen architecture can be seen in tab
 The architecture used for the unsupervised learning approach, displayed in table \ref{Tab:Unupervised Learning1}, looked very similar to the architecture of the supervised approach. The main difference between the two architectures was that the CNN was not built as a sequential model, because the used software does not support such an architecture. Instead of having one output layer, the CNN had to be designed with five parallel output layers, each predicting one time series \footnote{More detailed summaries of the models can be found in appendix \ref{AppendixA}}. In comparison, the RNN has just one output layer with 5 neurons, each used to predict a time series.    
 
 \begin{table}[h]
-	\caption{Unupervised Learning}
+	\caption{Configuration of Unupervised Learning in Exp. 1}
 	\begin{center}
 		\begin{tabular}{ | c | c | c | c |}
 			\hline
@@ -84,7 +84,7 @@ Inference time and F1-Score are, for all models, calculated on the same test dat
 
 
 \begin{table}[h]
-	\caption{Results}
+	\caption{Results of Experiment 1}
 	\begin{center}
 		\begin{tabular}{ | c | c | c | c |}
 			\hline
@@ -143,7 +143,7 @@ Since the test dataset only consists of around 3000 data points. It was used 3 t
 Since the RNN did not show sufficient results in Experiment 1 when given a classification task, it was excluded from Experiment 2. The CNN, however, which had probably learned the patterns of the anomalies, was tested again. Since the anomalies in the training and test set are not as similar anymore as in Experiment 1, it is expected that the CNN classifier performs very poorly. 
 
 \begin{table}[h]
-	\caption{Unupervised Learning}
+	\caption{Configuration of Unupervised Learning in Exp. 2}
 	\begin{center}
 		\begin{tabular}{ | c | c | c | c |}
 			\hline
@@ -158,7 +158,7 @@ Since the RNN did not show sufficient results in Experiment 1 when given a class
 	\end{center}
 \end{table}
 
-Because of the complexity of the dataset, in the second experiment it was decided to use LSTM units instead of GRU in the RNN architecture. LSTM units generally provide more accurate results but use more memory and therefore more computation time. The designed neural network architecture consisted of 3 sequential layers of LSTM layers and one dense layer with four neurons. 
+Because of the complexity of the dataset, in the second experiment it was decided to use LSTM units instead of GRU in the RNN architecture. LSTM units generally provide more accurate results but use more memory and therefore more computation time \parencite{Lendave2021}. The designed neural network architecture consisted of 3 sequential layers of LSTM layers and one dense layer with four neurons. 
 %https://analyticsindiamag.com/lstm-vs-gru-in-recurrent-neural-network-a-comparative-study/  
 
 The CNN was designed as follows, three layers of one-dimensional convolutional layers were used. After the first layer, a max-pooling layer was added, to reduce the feature space and improve computation time. Since the CNN is expected to predict a time series, the feature space was not further reduced through max-pooling layers, since it would negatively affect the accuracy.  
@@ -173,14 +173,14 @@ The generator function for this experiment was configured as follows:
 	\item Batch Size - 128 samples per batch
 \end{itemize}
 
-First experiments were done only using data from T1, T2, T3, energy use and outside temperature to predict T1 to T3 and energy use. However as the result were not satisfactory to predict accurate enough results to find the embedded anomalies, further variables were added for training. Finally, the following variables were used to make predictions: T1 to T5, Appliances and Ligths, Outside Temperature, Air Pressure and Windspeed. As the anomlies, however, were only embedded into 4 out of the 10 variables, only the affected 4 were predicted.
+First experiments were done only using data from T1, T2, T3, energy use and outside temperature to predict T1 to T3 and appliances energy use. However, the achieved results were not satisfactory. The results were not accurate enough to predict the anomalies. It was theorized, that the training data did not contain enough information to reliably predict the future, therefore additional variables were added. Adding more variables to predict the future resulted in a better MAE. Finally, the following variables were used to make predictions: T1 to T5, energy use of appliances and ligths, outside temperature, air pressure and windspeed. As the anomlies, however, were only embedded into 4 out of the 10 variables, only the affected 4 were predicted.
 
 
 \subsection{Results}
 Because the dataset was much more challenging, the reported scores are clearly inferior to Experiment 1. In total there were 13 anomalies to be detected in the test sets. The difference in F1-Score between the CNN and the RNN results from one anomaly which was not recognized by the CNN. However, training the RNN takes over 30 times longer than the CNN.
 
 \begin{table}[h]
-	\caption{Results}
+	\caption{Results of Experiment 2}
 	\begin{center}
 		\begin{tabular}{ | c | c | c | c |}
 			\hline
@@ -199,7 +199,7 @@ Because the dataset was much more challenging, the reported scores are clearly i
 The above reported results show the overall performance. Since the dataset was more complex than in the first experiment, the results are investigated further to show how the different architecture performed on the various anomalies and how accurate the predictions were on the different variables. First of all, the average error of the predicted variables are investigated further. The below results are reported from the first test set.
 
 \begin{table}[h]
-	\caption{Results}
+	\caption{MAE of Predictions}
 	\begin{center}
 		\begin{tabular}{ | c | c | c | c |}
 			\hline
@@ -228,10 +228,9 @@ In the third experiment, a dataset that was dedicated to anomaly detection tasks
 
 \subsection{Dataset}
 %https://arxiv.org/pdf/1612.06676.pdf
-The dataset was introduced by Filonov et al. \parencite{Filonov2016}. The data was created by modelling a gasoil plant heating loop The GHL model has three reservoirs: a receiving tank (RT), a heating tank (HT), and a collection tank (CT). The technological challenge is to heat gasoil in RT to 60 degrees Celsius, resulting in a viscosity sufficient for transmission to CT. In the model, the heating is done in stages. A fraction of gasoil is heated to 60 degrees Celsius in HT and then pumped back into RT to relax for a while. This technique is done until the RT temperature reaches 60 degrees Celsius. After that, the RT is poured into the CT. Following that, RT is refilled from an infinite source.
+The dataset was introduced by Filonov et al. \parencite{Filonov2016}. The data was created by modelling a gasoil plant heating loop The GHL (Gasoil Heating Loop) model has three reservoirs: a receiving tank (RT), a heating tank (HT), and a collection tank (CT). The technological challenge is to heat gasoil in RT to 60 degrees Celsius, resulting in a viscosity sufficient for transmission to CT. In the model, the heating is done in stages. A fraction of gasoil is heated to 60 degrees Celsius in HT and then pumped back into RT to relax for a while. This technique is done until the RT temperature reaches 60 degrees Celsius. After that, the RT is poured into the CT. Following that, RT is refilled from an infinite source.
 
 The training dataset consists of 19 variables with no anomalies, the most important, according to Filonov et al. \parencite{Filonov2016} are shown in Figure \ref{fig:GHL_data}. The sensors for RT level, RT temperature, and HT temperature are the first three variables. The remaining two variables relate to control signals for turning on/off the gasoil supply and turning on/off the heater.
-
 
 \begin{figure}[h]
 	\centering
@@ -258,7 +257,7 @@ As anomalies cyber attacks were introduced. The anomalies each concern the varia
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{Figures/anomaly_max_RT_level}
+	\includegraphics[scale=0.4]{Figures/anomaly_max_RT_level}
 	\decoRule
 	\caption[Attack on max-RT-level set point]{Attack on max-RT-level set point \parencite{Own}}
 	\label{fig:anomaly_max_RT_level}
@@ -266,21 +265,86 @@ As anomalies cyber attacks were introduced. The anomalies each concern the varia
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{Figures/anomaly_max_HT_temp}
+	\includegraphics[scale=0.4]{Figures/anomaly_max_HT_temp}
 	\decoRule
 	\caption[Unauthorized change of max HT temperature]{Unauthorized change of max HT temperature \parencite{Own}}
 	\label{fig:anomaly_max_HT_temp}
 \end{figure}
 
+Since the anomalies affect only the two above shown variables, the task for the neural networks was defined to predict the two above mentioned variables. Out of the past information of all 19 variables a neural network is expected to reliably predict the two monitored variables.
 
 \subsection{Neural Networks}
+Since the training does not contain any anomalies, only unsupervised training approaches are used. Wen and Keyes \parencite*{Wen2019} used the same dataset, for a supervised approach, but used part of the test set for training, therefore making it not possible to compare the results to works of Filonov et al. \parencite*{Filonov2016}.
 
+In Experiment 3, the chosen neural network architecture is again a LSTM. Since, Filonov et al. \parencite*{Filonov2016} use a LSTM network in their experiment, in order to be able to compare the experiments the same neural network architecture was chosen. However, Filonov et al. only report in their work, that two LSTM layers and a dropout layer were used. The exact configuration of the LSTM layers is not evident. Therefore, the number of units per layers was experimentally determined. The dropout layer, which was added to reduce overfitting, was configured with a dropout rate of 0.1, which was adapted for this experiment. 
+
+\begin{table}[h]
+	\caption{Configuration of Unupervised Learning in Exp. 3}
+	\begin{center}
+		\begin{tabular}{ | c | c | c | c |}
+			\hline
+			\thead{} & \thead{Input} & \thead{NN-Architecture} & \thead{Output} \\
+			\hline
+			\thead{CNN} &  100 past datapoints  & \makecell{3 1D-Convolutional Layers \\ 2 Dropout Layers }  & \makecell{ 2 Dense Layers with \\ 1 regression outputs}   \\
+			\hline
+			\thead{RNN} &  100 past datapoints  & \makecell{2 LSTM Layers \\ 1 Dropout Layer}  & \makecell{ 1 Dense Layers with \\ 2 regression outputs}  \\
+			\hline
+		\end{tabular}
+		\label{Tab:Unupervised Learning3}
+	\end{center}
+\end{table}
+
+Some early experiments with a two-layered CNN yielded in poor results. Therefore, an additional convolutional layer was added. As in Experiment 2, initially included max-ppoling layers were found to negatively impact the ability to accurately predict the required time series, therefore it was dispensed with completely. Since the CNN now also had a tendency to overfit, two dropout layers were added. 
 
 
 \subsubsection{Learning}
+The main challange when training the neural network was to determine an appropriate lookback. Initial experiments were carried out with 1000 - 5000 past data points that were considered. Although, the computation time increased significantly, the reported results were not satisfactory. Looking at the work of Wen and Keyes \parencite*{Wen2019}, who trained their network on snapshots of length 300 and applied a similarly rigorous sampling technique, the lookback paramter was set accordingly. Experiments with a lookback of between 300 and 500 past data points, improved not only the reported MAE, but also had a positive effect on computation time. While the results for the lookbacks between 300 and 500 were not significantly different, it was determined to use 300 because it resulted in the shortest computation time.
+The generator function for this experiment was, therefore, configured as follows:
+
+\begin{itemize}
+	\item Lookback - 300 past data points: 1000 seconds in the past
+	\item Step - 1: no further subsampling is done
+	\item Delay - 1: the next time step in the future is predicted
+	\item Batch Size - 128 samples per batch
+\end{itemize}
+
+\subsection{Results of Experiment 3}
+As in the previously described experiments, the anomaly score was calculated as the difference between predicted value and actual value. Figure \ref{fig:rollmean} shows that calculating the difference results in a graph with many peaks where the anomaly is not clearly visible. Filonov et al. \parencite*{Filonov2016} experienced the same problem and applied a exponential rolling mean on the calculated difference to smooth the outliers. The same technique is used, to smooth difference calculated in Experiment 3, although only a simple rolling mean is calculated. The effects of which together with the applied thresholds can be seen in the second graph shown in Figure \ref{fig:rollmean}. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{Figures/Rollmean}
+	\decoRule
+	\caption[Effect of Rolling Mean Calculation]{Effect of Rolling Mean Calculation \parencite{Own}}
+	\label{fig:rollmean}
+\end{figure}
 
 
-\subsection{Results}
+\subsubsection{Result of Experiment 3.1}
+% false positives at the start are not counted, they possibly exist due to a ramp up phase  
+
+% no batch computing on test sets, because you would not wait for a batch to be complete and just calculate the anomaly score straigth away
+
+
+
+\begin{table}[h]
+	\caption{Results of Experiment 3.1}
+	\begin{center}
+		\begin{tabular}{ | c | c | c | c |}
+			\hline
+			\thead{} & \thead{F1-Score} & \thead{Training Time} & \thead{Inference Time} \\
+			\hline
+			\thead{CNN Unsupervised } & 0.8696 & 142s   & 185s*   \\
+			\hline
+			\thead{RNN Unsupervised} & 0.9053 & 467s   & 530s*   \\
+			\hline
+		\end{tabular}
+		\label{Tab:Results3.1}
+	\end{center}
+\end{table}
+* the inference time reported is on just one instance of the test dataset
+
+
 
 % Discuss labelling of Anomalies somewhere in respect to mislabelled ground truth. 
 

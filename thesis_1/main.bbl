@@ -998,6 +998,32 @@
     \field{year}{1998}
   \endentry
 
+  \entry{Lendave2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LV}{%
+         family={Lendave},
+         familyi={L\bibinitperiod},
+         given={Vijaysinh},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LV1}
+    \strng{fullhash}{LV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{LSTM Vs GRU in Recurrent Neural Network: A Comparative Study}
+    \verb{url}
+    \verb https://analyticsindiamag.com/lstm-vs-gru-in-recurrent-neural-network
+    \verb -a-comparative-study/
+    \endverb
+    \field{month}{08}
+    \field{year}{2021}
+  \endentry
+
   \entry{Malhotra2015}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=MP}{%
