@@ -1,5 +1,32 @@
 \chapter{Results Analysis}
 
+In this chapter, the results of all experiments are compared and discussed to evaluate which approach is suitable in what scenario. 
 
+The experiments quickly showed that when trying to detect anomalies in time series with deep learning approaches, the decribed unsupervised approach is the preferred choice. As supervised approaches need to assure, that the anomalies that occur when the model is in operation are the same as in the training set. Further, a training set that contains enough anomalies must exist. Only under these limiting condition a supervised model can reliably be deployed. When these requirements are fullfilled a Convolutional Neural Network might be a good choice. 
+Experiment 1 showed that a CNN, in comparison to a RNN, is capable of recognizing the anomalies. The same conclusion was reached by Wen and Keyes \parencite*{Wen2019}, who successfully applied a special version of a CNN (U-Net: Section \ref{U-Net}) to the GHL dataset.  
+
+In contrast to the supervised approach the unsupervised approach generally proved to be more stable. As it needs no knowledge of the nature of the anomalies. The only requirement for this approach is a sufficiently large training set to learn the normal behaviour. Both neural network types, CNN and RNN, showed similar abilities when learning the normal behaviour. This means that CNN, that are usually applied for tasks such image recognition, are similarly suitable to predict time series, which is normally the domain of RNN. Looking at the F1-Scores of Experiments 1 to 3, shows that CNN can be useful alternative to RNN when detecting anomalies. Although, the F1-Score of the CNN is often marginally lower than the F1-Score of the compared RNN, the CNN has another big advantage. When tracking anomalies, it is often a neccessary to detect them as quickly as possible. Looking at the inference times of the various models, it can be seen that the CNN model is up to three times faster as the RNN model. This advantage of speed can be of paramount importance in a real world scenario, as it can decide if delicate components of a system take damage or not.
+
+The CNN is not only faster at inference but also in training. As there many hyper-parameters, such as batch size, lookback, layers etc., to be determined for an optimal model performance, the training time becomes important. When using a machine learning algorithm, a model is trained again and again to find the best configuration. So the training time of a model decides how fast a well performing model can be developed. Looking at the training times achieved in this work, it can be seen that the CNN learns much faster. This might have two reasons. First, when the number of parameters in the CNN and RNN models are compared, it can be observed, that a CNN generally has less parameters (see Appendix \ref{AppendixA}). When training a neural network, after every batch, it needs to be calculated how much these parameters need to be adjusted. This makes it more and more computationally expensive the more parameters there are. Second, it seems to be good strategy to look at a time series as a pattern. Where the RNN calculated the influence of the past on the future, the CNN tries to recognise patterns in the data. This approach not only worked when the time series followed a cyclic pattern as Experiment 1 and 3 but also in the case of the weather data in Experiment 2.     
+
+Ultimately, as it is often the case in data science, the choice whether to use RNN or CNN is a tradeoff, in this particular case, between speed and quality of the result. A tradeoff, which might, however, be mitigated, in the favor of the CNN, by using more advanced versions of the CNN such as the U-Net.
+
+% Discuss energy use of models comparing CNN and RNN
+
+% Critic, there might still be better approaches than NNs
+
+
+%To compare different models often a process called k-fold cross validation is used. When applying k-fold cross-validation, k different validation sets are drawn from the dataset, as opposed to just one when applying the validation set approach, which was used in this work, therefore a model needs to be trained k times. 
 
 \chapter{Conclusion}
+The experiments conducted in this work did not show that Convolutional Neural Networks are overall superior to Recurrent Neural Networks. However, CNNs have some advantages over RNN, which can be useful in anomaly detection. One of the main advantage of a CNN is its ability to recognize anomalies. Given a case where the anomalous behaviour always follows the same pattern, a CNN can reliably be trained to recognize this pattern. A real world scenario for this use case be the frequency analysis of a ball bearing \parencite{Mais2002}.
+
+The second advantage of the CNN is its shorter inference time. 
+%Looking at the computation times and the results of the experiments, it is however, questionable if deep learning is the right approach in each case. In Experiment 1, an algorithm that simply predicts a data point at the same time in the future as equal to now. 
+
+% it seems to be a good idea to use CNN for time series prediction in general, but no pooling - reduces features
+
+
+%Another factor, that speeks for the use of CNN instead of RNN, is that CNN generally need less computation time, in training but also in operation. One of the critique points of 
+
+% Some argue that RNN are no longer needed https://www.macnica.co.jp/business/ai_iot/columns/135112/

@@ -57,7 +57,7 @@ With all datasets the classical train, validation and test dataset approach is c
 \section{Setup of Experiments} \label{SetupOfExperiments}
 The following section explains how the different experiments are conducted in detail. When desinging the experiments, the focus is put on comparability rather than optimally tuned neural networks.  Further, it is shown how the datasets and anomalies were engineered.
 
-The following subsections give information on the chosen setups of the experiments that apply to all experiments. Further, global parameters are defined. Global parameters are defined manually and are the same for all experiments. Parameters, which do not fall in this category such as number of neurons in a layer, are specified in Chapter \ref{Experiments} in the section belonging to the respective experiment.
+The following subsections give information on the chosen setups of the experiments that apply to all experiments. Further, global hyper-parameters are defined. Global hyper-parameters are defined manually and are the same for all experiments. Hyper-parameters, which do not fall in this category such as number of neurons in a layer, are specified in Chapter \ref{Experiments} in the section belonging to the respective experiment.
 
 \subsection{Supervised Learning}
 The supervised learning approach refers to training the neural network on a labelled dataset. The dataset used for training already has the anomalies embedded. The task of finding the anomalies can also be described as a classification task, where the neural networks classifies a sequence as normal or anomalous. In such a case binary crossentropy and a sigmoid activation function are used as loss function and last layer activation fuction. The aforementioned combination means that in the last layer a logistic regression is done, where a threshold is determined to classify the sequences into normal and anomalous.
@@ -82,6 +82,12 @@ When designing the neural networks, as activation function generally "ReLu" (Rec
 \subsubsection{Optimizer}
 As optimizer, the often used default choice in machine learning, ADAM (Adaptive Moment Estimation), with the proposed default values, is applied \parencite{Katanforoosh2019}. ADAM updates the learning rate when training, making it faster than other optimizers such a Gradient Descent. On the downside, however, ADAM uses a lot memory for a given batch size and is found to generalize poorly in late stages of training.
 %https://www.deeplearning.ai/ai-notes/optimization/ 
+
+\subsubsection{Batch Computing}
+%https://medium.com/analytics-vidhya/when-and-why-are-batches-used-in-machine-learning-acda4eb00763
+\textcolor{red}{Typically in machine learning, training examples are not used one after another or all at once, because updating the optimizer function after every example or only after the whole dataset is inefficient as it uses a lot of memory. To speed up the process, training data is fed to the machine learning model in batches. A batch is a collection of training examples. The size of these batches, however, also has an impact on the learning ability of the machine learning model. When using an ADAM optimizer, too large batches can have a negative impact on performance of the model \parencite{Krishnan2019}.\\
+When detecting anomlies, the batch size parameter is only used when training. As in a real world scenario every new measurement is analysed immediately since it mostly is crucial to detect the anomaly as early as possible. Analysing every datapoint, however, leads to a increase in computation time which explains the long inference times in the experiments.}
+% no batch computing on test sets, because you would not wait for a batch to be complete and just calculate the anomaly score straigth away
 
 \subsection{Experiments}
 In the following, it is suggested how the experiments on the 3 different datasets are conducted.

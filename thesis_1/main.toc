@@ -143,57 +143,57 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Optimizer}{27}{section*.105}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Experiments}{27}{subsection.106}%
+\contentsline {subsubsection}{Batch Computing}{27}{section*.106}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{1. Experiment}{27}{section*.107}%
+\contentsline {subsection}{\numberline {4.3.4}Experiments}{27}{subsection.107}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{2. Experiment}{27}{section*.108}%
+\contentsline {subsubsection}{1. Experiment}{27}{section*.108}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{3. Experiment}{27}{section*.109}%
+\contentsline {subsubsection}{2. Experiment}{27}{section*.109}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}Results}{27}{subsection.110}%
+\contentsline {subsubsection}{3. Experiment}{27}{section*.110}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experiments}{29}{chapter.111}%
+\contentsline {subsection}{\numberline {4.3.5}Results}{28}{subsection.111}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Experiment 1}{29}{section.112}%
+\contentsline {chapter}{\numberline {5}Experiments}{29}{chapter.112}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Dataset}{29}{subsection.113}%
+\contentsline {section}{\numberline {5.1}Experiment 1}{29}{section.113}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Neural Networks}{30}{subsection.116}%
+\contentsline {subsection}{\numberline {5.1.1}Dataset}{29}{subsection.114}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Learning}{31}{section*.120}%
+\contentsline {subsection}{\numberline {5.1.2}Neural Networks}{30}{subsection.117}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Results}{32}{subsection.121}%
+\contentsline {subsubsection}{Learning}{31}{section*.121}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Experiment 2}{33}{section.123}%
+\contentsline {subsection}{\numberline {5.1.3}Results of Experiment 1}{32}{subsection.122}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Dataset}{33}{subsection.124}%
+\contentsline {section}{\numberline {5.2}Experiment 2}{33}{section.124}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sampling}{33}{section*.126}%
+\contentsline {subsection}{\numberline {5.2.1}Dataset}{33}{subsection.125}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Anomalies}{34}{section*.127}%
+\contentsline {subsubsection}{Sampling}{33}{section*.127}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Neural Networks}{35}{subsection.129}%
+\contentsline {subsubsection}{Anomalies}{34}{section*.128}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Learning}{35}{section*.131}%
+\contentsline {subsection}{\numberline {5.2.2}Neural Networks}{35}{subsection.130}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Results}{36}{subsection.132}%
+\contentsline {subsubsection}{Learning}{35}{section*.132}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Experiment 3}{37}{section.135}%
+\contentsline {subsection}{\numberline {5.2.3}Results of Experiment 2}{36}{subsection.133}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Dataset}{37}{subsection.136}%
+\contentsline {section}{\numberline {5.3}Experiment 3}{37}{section.136}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sampling}{38}{section*.138}%
+\contentsline {subsection}{\numberline {5.3.1}Dataset}{37}{subsection.137}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Anomalies}{39}{section*.140}%
+\contentsline {subsubsection}{Sampling}{38}{section*.139}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Neural Networks}{40}{subsection.144}%
+\contentsline {subsubsection}{Anomalies}{39}{section*.141}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Learning}{40}{section*.146}%
+\contentsline {subsection}{\numberline {5.3.2}Neural Networks}{40}{subsection.145}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Results of Experiment 3}{41}{subsection.147}%
+\contentsline {subsubsection}{Learning}{40}{section*.147}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Result of Experiment 3.1}{41}{section*.149}%
+\contentsline {subsection}{\numberline {5.3.3}Results of Experiment 3}{41}{subsection.148}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Results Analysis}{43}{chapter.151}%
 \defcounter {refsection}{0}\relax 

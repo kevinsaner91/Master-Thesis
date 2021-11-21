@@ -925,6 +925,32 @@
     \field{year}{2019}
   \endentry
 
+  \entry{Krishnan2019}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=KB}{%
+         family={Krishnan},
+         familyi={K\bibinitperiod},
+         given={Bipin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KB1}
+    \strng{fullhash}{KB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{WHEN and WHY are batches used in machine learning ?}
+    \verb{url}
+    \verb https://medium.com/analytics-vidhya/when-and-why-are-batches-used-in-
+    \verb machine-learning-acda4eb00763
+    \endverb
+    \field{month}{11}
+    \field{year}{2019}
+  \endentry
+
   \entry{LeCun1998}{article}{}
     \name{author}{4}{}{%
       {{hash=LY}{%
@@ -1022,6 +1048,36 @@
     \endverb
     \field{month}{08}
     \field{year}{2021}
+  \endentry
+
+  \entry{Mais2002}{report}{}
+    \name{author}{1}{}{%
+      {{hash=MJ}{%
+         family={Mais},
+         familyi={M\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJ1}
+    \strng{fullhash}{MJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{1\bibrangedash 32}
+    \field{title}{Spectrum Analysis}
+    \verb{url}
+    \verb file:///C:/Users/Kevin/AppData/Local/Temp/0901d1968024acef-CM5118-EN-
+    \verb Spectrum-Analysis_tcm_12-113997.pdf
+    \endverb
+    \list{institution}{1}{%
+      {SKF USA Inc.}%
+    }
+    \field{month}{05}
+    \field{year}{2002}
   \endentry
 
   \entry{Malhotra2015}{inproceedings}{}
