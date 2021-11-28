@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.30)  21 NOV 2021 11:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.30)  28 NOV 2021 13:05
 entering extended mode
 **./main.tex
 (main.tex
@@ -1186,7 +1186,7 @@ Overfull \hbox (0.75133pt too wide) in paragraph at lines 55--56
 ms. The sum is then passed through
  []
 
-<Figures/layers.png, id=720, 732.7375pt x 495.8525pt>
+<Figures/layers.png, id=744, 732.7375pt x 495.8525pt>
 File: Figures/layers.png Graphic file (type png)
 <use Figures/layers.png>
 Package pdftex.def Info: Figures/layers.png  used on input line 63.
@@ -1204,18 +1204,18 @@ Overfull \hbox (1.15233pt too wide) in paragraph at lines 90--91
  []
 
 [4]
-<Figures/LSTM.jpg, id=747, 547.2947pt x 575.14874pt>
+<Figures/LSTM.jpg, id=771, 547.2947pt x 575.14874pt>
 File: Figures/LSTM.jpg Graphic file (type jpg)
 <use Figures/LSTM.jpg>
 Package pdftex.def Info: Figures/LSTM.jpg  used on input line 101.
 (pdftex.def)             Requested size: 273.64667pt x 287.57367pt.
-<Figures/filter.png, id=753, 330.37714pt x 175.51286pt>
+<Figures/filter.png, id=777, 330.37714pt x 175.51286pt>
 File: Figures/filter.png Graphic file (type png)
 <use Figures/filter.png>
 Package pdftex.def Info: Figures/filter.png  used on input line 117.
 (pdftex.def)             Requested size: 231.2624pt x 122.85815pt.
  [5 <./Figures/LSTM.jpg> <./Figures/filter.png>]
-<Figures/pooling.png, id=767, 1330.9725pt x 481.8pt>
+<Figures/pooling.png, id=791, 1330.9725pt x 481.8pt>
 File: Figures/pooling.png Graphic file (type png)
 <use Figures/pooling.png>
 Package pdftex.def Info: Figures/pooling.png  used on input line 128.
@@ -1267,7 +1267,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 
 ] [10]
-<Figures/CNN.png, id=821, 1098.35344pt x 338.76563pt>
+<Figures/CNN.png, id=845, 1098.35344pt x 338.76563pt>
 File: Figures/CNN.png Graphic file (type png)
 <use Figures/CNN.png>
 Package pdftex.def Info: Figures/CNN.png  used on input line 132.
@@ -1287,7 +1287,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 153.
  [12]
-<Figures/MC-DCNN.png, id=844, 1184.92688pt x 673.76718pt>
+<Figures/MC-DCNN.png, id=868, 1184.92688pt x 673.76718pt>
 File: Figures/MC-DCNN.png Graphic file (type png)
 <use Figures/MC-DCNN.png>
 Package pdftex.def Info: Figures/MC-DCNN.png  used on input line 196.
@@ -1307,7 +1307,7 @@ chi-tec-ture per-forms much faster
  []
 
 [13]
-<Figures/U-Net.png, id=857, 1208.26407pt x 430.60875pt>
+<Figures/U-Net.png, id=881, 1208.26407pt x 430.60875pt>
 File: Figures/U-Net.png Graphic file (type png)
 <use Figures/U-Net.png>
 Package pdftex.def Info: Figures/U-Net.png  used on input line 211.
@@ -1317,7 +1317,7 @@ Package pdftex.def Info: Figures/U-Net.png  used on input line 211.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14 <./Figures/MC-DCNN.png>] [15 <./Figures/U-Net.png>]
-<Figures/ROC.png, id=875, 436.63126pt x 348.55219pt>
+<Figures/ROC.png, id=899, 436.63126pt x 348.55219pt>
 File: Figures/ROC.png Graphic file (type png)
 <use Figures/ROC.png>
 Package pdftex.def Info: Figures/ROC.png  used on input line 287.
@@ -1343,7 +1343,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--12
 
  []
 
-<Figures/Thesis Map.png, id=907, 689.57625pt x 443.40656pt>
+<Figures/Thesis Map.png, id=931, 689.57625pt x 443.40656pt>
 File: Figures/Thesis Map.png Graphic file (type png)
 <use Figures/Thesis Map.png>
 Package pdftex.def Info: Figures/Thesis Map.png  used on input line 25.
@@ -1385,7 +1385,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
  []
 
-<Figures/series_anomaly.png, id=948, 438.8897pt x 315.42844pt>
+<Figures/series_anomaly.png, id=972, 438.8897pt x 315.42844pt>
 File: Figures/series_anomaly.png Graphic file (type png)
 <use Figures/series_anomaly.png>
 Package pdftex.def Info: Figures/series_anomaly.png  used on input line 34.
@@ -1401,7 +1401,7 @@ Overfull \hbox (8.6754pt too wide) in paragraph at lines 63--64
 
  (Chapters/Chapter5.tex
 Chapter 5.
-<Figures/synthetic data.png, id=988, 507.39563pt x 465.99094pt>
+<Figures/synthetic data.png, id=1012, 507.39563pt x 465.99094pt>
 File: Figures/synthetic data.png Graphic file (type png)
 <use Figures/synthetic data.png>
 Package pdftex.def Info: Figures/synthetic data.png  used on input line 11.
@@ -1419,7 +1419,7 @@ LaTeX Warning: Citation 'own' on page 29 undefined on input line 13.
 
 
  <./Figures/synthetic data.png>]
-<Figures/Anomalies.png, id=995, 612.78937pt x 439.6425pt>
+<Figures/Anomalies.png, id=1019, 612.78937pt x 439.6425pt>
 File: Figures/Anomalies.png Graphic file (type png)
 <use Figures/Anomalies.png>
 Package pdftex.def Info: Figures/Anomalies.png  used on input line 21.
@@ -1439,7 +1439,7 @@ LaTeX Warning: Citation 'own' on page 30 undefined on input line 23.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [30 <./Figures/Anomalies.png>] [31] [32]
-<Figures/temp_dataset.png, id=1019, 409.53pt x 411.03563pt>
+<Figures/temp_dataset.png, id=1043, 409.53pt x 411.03563pt>
 File: Figures/temp_dataset.png Graphic file (type png)
 <use Figures/temp_dataset.png>
 Package pdftex.def Info: Figures/temp_dataset.png  used on input line 120.
@@ -1459,7 +1459,7 @@ Overfull \hbox (0.14542pt too wide) in paragraph at lines 130--131
 stribution-based ag-gre-gate anomaly.
  []
 
-<Figures/temp_anomalies.png, id=1026, 508.14844pt x 562.35094pt>
+<Figures/temp_anomalies.png, id=1050, 508.14844pt x 562.35094pt>
 File: Figures/temp_anomalies.png Graphic file (type png)
 <use Figures/temp_anomalies.png>
 Package pdftex.def Info: Figures/temp_anomalies.png  used on input line 134.
@@ -1471,7 +1471,7 @@ LaTeX Warning: Citation 'Own' on page 34 undefined on input line 136.
 LaTeX Warning: Citation 'Own' on page 34 undefined on input line 136.
 
 [34 <./Figures/temp_anomalies.png>] [35] [36]
-<Figures/GHL_data.png, id=1048, 581.92406pt x 521.69907pt>
+<Figures/GHL_data.png, id=1072, 581.92406pt x 521.69907pt>
 File: Figures/GHL_data.png Graphic file (type png)
 <use Figures/GHL_data.png>
 Package pdftex.def Info: Figures/GHL_data.png  used on input line 239.
@@ -1484,7 +1484,7 @@ LaTeX Warning: Citation 'Own' on page 37 undefined on input line 241.
 LaTeX Warning: Citation 'Own' on page 37 undefined on input line 241.
 
 [37 <./Figures/GHL_data.png>]
-<Figures/downsample.png, id=1058, 673.76718pt x 438.8897pt>
+<Figures/downsample.png, id=1082, 673.76718pt x 438.8897pt>
 File: Figures/downsample.png Graphic file (type png)
 <use Figures/downsample.png>
 Package pdftex.def Info: Figures/downsample.png  used on input line 250.
@@ -1497,7 +1497,7 @@ LaTeX Warning: Citation 'Own' on page 38 undefined on input line 252.
 LaTeX Warning: Citation 'Own' on page 38 undefined on input line 252.
 
 [38 <./Figures/downsample.png>]
-<Figures/anomaly_max_RT_level.png, id=1068, 762.59906pt x 438.8897pt>
+<Figures/anomaly_max_RT_level.png, id=1092, 762.59906pt x 438.8897pt>
 File: Figures/anomaly_max_RT_level.png Graphic file (type png)
 <use Figures/anomaly_max_RT_level.png>
 Package pdftex.def Info: Figures/anomaly_max_RT_level.png  used on input line 2
@@ -1510,7 +1510,7 @@ LaTeX Warning: Citation 'Own' on page 39 undefined on input line 264.
 
 LaTeX Warning: Citation 'Own' on page 39 undefined on input line 264.
 
-<Figures/anomaly_max_HT_temp.png, id=1069, 762.59906pt x 438.8897pt>
+<Figures/anomaly_max_HT_temp.png, id=1093, 762.59906pt x 438.8897pt>
 File: Figures/anomaly_max_HT_temp.png Graphic file (type png)
 <use Figures/anomaly_max_HT_temp.png>
 Package pdftex.def Info: Figures/anomaly_max_HT_temp.png  used on input line 27
@@ -1529,7 +1529,7 @@ c-ture is again a LSTM. Since, Filonov
  []
 
 [40]
-<Figures/Rollmean.png, id=1089, 554.07pt x 505.89pt>
+<Figures/Rollmean.png, id=1113, 554.07pt x 505.89pt>
 File: Figures/Rollmean.png Graphic file (type png)
 <use Figures/Rollmean.png>
 Package pdftex.def Info: Figures/Rollmean.png  used on input line 318.
@@ -1542,7 +1542,7 @@ LaTeX Warning: Citation 'Own' on page 41 undefined on input line 320.
 LaTeX Warning: Citation 'Own' on page 41 undefined on input line 320.
 
 [41 <./Figures/Rollmean.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 330--332
+Underfull \hbox (badness 10000) in paragraph at lines 328--332
 
  []
 
@@ -1563,21 +1563,16 @@ Chapter 7.
 1: section
 [45
 
-]
+] [46]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (Appendices/AppendixA.tex [46
-
-
-
-
-]
+ (Appendices/AppendixA.tex
 Appendix A.
 
 
 pdfTeX warning: pdflatex.exe (file ./Figures/summary_CNN_class_syn.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/summary_CNN_class_syn.pdf, id=1125, 614.295pt x 794.97pt>
+<Figures/summary_CNN_class_syn.pdf, id=1156, 614.295pt x 794.97pt>
 File: Figures/summary_CNN_class_syn.pdf Graphic file (type pdf)
 <use Figures/summary_CNN_class_syn.pdf>
 Package pdftex.def Info: Figures/summary_CNN_class_syn.pdf  used on input line 
@@ -1593,7 +1588,7 @@ LaTeX Warning: Citation 'own' on page 47 undefined on input line 14.
 
 pdfTeX warning: pdflatex.exe (file ./Figures/summary_GRU_class_syn.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/summary_GRU_class_syn.pdf, id=1126, 614.295pt x 794.97pt>
+<Figures/summary_GRU_class_syn.pdf, id=1157, 614.295pt x 794.97pt>
 File: Figures/summary_GRU_class_syn.pdf Graphic file (type pdf)
 <use Figures/summary_GRU_class_syn.pdf>
 Package pdftex.def Info: Figures/summary_GRU_class_syn.pdf  used on input line 
@@ -1609,85 +1604,124 @@ LaTeX Warning: Citation 'own' on page 47 undefined on input line 22.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 1: section
-[47 <./Figures/summary_CNN_class_syn.pdf>]
+[47
+
+
+
+
+ <./Figures/summary_CNN_class_syn.pdf>] [48 <./Figures/summary_GRU_class_syn.pd
+f>]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/summary_CNN_pred_syn.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/summary_CNN_pred_syn.pdf, id=1143, 597.55246pt x 845.07724pt>
+<Figures/summary_CNN_pred_syn.pdf, id=1190, 597.55246pt x 845.07724pt>
 File: Figures/summary_CNN_pred_syn.pdf Graphic file (type pdf)
 <use Figures/summary_CNN_pred_syn.pdf>
 Package pdftex.def Info: Figures/summary_CNN_pred_syn.pdf  used on input line 3
 0.
 (pdftex.def)             Requested size: 298.7755pt x 422.53758pt.
 
-LaTeX Warning: Citation 'own' on page 48 undefined on input line 32.
+LaTeX Warning: Citation 'own' on page 49 undefined on input line 32.
 
 
-LaTeX Warning: Citation 'own' on page 48 undefined on input line 32.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Citation 'own' on page 49 undefined on input line 32.
 
 
 
 pdfTeX warning: pdflatex.exe (file ./Figures/summary_GRU_pred_syn.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/summary_GRU_pred_syn.pdf, id=1144, 597.55246pt x 845.07724pt>
+<Figures/summary_GRU_pred_syn.pdf, id=1191, 597.55246pt x 845.07724pt>
 File: Figures/summary_GRU_pred_syn.pdf Graphic file (type pdf)
 <use Figures/summary_GRU_pred_syn.pdf>
 Package pdftex.def Info: Figures/summary_GRU_pred_syn.pdf  used on input line 3
 8.
 (pdftex.def)             Requested size: 298.7755pt x 422.53758pt.
 
-LaTeX Warning: Citation 'own' on page 48 undefined on input line 40.
+LaTeX Warning: Citation 'own' on page 49 undefined on input line 40.
 
 
-LaTeX Warning: Citation 'own' on page 48 undefined on input line 40.
+LaTeX Warning: Citation 'own' on page 49 undefined on input line 40.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[49
 
+ <./Figures/summary_CNN_pred_syn.pdf>] [50 <./Figures/summary_GRU_pred_syn.pdf>
+]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/summary_CNN_pred_house_temp.pdf): 
 PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/summary_CNN_pred_house_temp.pdf, id=1145, 597.45204pt x 845.1575pt>
+<Figures/summary_CNN_pred_house_temp.pdf, id=1235, 597.45204pt x 845.1575pt>
 File: Figures/summary_CNN_pred_house_temp.pdf Graphic file (type pdf)
 <use Figures/summary_CNN_pred_house_temp.pdf>
 Package pdftex.def Info: Figures/summary_CNN_pred_house_temp.pdf  used on input
- line 58.
+ line 60.
 (pdftex.def)             Requested size: 298.72528pt x 422.57771pt.
 
-LaTeX Warning: Citation 'own' on page 48 undefined on input line 60.
+LaTeX Warning: Citation 'own' on page 51 undefined on input line 62.
 
 
-LaTeX Warning: Citation 'own' on page 48 undefined on input line 60.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Citation 'own' on page 51 undefined on input line 62.
 
 
 
 pdfTeX warning: pdflatex.exe (file ./Figures/summary_LSTM_pred_house_temp.pdf):
  PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/summary_LSTM_pred_house_temp.pdf, id=1146, 597.45204pt x 845.1575pt>
+<Figures/summary_LSTM_pred_house_temp.pdf, id=1236, 597.45204pt x 845.1575pt>
 File: Figures/summary_LSTM_pred_house_temp.pdf Graphic file (type pdf)
 <use Figures/summary_LSTM_pred_house_temp.pdf>
 Package pdftex.def Info: Figures/summary_LSTM_pred_house_temp.pdf  used on inpu
-t line 66.
+t line 68.
 (pdftex.def)             Requested size: 298.72528pt x 422.57771pt.
 
-LaTeX Warning: Citation 'own' on page 48 undefined on input line 68.
+LaTeX Warning: Citation 'own' on page 51 undefined on input line 70.
 
 
-LaTeX Warning: Citation 'own' on page 48 undefined on input line 68.
+LaTeX Warning: Citation 'own' on page 51 undefined on input line 70.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [48 <./Figures/summary_GRU_class_syn.pdf>] [49 <./Figures/summary_CNN_pred_sy
-n.pdf>] [50 <./Figures/summary_GRU_pred_syn.pdf>] [51 <./Figures/summary_CNN_pr
-ed_house_temp.pdf>] [52 <./Figures/summary_LSTM_pred_house_temp.pdf>]
+[51
+
+ <./Figures/summary_CNN_pred_house_temp.pdf>] [52 <./Figures/summary_LSTM_pred_
+house_temp.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Figures/summary_CNN_GHL.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+<Figures/summary_CNN_GHL.pdf, id=1273, 597.55246pt x 845.07724pt>
+File: Figures/summary_CNN_GHL.pdf Graphic file (type pdf)
+<use Figures/summary_CNN_GHL.pdf>
+Package pdftex.def Info: Figures/summary_CNN_GHL.pdf  used on input line 80.
+(pdftex.def)             Requested size: 298.7755pt x 422.53758pt.
+
+LaTeX Warning: Citation 'own' on page 53 undefined on input line 82.
+
+
+LaTeX Warning: Citation 'own' on page 53 undefined on input line 82.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./Figures/summary_LSTM_GHL.pdf): PDF inclusi
+on: found PDF version <1.7>, but at most version <1.5> allowed
+<Figures/summary_LSTM_GHL.pdf, id=1274, 597.55246pt x 845.07724pt>
+File: Figures/summary_LSTM_GHL.pdf Graphic file (type pdf)
+<use Figures/summary_LSTM_GHL.pdf>
+Package pdftex.def Info: Figures/summary_LSTM_GHL.pdf  used on input line 88.
+(pdftex.def)             Requested size: 298.7755pt x 422.53758pt.
+
+LaTeX Warning: Citation 'own' on page 53 undefined on input line 90.
+
+
+LaTeX Warning: Citation 'own' on page 53 undefined on input line 90.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [53
+
+ <./Figures/summary_CNN_GHL.pdf>] [54 <./Figures/summary_LSTM_GHL.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
 10.
 
@@ -1713,7 +1747,7 @@ Overfull \hbox (3.85527pt too wide) in paragraph at lines 310--310
  []
 
 1: section
-[53
+[55
 
 
 
@@ -1736,14 +1770,20 @@ ts for dum-mies\T1/futs/m/n/10.95 . \T1/futs/m/sc/10.95 url\T1/futs/m/n/10.95 :
  [][]$\T1/cmtt/m/n/10.95 https : / / towardsdatascience .
  []
 
-[54] (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
+[56] (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
 (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux)
 (Chapters/Chapter6.aux) (Appendices/AppendixA.aux))
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CFD72F0CDB6BB4293FB8AA8A5A7A0C8E;14965.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 1CFD8786115891BBF7378289B2C5B0D5;15822
+(rerunfilecheck)             After:  D430F9AFA0A404AD278A983C6B156CD8;15827.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                main
@@ -1754,10 +1794,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28977 strings out of 478847
- 618448 string characters out of 2848386
- 1150636 words of memory out of 3000000
- 46161 multiletter control sequences out of 15000+600000
+ 29016 strings out of 478847
+ 619363 string characters out of 2848386
+ 1151322 words of memory out of 3000000
+ 46187 multiletter control sequences out of 15000+600000
  557897 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  96i,21n,95p,2234b,2495s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1769,9 +1809,9 @@ pia/putb8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/
 utopia/putr8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/ado
 be/utopia/putr8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/
 adobe/utopia/putri8a.pfb>
-Output written on main.pdf (72 pages, 2232169 bytes).
+Output written on main.pdf (74 pages, 2540741 bytes).
 PDF statistics:
- 1436 PDF objects out of 1440 (max. 8388607)
- 273 named destinations out of 1000 (max. 500000)
- 982 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1515 PDF objects out of 1728 (max. 8388607)
+ 284 named destinations out of 1000 (max. 500000)
+ 1024 words of extra memory for PDF output out of 10000 (max. 10000000)
 

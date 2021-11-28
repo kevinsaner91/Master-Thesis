@@ -243,7 +243,7 @@ For testing the trained models, Filonov et al. \parencite*{Filonov2016} provide 
 \end{figure}
 
 \subsubsection{Sampling}
-The dataset intended for training contains 1.5 million data points, on top all 48 available test sets contain around 200'000 data points. The training of the neural networks and the evaluation of the test sets would therefore take a lot of time. Inspired by the work of Wen and Keyes \parencite*{Wen2019}, who took snapshots of length 50'000 and then downsampled them to a length of 1'024, the data should also be downsampled to save time. \textcolor{red}{ Downsampling  refers to reducing the number of data points in a time series. There are different techniques to achieve downsampling. The technique applied in this case is called decimation. Since the data contains many repeating data points, which have the same value, only every 10th datapoint was kept, which corresponds to a decimation by a factor of 10.} This greatly reduces the computation time, since the training dataset now contains only 150'000 data points while a test set contains 20'000 data points. On the downside, using this technique to downsample information is lost, which possibly effects the results of the chosen anomaly detection methods. Figure \ref{fig:downsample} shows how the variable RT Level behaves on 5'000 data points pre- and post-downsampling.
+The dataset intended for training contains 1.5 million data points, on top all 48 available test sets contain around 200'000 data points. The training of the neural networks and the evaluation of the test sets would therefore take a lot of time. Inspired by the work of Wen and Keyes \parencite*{Wen2019}, who took snapshots of length 50'000 and then downsampled them to a length of 1'024, the data should also be downsampled to save time. Downsampling  refers to reducing the number of data points in a time series. There are different techniques to achieve downsampling. The technique applied in this case is called decimation. Since the data contains many repeating data points, which have the same value, only every 10th datapoint was kept, which corresponds to a decimation by a factor of 10. This greatly reduces the computation time, since the training dataset now contains only 150'000 data points while a test set contains 20'000 data points. On the downside, using this technique to downsample information is lost, which possibly effects the results of the chosen anomaly detection methods. Figure \ref{fig:downsample} shows how the variable RT Level behaves on 5'000 data points pre- and post-downsampling.
 
 \begin{figure}[h]
 	\centering
@@ -276,9 +276,9 @@ As anomalies cyber attacks were introduced. The anomalies each concern the varia
 Since the anomalies affect only the two above shown variables, the task for the neural networks was defined to predict the two above mentioned variables. Out of the past information of all 19 variables a neural network is expected to reliably predict the two monitored variables.
 
 \subsection{Neural Networks}
-\textcolor{red}{As described in Section \ref{GHL_Dataset}, the provided training dataset does not contain any anomalies, therefore only unsupervised training approaches are used. Wen and Keyes \parencite*{Wen2019} used the GHL dataset, for a supervised approach, but used part of the test set for training, therefore making it not possible to compare the results to works of Filonov et al. \parencite*{Filonov2016}.}
+As described in Section \ref{GHL_Dataset}, the provided training dataset does not contain any anomalies, therefore only unsupervised training approaches are used. Wen and Keyes \parencite*{Wen2019} used the GHL dataset, for a supervised approach, but used part of the test set for training, therefore making it not possible to compare the results to works of Filonov et al. \parencite*{Filonov2016}.
 
-In Experiment 3, the chosen neural network architecture is again a LSTM. Since, Filonov et al. \parencite*{Filonov2016} use a LSTM network in their experiment, in order to be able to compare the experiments the same neural network architecture was chosen. However, Filonov et al. only report in their work, that two LSTM layers and a dropout layer were used. The exact configuration of the LSTM layers is not evident. Therefore, the number of units per layers was experimentally determined. \textcolor{red}{ Finally, 32 units and 24 units were used in the first and in the second layer respectively.} The dropout layer, which was added to reduce overfitting, was configured with a dropout rate of 0.1, which was adapted for this experiment. 
+In Experiment 3, the chosen neural network architecture is again a LSTM. Since, Filonov et al. \parencite*{Filonov2016} use a LSTM network in their experiment, in order to be able to compare the experiments the same neural network architecture was chosen. However, Filonov et al. only report in their work, that two LSTM layers and a dropout layer were used. The exact configuration of the LSTM layers is not evident. Therefore, the number of units per layers was experimentally determined. Finally, 32 units and 24 units were used in the first and in the second layer respectively. The dropout layer, which was added to reduce overfitting, was configured with a dropout rate of 0.1, which was adapted for this experiment. 
 
 \begin{table}[h]
 	\caption{Configuration of Unupervised Learning in Exp. 3}
@@ -296,7 +296,7 @@ In Experiment 3, the chosen neural network architecture is again a LSTM. Since, 
 	\end{center}
 \end{table}
 
-Some early experiments with a two-layered CNN yielded in poor results. Therefore, an additional convolutional layer was added. As in Experiment 2, initially included max-pooling layers were found to negatively impact the ability to accurately predict the required time series, therefore it was dispensed with completely. Since the CNN now also had a tendency to overfit, two dropout layers were added. 
+Some early experiments with a two-layered CNN yielded in poor results. Therefore, an additional convolutional layer was added. Max-pooling layers were initially included in Experiment 2 but were found to have a negative impact on the ability to accurately predict the required time series, so they were removed entirely in Experiment 3.  Since the CNN now also had a tendency to overfit, two dropout layers were added. 
 
 
 \subsubsection{Learning}
@@ -311,7 +311,7 @@ The generator function for this experiment was, therefore, configured as follows
 \end{itemize}
 
 \subsection{Results of Experiment 3}
-As in the previously described experiments, the anomaly score was calculated as the difference between predicted value and actual value. Figure \ref{fig:rollmean} shows that calculating the different results in a graph with many peaks where the anomaly is not clearly visible. Filonov et al. \parencite*{Filonov2016} experienced the same problem and applied a exponential rolling mean on the calculated difference to smooth the outliers. The same technique is used, to smooth the difference calculated in Experiment 3, although only a simple rolling mean is calculated. \textcolor{red}{The lower graph of Figure \ref{fig:rollmean} shows the time series after the rolling mean was applied together with the Danger control variable in red and the applied threshold in blue.}
+As in the previously described experiments, the anomaly score was calculated as the difference between predicted value and actual value. Figure \ref{fig:rollmean} shows that calculating the different results in a graph with many peaks where the anomaly is not clearly visible. Filonov et al. \parencite*{Filonov2016} experienced the same problem and applied a exponential rolling mean on the calculated difference to smooth the outliers. The same technique is used, to smooth the difference calculated in Experiment 3, although only a simple rolling mean is calculated. The lower graph of Figure \ref{fig:rollmean} shows the time series after the rolling mean was applied together with the Danger control variable in red and the applied threshold in blue.
 
 \begin{figure}[h]
 	\centering
@@ -324,10 +324,10 @@ As in the previously described experiments, the anomaly score was calculated as 
 \newpage
 
 % false positives at the start are not counted, they possibly exist due to a ramp up phase
-\textcolor{red}{
-Notable, when looking at the predictions on the test sets, is that every set had a ramp up beahviour where the predicted and actual did not match causing an anomaly at the start of all test sets. This behaviour was observed with both, the CNN and the RNN model, leading to the conclusion that this behaviour was created when the test set was generated. It was assumed, that this behaviour does not occur during operation. The anomalies caused by the ramp up phase were therefore not counted when calculating the final result. 
+
+Notable, when looking at the predictions on the test sets, is that every set had a ramp up behaviour where the predicted and actual did not match causing an anomaly at the start of all test sets. This behaviour was observed with both, the CNN and the RNN model, leading to the conclusion that this behaviour was created when the test set was generated. It was assumed, that this behaviour does not occur during operation. The anomalies caused by the ramp up phase were therefore not counted when calculating the final result. 
 Further, when calculating the result, a series of anomalies that occur in quick succession are counted as just one anomaly as this refers to one of the identified flaws of the existing benchmarks (see Section \ref{Problems of Existing Benchmarks}). However, because of the down-sampling of the data and the application of a rolling mean to the predicted result, it would also no longer be possible to recognize the separate peaks caused by a series of anomalies. Since it is unknown whether Filonov et. al \parencite*{Filonov2016} used the same approach, it is possible that  better F1-Scores are achieved this way, but actually the task was simplified.\\
-Although Wen and Keyes \parencite*{Wen2019} also used the GHL data for their experiment, the results cannot be compared as they used parts of the test set to train their model, meaning they could not evaluate their model on the whole test set.}
+Although Wen and Keyes \parencite*{Wen2019} also used the GHL data for their experiment, the results cannot be compared as they used parts of the test set to train their model, meaning they could not evaluate their model on the whole test set.
  \\
 
 \begin{table}[h]
