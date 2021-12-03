@@ -11,7 +11,10 @@ The CNN is not only faster at inference but also in training. As there many hype
 
 Ultimately, as it is often the case in data science, the choice whether to use RNN or CNN is a tradeoff, in this particular case, between speed and quality of the result. A tradeoff, which might, however, be mitigated, in the favor of the CNN, by using more advanced versions of the CNN such as the U-Net.
 
-% Discuss energy use of models comparing CNN and RNN
+
+\section{Review of Experiments}
+%Looking at the computation times and the results of the experiments, it is however, questionable if deep learning is the right approach in each case. In Experiment 1, an algorithm that simply predicts a data point at the same time in the future as equal to now.
+
 
 % Critic, there might still be better approaches than NNs
 
@@ -27,38 +30,30 @@ This final chapter seeks to answer the research questions proposed in Section \r
 
 \paragraph{How does a CNN for univariate and multivariate data need to be designed for successful anomaly detection in time series data?}
 
-Munir \parencite*{Munir2019} showed that for univariate time series data 1-dimensional convolutional layers can successfully be used. Wen and Keyes \parencite*{Wen2019} also use 1-dimensional convolutional layers for their proposed architecture type, the U-Net. The further design of the CNN for anomaly detection is dependent on the given task. If a supervised approach is deemed suitable, the CNN is defined as a classifier deciding whether a given sequence is anomalous or not. However, this approach is reserved for only a few special use cases where the shapes of the anomalies are known and unchanging. If it is unknown how the anomalies look like, the CNN has to be designed to predict the future of a time series. Given this so-called regression task, it is preferable to omit the max-pooling layers, that are normally part of CNN architecture, because especially with complex multivariate time series, they impair a CNN's ability to reliably predict a time series.  
+Munir \parencite*{Munir2019} showed that for univariate time series data 1-dimensional convolutional layers can successfully be used. Wen and Keyes \parencite*{Wen2019} also use 1-dimensional convolutional layers for their proposed architecture type, the U-Net. The further design of the CNN for anomaly detection is dependent on the given task. If a supervised approach is deemed suitable, the CNN is defined as a classifier deciding whether a given sequence is anomalous or not. However, this approach is reserved only for a few special use cases where the shapes of the anomalies are known and unchanging. If it is unknown how the anomalies look like, the CNN has to be designed to predict the future of a time series. Given this so-called regression task, it is preferable to omit the max-pooling layers, that are normally part of CNN architecture, because especially with complex multivariate time series, they impair a CNN's ability to reliably predict a time series.  
 
 \paragraph{What advantages and disadvantages arise when using a CNN compared to a RNN for anomaly detection in univariate and multivariate time series?} The main advantage of a CNN over an RNN, such as a GRU- or LSTM-neural network, is its shorter computation time. The research revealed that utilizing a CNN reduces the amount of time it takes to train and infer. This is especially useful in the use case of anomaly detection as it is crucial to recognize the anomalies as fast as possible.
 
 The second big advantage of a CNN is its ability to recognize anomalies. Given a case where the anomalous behaviour always follows the same pattern as in Experiment 1, a CNN can reliably be trained to recognize this pattern. A real world scenario for this use case be the frequency analysis of a ball bearing \parencite{Mais2002}.
 
-In the scope of this work no major disadvantages were found when applying CNN to detect anomalies.
+In the scope of this work no major disadvantages were found when comparing CNN to RNN to detect anomalies.
 
 
-\paragraph{What hyper-parameter settings are crucial for a fair performance comparison between RNN and CNN?} In order to fairly compare the two neural network architectures, some hyperparameters were defined the same for both. These hyperparameter include foremost the configuration of the generator function. 
+\paragraph{What hyper-parameter settings are crucial for a fair performance comparison between RNN and CNN?} In order to fairly compare the two neural network architectures, whereever possible the hyperparameters were defined for both types. These hyperparameter include foremost the configuration of the generator function. Further, regarding the neural network architecture, the given task and the applied optimizer was defined the same for both types. At last, when postprocessing the data, that was produced by the experiments, parameters were set to the same value, for example how the rolling mean was calculated in Experiment 3.
 
-
-
-%same parameters for generator
-
-
-
+In contrast, it is difficult to compare the neural network architectures, because the functionalities are fundamentally different. Even when the neural networks have the same number of layers and roughly the same number of neurons, as in Experiment 2, the number of trainable parameters is vastly different (see Appendix \ref{exp2_summary}). During the experiments conducted in this work, the hyperparameters defining the neural networks were set on a experimental basis. No hyperparameter-tuning routine was used, with the disadvantage of probably suboptimal results, but with the advantage of being able to build neural networks with similar complexity. Except for Experiment 3, the neural networks were designed with the same number of layers and approximately the same number of neurons. Interestingly, this approach showed, that the learning capabilities of the neural networks were similar.
 
 \section{Comment on Thesis Statement}
 
-The experiments conducted in this work did not show that Convolutional Neural Networks are overall superior to Recurrent Neural Networks. 
+The experiments conducted in this work did not show that Convolutional Neural Networks are overall superior to Recurrent Neural Networks. They have, nevertheless, been proved to offer significant benefits, particularly in the context of anomaly detection. The biggest advantage of CNN, is the reduced computation time, which helps to faster identify anomalies. The shorter computation time further becomes important once the experiment is scaled to bigger datasets and faster GPU aided hardware. At a certain complexity, the cost to run such deep learning based models will become incisive. Since deep learning is also sometimes critised to not be eco-friendly, CNN offer an approach to mitigate both of these problems \parencite{Walleser2021}.
 
-The second advantage of the CNN is its shorter inference time. 
-%Looking at the computation times and the results of the experiments, it is however, questionable if deep learning is the right approach in each case. In Experiment 1, an algorithm that simply predicts a data point at the same time in the future as equal to now. 
+The trials conducted in this paper revealed that when a typical CNN with convolutional and max-pooling layers is applied, the performance is still inferior to that of an RNN. This gap, however migth be closed, with the use of upsampling and transposing layers. These, also called deconvolutional layers, build the counterpart to convolutional layers. Simply said convolutional layers' goal is to extract features, whereas deconvolutional layers' goal is to produce features. Wen and Keyes \parencite*{Wen2019} were able to successfully use the combination of both, convolution and deconvolution, in their anomaly detection experiment.
 
-% it seems to be a good idea to use CNN for time series prediction in general, but no pooling - reduces features. Another approach that is popular in is Auto-Encoder with upsampling.
-
-
-
-%Another factor, that speeks for the use of CNN instead of RNN, is that CNN generally need less computation time, in training but also in operation. One of the critique points of 
+Overall, the experiment demonstrated that CNNs are capable of accuratly forecasting time series. With some adjustments, they are probaly equally as accurate as RNN. This work supports the view of some experts who believe RNN will be phased out in the future \parencite{Culurciello2018} \parencite{Bai2018}. 
 
 % Some argue that RNN are no longer needed https://www.macnica.co.jp/business/ai_iot/columns/135112/
 %https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0
 %https://arxiv.org/abs/1803.01271
+\section{Future Research}
+
 

@@ -3,7 +3,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Declaration of Authorship}{iii}{section*.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abstract}{vii}{section*.4}%
+\contentsline {chapter}{Abstract}{vii}{section*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acknowledgements}{ix}{section*.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.10}%
 \defcounter {refsection}{0}\relax 
@@ -53,9 +55,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Anomaly Detection on Univariate Time Series}{10}{section.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}LSTM}{10}{subsection.49}%
+\contentsline {subsection}{\numberline {2.2.1}Univariate Anomaly detection with LSTM}{10}{subsection.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}CNN}{11}{subsection.50}%
+\contentsline {subsection}{\numberline {2.2.2}Univariate Anomaly detection with CNN}{11}{subsection.50}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.3}Comparison}{11}{subsection.52}%
 \defcounter {refsection}{0}\relax 
@@ -65,11 +67,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Anomaly Detection on Multivariate Time Series}{12}{section.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}LSTM}{12}{subsection.57}%
+\contentsline {subsection}{\numberline {2.3.1}Multivariate Anomaly Detection with LSTM}{12}{subsection.57}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Anomaly Detection using LSTM}{12}{section*.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}CNN}{13}{subsection.59}%
+\contentsline {subsection}{\numberline {2.3.2}Multivariate Anomaly Detection with CNN}{13}{subsection.59}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Classification of Time Series Data using CNN}{13}{section*.60}%
 \defcounter {refsection}{0}\relax 
@@ -197,34 +199,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Results Analysis}{43}{chapter.151}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{45}{chapter.152}%
+\contentsline {section}{\numberline {6.1}Review of Experiments}{44}{section.152}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Answering the Research Questions}{45}{section.153}%
+\contentsline {chapter}{\numberline {7}Conclusion}{45}{chapter.153}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{How does a CNN for univariate and multivariate data need to be designed for successful anomaly detection in time series data?}{45}{section*.154}%
+\contentsline {section}{\numberline {7.1}Answering the Research Questions}{45}{section.154}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{What advantages and disadvantages arise when using a CNN compared to a RNN for anomaly detection in univariate and multivariate time series?}{45}{section*.155}%
+\contentsline {paragraph}{How does a CNN for univariate and multivariate data need to be designed for successful anomaly detection in time series data?}{45}{section*.155}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{What hyper-parameter settings are crucial for a fair performance comparison between RNN and CNN?}{45}{section*.156}%
+\contentsline {paragraph}{What advantages and disadvantages arise when using a CNN compared to a RNN for anomaly detection in univariate and multivariate time series?}{45}{section*.156}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Comment on Thesis Statement}{45}{section.157}%
+\contentsline {paragraph}{What hyper-parameter settings are crucial for a fair performance comparison between RNN and CNN?}{45}{section*.157}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Model Summaries}{47}{appendix.158}%
+\contentsline {section}{\numberline {7.2}Comment on Thesis Statement}{46}{section.158}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{47}{section.159}%
+\contentsline {section}{\numberline {7.3}Future Research}{46}{section.159}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}Supervised Learning}{47}{subsection.160}%
+\contentsline {chapter}{\numberline {A}Model Summaries}{47}{appendix.160}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}Unsupervised Learning}{49}{subsection.163}%
+\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{47}{section.161}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Summary of Models of Experiment 2}{51}{section.166}%
+\contentsline {subsection}{\numberline {A.1.1}Supervised Learning}{47}{subsection.162}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Supervised Learning}{51}{subsection.167}%
+\contentsline {subsection}{\numberline {A.1.2}Unsupervised Learning}{49}{subsection.165}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Unsupervised Learning}{51}{subsection.168}%
+\contentsline {section}{\numberline {A.2}Summary of Models of Experiment 2}{51}{section.168}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Summary of Models of Experiment 3}{53}{section.171}%
+\contentsline {subsection}{\numberline {A.2.1}Supervised Learning}{51}{subsection.169}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.1}Unsupervised Learning}{53}{subsection.172}%
+\contentsline {subsection}{\numberline {A.2.2}Unsupervised Learning}{51}{subsection.170}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{55}{appendix*.175}%
+\contentsline {section}{\numberline {A.3}Summary of Models of Experiment 3}{53}{section.173}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.3.1}Unsupervised Learning}{53}{subsection.174}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{55}{appendix*.177}%

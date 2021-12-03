@@ -113,7 +113,7 @@ Knowing ahead of time what kind of anomaly the data might contain helps the data
 
 First, anomaly detection on univariate time series using deep learning approaches is investigated to gain insight into the used architecture and the overall training and detection process. 
 
-\subsection{LSTM}
+\subsection{Univariate Anomaly detection with LSTM}
 
 Because of their ability to retain long term memory, Long Short Term Memory (LSTM) networks have been shown to be especially useful for learning sequences containing longer term patterns. Malhotra et al. \parencite*{Malhotra2015} model normal behaviour with a predictor and then use the prediction errors to classify abnormal behaviour. This is especially useful in real-world anomaly detection scenarios where instances of normal behaviour are plentiful but instances of anomalous behaviour are rare. For prediction, multiple time steps into the future are forecasted to ensure that the networks capture the temporal structure of the chain. As a result, each point in the series has multiple corresponding expected values made at various points in the past, resulting in multiple error values. The likelihood of normal behaviour on the test data is calculated using the probability distribution of the errors produced when predicting on normal data. For this approach Malhotra et al. use a deep LSTM neural network. The proposed network architecture with two hidden layers is successfully applied on different univariate time series such Electrocardiograms (ECG), a valve time series and a power demand dataset. The proposed approach on univariate data could easily be adopted with multivariate data, where instead of a univariate in- and output, a multivariate data set is fed into the neural network to predict a multivariate output. 
 
@@ -122,7 +122,7 @@ Especially to mention is the training approach used in both papers. To train the
 %https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2015-56.pdf
 
 
-\subsection{CNN} \label{CNN on univariate series}
+\subsection{Univariate Anomaly detection with CNN} \label{CNN on univariate series}
 
 The use of CNNs for time-series analysis has received interest in recent years. Munir et al. \parencite*{Munir2019} forecast time-series and identify anomalies based on the prediction error using a CNN architecture called deep-learning based anomaly detection method (DeepAnT). DeepAnT uses an architecture that is divided into two modules. The first module is called "Time Series Predictor". The "Time Series Predictor" consists of a CNN. As the name of the module indicates, the CNN is responsible for predicting the future time stamps of a given time series, whereas  the "Anomaly Detector" module is responsible for tagging given data point as anomalous. Figure \ref{fig:CNN} represents the architecture of the CNN-based predictor module. It consists of two convolutional layers, each followed by a max-pooling layer. As the last layer, however, a fully connected layer, where all neurons are connected to all neurons of the previous layer, is used. The last is responsible for predicting the next time step. The number of output nodes, hereby, corresponds to the number of predicted time steps. One output node means only the next time step into the future is predicted, whereas three output nodes would imply a sequence of three data points are predicted.     
 
@@ -160,7 +160,7 @@ The second parameter that was used to compare the different categories was train
 \section{Anomaly Detection on Multivariate Time Series}
 In this section, anomaly detection on multivariate time series is investigated. Once again, CNNs and LSTMs are examined on the state of the art application possibilities for anomaly detection or time series classification.
 
-\subsection{LSTM}
+\subsection{Multivariate Anomaly Detection with LSTM}
 First, relevant works that use LSTMs are investigated. LSTMs will be used to establish a benchmark.
 
 \subsubsection{Anomaly Detection using LSTM} \label{Anomaly Detection using LSTM}
@@ -182,7 +182,7 @@ In his dissertation, Alexander Verner \parencite*{Verner2019}, compared differen
 %
 %The above described typical use case of an LSTM is relevant because it can be applied in an unsupervised learning approach. Similar as in section \ref{CNN on univariate series}, with a traditional LSTM a base could be learned to predict various time steps in the future. Again applying the Euclidean distance, a probability for an occurring anomaly could be calculated.
 
-\subsection{CNN}
+\subsection{Multivariate Anomaly Detection with CNN}
 In this section CNNs for anomaly detection but also for classification of time series are investigated. 
 
 \subsubsection{Classification of Time Series Data using CNN}

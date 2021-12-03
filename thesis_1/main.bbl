@@ -162,6 +162,58 @@
     \field{year}{2009}
   \endentry
 
+  \entry{Bai2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BS}{%
+         family={Bai},
+         familyi={B\bibinitperiod},
+         given={Shaojie},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KJZ}{%
+         family={Kolter},
+         familyi={K\bibinitperiod},
+         given={J.\bibnamedelima Zico},
+         giveni={J\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=KV}{%
+         family={Koltun},
+         familyi={K\bibinitperiod},
+         given={Vladlen},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BSKJZKV1}
+    \strng{fullhash}{BSKJZKV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    For most deep learning practitioners, sequence modeling is synonymous with
+  recurrent networks. Yet recent results indicate that convolutional
+  architectures can outperform recurrent networks on tasks such as audio
+  synthesis and machine translation. Given a new sequence modeling task or
+  dataset, which architecture should one use? We conduct a systematic
+  evaluation of generic convolutional and recurrent architectures for sequence
+  modeling. The models are evaluated across a broad range of standard tasks
+  that are commonly used to benchmark recurrent networks. Our results indicate
+  that a simple convolutional architecture outperforms canonical recurrent
+  networks such as LSTMs across a diverse range of tasks and datasets, while
+  demonstrating longer effective memory. We conclude that the common
+  association between sequence modeling and recurrent networks should be
+  reconsidered, and convolutional networks should be regarded as a natural
+  starting point for sequence modeling tasks. To assist related work, we have
+  made code available at http://github.com/locuslab/TCN .%
+    }
+    \field{title}{An Empirical Evaluation of Generic Convolutional and
+  Recurrent Networks for Sequence Modeling}
+    \field{month}{03}
+    \field{year}{2018}
+  \endentry
+
   \entry{Braei2020}{misc}{}
     \name{author}{2}{}{%
       {{hash=BM}{%
@@ -292,6 +344,32 @@
   Workshop}
     \field{month}{12}
     \field{year}{2014}
+  \endentry
+
+  \entry{Culurciello2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CE}{%
+         family={Culurciello},
+         familyi={C\bibinitperiod},
+         given={Eugenio},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CE1}
+    \strng{fullhash}{CE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{The fall of RNN / LSTM}
+    \verb{url}
+    \verb https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0
+    \endverb
+    \field{journaltitle}{Towards Data Science}
+    \field{month}{04}
+    \field{year}{2018}
   \endentry
 
   \entry{Dutta2018}{inproceedings}{}
@@ -1488,6 +1566,33 @@
       {Nova Southeastern University}%
     }
     \field{year}{2019}
+  \endentry
+
+  \entry{Walleser2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WE}{%
+         family={Walleser},
+         familyi={W\bibinitperiod},
+         given={Emil},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WE1}
+    \strng{fullhash}{WE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Artificial Intelligence Has an Enormous Carbon Footprint}
+    \verb{url}
+    \verb https://towardsdatascience.com/artificial-intelligence-has-an-enormou
+    \verb s-carbon-footprint-239290ebffe
+    \endverb
+    \field{journaltitle}{Towards Data Science}
+    \field{month}{06}
+    \field{year}{2021}
   \endentry
 
   \entry{Wen2019}{misc}{}

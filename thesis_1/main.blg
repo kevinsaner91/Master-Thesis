@@ -34,22 +34,17 @@ Case mismatch error between cite keys Own and own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 365 of file main.aux
- : \citation{Own
- :              }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Own and own
 ---line 368 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 376 of file main.aux
+---line 371 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 379 of file main.aux
+---line 380 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
@@ -59,27 +54,32 @@ Case mismatch error between cite keys Own and own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 386 of file main.aux
+---line 387 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 389 of file main.aux
+---line 390 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 392 of file main.aux
+---line 393 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 414 of file main.aux
+---line 396 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 417 of file main.aux
+---line 418 of file main.aux
+ : \citation{Own
+ :              }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Own and own
+---line 421 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
@@ -102,7 +102,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 10040 items.
+Reallocating 'field_info' (item size: 4) to 10460 items.
 Database file #1: main-blx.bib
 Database file #2: example.bib
 Warning--entry type for "Wen2019" isn't style-file defined
@@ -125,49 +125,53 @@ Warning--entry type for "Lendave2021" isn't style-file defined
 --line 359 of file example.bib
 Warning--entry type for "Krishnan2019" isn't style-file defined
 --line 366 of file example.bib
+Warning--entry type for "Walleser2021" isn't style-file defined
+--line 383 of file example.bib
+Warning--entry type for "Culurciello2018" isn't style-file defined
+--line 391 of file example.bib
 Warning--I didn't find a database entry for "own"
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 35 entries,
+You've used 38 entries,
             6393 wiz_defined-function locations,
-            1494 strings with 38870 characters,
-and the built_in function-call counts, 204279 in all, are:
-= -- 13578
-> -- 3642
-< -- 939
-+ -- 4843
-- -- 1416
-* -- 15795
-:= -- 21703
+            1509 strings with 40425 characters,
+and the built_in function-call counts, 219064 in all, are:
+= -- 14459
+> -- 3959
+< -- 1033
++ -- 5144
+- -- 1535
+* -- 16928
+:= -- 23130
 add.period$ -- 0
-call.type$ -- 35
-change.case$ -- 398
-chr.to.int$ -- 87
-cite$ -- 68
-duplicate$ -- 22506
-empty$ -- 19118
-format.name$ -- 2316
-if$ -- 41567
+call.type$ -- 38
+change.case$ -- 428
+chr.to.int$ -- 96
+cite$ -- 74
+duplicate$ -- 24128
+empty$ -- 20555
+format.name$ -- 2497
+if$ -- 44661
 int.to.chr$ -- 0
-int.to.str$ -- 70
+int.to.str$ -- 76
 missing$ -- 0
-newline$ -- 1316
-num.names$ -- 1439
-pop$ -- 12049
+newline$ -- 1406
+num.names$ -- 1562
+pop$ -- 13081
 preamble$ -- 1
-purify$ -- 586
+purify$ -- 628
 quote$ -- 0
-skip$ -- 5929
+skip$ -- 6442
 stack$ -- 0
-substring$ -- 22574
-swap$ -- 5737
-text.length$ -- 956
-text.prefix$ -- 34
+substring$ -- 23969
+swap$ -- 6182
+text.length$ -- 1049
+text.prefix$ -- 37
 top$ -- 1
-type$ -- 1168
+type$ -- 1268
 warning$ -- 0
-while$ -- 3126
+while$ -- 3328
 width$ -- 0
-write$ -- 1282
+write$ -- 1369
 (There were 14 error messages)
