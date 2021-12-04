@@ -291,7 +291,7 @@ Typically, lowering the classification threshold, described in section \ref{CNN 
 	%https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc
 \end{figure}
 
-The area under the above shown curve, however, is classification-threshold-invariant. It measures the quality of the model's predictions irrespective of what classification threshold is chosen. The AUC in anomaly detection expressed the likelihood that the measured algorithm assigns a random anomalous point in the time-series a higher anomaly score than a random normal point. As a result, AUC is a good way to compare different anomaly detection methods \parencite{Braei2020}.
+The area under the above shown curve, however, is classification-threshold-invariant. It measures the quality of the model's predictions irrespective of what classification threshold is chosen. The AUC in anomaly detection expresses the likelihood that the measured algorithm assigns a random anomalous point in the time-series a higher anomaly score than a random normal point. As a result, AUC is considered useful to compare different anomaly detection methods \parencite{Braei2020}.
 
 \subsection{F-Score}
 Another approach to compare models is to use the F-Score. The F-Score describes a model's accuracy on a dataset. It is commonly used to assess binary classification systems, which categorize examples as "positive" or "negative" or in the case of anomaly detection into "anomalous" and "non-anomalous". The F-score is a method of combining the model's precision and recall, per definition it is the harmonic mean of the precision and recall of the model. Precision and recall are calculated as follows from the true and false positive respectively negatives.

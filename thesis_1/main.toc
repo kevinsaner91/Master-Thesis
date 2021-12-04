@@ -201,36 +201,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Review of Experiments}{44}{section.152}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{45}{chapter.153}%
+\contentsline {chapter}{\numberline {7}Conclusion}{45}{chapter.154}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Answering the Research Questions}{45}{section.154}%
+\contentsline {section}{\numberline {7.1}Answering the Research Questions}{45}{section.155}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{How does a CNN for univariate and multivariate data need to be designed for successful anomaly detection in time series data?}{45}{section*.155}%
+\contentsline {paragraph}{How does a CNN for univariate and multivariate data need to be designed for successful anomaly detection in time series data?}{45}{section*.156}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{What advantages and disadvantages arise when using a CNN compared to a RNN for anomaly detection in univariate and multivariate time series?}{45}{section*.156}%
+\contentsline {paragraph}{What advantages and disadvantages arise when using a CNN compared to a RNN for anomaly detection in univariate and multivariate time series?}{45}{section*.157}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{What hyper-parameter settings are crucial for a fair performance comparison between RNN and CNN?}{45}{section*.157}%
+\contentsline {paragraph}{What hyper-parameter settings are crucial for a fair performance comparison between RNN and CNN?}{45}{section*.158}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Comment on Thesis Statement}{46}{section.158}%
+\contentsline {section}{\numberline {7.2}Comment on Thesis Statement}{46}{section.159}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Future Research}{46}{section.159}%
+\contentsline {section}{\numberline {7.3}Future Research}{46}{section.160}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Model Summaries}{47}{appendix.160}%
+\contentsline {chapter}{\numberline {A}Model Summaries}{47}{appendix.161}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{47}{section.161}%
+\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{47}{section.162}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}Supervised Learning}{47}{subsection.162}%
+\contentsline {subsection}{\numberline {A.1.1}Supervised Learning}{47}{subsection.163}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}Unsupervised Learning}{49}{subsection.165}%
+\contentsline {subsection}{\numberline {A.1.2}Unsupervised Learning}{49}{subsection.166}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Summary of Models of Experiment 2}{51}{section.168}%
+\contentsline {section}{\numberline {A.2}Summary of Models of Experiment 2}{51}{section.169}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Supervised Learning}{51}{subsection.169}%
+\contentsline {subsection}{\numberline {A.2.1}Supervised Learning}{51}{subsection.170}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Unsupervised Learning}{51}{subsection.170}%
+\contentsline {subsection}{\numberline {A.2.2}Unsupervised Learning}{52}{subsection.172}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Summary of Models of Experiment 3}{53}{section.173}%
+\contentsline {section}{\numberline {A.3}Summary of Models of Experiment 3}{54}{section.175}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.1}Unsupervised Learning}{53}{subsection.174}%
+\contentsline {subsection}{\numberline {A.3.1}Unsupervised Learning}{54}{subsection.176}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{55}{appendix*.177}%
+\contentsline {chapter}{Bibliography}{57}{appendix*.179}%

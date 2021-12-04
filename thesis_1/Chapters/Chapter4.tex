@@ -102,11 +102,7 @@ The second experiment is conducted on a more challenging dataset. Also the embed
 In the third experiment, a dataset that has already been used in the field of anomaly detection should be used. The neural network architecture types CNN and RNN are applied to the chosen dataset. First, this shows which approach is better suited and second, the achieved results can be compared to already existent results to verify the overall performance of the chosen anomaly detection methods.
 
 \subsection{Results}
-As results three metrics are reported. First and most important, is the F1-Score which gives insight on the models ability to recognize anomalies.
-
-\textcolor{red}{ F1 Score is picked over AUROC because it's better when the data is imbalanced}
-
- Second and third, the training and inference time are reported.
+As results three metrics are reported. First and most important, is the F1-Score which gives insight on the models ability to recognize anomalies. The F1-Score is preferred over the AUC, because it is more significant on imbalanced datasets. The F1-Score provides a better estimate of how many anomalies are correctly identified. It is assumed that a model properly classifies a significant number of true negatives. Therefore, AUC-Score of the models would be very high and similar and thus harder to compare. As the other two metrics, the training and inference time are reported of each model.
 
 
 

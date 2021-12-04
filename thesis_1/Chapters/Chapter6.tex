@@ -13,6 +13,21 @@ Ultimately, as it is often the case in data science, the choice whether to use R
 
 
 \section{Review of Experiments}
+Neural Networks became popular in recent years in anomaly detection as they require little domain knowledge. The experiments conducted in this work indicate that this comes at the expense of higher training and inference times as well as performance drawbacks. This is particularly evident in Experiment 3. As Figure \ref{fig:review} shows, one type of anomaly is easily recognizable. The green line representes the actual value, the red line indicates the anomalies. An anomaly occurs when the green line surpasses the 333°C threshold represented by the black line. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.45]{Figures/review}
+	\decoRule
+	\caption[Behaviour of Anomaly in the GHL Dataset]{Behaviour of Anomaly in the GHL Dataset \parencite{own}}
+	\label{fig:review}
+\end{figure}
+
+This circumstance is supposed to be known by someone with domain expertise.
+As a result, it is known that for this sort of anomaly, a logistic regression model is sufficient, and on top of that, this much simpler model achieves a 100 percent accuracy. 
+
+To conclude, deep learning is not always the best option, and domain expertise is still necessary to select the quickest and most accurate model.   
+
 %Looking at the computation times and the results of the experiments, it is however, questionable if deep learning is the right approach in each case. In Experiment 1, an algorithm that simply predicts a data point at the same time in the future as equal to now.
 
 
@@ -55,5 +70,7 @@ Overall, the experiment demonstrated that CNNs are capable of accuratly forecast
 %https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0
 %https://arxiv.org/abs/1803.01271
 \section{Future Research}
+
+
 
 
