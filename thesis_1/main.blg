@@ -15,71 +15,71 @@ Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: Chapters/Chapter4.aux
 Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: Chapters/Chapter5.aux
-White space in argument---line 343 of file main.aux
+White space in argument---line 344 of file main.aux
  : \citation{Own
  :               or UCI???}
 I'm skipping whatever remains of this command
-White space in argument---line 346 of file main.aux
+White space in argument---line 347 of file main.aux
  : \citation{Own
  :               or UCI???}
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 349 of file main.aux
+---line 350 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 352 of file main.aux
+---line 353 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 368 of file main.aux
+---line 369 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 371 of file main.aux
+---line 372 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 380 of file main.aux
+---line 381 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 383 of file main.aux
+---line 384 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 387 of file main.aux
+---line 388 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 390 of file main.aux
+---line 391 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 393 of file main.aux
+---line 394 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 396 of file main.aux
+---line 397 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 418 of file main.aux
+---line 419 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 421 of file main.aux
+---line 422 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
@@ -87,6 +87,8 @@ Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: Chapters/Chapter6.aux
 Reallocating 'name_of_file' (item size: 1) to 25 items.
 A level-1 auxiliary file: Appendices/AppendixA.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: Appendices/AppendixB.aux
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
@@ -102,76 +104,72 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 10460 items.
+Reallocating 'field_info' (item size: 4) to 10600 items.
 Database file #1: main-blx.bib
 Database file #2: example.bib
-Warning--entry type for "Wen2019" isn't style-file defined
---line 11 of file example.bib
-Warning--entry type for "Hodge2004" isn't style-file defined
---line 32 of file example.bib
 Warning--entry type for "DennyBritz2015" isn't style-file defined
---line 143 of file example.bib
-Warning--entry type for "MichaelPhi2018" isn't style-file defined
 --line 151 of file example.bib
-Warning--entry type for "RichStureborg2019" isn't style-file defined
+Warning--entry type for "MichaelPhi2018" isn't style-file defined
 --line 159 of file example.bib
-Warning--entry type for "Braei2020" isn't style-file defined
---line 176 of file example.bib
+Warning--entry type for "RichStureborg2019" isn't style-file defined
+--line 167 of file example.bib
 Warning--entry type for "Katanforoosh2019" isn't style-file defined
---line 335 of file example.bib
+--line 371 of file example.bib
 Warning--entry type for "Google2021" isn't style-file defined
---line 353 of file example.bib
+--line 390 of file example.bib
 Warning--entry type for "Lendave2021" isn't style-file defined
---line 359 of file example.bib
+--line 396 of file example.bib
 Warning--entry type for "Krishnan2019" isn't style-file defined
---line 366 of file example.bib
+--line 403 of file example.bib
 Warning--entry type for "Walleser2021" isn't style-file defined
---line 383 of file example.bib
+--line 420 of file example.bib
 Warning--entry type for "Culurciello2018" isn't style-file defined
---line 391 of file example.bib
+--line 428 of file example.bib
+Warning--I'm ignoring Bai2018's extra "volume" field
+--line 442 of file example.bib
 Warning--I didn't find a database entry for "own"
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 38 entries,
+You've used 39 entries,
             6393 wiz_defined-function locations,
-            1509 strings with 40425 characters,
-and the built_in function-call counts, 219064 in all, are:
-= -- 14459
-> -- 3959
-< -- 1033
-+ -- 5144
-- -- 1535
-* -- 16928
-:= -- 23130
+            1538 strings with 40901 characters,
+and the built_in function-call counts, 251825 in all, are:
+= -- 17508
+> -- 4440
+< -- 1362
++ -- 6246
+- -- 1613
+* -- 18843
+:= -- 26528
 add.period$ -- 0
-call.type$ -- 38
-change.case$ -- 428
-chr.to.int$ -- 96
-cite$ -- 74
-duplicate$ -- 24128
-empty$ -- 20555
-format.name$ -- 2497
-if$ -- 44661
+call.type$ -- 39
+change.case$ -- 755
+chr.to.int$ -- 99
+cite$ -- 76
+duplicate$ -- 27898
+empty$ -- 22908
+format.name$ -- 2707
+if$ -- 51329
 int.to.chr$ -- 0
-int.to.str$ -- 76
+int.to.str$ -- 103
 missing$ -- 0
-newline$ -- 1406
-num.names$ -- 1562
-pop$ -- 13081
+newline$ -- 1609
+num.names$ -- 1969
+pop$ -- 13593
 preamble$ -- 1
-purify$ -- 628
+purify$ -- 977
 quote$ -- 0
-skip$ -- 6442
+skip$ -- 7604
 stack$ -- 0
-substring$ -- 23969
-swap$ -- 6182
-text.length$ -- 1049
-text.prefix$ -- 37
+substring$ -- 28693
+swap$ -- 7063
+text.length$ -- 1098
+text.prefix$ -- 38
 top$ -- 1
-type$ -- 1268
+type$ -- 1305
 warning$ -- 0
-while$ -- 3328
+while$ -- 3849
 width$ -- 0
-write$ -- 1369
+write$ -- 1571
 (There were 14 error messages)

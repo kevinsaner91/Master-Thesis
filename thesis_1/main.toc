@@ -41,196 +41,202 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.4.1}Research Questions}{7}{subsection.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Research Objectives}{7}{subsection.35}%
+\contentsline {subsection}{\numberline {1.4.2}Research Objectives}{7}{subsection.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Limitations}{7}{subsection.40}%
+\contentsline {subsection}{\numberline {1.4.3}Limitations}{7}{subsection.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.4}Significance}{8}{subsection.41}%
+\contentsline {subsection}{\numberline {1.4.4}Significance}{8}{subsection.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Related Literature}{9}{chapter.42}%
+\contentsline {chapter}{\numberline {2}Related Literature}{9}{chapter.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Anomaly or Outlier?}{9}{section.43}%
+\contentsline {section}{\numberline {2.1}Anomaly or Outlier?}{9}{section.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Types of Anomalies}{9}{subsection.44}%
+\contentsline {subsection}{\numberline {2.1.1}Types of Anomalies}{9}{subsection.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Anomaly Detection on Univariate Time Series}{10}{section.48}%
+\contentsline {section}{\numberline {2.2}Anomaly Detection on Univariate Time Series}{10}{section.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Univariate Anomaly detection with LSTM}{10}{subsection.49}%
+\contentsline {subsection}{\numberline {2.2.1}Univariate Anomaly detection with LSTM}{10}{subsection.52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Univariate Anomaly detection with CNN}{11}{subsection.50}%
+\contentsline {subsection}{\numberline {2.2.2}Univariate Anomaly detection with CNN}{11}{subsection.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Comparison}{11}{subsection.52}%
+\contentsline {subsection}{\numberline {2.2.3}Comparison}{11}{subsection.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Comparison of AUC}{12}{section*.53}%
+\contentsline {subsubsection}{Comparison of AUC}{12}{section*.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Computation Time}{12}{section*.55}%
+\contentsline {subsubsection}{Computation Time}{12}{section*.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Anomaly Detection on Multivariate Time Series}{12}{section.56}%
+\contentsline {section}{\numberline {2.3}Anomaly Detection on Multivariate Time Series}{12}{section.59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Multivariate Anomaly Detection with LSTM}{12}{subsection.57}%
+\contentsline {subsection}{\numberline {2.3.1}Multivariate Anomaly Detection with LSTM}{12}{subsection.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Anomaly Detection using LSTM}{12}{section*.58}%
+\contentsline {subsubsection}{Anomaly Detection using LSTM}{12}{section*.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Multivariate Anomaly Detection with CNN}{13}{subsection.59}%
+\contentsline {subsection}{\numberline {2.3.2}Multivariate Anomaly Detection with CNN}{13}{subsection.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Classification of Time Series Data using CNN}{13}{section*.60}%
+\contentsline {subsubsection}{Classification of Time Series Data using CNN}{13}{section*.63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{U-Nets for Anomaly Detection}{14}{section*.62}%
+\contentsline {subsubsection}{U-Nets for Anomaly Detection}{14}{section*.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Hyperparameter Settings for fair comparison}{15}{section.64}%
+\contentsline {section}{\numberline {2.4}Hyperparameter Settings for fair comparison}{15}{section.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}ROC and AUC}{15}{subsection.65}%
+\contentsline {subsection}{\numberline {2.4.1}ROC and AUC}{15}{subsection.68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}F-Score}{16}{subsection.67}%
+\contentsline {subsection}{\numberline {2.4.2}F-Score}{16}{subsection.70}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.3}Computation Time}{17}{subsection.68}%
+\contentsline {subsection}{\numberline {2.4.3}Computation Time}{17}{subsection.71}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Research Gap}{17}{section.69}%
+\contentsline {section}{\numberline {2.5}Research Gap}{17}{section.72}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Research Methodology}{19}{chapter.70}%
+\contentsline {chapter}{\numberline {3}Research Methodology}{19}{chapter.73}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduction}{19}{section.71}%
+\contentsline {section}{\numberline {3.1}Introduction}{19}{section.74}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Research Design}{19}{section.72}%
+\contentsline {section}{\numberline {3.2}Research Design}{19}{section.75}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Awareness of the Problem - Literature Review}{20}{subsection.74}%
+\contentsline {subsection}{\numberline {3.2.1}Awareness of the Problem - Literature Review}{20}{subsection.77}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Experimental Design}{20}{subsection.75}%
+\contentsline {subsection}{\numberline {3.2.2}Experimental Design}{20}{subsection.78}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Data Selection}{20}{section*.76}%
+\contentsline {subsubsection}{Data Selection}{20}{section*.79}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Setup of Experiments}{21}{section*.77}%
+\contentsline {subsubsection}{Setup of Experiments}{21}{section*.80}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Experiments}{21}{subsection.78}%
+\contentsline {subsection}{\numberline {3.2.3}Experiments}{21}{subsection.81}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Evaluation - Results Analysis}{21}{subsection.80}%
+\contentsline {subsection}{\numberline {3.2.4}Evaluation - Results Analysis}{21}{subsection.83}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Conclusion}{22}{subsection.81}%
+\contentsline {subsection}{\numberline {3.2.5}Conclusion}{21}{subsection.84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Experimental Design}{23}{chapter.82}%
+\contentsline {chapter}{\numberline {4}Experimental Design}{23}{chapter.85}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Tools}{23}{section.83}%
+\contentsline {section}{\numberline {4.1}Tools}{23}{section.86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Hardware}{23}{subsection.84}%
+\contentsline {subsection}{\numberline {4.1.1}Hardware}{23}{subsection.87}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Software}{23}{subsection.85}%
+\contentsline {subsection}{\numberline {4.1.2}Software}{23}{subsection.88}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Datasets}{23}{section.86}%
+\contentsline {section}{\numberline {4.2}Datasets}{23}{section.89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Problems of Existing Benchmarks}{23}{subsection.87}%
+\contentsline {subsection}{\numberline {4.2.1}Problems of Existing Benchmarks}{23}{subsection.90}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Anomalies}{24}{subsection.92}%
+\contentsline {subsection}{\numberline {4.2.2}Anomalies}{24}{subsection.95}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Dataset Selection}{24}{subsection.94}%
+\contentsline {subsection}{\numberline {4.2.3}Dataset Selection}{24}{subsection.97}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{1. Dataset}{25}{section*.95}%
+\contentsline {subsubsection}{1. Dataset}{25}{section*.98}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{2. Dataset}{25}{section*.96}%
+\contentsline {subsubsection}{2. Dataset}{25}{section*.99}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{3. Dataset}{25}{section*.97}%
+\contentsline {subsubsection}{3. Dataset}{25}{section*.100}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Split of Datasets}{25}{subsection.98}%
+\contentsline {subsection}{\numberline {4.2.4}Split of Datasets}{25}{subsection.101}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Setup of Experiments}{25}{section.99}%
+\contentsline {section}{\numberline {4.3}Setup of Experiments}{25}{section.102}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Supervised Learning}{25}{subsection.100}%
+\contentsline {subsection}{\numberline {4.3.1}Supervised Learning}{25}{subsection.103}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Unsupervised Learning}{26}{subsection.101}%
+\contentsline {subsection}{\numberline {4.3.2}Unsupervised Learning}{26}{subsection.104}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Neural Networks}{26}{subsection.102}%
+\contentsline {subsection}{\numberline {4.3.3}Neural Networks}{26}{subsection.105}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Normalization}{26}{section*.103}%
+\contentsline {subsubsection}{Normalization}{26}{section*.106}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Activation Function}{26}{section*.104}%
+\contentsline {subsubsection}{Activation Function}{26}{section*.107}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Optimizer}{27}{section*.105}%
+\contentsline {subsubsection}{Optimizer}{27}{section*.108}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Batch Computing}{27}{section*.106}%
+\contentsline {subsubsection}{Batch Computing}{27}{section*.109}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Experiments}{27}{subsection.107}%
+\contentsline {subsection}{\numberline {4.3.4}Experiments}{27}{subsection.110}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{1. Experiment}{27}{section*.108}%
+\contentsline {subsubsection}{1. Experiment}{27}{section*.111}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{2. Experiment}{27}{section*.109}%
+\contentsline {subsubsection}{2. Experiment}{27}{section*.112}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{3. Experiment}{27}{section*.110}%
+\contentsline {subsubsection}{3. Experiment}{27}{section*.113}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}Results}{28}{subsection.111}%
+\contentsline {subsection}{\numberline {4.3.5}Results}{28}{subsection.114}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experiments}{29}{chapter.112}%
+\contentsline {chapter}{\numberline {5}Experiments}{29}{chapter.115}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Experiment 1}{29}{section.113}%
+\contentsline {section}{\numberline {5.1}Experiment 1}{29}{section.116}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Dataset}{29}{subsection.114}%
+\contentsline {subsection}{\numberline {5.1.1}Dataset}{29}{subsection.117}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Neural Networks}{30}{subsection.117}%
+\contentsline {subsection}{\numberline {5.1.2}Neural Networks}{30}{subsection.120}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Learning}{31}{section*.121}%
+\contentsline {subsubsection}{Learning}{31}{section*.124}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Results of Experiment 1}{32}{subsection.122}%
+\contentsline {subsection}{\numberline {5.1.3}Results of Experiment 1}{32}{subsection.125}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Experiment 2}{33}{section.124}%
+\contentsline {section}{\numberline {5.2}Experiment 2}{33}{section.127}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Dataset}{33}{subsection.125}%
+\contentsline {subsection}{\numberline {5.2.1}Dataset}{33}{subsection.128}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sampling}{33}{section*.127}%
+\contentsline {subsubsection}{Sampling}{33}{section*.130}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Anomalies}{34}{section*.128}%
+\contentsline {subsubsection}{Anomalies}{34}{section*.131}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Neural Networks}{35}{subsection.130}%
+\contentsline {subsection}{\numberline {5.2.2}Neural Networks}{35}{subsection.133}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Learning}{35}{section*.132}%
+\contentsline {subsubsection}{Learning}{35}{section*.135}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Results of Experiment 2}{36}{subsection.133}%
+\contentsline {subsection}{\numberline {5.2.3}Results of Experiment 2}{36}{subsection.136}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Experiment 3}{37}{section.136}%
+\contentsline {section}{\numberline {5.3}Experiment 3}{37}{section.139}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Dataset}{37}{subsection.137}%
+\contentsline {subsection}{\numberline {5.3.1}Dataset}{37}{subsection.140}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sampling}{38}{section*.139}%
+\contentsline {subsubsection}{Sampling}{38}{section*.142}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Anomalies}{39}{section*.141}%
+\contentsline {subsubsection}{Anomalies}{39}{section*.144}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Neural Networks}{40}{subsection.145}%
+\contentsline {subsection}{\numberline {5.3.2}Neural Networks}{40}{subsection.148}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Learning}{40}{section*.147}%
+\contentsline {subsubsection}{Learning}{40}{section*.150}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Results of Experiment 3}{41}{subsection.148}%
+\contentsline {subsection}{\numberline {5.3.3}Results of Experiment 3}{41}{subsection.151}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Results Analysis}{43}{chapter.151}%
+\contentsline {chapter}{\numberline {6}Results Analysis}{43}{chapter.154}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Review of Experiments}{44}{section.152}%
+\contentsline {section}{\numberline {6.1}Review of Experiments}{44}{section.155}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{45}{chapter.154}%
+\contentsline {chapter}{\numberline {7}Conclusion}{45}{chapter.157}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Answering the Research Questions}{45}{section.155}%
+\contentsline {section}{\numberline {7.1}Answering the Research Questions}{45}{section.158}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{How does a CNN for univariate and multivariate data need to be designed for successful anomaly detection in time series data?}{45}{section*.156}%
+\contentsline {paragraph}{How does a CNN for univariate and multivariate data need to be designed for successful anomaly detection in time series data?}{45}{section*.159}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{What advantages and disadvantages arise when using a CNN compared to a RNN for anomaly detection in univariate and multivariate time series?}{45}{section*.157}%
+\contentsline {paragraph}{What advantages and disadvantages arise when using a CNN compared to a RNN for anomaly detection in univariate and multivariate time series?}{45}{section*.160}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{What hyper-parameter settings are crucial for a fair performance comparison between RNN and CNN?}{45}{section*.158}%
+\contentsline {paragraph}{Which hyper-parameter settings are crucial for a fair performance comparison between RNN and CNN?}{45}{section*.161}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Comment on Thesis Statement}{46}{section.159}%
+\contentsline {section}{\numberline {7.2}Insights Regarding Thesis Statement}{46}{section.162}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Future Research}{46}{section.160}%
+\contentsline {section}{\numberline {7.3}Future Research}{46}{section.163}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Model Summaries}{47}{appendix.161}%
+\contentsline {chapter}{\numberline {A}Model Summaries}{49}{appendix.164}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{47}{section.162}%
+\contentsline {section}{\numberline {A.1}Summary of Models of Experiment 1}{49}{section.165}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}Supervised Learning}{47}{subsection.163}%
+\contentsline {subsection}{\numberline {A.1.1}Supervised Learning}{49}{subsection.166}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}Unsupervised Learning}{49}{subsection.166}%
+\contentsline {subsection}{\numberline {A.1.2}Unsupervised Learning}{51}{subsection.169}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Summary of Models of Experiment 2}{51}{section.169}%
+\contentsline {section}{\numberline {A.2}Summary of Models of Experiment 2}{53}{section.172}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Supervised Learning}{51}{subsection.170}%
+\contentsline {subsection}{\numberline {A.2.1}Supervised Learning}{53}{subsection.173}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Unsupervised Learning}{52}{subsection.172}%
+\contentsline {subsection}{\numberline {A.2.2}Unsupervised Learning}{54}{subsection.175}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Summary of Models of Experiment 3}{54}{section.175}%
+\contentsline {section}{\numberline {A.3}Summary of Models of Experiment 3}{56}{section.178}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.1}Unsupervised Learning}{54}{subsection.176}%
+\contentsline {subsection}{\numberline {A.3.1}Unsupervised Learning}{56}{subsection.179}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{57}{appendix*.179}%
+\contentsline {chapter}{\numberline {B}Model Descriptions}{59}{appendix.182}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}Logistic Regression}{59}{section.183}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}Naïve Model}{59}{section.184}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{61}{appendix*.185}%

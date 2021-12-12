@@ -189,7 +189,7 @@ Olten, 21st of December 2021\\
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-In the age of Big Data, data analysis becomes ever more important. To analise the data, many researchers nowadays focus on articial intelligence. Artificial intelligence does not rely on labour-intensive feature engineering like the traditional machine learning or statistical models. Therefore the use of AI, such as neural networks, can save a lot of development time. Two widely used architectures of neural networks are the Convolutional Neural Networks and the Recurrent Neural Networks. A Convolutional Neural Network is generally used when a task is related to image recognition, whereas Recurrent Neural Networks are used for the prediction of time series. Recently an approach was proposed to analyze time series data with Convolutional Neural Networks. The strengths and weaknesses of this approach, however, are currently unknown and are further investigated in this paper. To examine the usefulness, the practically relevant use case of anomaly detection was chosen. Within the scope of this work, different approaches on anomaly detection, that employ convolutional or recurrent neural networks are investigated. Further, the influence of transfer learning on both architectures is examined. Since the architectures should be compared regarding their performance, ways to evaluate the performances are assessed. Finally, it is described, how the chosen framework of methodoloy is applied and how the further research is planned out.     
+In the age of Big Data, data analysis becomes ever more important. To analyse the data, many researchers nowadays focus on artificial intelligence. Artificial intelligence does not rely on labour-intensive feature engineering like the traditional machine learning or statistical models. Therefore, the use of AI, such as neural networks, can save a lot of development time. Two widely used architectures of neural networks are the Convolutional Neural Networks and the Recurrent Neural Networks. A Convolutional Neural Network is generally used when a task is related to image recognition, whereas Recurrent Neural Networks are used for the prediction of time series. Recently an approach was proposed to analyse time series data with Convolutional Neural Networks. The strengths and weaknesses of this approach, however, are currently unknown and are further investigated in this paper. To examine the usefulness, the practically relevant use case of anomaly detection was chosen. Within the scope of this work, different approaches on anomaly detection, that employ convolutional or recurrent neural networks are investigated. Since the architectures should be compared regarding their performance, ways to evaluate the performances are assessed. After elaborating the methodology applied in this work, it is described how the hyper-parameters were determined to make the models comparable. As a main part of this work, three experiments on different datasets are conducted. The datasets used, vary in complexity and contain different types of anomalies. The first experiment was carried out on a synthetic dataset with synthetic anomalies. In the second experiment a real-world dataset with synthetic anomalies was used. Finally, an official benchmark dataset was employed in the third experiment. On the obtained results the two architectures are assessed according to their usefulness for anomaly detection. Further, it is classified how helpful deep learning is for forecasting time series and detecting anomalies. At last, the insights of this work are presented together with suggestions for future research.     
 
 \end{abstract}
 
@@ -198,9 +198,11 @@ In the age of Big Data, data analysis becomes ever more important. To analise th
 %----------------------------------------------------------------------------------------
 
 \begin{acknowledgements}
-\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
-The acknowledgments and the people to thank go here.
-, don't forget to include your project advisor\ldots
+\addchaptertocentry{\acknowledgementname}
+ I would first like to thank my thesis advisor Prof. Dr. Thomas Hanne, lecturer in business information systems at Fachhochschule Nordwestschweiz for the useful comments, remarks and engagement through the learning process of this master thesis. 
+ 
+ 
+ I would also like to thank the experts at my workplace, especially Manuel Dominguez and Benjamin Volland, who, in various discussions, provided new ideas and ways to approach the questions presented throughout this thesis.  
 \end{acknowledgements}
 
 %----------------------------------------------------------------------------------------
@@ -226,7 +228,9 @@ The acknowledgments and the people to thank go here.
 \textbf{LSTM} & \textbf{L}ong \textbf{S}hort \textbf{T}erm \textbf{M}emory\\
 \textbf{ROC} & \textbf{R}eceiver \textbf{O}perating \textbf{C}haracteristics\\
 \textbf{AUC} & \textbf{A}rea \textbf{U}nder the \textbf{C}urve\\
-\textbf{MAE} & \textbf{M}ean \textbf{A}bsolute \textbf{E}rror
+\textbf{ReLu} & \textbf{R}ectified \textbf{L}inear \textbf{U}nit\\
+\textbf{MAE} & \textbf{M}ean \textbf{A}bsolute \textbf{E}rror \\
+\textbf{FCN} & \textbf{F}ully \textbf{C}onvolutional \textbf{N}etworks\\
 
 
 \end{abbreviations}
@@ -294,7 +298,7 @@ The acknowledgments and the people to thank go here.
 % Uncomment the lines as you write the Appendices
 
 \include{Appendices/AppendixA}
-%\include{Appendices/AppendixB}
+\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 
 %----------------------------------------------------------------------------------------

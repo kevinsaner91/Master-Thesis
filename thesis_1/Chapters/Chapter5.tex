@@ -24,10 +24,10 @@ In a second step the dataset was enriched with six different kinds of anomalies.
 	\label{fig:anomalies}
 \end{figure}
 
-For the supervised learning approach the dataset was also labelled. In each case the whole day was marked as an anomaly. In total 30 anomalous days were embedded into the dataset, this corresponds to 1.5 percent of anomalous datapoints.
+For the supervised learning approach, the dataset was also labelled. In each case the whole day was marked as an anomaly. In total 30 anomalous days were embedded into the dataset; this corresponds to 1.5 percent of anomalous datapoints.
 
 \subsection{Neural Networks}
-In the first experiment, a CNN was tested against a RNN in a supervised and also in an unsupervised fashion. As RNN, the type GRU was chosen. As some first attempts showed, that it showed sufficient results with improved computation time compared to the more complex LSTM. 
+In the first experiment, a CNN was tested against a RNN in a supervised and in an unsupervised fashion. As RNN, the type GRU was chosen. As some first attempts showed, that it showed sufficient results with improved computation time compared to the more complex LSTM. 
 
 For the supervised learning approach, the chosen architecture can be seen in table \ref{Tab:Supervised Learning1}. The architecture with two hidden layers, first presented in Section \ref{Anomaly Detection on Univariate Time Series}, served as example for the RNN. Supplementary, the CNN was built to match the number of layers used for the RNN, where each convolutional layer was followed by a max-pooling layer (explained in Section \ref{CNN}.     
 
@@ -76,7 +76,7 @@ The learning on the data was done using a so called generator function, which it
 	\item Batch Size - The number of samples per batch
 \end{itemize}
 
-For this experiment, the parameter lookback was set to 120 data points in the past, which represent the last 5 days. The parameters step and delay were set to one and as batch size 128 was chosen. This setup can be described as follows: There are 128 ordered samples taken from the the whole dataset. Each of these samples consist of 120 data point of past data. With the step parameter set to one, there is no further subsampling done. With delay set to one, the task for the neural network is to predict the next data point in the future per sample for each variable in the data set. This task is done simultaneously for all samples of batch, which speeds up training.
+For this experiment, the parameter lookback was set to 120 data points in the past, which represent the last 5 days. The parameters step and delay were set to one and as batch size 128 was chosen. This setup can be described as follows: There are 128 ordered samples taken from the whole dataset. Each of these samples consist of 120 data point of past data. With the step parameter set to one, there is no further subsampling done. With delay set to one, the task for the neural network is to predict the next data point in the future per sample for each variable in the data set. This task is done simultaneously for all samples of batch, which speeds up training.
 
 \subsection{Results of Experiment 1}
 
@@ -109,10 +109,10 @@ The best score was achieved with a CNN applied in an unsupervised fashion. The C
 \newpage
 
 \section{Experiment 2}
-In a second experiment, a real dataset was used as base. The anomalies were embedded manually. Since, the unsupervised approach with RNN in Experiment 1 proved useless it was not included in the second experiment. Since the anomalies in training and test set looked very similar as in Experiment 1, the supervised approach with the CNN was able to recognize some of the anomalies. In the second approach, it should be investigated if this is approach could be of any use, if the anomalies consist of a hitherto unknown pattern.
+In a second experiment, a real dataset was used as base. The anomalies were embedded manually. Since the unsupervised approach with RNN in Experiment 1 proved useless it was not included in the second experiment. Since the anomalies in training and test set looked very similar as in Experiment 1, the supervised approach with the CNN was able to recognize some of the anomalies. In the second approach, it should be investigated if this is approach could be of any use, if the anomalies consist of a hitherto unknown pattern.
 
 \subsection{Dataset}
-The dataset used was derived from the "Appliances Energy Prediction Dataset" available on the UCI Machine Learning Repository. The dataset consists of 9 room temperatures (T1 to T9) and corresponding humidity levels, energy in use of ligth and appliances, two random variables for testing regression models as well as six variables containing weather information. The dataset consists of 19735 datapoints, where 6 datapoints are drawn per hour. Of the available variables only 10 variables were used for the anomaly detection task. The variables used are 5 room temperatures, energy use, outside temperature, air pressure and wind speed. The variables were selected because they show a dependency. For example, a high outside temperature and energy use result in high temperatures in the different rooms. Figure \ref{fig:temp_dataset} shows an extract from the used dataset.
+The dataset used was derived from the "Appliances Energy Prediction Dataset" available on the UCI Machine Learning Repository. The dataset consists of 9 room temperatures (T1 to T9) and corresponding humidity levels, energy in use of light and appliances, two random variables for testing regression models as well as six variables containing weather information. The dataset consists of 19735 datapoints, where 6 datapoints are drawn per hour. Of the available variables only 10 variables were used for the anomaly detection task. The variables used are 5 room temperatures, energy use, outside temperature, air pressure and wind speed. The variables were selected because they show a dependency. For example, a high outside temperature and energy use result in high temperatures in the different rooms. Figure \ref{fig:temp_dataset} shows an extract from the used dataset.
 
 
 \begin{figure}[h]
@@ -137,13 +137,13 @@ Again, the anomalies were embedded manually into the dataset. The anomalies are 
 	\label{fig:temp_anomalies}
 \end{figure}
 
-Since the test dataset only consists of around 3000 data points. It was used 3 times so that it does not have an unusual high density of anomalies. In the first instance, anomalies that only affected one variable were embedded. In the second instance, anomalies, that affected all 3 temperature variables, such as a deviant cycle, were embedded. On top, in the energy use variable, variation change anomalies were embedded.  In the third instance, distribution based anomalies, which affected T1 and T2, were embedded.
+Since the test dataset only consists of around 3000 data points. It was used 3 times so that it does not have an unusual high density of anomalies. In the first instance, anomalies that only affected one variable were embedded. In the second instance, anomalies, that affected all 3 temperature variables, such as a deviant cycle, were embedded. On top, in the energy use variable, variation change anomalies were embedded.  In the third instance, distribution-based anomalies, which affected T1 and T2, were embedded.
 
 \subsection{Neural Networks}
 Since the RNN did not show sufficient results in Experiment 1 when given a classification task, it was excluded from Experiment 2. The CNN, however, which had probably learned the patterns of the anomalies, was tested again. Since the anomalies in the training and test set are not as similar anymore as in Experiment 1, it is expected that the CNN classifier performs very poorly. 
 
 \begin{table}[h]
-	\caption{Configuration of Unupervised Learning in Exp. 2}
+	\caption{Configuration of Unsupervised Learning in Exp. 2}
 	\begin{center}
 		\begin{tabular}{ | c | c | c | c |}
 			\hline
@@ -161,7 +161,7 @@ Since the RNN did not show sufficient results in Experiment 1 when given a class
 Because of the complexity of the dataset, in the second experiment it was decided to use LSTM units instead of GRU in the RNN architecture. LSTM units generally provide more accurate results but use more memory and therefore more computation time \parencite{Lendave2021}. The designed neural network architecture consisted of 3 sequential layers of LSTM layers and one dense layer with four neurons. 
 %https://analyticsindiamag.com/lstm-vs-gru-in-recurrent-neural-network-a-comparative-study/  
 
-The CNN was designed as follows, three layers of one-dimensional convolutional layers were used. After the first layer, a max-pooling layer was added, to reduce the feature space and improve computation time. Since the CNN is expected to predict a time series, the feature space was not further reduced through max-pooling layers, since it would negatively affect the accuracy.  
+The CNN was designed as follows; three layers of one-dimensional convolutional layers were used. After the first layer, a max-pooling layer was added, to reduce the feature space and improve computation time. Since the CNN is expected to predict a time series, the feature space was not further reduced through max-pooling layers, since it would negatively affect the accuracy.  
 
 \subsubsection{Learning}
 The generator function for this experiment was configured as follows:
@@ -173,7 +173,7 @@ The generator function for this experiment was configured as follows:
 	\item Batch Size - 128 samples per batch
 \end{itemize}
 
-First experiments were done only using data from T1, T2, T3, energy use and outside temperature to predict T1 to T3 and appliances energy use. However, the achieved results were not satisfactory. The results were not accurate enough to predict the anomalies. It was theorized, that the training data did not contain enough information to reliably predict the future, therefore additional variables were added. Adding more variables to predict the future resulted in a better MAE. Finally, the following variables were used to make predictions: T1 to T5, energy use of appliances and ligths, outside temperature, air pressure and windspeed. As the anomlies, however, were only embedded into 4 out of the 10 variables, only the affected 4 were predicted.
+First experiments were done only using data from T1, T2, T3, energy use and outside temperature to predict T1 to T3 and appliances energy use. However, the achieved results were not satisfactory. The results were not accurate enough to predict the anomalies. It was theorized, that the training data did not contain enough information to reliably predict the future, therefore additional variables were added. Adding more variables to predict the future resulted in a better MAE. Finally, the following variables were used to make predictions: T1 to T5, energy use of appliances and lights, outside temperature, air pressure and windspeed. As the anomalies, however, were only embedded into 4 out of the 10 variables, only the affected 4 were predicted.
 
 
 \subsection{Results of Experiment 2}
@@ -232,7 +232,7 @@ The dataset was introduced by Filonov et al. \parencite{Filonov2016}. The data w
 
 The training dataset consists of 19 variables and around 1.5 million datapoints with no anomalies, the most important, according to Filonov et al. \parencite{Filonov2016} are shown in Figure \ref{fig:GHL_data}. The sensors for RT level, RT temperature, and HT temperature are the first three variables. The remaining two variables relate to control signals for turning on/off the gasoil supply and turning on/off the heater.
 
-For testing the trained models, Filonov et al. \parencite*{Filonov2016} provide 48 test sets, which are further decribed in Section \ref{GHL_Anomalies}
+For testing the trained models, Filonov et al. \parencite*{Filonov2016} provide 48 test sets, which are further described in Section \ref{GHL_Anomalies}
 
 \begin{figure}[h]
 	\centering
@@ -255,7 +255,7 @@ The dataset intended for training contains 1.5 million data points, on top all 4
 
 \newpage
 \subsubsection{Anomalies} \label{GHL_Anomalies}
-As anomalies cyber attacks were introduced. The anomalies each concern the variables RT Level and HT Temperature, which had been changed without authorisation. By setting the value for RT Level or HT Temperature to different levels and varying the the time of attack 48 test sets were created. Each test set contains only one anomaly of either type. Figure \ref{fig:anomaly_max_RT_level} and Figure \ref{fig:anomaly_max_HT_temp} give an example of the anomalies look like. In red, the variable Danger, which is the control variable that indicates the anomaly, is shown \footnote{In Figure \ref{fig:anomaly_max_HT_temp} the variable Danger was artificially lifted to a base level of 300 instead of 0 and multiplied by 10 for better visibility}.
+As anomalies cyber-attacks were introduced. The anomalies each concern the variables RT Level and HT Temperature, which had been changed without authorisation. By setting the value for RT Level or HT Temperature to different levels and varying the time of attack 48 test sets were created. Each test set contains only one anomaly of either type. Figure \ref{fig:anomaly_max_RT_level} and Figure \ref{fig:anomaly_max_HT_temp} give an example of the anomalies look like. In red, the variable Danger, which is the control variable that indicates the anomaly, is shown \footnote{In Figure \ref{fig:anomaly_max_HT_temp} the variable Danger was artificially lifted to a base level of 300 instead of 0 and multiplied by 10 for better visibility}.
 
 \begin{figure}[h]
 	\centering
@@ -281,7 +281,7 @@ As described in Section \ref{GHL_Dataset}, the provided training dataset does no
 In Experiment 3, the chosen neural network architecture is again a LSTM. Since, Filonov et al. \parencite*{Filonov2016} use a LSTM network in their experiment, in order to be able to compare the experiments the same neural network architecture was chosen. However, Filonov et al. only report in their work, that two LSTM layers and a dropout layer were used. The exact configuration of the LSTM layers is not evident. Therefore, the number of units per layers was experimentally determined. Finally, 32 units and 24 units were used in the first and in the second layer respectively. The dropout layer, which was added to reduce overfitting, was configured with a dropout rate of 0.1, which was adapted for this experiment. 
 
 \begin{table}[h]
-	\caption{Configuration of Unupervised Learning in Exp. 3}
+	\caption{Configuration of Unsupervised Learning in Exp. 3}
 	\begin{center}
 		\begin{tabular}{ | c | c | c | c |}
 			\hline
@@ -300,7 +300,7 @@ Some early experiments with a two-layered CNN yielded in poor results. Therefore
 
 
 \subsubsection{Learning}
-The main challange when training the neural network was to determine an appropriate lookback. Initial experiments were carried out with 1000 - 5000 past data points that were considered. Although, the computation time increased significantly, the reported results were not satisfactory. Looking at the work of Wen and Keyes \parencite*{Wen2019}, who trained their network on snapshots of length 300 and applied a similarly rigorous sampling technique, the lookback paramter was set accordingly. Experiments with a lookback of between 300 and 500 past data points, improved not only the reported MAE, but also had a positive effect on computation time. While the results for the lookbacks between 300 and 500 were not significantly different, it was determined to use 300 because it resulted in the shortest computation time.
+The main challenge when training the neural network was to determine an appropriate lookback. Initial experiments were carried out with 1000 - 5000 past data points that were considered. Although, the computation time increased significantly, the reported results were not satisfactory. Looking at the work of Wen and Keyes \parencite*{Wen2019}, who trained their network on snapshots of length 300 and applied a similarly rigorous sampling technique, the lookback parameter was set accordingly. Experiments with a lookback of between 300 and 500 past data points, improved not only the reported MAE, but also had a positive effect on computation time. While the results for the lookbacks between 300 and 500 were not significantly different, it was determined to use 300 because it resulted in the shortest computation time.
 The generator function for this experiment was, therefore, configured as follows:
 
 \begin{itemize}
@@ -325,7 +325,7 @@ As in the previously described experiments, the anomaly score was calculated as 
 
 % false positives at the start are not counted, they possibly exist due to a ramp up phase
 
-Notable, when looking at the predictions on the test sets, is that every set had a ramp up behaviour where the predicted and actual did not match causing an anomaly at the start of all test sets. This behaviour was observed with both, the CNN and the RNN model, leading to the conclusion that this behaviour was created when the test set was generated. It was assumed, that this behaviour does not occur during operation. The anomalies caused by the ramp up phase were therefore not counted when calculating the final result. 
+Notable, when looking at the predictions on the test sets, is that every set had a ramp up behaviour where the predicted and actual did not match causing an anomaly at the start of all test sets. This behaviour was observed with both, the CNN and the RNN model, leading to the conclusion that this behaviour was created when the test set was generated. It was assumed, that this behaviour does not occur during operation. The anomalies caused by the ramp up phase were therefore not counted when calculating the result. 
 Further, when calculating the result, a series of anomalies that occur in quick succession are counted as just one anomaly as this refers to one of the identified flaws of the existing benchmarks (see Section \ref{Problems of Existing Benchmarks}). However, because of the down-sampling of the data and the application of a rolling mean to the predicted result, it would also no longer be possible to recognize the separate peaks caused by a series of anomalies. Since it is unknown whether Filonov et. al \parencite*{Filonov2016} used the same approach, it is possible that  better F1-Scores are achieved this way, but actually the task was simplified.\\
 Although Wen and Keyes \parencite*{Wen2019} also used the GHL data for their experiment, the results cannot be compared as they used parts of the test set to train their model, meaning they could not evaluate their model on the whole test set.
  \\

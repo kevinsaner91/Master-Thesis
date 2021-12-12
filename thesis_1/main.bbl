@@ -26,6 +26,9 @@
          giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {Springer, New York}%
+    }
     \strng{namehash}{ACC1}
     \strng{fullhash}{ACC1}
     \field{labelnamesource}{author}
@@ -57,11 +60,9 @@
     \verb{doi}
     \verb 10.1007/978-1-4614-6396-2
     \endverb
-    \field{isbn}{9781461463962}
+    \field{isbn}{978-1-4614-6396-2}
     \field{pages}{1\bibrangedash 446}
     \field{title}{Outlier analysis}
-    \field{volume}{9781461463}
-    \field{journaltitle}{Outlier Analysis}
     \field{year}{2013}
   \endentry
 
@@ -92,6 +93,17 @@
          giveni={S\bibinitperiod},
       }}%
     }
+    \name{editor}{1}{}{%
+      {{hash=SN}{%
+         family={Shakhovska},
+         familyi={S\bibinitperiod},
+         given={Natalya},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer, Cham}%
+    }
     \keyw{Big data,Fuzzy-AHP,Healthcare,Internet of Things (IoT)}
     \strng{namehash}{AZ+1}
     \strng{fullhash}{AZSSBMRSS1}
@@ -116,10 +128,11 @@
   the area of health, according to the usage, were identified as “Ultraviolet
   Radiation,” “Dental Health,” and “Fall Detection.”.%
     }
+    \field{booktitle}{Advances in Intelligent Systems and Computing}
     \verb{doi}
     \verb 10.1007/978-981-10-6875-1_66
     \endverb
-    \field{isbn}{9789811068744}
+    \field{isbn}{978-3-319-45990-5}
     \field{issn}{21945357}
     \field{pages}{675\bibrangedash 685}
     \field{title}{The rise of Internet of Things (IoT) in big healthcare data:
@@ -129,7 +142,7 @@
     \field{year}{2018}
   \endentry
 
-  \entry{Chandola2009}{article}{}
+  \entry{Chandola2009}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=ACBV}{%
          family={Arindam\bibnamedelima Chandola},
@@ -146,6 +159,9 @@
          giveni={V\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
     \strng{namehash}{ACVBKV1}
     \strng{fullhash}{ACVBKV1}
     \field{labelnamesource}{author}
@@ -154,10 +170,18 @@
     \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
+    \field{booktitle}{ACM computing surveys (CSUR)}
+    \verb{doi}
+    \verb https://doi.org/10.1145
+    \endverb
     \field{issue}{3}
+    \field{number}{3}
     \field{pages}{1\bibrangedash 58}
     \field{title}{Anomaly detection: A survey}
     \field{volume}{41}
+    \list{location}{1}{%
+      {New York, USA}%
+    }
     \field{journaltitle}{ACM computing surveys (CSUR)}
     \field{year}{2009}
   \endentry
@@ -210,11 +234,13 @@
     }
     \field{title}{An Empirical Evaluation of Generic Convolutional and
   Recurrent Networks for Sequence Modeling}
+    \field{volume}{abs/2004.00433}
+    \field{journaltitle}{Computing Research Repository}
     \field{month}{03}
     \field{year}{2018}
   \endentry
 
-  \entry{Braei2020}{misc}{}
+  \entry{Braei2020}{article}{}
     \name{author}{2}{}{%
       {{hash=BM}{%
          family={Braei},
@@ -254,10 +280,10 @@
   alongside some general notion of which method is suited for a certain type of
   data.%
     }
-    \field{issn}{23318422}
     \field{title}{Anomaly detection in univariate time-series: A survey on the
   state-of-the-art}
-    \field{journaltitle}{arXiv}
+    \field{volume}{abs/2004.00433}
+    \field{journaltitle}{Computing Research Repository}
     \field{year}{2020}
   \endentry
 
@@ -340,8 +366,7 @@
     \verb{url}
     \verb http://arxiv.org/abs/1412.3555
     \endverb
-    \field{journaltitle}{NIPS 2014 Deep Learning and Representation Learning
-  Workshop}
+    \field{journaltitle}{Computing Research Repository}
     \field{month}{12}
     \field{year}{2014}
   \endentry
@@ -399,8 +424,9 @@
          giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
       }}%
     }
-    \keyw{CNN RNN network,Data augmentation,Handwriting recognition,Image
-  pre-processing}
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
     \strng{namehash}{DK+1}
     \strng{fullhash}{DKKPMMJCV1}
     \field{labelnamesource}{author}
@@ -422,17 +448,19 @@
   and present state of art results for the task of unconstrained line and word
   recognition on popular datasets such as IAM, RIMES and GW.%
     }
+    \field{booktitle}{2018 16th International Conference on Frontiers in
+  Handwriting Recognition (ICFHR)}
     \verb{doi}
     \verb 10.1109/ICFHR-2018.2018.00023
     \endverb
-    \field{isbn}{9781538658758}
+    \field{isbn}{978-1-5386-5875-8}
     \field{issn}{21676453}
     \field{pages}{80\bibrangedash 85}
     \field{title}{Improving CNN-RNN hybrid networks for handwriting
   recognition}
-    \field{volume}{2018-Augus}
-    \field{journaltitle}{Proceedings of International Conference on Frontiers
-  in Handwriting Recognition, ICFHR}
+    \list{location}{1}{%
+      {Niagara Falls, NY, USA}%
+    }
     \field{year}{2018}
   \endentry
 
@@ -463,8 +491,9 @@
          giveni={Y\bibinitperiod},
       }}%
     }
-    \keyw{3d convolutional network,Emotion recognition,Long short term memory
-  network,Model fusion,Recurrent neural network}
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
     \strng{namehash}{FY+1}
     \strng{fullhash}{FYLXLDLY1}
     \field{labelnamesource}{author}
@@ -487,6 +516,8 @@
   the winner of EmotiW 2015. Extensive experiments show that combining RNN and
   C3D together can improve video-based emotion recognition noticeably.%
     }
+    \field{booktitle}{ICMI 2016 - Proceedings of the 18th ACM International
+  Conference on Multimodal Interaction}
     \verb{doi}
     \verb 10.1145/2993148.2997632
     \endverb
@@ -494,6 +525,9 @@
     \field{pages}{445\bibrangedash 450}
     \field{title}{Video-Based emotion recognition using CNN-RNN and C3D hybrid
   networks}
+    \list{location}{1}{%
+      {Tokyo, Japan}%
+    }
     \field{journaltitle}{ICMI 2016 - Proceedings of the 18th ACM International
   Conference on Multimodal Interaction}
     \field{year}{2016}
@@ -542,6 +576,7 @@
     }
     \field{title}{Multivariate Industrial Time Series with Cyber-Attack
   Simulation: Fault Detection Using an LSTM-based Predictive Data Model}
+    \field{journaltitle}{Computing Research Repository}
     \field{month}{12}
     \field{year}{2016}
   \endentry
@@ -586,6 +621,7 @@
     \endverb
     \field{issn}{2364-415X}
     \field{issue}{4}
+    \field{pages}{297–331}
     \field{title}{On the nature and types of anomalies: a review of deviations
   in data}
     \field{volume}{12}
@@ -693,6 +729,35 @@
          giveni={J\bibinitperiod},
       }}%
     }
+    \name{editor}{4}{}{%
+      {{hash=WD}{%
+         family={W.},
+         familyi={W\bibinitperiod},
+         given={Duch},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JK}{%
+         family={J.},
+         familyi={J\bibinitperiod},
+         given={Kacprzyk},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=EO}{%
+         family={E.},
+         familyi={E\bibinitperiod},
+         given={Oja},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=SZ}{%
+         family={S.},
+         familyi={S\bibinitperiod},
+         given={Zadrożny},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
     \strng{namehash}{GAFSSJ1}
     \strng{fullhash}{GAFSSJ1}
     \field{labelnamesource}{author}
@@ -711,13 +776,18 @@
   system, as well as unidirectional LSTM-HMM. © Springer-Verlag Berlin
   Heidelberg 2005.%
     }
+    \field{booktitle}{Artificial Neural Networks: Formal Models and Their
+  Applications – ICANN 2005}
     \verb{doi}
     \verb 10.1007/11550907_126
     \endverb
     \field{issn}{03029743}
     \field{title}{Bidirectional LSTM networks for improved phoneme
   classification and recognition}
-    \field{volume}{3697 LNCS}
+    \field{volume}{3697}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
     \field{journaltitle}{Lecture Notes in Computer Science (including subseries
   Lecture Notes in Artificial Intelligence and Lecture Notes in
   Bioinformatics)}
@@ -782,9 +852,9 @@
     }
     \field{issn}{15594076}
     \field{pages}{319\bibrangedash 323}
-    \field{title}{Evidence-based anomaly detection in clinical domains.}
+    \field{title}{Evidence-based anomaly detection in clinical domains}
     \field{journaltitle}{AMIA ... Annual Symposium proceedings / AMIA
-  Symposium. AMIA Symposium}
+  Symposium.}
     \field{year}{2007}
   \endentry
 
@@ -837,16 +907,13 @@
     \field{issue}{8}
     \field{pages}{1735\bibrangedash 1780}
     \field{title}{Long Short-Term Memory}
-    \verb{url}
-    \verb https://direct.mit.edu/neco/article/9/8/1735-1780/6109
-    \endverb
     \field{volume}{9}
     \field{journaltitle}{Neural Computation}
     \field{month}{11}
     \field{year}{1997}
   \endentry
 
-  \entry{Hodge2004}{misc}{}
+  \entry{Hodge2004}{article}{}
     \name{author}{2}{}{%
       {{hash=HVJ}{%
          family={Hodge},
@@ -861,7 +928,6 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{Anomaly,Detection,Deviation,Noise,Novelty,Outlier,Recognition}
     \strng{namehash}{HVJAJ1}
     \strng{fullhash}{HVJAJ1}
     \field{labelnamesource}{author}
@@ -930,6 +996,41 @@
          giveni={O\bibinitperiod},
       }}%
     }
+    \name{editor}{5}{}{%
+      {{hash=SO}{%
+         family={S.},
+         familyi={S\bibinitperiod},
+         given={Ourselin},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={L.},
+         familyi={L\bibinitperiod},
+         given={Joskowicz},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={M.},
+         familyi={M\bibinitperiod},
+         given={Sabuncu},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GU}{%
+         family={G.},
+         familyi={G\bibinitperiod},
+         given={Unal},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={W.},
+         familyi={W\bibinitperiod},
+         given={Wells},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
     \strng{namehash}{iz+1}
     \strng{fullhash}{izAALSSBTRO1}
     \field{labelnamesource}{author}
@@ -954,13 +1055,18 @@
   method on a complex,highly variable 3D structure,the Xenopus kidney,and
   achieve good results for both use cases.%
     }
+    \field{booktitle}{Medical Image Computing and Computer-Assisted
+  Intervention – MICCAI 2016. MICCAI 2016. Lecture Notes in Computer Science}
     \verb{doi}
     \verb 10.1007/978-3-319-46723-8_49
     \endverb
     \field{issn}{16113349}
     \field{title}{3D U-net: Learning dense volumetric segmentation from sparse
   annotation}
-    \field{volume}{9901 LNCS}
+    \field{volume}{9901}
+    \list{location}{1}{%
+      {Cham}%
+    }
     \field{journaltitle}{Lecture Notes in Computer Science (including subseries
   Lecture Notes in Artificial Intelligence and Lecture Notes in
   Bioinformatics)}
@@ -1147,10 +1253,6 @@
     \field{sortinithash}{M}
     \field{pages}{1\bibrangedash 32}
     \field{title}{Spectrum Analysis}
-    \verb{url}
-    \verb file:///C:/Users/Kevin/AppData/Local/Temp/0901d1968024acef-CM5118-EN-
-    \verb Spectrum-Analysis_tcm_12-113997.pdf
-    \endverb
     \list{institution}{1}{%
       {SKF USA Inc.}%
     }
@@ -1185,6 +1287,9 @@
          giveni={P\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {i6doc.com}%
+    }
     \strng{namehash}{MP+1}
     \strng{fullhash}{MPVLSGAP1}
     \field{labelnamesource}{author}
@@ -1206,10 +1311,15 @@
   anomalous behavior. The efficacy of this approach is demonstrated on four
   datasets: ECG, space shuttle, power demand, and multi-sensor engine dataset.%
     }
+    \field{booktitle}{23rd European Symposium on Artificial Neural Networks,
+  Computational Intelligence and Machine Learning, ESANN 2015 - Proceedings}
     \field{isbn}{9782875870148}
     \field{pages}{89\bibrangedash 94}
     \field{title}{Long Short Term Memory networks for anomaly detection in time
   series}
+    \list{location}{1}{%
+      {Bruges, Belgium}%
+    }
     \field{journaltitle}{23rd European Symposium on Artificial Neural Networks,
   Computational Intelligence and Machine Learning, ESANN 2015 - Proceedings}
     \field{year}{2015}
@@ -1297,7 +1407,7 @@
     \field{year}{2019}
   \endentry
 
-  \entry{Ord1996}{article}{}
+  \entry{Ord1996}{inbook}{}
     \name{author}{1}{}{%
       {{hash=OK}{%
          family={Ord},
@@ -1305,6 +1415,10 @@
          given={Keith},
          giveni={K\bibinitperiod},
       }}%
+    }
+    \list{publisher}{2}{%
+      {John Wiley}%
+      {Sons}%
     }
     \strng{namehash}{OK1}
     \strng{fullhash}{OK1}
@@ -1317,11 +1431,14 @@
     \field{abstract}{%
     No abstract is available for this item.%
     }
+    \field{booktitle}{International Journal of Forecasting}
+    \field{isbn}{ISBN 0-471-93094-6}
     \field{issue}{1}
-    \field{title}{Outliers in statistical data : V. Barnett and T. Lewis, 1994,
-  3rd edition, (John Wiley and Sons, Chichester), 584 pp., [UK pound]55.00,
-  ISBN 0-471-93094-6}
+    \field{title}{Outliers in statistical data}
     \field{volume}{12}
+    \list{location}{1}{%
+      {Chichester}%
+    }
     \field{journaltitle}{International Journal of Forecasting}
     \field{year}{1996}
   \endentry
@@ -1375,6 +1492,35 @@
          giveni={T\bibinitperiod},
       }}%
     }
+    \name{editor}{4}{}{%
+      {{hash=NN}{%
+         family={N.},
+         familyi={N\bibinitperiod},
+         given={Navab},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=JH}{%
+         family={J.},
+         familyi={J\bibinitperiod},
+         given={Hornegger},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={W.},
+         familyi={W\bibinitperiod},
+         given={Wells},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=AF}{%
+         family={A.},
+         familyi={A\bibinitperiod},
+         given={Frangi},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
     \strng{namehash}{ROFPBT1}
     \strng{fullhash}{ROFPBT1}
     \field{labelnamesource}{author}
@@ -1400,6 +1546,8 @@
   (based on Caffe) and the trained networks are available at
   http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net.%
     }
+    \field{booktitle}{Medical Image Computing and Computer-Assisted
+  Intervention – MICCAI 2015. MICCAI 2015. Lecture Notes in Computer Science}
     \verb{doi}
     \verb 10.1007/978-3-319-24574-4_28
     \endverb
@@ -1409,6 +1557,9 @@
     \field{title}{U-net: Convolutional networks for biomedical image
   segmentation}
     \field{volume}{9351}
+    \list{location}{1}{%
+      {Cham}%
+    }
     \field{journaltitle}{Lecture Notes in Computer Science (including subseries
   Lecture Notes in Artificial Intelligence and Lecture Notes in
   Bioinformatics)}
@@ -1499,8 +1650,6 @@
          giveni={A\bibinitperiod},
       }}%
     }
-    \keyw{Class imbalance,Classification,Data analysis,Machine
-  learning,Statistical analysis,Supervised learning}
     \strng{namehash}{TF+1}
     \strng{fullhash}{TFHSKFGA1}
     \field{labelnamesource}{author}
@@ -1556,14 +1705,16 @@
     \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
-    \field{pages}{1\bibrangedash 131}
     \field{title}{LSTM Networks for Detection and Classification of Anomalies
   in Raw Sensor Data}
     \verb{url}
     \verb https://nsuworks.nova.edu/gscis_etd/1074.
     \endverb
+    \list{location}{1}{%
+      {California}%
+    }
     \list{institution}{1}{%
-      {Nova Southeastern University}%
+      {Doctoral dissertation. Nova Southeastern University}%
     }
     \field{year}{2019}
   \endentry
@@ -1595,7 +1746,56 @@
     \field{year}{2021}
   \endentry
 
-  \entry{Wen2019}{misc}{}
+  \entry{Wang2017}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhiguang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Weizhong},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=OT}{%
+         family={Oates},
+         familyi={O\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WZYWOT1}
+    \strng{fullhash}{WZYWOT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{2017 International Joint Conference on Neural Networks
+  (IJCNN)}
+    \verb{doi}
+    \verb 10.1109/IJCNN.2017.7966039
+    \endverb
+    \field{isbn}{978-1-5090-6182-2}
+    \field{title}{Time series classification from scratch with deep neural
+  networks: A strong baseline}
+    \list{location}{1}{%
+      {Anchorage, AK, USA}%
+    }
+    \field{journaltitle}{2017 International Joint Conference on Neural Networks
+  (IJCNN)}
+    \field{month}{05}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Wen2019}{article}{}
     \name{author}{2}{}{%
       {{hash=WT}{%
          family={Wen},
@@ -1634,7 +1834,8 @@
     \field{issn}{23318422}
     \field{title}{Time Series Anomaly Detection Using Convolutional Neural
   Networks and Transfer Learning}
-    \field{journaltitle}{arXiv}
+    \field{volume}{abs/1905.13628}
+    \field{journaltitle}{Computing Research Repository}
     \field{year}{2019}
   \endentry
 
@@ -1661,8 +1862,12 @@
     \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1109/TKDE.2021.3112126
+    \endverb
     \field{title}{Current Time Series Anomaly Detection Benchmarks are Flawed
   and are Creating the Illusion of Progress}
+    \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
     \field{year}{2020}
   \endentry
 
