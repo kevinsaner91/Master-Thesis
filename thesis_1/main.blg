@@ -15,71 +15,73 @@ Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: Chapters/Chapter4.aux
 Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: Chapters/Chapter5.aux
-White space in argument---line 344 of file main.aux
- : \citation{Own
- :               or UCI???}
-I'm skipping whatever remains of this command
-White space in argument---line 347 of file main.aux
- : \citation{Own
- :               or UCI???}
-I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 350 of file main.aux
+---line 523 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 353 of file main.aux
+---line 526 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 369 of file main.aux
+---line 530 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 372 of file main.aux
+---line 533 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 381 of file main.aux
+---line 549 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 384 of file main.aux
+---line 552 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 388 of file main.aux
+---line 564 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 391 of file main.aux
+---line 567 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 394 of file main.aux
+---line 575 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 397 of file main.aux
+---line 578 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 419 of file main.aux
+---line 581 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 422 of file main.aux
+---line 584 of file main.aux
+ : \citation{Own
+ :              }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Own and own
+---line 611 of file main.aux
+ : \citation{Own
+ :              }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Own and own
+---line 614 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
@@ -104,72 +106,98 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 10600 items.
+Reallocating 'field_info' (item size: 4) to 13260 items.
 Database file #1: main-blx.bib
 Database file #2: example.bib
 Warning--entry type for "DennyBritz2015" isn't style-file defined
---line 151 of file example.bib
+--line 164 of file example.bib
 Warning--entry type for "MichaelPhi2018" isn't style-file defined
---line 159 of file example.bib
+--line 172 of file example.bib
 Warning--entry type for "RichStureborg2019" isn't style-file defined
---line 167 of file example.bib
+--line 180 of file example.bib
 Warning--entry type for "Katanforoosh2019" isn't style-file defined
---line 371 of file example.bib
+--line 388 of file example.bib
 Warning--entry type for "Google2021" isn't style-file defined
---line 390 of file example.bib
+--line 407 of file example.bib
 Warning--entry type for "Lendave2021" isn't style-file defined
---line 396 of file example.bib
+--line 413 of file example.bib
 Warning--entry type for "Krishnan2019" isn't style-file defined
---line 403 of file example.bib
-Warning--entry type for "Walleser2021" isn't style-file defined
 --line 420 of file example.bib
+Warning--entry type for "Walleser2021" isn't style-file defined
+--line 437 of file example.bib
 Warning--entry type for "Culurciello2018" isn't style-file defined
---line 428 of file example.bib
+--line 445 of file example.bib
 Warning--I'm ignoring Bai2018's extra "volume" field
---line 442 of file example.bib
+--line 459 of file example.bib
+Warning--entry type for "Singh2018" isn't style-file defined
+--line 483 of file example.bib
+Warning--entry type for "Fumo2017" isn't style-file defined
+--line 504 of file example.bib
+Warning--entry type for "Gad2018" isn't style-file defined
+--line 512 of file example.bib
+Warning--entry type for "Doshi2019" isn't style-file defined
+--line 520 of file example.bib
+Warning--entry type for "Shung2018" isn't style-file defined
+--line 543 of file example.bib
+Warning--entry type for "Brownlee2017" isn't style-file defined
+--line 551 of file example.bib
+Warning--entry type for "Brownlee2019" isn't style-file defined
+--line 559 of file example.bib
+Warning--entry type for "Stöttner2019" isn't style-file defined
+--line 567 of file example.bib
+Warning--entry type for "Brownlee2019.2" isn't style-file defined
+--line 575 of file example.bib
+Warning--entry type for "Candanedo2015" isn't style-file defined
+--line 600 of file example.bib
+Warning--entry type for "Tan2018" isn't style-file defined
+--line 608 of file example.bib
+Warning--entry type for "Swaminathan2018" isn't style-file defined
+--line 616 of file example.bib
+Warning--entry type for "Otexts2021" isn't style-file defined
+--line 624 of file example.bib
 Warning--I didn't find a database entry for "own"
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 39 entries,
+You've used 58 entries,
             6393 wiz_defined-function locations,
-            1538 strings with 40901 characters,
-and the built_in function-call counts, 251825 in all, are:
-= -- 17508
-> -- 4440
-< -- 1362
-+ -- 6246
-- -- 1613
-* -- 18843
-:= -- 26528
+            1660 strings with 48295 characters,
+and the built_in function-call counts, 351145 in all, are:
+= -- 23739
+> -- 6433
+< -- 2018
++ -- 8291
+- -- 2306
+* -- 26185
+:= -- 35918
 add.period$ -- 0
-call.type$ -- 39
-change.case$ -- 755
-chr.to.int$ -- 99
-cite$ -- 76
-duplicate$ -- 27898
-empty$ -- 22908
-format.name$ -- 2707
-if$ -- 51329
+call.type$ -- 58
+change.case$ -- 1071
+chr.to.int$ -- 148
+cite$ -- 114
+duplicate$ -- 38878
+empty$ -- 32506
+format.name$ -- 3831
+if$ -- 72178
 int.to.chr$ -- 0
-int.to.str$ -- 103
+int.to.str$ -- 157
 missing$ -- 0
-newline$ -- 1609
-num.names$ -- 1969
-pop$ -- 13593
+newline$ -- 2246
+num.names$ -- 2903
+pop$ -- 20076
 preamble$ -- 1
-purify$ -- 977
+purify$ -- 1362
 quote$ -- 0
-skip$ -- 7604
+skip$ -- 11177
 stack$ -- 0
-substring$ -- 28693
-swap$ -- 7063
-text.length$ -- 1098
-text.prefix$ -- 38
+substring$ -- 38398
+swap$ -- 10139
+text.length$ -- 1640
+text.prefix$ -- 57
 top$ -- 1
-type$ -- 1305
+type$ -- 1938
 warning$ -- 0
-while$ -- 3849
+while$ -- 5187
 width$ -- 0
-write$ -- 1571
+write$ -- 2189
 (There were 14 error messages)

@@ -316,6 +316,116 @@
     \field{year}{2015}
   \endentry
 
+  \entry{Brownlee2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BJ}{%
+         family={Brownlee},
+         familyi={B\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ1}
+    \strng{fullhash}{BJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{What is the Difference Between Test and Validation Datasets?}
+    \verb{url}
+    \verb https://machinelearningmastery.com/difference-test-validation-dataset
+    \verb s/
+    \endverb
+    \field{journaltitle}{Machine Learning Mastery}
+    \field{month}{07}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Brownlee2019.2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BJ}{%
+         family={Brownlee},
+         familyi={B\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ1}
+    \strng{fullhash}{BJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{extradate}{1}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{A Gentle Introduction to the Rectified Linear Unit (ReLU)}
+    \verb{url}
+    \verb https://machinelearningmastery.com/rectified-linear-activation-functi
+    \verb on-for-deep-learning-neural-networks/
+    \endverb
+    \field{journaltitle}{Machine Learning Mastery}
+    \field{month}{01}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Brownlee2019}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BJ}{%
+         family={Brownlee},
+         familyi={B\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ1}
+    \strng{fullhash}{BJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{extradate}{2}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{How to Choose Loss Functions When Training Deep Learning
+  Neural Networks}
+    \verb{url}
+    \verb https://machinelearningmastery.com/how-to-choose-loss-functions-when-
+    \verb training-deep-learning-neural-networks/
+    \endverb
+    \field{journaltitle}{Machine Learning Mastery}
+    \field{month}{01}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Candanedo2015}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CL}{%
+         family={Candanedo},
+         familyi={C\bibinitperiod},
+         given={Luis},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CL1}
+    \strng{fullhash}{CL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Appliances energy prediction Data Set}
+    \verb{url}
+    \verb https://archive.ics.uci.edu/ml/datasets/Appliances+energy+prediction
+    \endverb
+    \field{journaltitle}{UCI Machine Learning Repository}
+    \field{month}{02}
+    \field{year}{2015}
+  \endentry
+
   \entry{JunyoungChung2014}{article}{}
     \name{author}{4}{}{%
       {{hash=CJ}{%
@@ -395,6 +505,33 @@
     \field{journaltitle}{Towards Data Science}
     \field{month}{04}
     \field{year}{2018}
+  \endentry
+
+  \entry{Doshi2019}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DS}{%
+         family={Doshi},
+         familyi={D\bibinitperiod},
+         given={Sanket},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DS1}
+    \strng{fullhash}{DS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Various Optimization Algorithms For Training Neural Network}
+    \verb{url}
+    \verb https://towardsdatascience.com/optimizers-for-training-neural-network
+    \verb -59450d71caf6
+    \endverb
+    \field{journaltitle}{Towards Data Science}
+    \field{month}{01}
+    \field{year}{2019}
   \endentry
 
   \entry{Dutta2018}{inproceedings}{}
@@ -630,6 +767,125 @@
     \field{year}{2021}
   \endentry
 
+  \entry{Forman2010}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FG}{%
+         family={Forman},
+         familyi={F\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Scholz},
+         familyi={S\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \strng{namehash}{FGSM1}
+    \strng{fullhash}{FGSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    Cross-validation is a mainstay for measuring performance and progress in
+  machine learning. There are subtle differences in how exactly to compute
+  accuracy, F-measure and Area Under the ROC Curve (AUC) in cross-validation
+  studies. However, these details are not discussed in the literature, and
+  incompatible methods are used by various papers and software packages. This
+  leads to inconsistency across the research literature. Anomalies in
+  performance calculations for particular folds and situations go undiscovered
+  when they are buried in aggregated results over many folds and datasets,
+  without ever a person looking at the intermediate performance measurements.
+  This research note clarifies and illustrates the differences, and it provides
+  guidance for how best to measure classification performance under
+  cross-validation. In particular, there are several divergent methods used for
+  computing F-measure, which is often recommended as a performance measure
+  under class imbalance, e.g., for text classification domains and in
+  one-vs.-all reductions of datasets having many classes. We show by experiment
+  that all but one of these computation methods leads to biased measurements,
+  especially under high class imbalance. This paper is of particular interest
+  to those designing machine learning software libraries and researchers
+  focused on high class imbalance.%
+    }
+    \verb{doi}
+    \verb 10.1145/1882471.1882479
+    \endverb
+    \field{issn}{1931-0145}
+    \field{number}{1}
+    \field{pages}{49–57}
+    \field{title}{Apples-to-Apples in Cross-Validation Studies: Pitfalls in
+  Classifier Performance Measurement}
+    \field{volume}{12}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{SIGKDD Explor. Newsl.}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Fumo2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FD}{%
+         family={Fumo},
+         familyi={F\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FD1}
+    \strng{fullhash}{FD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{A Gentle Introduction To Neural Networks Series}
+    \verb{url}
+    \verb https://towardsdatascience.com/a-gentle-introduction-to-neural-networ
+    \verb ks-series-part-1-2b90b87795bc
+    \endverb
+    \field{journaltitle}{Towards Data Science}
+    \field{month}{04}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Gad2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GA}{%
+         family={Gad},
+         familyi={G\bibinitperiod},
+         given={Ahmed},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GA1}
+    \strng{fullhash}{GA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Beginners Ask “How Many Hidden Layers/Neurons to Use in
+  Artificial Neural Networks?”}
+    \verb{url}
+    \verb https://towardsdatascience.com/beginners-ask-how-many-hidden-layers-n
+    \verb eurons-to-use-in-artificial-neural-networks-51466afa0d3e
+    \endverb
+    \field{journaltitle}{Towards Data Science}
+    \field{month}{06}
+    \field{year}{2018}
+  \endentry
+
   \entry{Gers2000}{article}{}
     \name{author}{3}{}{%
       {{hash=GFA}{%
@@ -856,6 +1112,40 @@
     \field{journaltitle}{AMIA ... Annual Symposium proceedings / AMIA
   Symposium.}
     \field{year}{2007}
+  \endentry
+
+  \entry{Hinton1999}{book}{}
+    \name{author}{2}{}{%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=STJ}{%
+         family={Sejnowski},
+         familyi={S\bibinitperiod},
+         given={Terrence\bibnamedelima J.},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The MIT Press}%
+    }
+    \strng{namehash}{HGSTJ1}
+    \strng{fullhash}{HGSTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb https://doi.org/10.7551/mitpress/7011.001.0001
+    \endverb
+    \field{title}{Unsupervised Learning: Foundations of Neural Computation}
+    \field{volume}{3}
+    \field{year}{1999}
   \endentry
 
   \entry{Hochreiter1997}{article}{}
@@ -1403,8 +1693,87 @@
     \field{title}{DeepAnT: A Deep Learning Approach for Unsupervised Anomaly
   Detection in Time Series}
     \field{volume}{7}
-    \field{journaltitle}{IEEE Access}
+    \field{journaltitle}{IEEE}
     \field{year}{2019}
+  \endentry
+
+  \entry{Olkin2001}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=OI}{%
+         family={Olkin},
+         familyi={O\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sampson},
+         familyi={S\bibinitperiod},
+         given={A.R.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=SNJ}{%
+         family={Smelser},
+         familyi={S\bibinitperiod},
+         given={Neil\bibnamedelima J.},
+         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BPB}{%
+         family={Baltes},
+         familyi={B\bibinitperiod},
+         given={Paul\bibnamedelima B.},
+         giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pergamon}%
+    }
+    \strng{namehash}{OISA1}
+    \strng{fullhash}{OISA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    Multivariate analysis is the statistical study of data where multiple
+  measurements are made on each experimental unit and where the relationships
+  among multivariate measurements and their structure are important. A modern,
+  overlapping categorization of multivariate analysis is: normal and general
+  multivariate models and distribution theory; the study and measurement of
+  relationships; probability computations of multidimensional regions; and the
+  exploration of data structures and patterns. The multivariate normal
+  distribution plays a central role in multivariate analysis in the same way
+  that the univariate normal distribution plays a central role. The Student'st
+  generalizes to Hotelling's T2 and the chi-square distribution to the Wishart
+  distribution. Newer multivariate distributions can model data when the
+  multivariate normal distribution is not adequate. For multidimensional data,
+  relationships among the variables are fundamental to explore. Useful
+  techniques to understand and quantify these include multivariate regression
+  analysis and various correlational notions such as partial correlations and
+  canonical correlations. Approaches to compute complicated multidimensional
+  probabilities including obtaining lower bounds for the probabilities and
+  using numerical approximation techniques. The exploration of structure and
+  patterns for complex multivariate data sets is crucial for modern data
+  analysis and data mining. Multivariate tools, useful in this context, include
+  principal components analysis, canonical analysis, factor analysis, path
+  analysis, structural equation methods, clustering, and discriminant
+  analysis.%
+    }
+    \field{booktitle}{International Encyclopedia of the Social and Behavioral
+  Sciences}
+    \verb{doi}
+    \verb https://doi.org/10.1016/B0-08-043076-7/00472-1
+    \endverb
+    \field{isbn}{978-0-08-043076-8}
+    \field{pages}{10240\bibrangedash 10247}
+    \field{title}{Multivariate Analysis: Overview}
+    \list{location}{1}{%
+      {Oxford}%
+    }
+    \field{year}{2001}
   \endentry
 
   \entry{Ord1996}{inbook}{}
@@ -1441,6 +1810,68 @@
     }
     \field{journaltitle}{International Journal of Forecasting}
     \field{year}{1996}
+  \endentry
+
+  \entry{Otexts2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={Otexts},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{note}{Retrieved: 14/12/2021}
+    \field{title}{Some simple forecasting methods}
+    \verb{url}
+    \verb https://otexts.com/fpp2/simple-methods.html
+    \endverb
+    \field{journaltitle}{Forecasting: Principles and Practice}
+    \field{month}{12}
+    \field{year}{2021}
+  \endentry
+
+  \entry{pena2011}{book}{}
+    \name{author}{3}{}{%
+      {{hash=PD}{%
+         family={Peña},
+         familyi={P\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TGC}{%
+         family={Tiao},
+         familyi={T\bibinitperiod},
+         given={George\bibnamedelima C},
+         giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=TRS}{%
+         family={Tsay},
+         familyi={T\bibinitperiod},
+         given={Ruey\bibnamedelima S},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons}%
+    }
+    \strng{namehash}{PDTGCTRS1}
+    \strng{fullhash}{PDTGCTRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{A course in time series analysis}
+    \field{volume}{322}
+    \field{year}{2011}
   \endentry
 
   \entry{MichaelPhi2018}{misc}{}
@@ -1595,6 +2026,119 @@
     \field{year}{1958}
   \endentry
 
+  \entry{Russell2010}{book}{}
+    \name{author}{2}{}{%
+      {{hash=RS}{%
+         family={Russell},
+         familyi={R\bibinitperiod},
+         given={Stuart},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Norvig},
+         familyi={N\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson}%
+    }
+    \strng{namehash}{RSNP1}
+    \strng{fullhash}{RSNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Artificial Intelligence: A Modern Approach, 3rd Edition}
+    \field{volume}{3}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Shung2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SKP}{%
+         family={Shung},
+         familyi={S\bibinitperiod},
+         given={Koo\bibnamedelima Ping},
+         giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SKP1}
+    \strng{fullhash}{SKP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Accuracy, Precision, Recall or F1?}
+    \verb{url}
+    \verb https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb3
+    \verb 7c5cb9
+    \endverb
+    \field{journaltitle}{Towards Data Science}
+    \field{month}{03}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Singh2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SA}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Aishwarya},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SA1}
+    \strng{fullhash}{SA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{A Multivariate Time Series Guide to Forecasting and Modeling}
+    \verb{url}
+    \verb https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series
+    \verb -guide-forecasting-modeling-python-codes/
+    \endverb
+    \field{journaltitle}{Analytics Vidhya}
+    \field{month}{09}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Stöttner2019}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=ST}{%
+         family={Stöttner},
+         familyi={S\bibinitperiod},
+         given={Timo},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ST1}
+    \strng{fullhash}{ST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Why Data should be Normalized before Training a Neural
+  Network}
+    \verb{url}
+    \verb https://towardsdatascience.com/why-data-should-be-normalized-before-t
+    \verb raining-a-neural-network-c626b7f66c7d
+    \endverb
+    \field{journaltitle}{Towards Data Science}
+    \field{month}{05}
+    \field{year}{2019}
+  \endentry
+
   \entry{RichStureborg2019}{misc}{}
     \name{author}{1}{}{%
       {{hash=SR}{%
@@ -1621,6 +2165,60 @@
     \field{journaltitle}{Towards Data Science}
     \field{month}{01}
     \field{year}{2019}
+  \endentry
+
+  \entry{Swaminathan2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SS}{%
+         family={Swaminathan},
+         familyi={S\bibinitperiod},
+         given={Saishruthi},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SS1}
+    \strng{fullhash}{SS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Logistic Regression — Detailed Overview}
+    \verb{url}
+    \verb https://towardsdatascience.com/logistic-regression-detailed-overview-
+    \verb 46c4da4303bc
+    \endverb
+    \field{journaltitle}{Towards Data Science}
+    \field{month}{05}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Tan2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=TL}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TL1}
+    \strng{fullhash}{TL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Multirate DSP, part 1: Upsampling and downsampling}
+    \verb{url}
+    \verb https://www.eetimes.com/multirate-dsp-part-1-upsampling-and-downsampl
+    \verb ing/
+    \endverb
+    \field{journaltitle}{EE Times}
+    \field{month}{04}
+    \field{year}{2018}
   \endentry
 
   \entry{Thabtah2020}{article}{}
@@ -1686,6 +2284,62 @@
     \field{volume}{513}
     \field{journaltitle}{Information Sciences}
     \field{year}{2020}
+  \endentry
+
+  \entry{Tsay2000}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TRS}{%
+         family={Tsay},
+         familyi={T\bibinitperiod},
+         given={Ruey\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Peña},
+         familyi={P\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PAE}{%
+         family={Pankratz},
+         familyi={P\bibinitperiod},
+         given={Alan\bibnamedelima E.},
+         giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TRSPDPAE1}
+    \strng{fullhash}{TRSPDPAE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    {This paper generalises four types of disturbance commonly used in
+  univariate time series analysis to the multivariate case, highlights the
+  differences between univariate and multivariate outliers, and investigates
+  dynamic effects of a multivariate outlier on individual components. The
+  effect of a multivariate outlier depends not only on its size and the
+  underlying model, but also on the interaction between the size and the
+  dynamic structure of the model. The latter factor does not appear in the
+  univariate case. A multivariate outlier can introduce various types of
+  outlier for the marginal component models. By comparing and contrasting
+  results of univariate and multivariate outlier detections, one can gain
+  insights into the characteristics of an outlier. We use real examples to
+  demonstrate the proposed analysis.}%
+    }
+    \verb{doi}
+    \verb 10.1093/biomet/87.4.789
+    \endverb
+    \field{issn}{0006-3444}
+    \field{issue}{4}
+    \field{pages}{789\bibrangedash 804}
+    \field{title}{{Outliers in multivariate time series}}
+    \field{volume}{87}
+    \field{journaltitle}{Biometrika}
+    \field{month}{12}
+    \field{year}{2000}
   \endentry
 
   \entry{Verner2019}{thesis}{}
@@ -1904,6 +2558,41 @@
          giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
       }}%
     }
+    \name{editor}{5}{}{%
+      {{hash=FL}{%
+         family={F.},
+         familyi={F\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={G.},
+         familyi={G\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={S.},
+         familyi={S\bibinitperiod},
+         given={Hwang},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={B.},
+         familyi={B\bibinitperiod},
+         given={Yao},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Z.},
+         familyi={Z\bibinitperiod},
+         given={Zhang},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
     \strng{namehash}{ZY+1}
     \strng{fullhash}{ZYLQCEGYZJL1}
     \field{labelnamesource}{author}
@@ -1932,6 +2621,8 @@
   demonstrates that feature learning is worth to investigate for time series
   classification. © 2014 Springer International Publishing Switzerland.%
     }
+    \field{booktitle}{Web-Age Information Management. WAIM 2014. Lecture Notes
+  in Computer Science}
     \verb{doi}
     \verb 10.1007/978-3-319-08010-9_33
     \endverb
@@ -1940,7 +2631,10 @@
     \field{pages}{298\bibrangedash 310}
     \field{title}{Time series classification using multi-channels deep
   convolutional neural networks}
-    \field{volume}{8485 LNCS}
+    \field{volume}{8485}
+    \list{location}{1}{%
+      {Cham}%
+    }
     \field{journaltitle}{Lecture Notes in Computer Science (including subseries
   Lecture Notes in Artificial Intelligence and Lecture Notes in
   Bioinformatics)}
