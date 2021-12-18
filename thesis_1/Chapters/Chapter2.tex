@@ -220,7 +220,7 @@ The proposed U-Net was tested on four scenarios: a univariate task with sufficie
 
 For the univariate task the dodgers loop sensor data was used. It involves a 28-week time series of traffic on a ramp near Dodger Stadium with a 5-minute frequency. The goal is to spot unusual traffic patterns caused by sporting events. Out of 39 events, only three could not be detected. The missing detection were attributed to missing values in the data set. Missing values apparently also were the reason for some false positives.
 
-For the multivariate task the gasoil heating loop (GHL) dataset proposed by Filonov et. al \parencite*{Filonov2016} was used. It contains 48 simulated control sequences for a gasoil plant heating loop that was hacked at one stage. There are 19 variables in all time series. A multivariate U-Net with 19 channels was trained by Wen and Keyes \parencite*{Wen2019}. Out the 18, in the test present attacks, only one was missed. However, also 3 false alarms (false positives) were reported. 
+For the multivariate task the gasoil heating loop (GHL) dataset proposed by Filonov, Lavrentyev and Vorontsov \parencite*{Filonov2016} was used. It contains 48 simulated control sequences for a gasoil plant heating loop that was hacked at one stage. There are 19 variables in all time series. A multivariate U-Net with 19 channels was trained by Wen and Keyes \parencite*{Wen2019}. Out the 18, in the test present attacks, only one was missed. However, also 3 false alarms (false positives) were reported. 
 
 %The tasks that included transfer learning are investigated further in Section \ref{TransferLearning}.
 

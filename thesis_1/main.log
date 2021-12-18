@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.30)  18 DEC 2021 09:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.30)  18 DEC 2021 11:02
 entering extended mode
 **./main.tex
 (main.tex
@@ -1141,6 +1141,12 @@ Package hyperref Warning: Suppressing empty link on input line 191.
 --------------------
  Acknowledgements
 --------------------
+
+Overfull \hbox (21.77673pt too wide) in paragraph at lines 205--206
+[]\T1/futs/m/n/10.95 I would also like to thank the ex-perts at my work-place E
+d-uca, es-pe-cially Manuel Dominguez
+ []
+
 1: section
 [9] [10
 
@@ -1542,9 +1548,9 @@ LaTeX Warning: Citation 'Own' on page 39 undefined on input line 277.
 LaTeX Warning: Citation 'Own' on page 39 undefined on input line 277.
 
 [39 <./Figures/anomaly_max_RT_level.png> <./Figures/anomaly_max_HT_temp.png>]
-Overfull \hbox (4.36679pt too wide) in paragraph at lines 286--287
+Overfull \hbox (6.12973pt too wide) in paragraph at lines 286--287
 []\T1/futs/m/n/10.95 In Ex-per-i-ment 3, the cho-sen neu-ral net-work ar-chi-te
-c-ture is again a LSTM. Since, Filonov
+c-ture is again a LSTM. Since, Filonov,
  []
 
 [40]
@@ -1914,7 +1920,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  29269 strings out of 478847
  625495 string characters out of 2848386
- 1178785 words of memory out of 3000000
+ 1178784 words of memory out of 3000000
  46384 multiletter control sequences out of 15000+600000
  557897 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1927,7 +1933,7 @@ pia/putb8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/
 utopia/putr8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/ado
 be/utopia/putr8a.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX/fonts/type1/
 adobe/utopia/putri8a.pfb>
-Output written on main.pdf (84 pages, 2825218 bytes).
+Output written on main.pdf (84 pages, 2825452 bytes).
 PDF statistics:
  1769 PDF objects out of 2073 (max. 8388607)
  328 named destinations out of 1000 (max. 500000)
