@@ -237,6 +237,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {B.1}Logistic Regression Model}{59}{section.182}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.2}Naïve Model}{59}{section.183}%
+\contentsline {section}{\numberline {B.2}Naïve Model}{60}{section.184}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{61}{appendix*.184}%
+\contentsline {chapter}{Bibliography}{61}{appendix*.185}%

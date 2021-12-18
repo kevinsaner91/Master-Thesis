@@ -40,25 +40,25 @@ At last, to be able to answer the research question it is investigated how the d
 In this section, it is outlined how the experiments are designed. It is described how and why datasets are selected as well as which architecture principles are followed when designing the neural networks.
 
 \subsubsection{Data Selection}
-\textcolor{red}{
-As described in Section \ref{anomalies}, there are different kinds of anomalies, which are more or less difficult to detect. In the Section Design of Experiments suitable data sets are proposed. At least, three different data sets are selected to conduct experiments.}
+As explained in Section \ref{anomalies}, there are several types of anomalies, each of which is more or less difficult to identify. Appropriate data sets are suggested under the Section Experimental Design \ref{ExpDesign}. To perform experiments, at least three separate data sets are suggested. In Section Datasets \ref{Datasets}, it is further reasoned why the proposed datasets are chosen.
  
-Further, the selected data sets have a direct impact on how the experiments have to be designed. Here the decision has to be made, whether an unsupervised or supervised approach is applied. A supervised approach hereby requires a data set where the anomalies are labelled. In contrast, an unsupervised approach can investigate any time series data for anomalies, but it is difficult to validate the achieved results.
+A careful selection of datasets is critical since it has a direct influence on how experiments must be designed. The datasets define whether a supervised approach may be employed or if only unsupervised methods can be utilized. Because both approaches will be examined, at least one of the datasets must be labeled. 
 
 \subsubsection{Setup of Experiments}
-In the Section Setup of Experiments the general setup of the experiments is elaborated. Chapter \ref{relatedLiterature} showed that there are various approaches on how to detect anomalies. Anomalies can either be directly classified by the neural network or detected via an anomaly threshold. This decision has to made based on the chosen data set, since only in a supervised approach a network can be designed to directly classify whether an anomaly is present. In Section \ref{SetupOfExperiments} a suitable method to answer the research questions is proposed. In addition, the advantages of the proposed setup, especially with an outlook on how the achieved results can be compared, are elucidated.   
-Further, in Section \ref{SetupOfExperiments}, all global hyper-parameters are defined. Global hyper-parameters are parameters that need to be defined manually rather than learned and are valid for all experiments. An example of such a global parameter could be the optimizer function and its corresponding parameters.
+The general setup of the experiments is detailed in the Section Setup of Experiments \ref{SetupOfExperiments}. As discussed in the section Related Literature \ref{relatedLiterature}, there are two basic methods for detecting anomalies: supervised and unsupervised. The Section Section Setup of Experiments \ref{SetupOfExperiments} describes how the neural network topologies must be created for each approach. 
+   
+Further, in Section \ref{SetupOfExperiments}, all global hyper-parameters are defined. Global hyper-parameters are parameters that must be explicitly defined rather than learnt and are valid across all experiments. The optimizer function and its accompanying parameters are an example of such a global parameter. 
 
 \subsection{Experiments}
-Finally, in the Section Experiments the proposed experimental setup is implemented. The experiments are only conducted on multivariate time series, since Braei and Wagner \parencite*{Braei2020} already issued a comprehensive study comparing different approaches for anomaly detection on univariate time series. 
+Finally, in the Chapter Experiments the proposed experimental setup is implemented. The experiments are only conducted on multivariate time series, since Braei and Wagner \parencite*{Braei2020} already issued a comprehensive study comparing different approaches for anomaly detection on univariate time series. 
 
-\textcolor{red}{In the Chapter \ref{Experiments}, the design of the neural networks is described. It includes the determination of the basic architecture, which is specific to the proposed data set, further, it also includes a lot of tuning work to figure out the best parameters for each neural network. }
+In Chapter \ref{Experiments} Experiments, the various experiments are discussed. First, the dataset as well as the contained anomalies are introduced. Following that, the neural network architecture is described, including all hyperparameters that are not globally specified. Finally, the outcomes of the respective experiments are provided. Three experiments with datasets of various complexity are carried out in total.  
 
 
 \subsection{Evaluation - Results Analysis}
-The Section Results Analysis is dedicated to the examination of the previously achieved results. The results are compared using predefined metrics such as training time, inference time and F1-Score. Looking at these metrics helps to compare the neural network architectures and to determine whether CNN are actually superior to RNN when applied for anomaly detection. In addtion, insights learned from the experiments are presented and the usefulness of deep learning is ranked.
+The Chapter Results Analysis is dedicated to the examination of the previously achieved results. The results are compared using predefined metrics such as training time, inference time and F1-Score. Looking at these metrics helps to compare the neural network architectures and to determine whether CNN are actually superior to RNN when applied for anomaly detection. In addtion, insights learned from the experiments are presented and the usefulness of deep learning is ranked.
 
 \subsection{Conclusion}
-In the Section Conclusion, the research questions are addressed. Answering the research questions will provide an overview of the most significant findings from the experiments. Second, the thesis statement's insights are presented, which aid in determining whether the thesis statement is rejected or accepted. Finally, further research topics are suggested based on the findings of this study. 
+In the Chapter Conclusion, the research questions are addressed. Answering the research questions will provide an overview of the most significant findings from the experiments. Second, the thesis statement's insights are presented, which aid in determining whether the thesis statement is rejected or accepted. Finally, further research topics are suggested based on the findings of this study. 
 
 

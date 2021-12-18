@@ -106,7 +106,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 13260 items.
+Reallocating 'field_info' (item size: 4) to 13400 items.
 Database file #1: main-blx.bib
 Database file #2: example.bib
 Warning--entry type for "DennyBritz2015" isn't style-file defined
@@ -155,49 +155,51 @@ Warning--entry type for "Swaminathan2018" isn't style-file defined
 --line 616 of file example.bib
 Warning--entry type for "Otexts2021" isn't style-file defined
 --line 624 of file example.bib
+Warning--entry type for "wiki2021" isn't style-file defined
+--line 633 of file example.bib
 Warning--I didn't find a database entry for "own"
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 58 entries,
+You've used 59 entries,
             6393 wiz_defined-function locations,
-            1660 strings with 48295 characters,
-and the built_in function-call counts, 351145 in all, are:
-= -- 23739
-> -- 6433
-< -- 2018
-+ -- 8291
-- -- 2306
-* -- 26185
-:= -- 35918
+            1665 strings with 48401 characters,
+and the built_in function-call counts, 354498 in all, are:
+= -- 23881
+> -- 6523
+< -- 2046
++ -- 8333
+- -- 2335
+* -- 26425
+:= -- 36161
 add.period$ -- 0
-call.type$ -- 58
-change.case$ -- 1071
-chr.to.int$ -- 148
-cite$ -- 114
-duplicate$ -- 38878
-empty$ -- 32506
-format.name$ -- 3831
-if$ -- 72178
+call.type$ -- 59
+change.case$ -- 1081
+chr.to.int$ -- 154
+cite$ -- 116
+duplicate$ -- 39270
+empty$ -- 32877
+format.name$ -- 3877
+if$ -- 72914
 int.to.chr$ -- 0
-int.to.str$ -- 157
+int.to.str$ -- 159
 missing$ -- 0
-newline$ -- 2246
-num.names$ -- 2903
-pop$ -- 20076
+newline$ -- 2271
+num.names$ -- 2944
+pop$ -- 20399
 preamble$ -- 1
-purify$ -- 1362
+purify$ -- 1374
 quote$ -- 0
-skip$ -- 11177
+skip$ -- 11337
 stack$ -- 0
-substring$ -- 38398
-swap$ -- 10139
-text.length$ -- 1640
-text.prefix$ -- 57
+substring$ -- 38553
+swap$ -- 10276
+text.length$ -- 1666
+text.prefix$ -- 58
 top$ -- 1
-type$ -- 1938
+type$ -- 1971
 warning$ -- 0
-while$ -- 5187
+while$ -- 5223
 width$ -- 0
-write$ -- 2189
+write$ -- 2213
 (There were 14 error messages)

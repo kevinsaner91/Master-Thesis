@@ -2493,6 +2493,31 @@
     \field{year}{2019}
   \endentry
 
+  \entry{wiki2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wikipedia},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{note}{Retrieved: 18/12/2021}
+    \field{title}{Logistic regression}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Logistic_regression
+    \endverb
+    \field{journaltitle}{Wikipedia}
+    \field{month}{12}
+    \field{year}{2021}
+  \endentry
+
   \entry{Wu2020}{article}{}
     \name{author}{2}{}{%
       {{hash=WR}{%
