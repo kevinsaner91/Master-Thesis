@@ -816,3 +816,69 @@ data <- data %>%
 data <- data[c(-1)]
 
 save(data, file = "../datasets/GHL/28_Lev_corr_Temp_fault_seed_119_vars_23.1")
+
+
+##############################################################################################
+
+rm(list = ls())
+
+data <- NULL
+
+setwd("~/MSCBIS/MT/trunk/R")
+
+files <-list.files("../datasets/GHL/", pattern=".csv", all.files=FALSE,
+           full.names=FALSE)
+
+setwd("../datasets/GHL/")
+
+for (i in 1:48) {
+  filename <- files[i]
+  temp <- read.csv(filename)
+  temp <- temp[1:204300,]
+  temp <- temp[c(-1,-3,-4,-21)]
+  temp <- temp %>%
+    filter(row_number() %% 5 == 1)
+  
+  data <- rbind(data, temp)
+}
+
+setwd("~/MSCBIS/MT/trunk/R")
+
+save(data, file = "../datasets/GHL/GHL_test_sample_5")
+
+rm(list = ls())
+
+data <- NULL
+
+setwd("~/MSCBIS/MT/trunk/R")
+
+files <-list.files("../datasets/GHL/", pattern=".csv", all.files=FALSE,
+                   full.names=FALSE)
+
+setwd("../datasets/GHL/")
+
+for (i in 1:48) {
+  filename <- files[i]
+  temp <- read.csv(filename)
+  temp <- temp[1:204300,]
+  temp <- temp[c(-1)]
+  temp <- temp %>%
+    filter(row_number() %% 5 == 1)
+  
+  data <- rbind(data, temp)
+}
+
+setwd("~/MSCBIS/MT/trunk/R")
+
+save(data, file = "../datasets/GHL/GHL_control_sample_5")
+
+rm(list = ls())
+
+data <- read.csv("../datasets/GHL/train_1500000_seed_11_vars_23.csv")
+
+data <- data %>%
+  filter(row_number() %% 5 == 1)
+
+data <- subset(data, select = 2:20)
+
+save(data, file = "../datasets/GHL/GHL_training_data_sample5")

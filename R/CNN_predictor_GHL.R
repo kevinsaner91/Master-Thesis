@@ -262,7 +262,7 @@ load("../datasets/GHL/GHL_test_control")
 
 par(mfrow=c(2,1))
 plot(result[1:10000,]$x,result[1:10000,]$RT_level, type="l", col="red")
-lines(result[1:10000,]$x,data[301:10100,]$RT_level,type="l",col="green")
+lines(result[1:10000,]$x,data[301:10300,]$RT_level,type="l",col="green")
 
 # plot(result[1:5000,]$x,result[1:5000,]$RT_temperature.T, type="l", col="red")
 # lines(result[1:5000,]$x,data[301:5300,]$RT_temperature.T,type="l",col="green")
@@ -275,6 +275,14 @@ lines(result[1:10000,]$x,data[301:10300,]$HT_temperature.T,type="l",col="green")
 # 
 # plot(result[1:5000,]$x,result[1:5000,]$heater_act, type="l", col="red")
 # lines(result[1:5000,]$x,data[301:5300,]$heater_act,type="l",col="green")
+
+## Plot for Docu
+# par(mfrow=c(1,1))
+# plot(result[1:10000,]$x,data[301:10300,]$RT_level,type="l",col="green", ylim = c(0,3), ylab = "RT Level", xlab = "Timesteps")
+# lines(result[1:10000,]$x,data[301:10300,]$DANGER,type="l",col="red")
+# 
+# plot(result[510751:520750,]$x,data[511051:521050,]$HT_temperature.T,type="l",col="green", ylab = "HT Temperature", xlab = "Timesteps")
+# lines(result[510751:520750,]$x,data[511051:521050,]$DANGER * 10 + 300,type="l",col="red")
 
 
 diff <- sqrt((data[301:980640,]$RT_level - result$RT_level)^2)
@@ -316,6 +324,15 @@ plot(y, rollmean, type = "l", ylim = c(0,2))
 lines(y,data[1100:980640,]$DANGER,type="l",col="red")
 abline(h = 0.4 ,col = "red")
 
+## Plot for Docu
+par(mfrow=c(2,1))
+
+y <- 2000:19000
+plot(y,diff[y,], type = "l")
+
+plot(y, rollmean[y,], type = "l", ylim = c(0,2))
+lines(y,data[y,]$DANGER,type="l",col="red")
+abline(h = 0.4 ,col = "red")
 
 # x <- 1:20156
 # plot(x,diff3[x,], type = "l")

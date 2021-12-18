@@ -1,0 +1,31 @@
+---
+title: "Untitled"
+author: "Kevin Saner"
+date: "28 11 2021"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message=FALSE, warning=FALSE}
+library(keras)
+rm(list = ls()) # clear workspace, use if needed
+setwd("~/MSCBIS/MT/trunk/R")
+model <- load_model_hdf5("CNN_Classifier_house_temp", compile = TRUE)
+summary(model)
+```
+```{r}
+
+rm(list = ls()) # clear workspace, use if needed
+
+load("../datasets/GHL/GHL_test_control")
+
+x <- 490321:length(data[,1])
+plot(x, data[x,]$HT_temperature.T, type="l", col="green")
+lines(x,data[x,]$DANGER + 330,type="l",col="red")
+```
+
