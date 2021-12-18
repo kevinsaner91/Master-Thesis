@@ -4,7 +4,7 @@ library(tidyverse)
 
 rm(list = ls()) # clear workspace, use if needed
 
-load(file = "../datasets/energy_data/energy_data_train")
+load(file = "../../datasets/energy_data/energy_data_train")
 
 
 data <- data.matrix(data_train)
@@ -145,8 +145,8 @@ rm(list = ls()) # clear workspace, use if needed
 
 model <- load_model_hdf5("CNN_Predictor_house_temp", compile = TRUE)
 
-load("../datasets/energy_data/energy_data_test_with_anomalies_1")
-load("../datasets/energy_data/energy_data_train")
+load("../../datasets/energy_data/energy_data_test_with_anomalies_1")
+load("../../datasets/energy_data/energy_data_train")
 
 data_test <- data.matrix(data_test)
 data_train <- data.matrix(data_train)
@@ -208,14 +208,14 @@ tic()
 result <- predict(model, test_gen, steps = 3000, verbose = TRUE)
 toc()
 
-save(result,file ="../datasets/energy_data/CNN_result_house_temp")
+save(result,file ="../../datasets/energy_data/CNN_result_house_temp")
 
 
 ### Evaluate
 
 rm(list = ls()) # clear workspace, use if needed
 
-load("../datasets/energy_data/CNN_result_house_temp")
+load("../../datasets/energy_data/CNN_result_house_temp")
 
 result <- as.data.frame(result)
 colnames(result)[1] <- "T1"
@@ -225,7 +225,7 @@ colnames(result)[4] <- "Appliances"
 
 result$x <- 1:nrow(result)
 
-load("../datasets/energy_data/energy_data_train")
+load("../../datasets/energy_data/energy_data_train")
 data_train <- data_train[!is.na(data_train$T1),]
 
 data_train <- data.matrix(data_train)
@@ -239,7 +239,7 @@ result[2] <- result[2]*std[2] + mean[2]
 result[3] <- result[3]*std[3] + mean[3] 
 result[4] <- result[4]*std[6] + mean[6] 
 
-load("../datasets/energy_data/energy_data_test_with_anomalies_3")
+load("../../datasets/energy_data/energy_data_test_with_anomalies_3")
 
 row.names(data_test) <- 1:nrow(data_test)
 data <- as.data.frame(data_test)

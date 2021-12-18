@@ -4,7 +4,7 @@ library(tidyverse)
 
 rm(list = ls()) # clear workspace, use if needed
 
-load(file = "../datasets/GHL/GHL_training_data") # length 1535118
+load(file = "../../datasets/GHL/GHL_training_data") # length 1535118
 
 data <- data.matrix(data)
 
@@ -140,12 +140,12 @@ rm(list = ls()) # clear workspace, use if needed
 
 model <- load_model_hdf5("LSTM_Predictor_GHL", compile = TRUE)
 
-load("../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23") #20456
+load("../../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23") #20456
 data_test <- data
 #data_test <- subset(data_test, select = c("RT_level", "RT_temperature.T", "HT_temperature.T","inj_valve_act","heater_act"))
 
 
-load("../datasets/GHL/GHL_training_data")
+load("../../datasets/GHL/GHL_training_data")
 data_train <- data
 
 data_test <- data.matrix(data_test)
@@ -208,14 +208,14 @@ tic()
 result <- predict(model, test_gen, steps = 19456, verbose = TRUE)
 toc()
 
-save(result,file ="../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23_result_LSTM")
+save(result,file ="../../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23_result_LSTM")
 
 
 ### Evaluate
 
 rm(list = ls()) # clear workspace, use if needed
 
-load("../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23_result_LSTM")
+load("../../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23_result_LSTM")
 
 x <- result[1:15000,,1:5]
 
@@ -229,7 +229,7 @@ colnames(result)[5] <- "heater_act"
 
 result$x <- 1:nrow(result)
 
-load("../datasets/GHL/GHL_training_data")
+load("../../datasets/GHL/GHL_training_data")
 data_train <- data
 
 data_train <- data.matrix(data_train)
@@ -244,7 +244,7 @@ result[3] <- result[3]*std[9] + mean[9]
 result[4] <- result[4]*std[15] + mean[15] 
 result[5] <- result[5]*std[16] + mean[16] 
 
-load("../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23")
+load("../../datasets/GHL/01_Lev_fault_Temp_corr_seed_11_vars_23")
 
 par(mfrow=c(5,1))
 plot(result[1:5000,]$x,result[1:5000,]$RT_level, type="l", col="red")

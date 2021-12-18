@@ -2,7 +2,7 @@ library(dplyr)
 
 rm(list = ls()) # clear workspace, use if needed
 
-data <- read.csv("../datasets/energy_data/energydata_complete.csv")
+data <- read.csv("../../datasets/energy_data/energydata_complete.csv")
 data <- subset(data, select = c("T1", "T2", "T3","T4","T5", "Appliances","lights", "T_out","Press_mm_hg", "Windspeed"))
 # anomalies
 data$anomaly <- FALSE
@@ -68,12 +68,12 @@ data_train <- rbind(data_sampled_1, data_sampled_2, data_sampled_3, data_sampled
 data_train <- data_train[!is.na(data_train$T1),]
 
 
-save(data_train, file = "../datasets/energy_data/energy_data_train" )
-save(data_test, file = "../datasets/energy_data/energy_data_test")
+save(data_train, file = "../../datasets/energy_data/energy_data_train" )
+save(data_test, file = "../../datasets/energy_data/energy_data_test")
 
 rm(list = ls()) # clear workspace, use if needed
 
-load(file = "../datasets/energy_data/energy_data_train")
+load(file = "../../datasets/energy_data/energy_data_train")
 
 par(mfrow = c(3,1))
 x <- 1:288 
@@ -97,7 +97,7 @@ plot(x, data_train[x,]$T_out, type = "l", col = "red", ylab = "Outside Temp (C°)
 
 rm(list = ls()) # clear workspace, use if needed
 
-load(file = "../datasets/energy_data/energy_data_test")
+load(file = "../../datasets/energy_data/energy_data_test")
 
 set.seed(1)
 index <- runif(1, min = 1, max = nrow(data_test))
@@ -157,11 +157,11 @@ plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(20,27), ylab = "Ro
 lines(x, data_test[x,]$T2, type = "l", col = "blue")
 lines(x, data_test[x,]$T3, type = "l", col = "red")
 
-save(data_test, file = "../datasets/energy_data/energy_data_test_with_anomalies_1")
+save(data_test, file = "../../datasets/energy_data/energy_data_test_with_anomalies_1")
 
 rm(list = ls()) # clear workspace, use if needed
 
-load(file = "../datasets/energy_data/energy_data_test")
+load(file = "../../datasets/energy_data/energy_data_test")
 
 set.seed(2)
 index <- runif(1, min = 1, max = nrow(data_test))
@@ -237,11 +237,11 @@ data_test[430:445,]$anomaly <- TRUE
 
 plot(x, data_test[x,]$Appliances, type = "l", col = "red", ylab = "Energy in Use (Wh)", xlab = "Timesteps (h)")
 
-save(data_test, file = "../datasets/energy_data/energy_data_test_with_anomalies_2")
+save(data_test, file = "../../datasets/energy_data/energy_data_test_with_anomalies_2")
 
 rm(list = ls()) # clear workspace, use if needed
 
-load(file = "../datasets/energy_data/energy_data_test")
+load(file = "../../datasets/energy_data/energy_data_test")
 par(mfrow = c(1,1))
 
 diff <- as.data.frame( data_test$T1 - data_test$T2)
@@ -281,7 +281,7 @@ data_test[2825:2848,]$anomaly <- TRUE
 plot(x, data_test[x,]$T1, type = "l", col = "green", ylim = c(20,29), ylab = "Room Temp (C°)", xlab = "Timesteps (h)")
 lines(x, data_test[x,]$T2, type = "l", col = "blue")
 
-save(data_test, file = "../datasets/energy_data/energy_data_test_with_anomalies_3")
+save(data_test, file = "../../datasets/energy_data/energy_data_test_with_anomalies_3")
 
 ###############################
 #                             #
@@ -289,7 +289,7 @@ save(data_test, file = "../datasets/energy_data/energy_data_test_with_anomalies_
 
 rm(list = ls()) # clear workspace, use if needed
 
-load(file = "../datasets/energy_data/energy_data_train")
+load(file = "../../datasets/energy_data/energy_data_train")
 
 index <- runif(1, min = 1, max = nrow(data_train))
 
@@ -499,4 +499,4 @@ data_train[15975:15995,]$anomaly <- TRUE
 plot(x, data_train[x,]$T1, type = "l", col = "green", ylim = c(20,29), ylab = "Room Temp (C°)", xlab = "Timesteps (h)")
 lines(x, data_train[x,]$T2, type = "l", col = "blue")
 
-save(data_train, file = "../datasets/energy_data/energy_data_train_with_anomalies")
+save(data_train, file = "../../datasets/energy_data/energy_data_train_with_anomalies")
