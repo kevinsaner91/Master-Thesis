@@ -4,7 +4,7 @@
 The first experiment was conducted on a fully synthetic dataset. Supervised and unsupervised learning approaches were used to detect the anomalies. 
 
 \subsection{Dataset} \label{dataset1}
-The dataset, that was created for this first task consisted of five variables. The dataset was created under the assumption, that one measurement was drawn per hour on totally 2000 days, resulting in 48000 datapoints. The variables all follow a cyclic pattern shown in Figure \ref{fig:synthetic data} but are not dependent on each other. 
+The dataset, that was created for this first task consists of five variables. The dataset was created under the assumption, that one measurement was drawn per hour on totally 2000 days, resulting in 48000 datapoints. The variables all follow a cyclic pattern shown in Figure \ref{fig:synthetic data} but are not dependent on each other. 
 
 \begin{figure}[h]
 	\centering
@@ -80,7 +80,7 @@ For this experiment, the parameter lookback was set to 120 data points in the pa
 
 \subsection{Results of Experiment 1}
 
-Inference time and F1-Score are, for all models, calculated on the same test dataset. As the initial dataset, it consists of 48000 datapoints, with 30 anomalous days embedded. For the supervised approach using a RNN, no F1-Score can be reported, as the model always predicted no anomaly. This leads to a divide by zero, when calculating the F1-Score. Alternatively, the accuracy is reported in this experiment. Further, also the accuracy of the Trivial Null Classifier, that always predicts the majority class, is reported as a benchmark.
+Inference time and F1-Score are, for all models, calculated on the same test dataset. As the initial dataset, it consists of 48000 datapoints, with 30 anomalous days embedded. For the supervised approach using a RNN, no F1-Score can be reported, as the model always predicted no anomaly. This leads to a divide by zero, when calculating the F1-Score. Alternatively, the accuracy is reported in this experiment. 
 
 Since the anomalies span over a whole day, for all approaches, the results were averaged per day. Resulting in normal or anomalous days. The reported F1-Score was finally calculated on this data. 
 
@@ -100,8 +100,6 @@ Since the anomalies span over a whole day, for all approaches, the results were 
 			\hline
 			\thead{RNN Unsupervised} &  0.9979 &  0.9984 & 300s   & 793s   \\
 			\hline
-			\thead{Trivial Null Classifier} &  - &  0.9849 & -   & -   \\
-			\hline
 		\end{tabular}
 		\label{Tab:Results1}
 	\end{center}
@@ -114,10 +112,10 @@ The best score was achieved with a CNN applied in an unsupervised fashion. The C
 \newpage
 
 \section{Experiment 2}
-In a second experiment, a real dataset was used as base. The anomalies were embedded manually. Since the unsupervised approach with RNN in Experiment 1 proved useless it was not included in the second experiment. Since the anomalies in training and test set looked very similar as in Experiment 1, the supervised approach with the CNN was able to recognize some of the anomalies. In the second approach, it should be investigated if this is approach could be of any use, if the anomalies consist of a hitherto unknown pattern.
+In a second experiment, a real dataset was used as base. The anomalies were embedded manually. Since the unsupervised approach with RNN in Experiment 1 proved useless it was not included in the second experiment. As the anomalies in training and test set looked very similar as in Experiment 1, the supervised approach with the CNN was able to recognize some of the anomalies. In the second approach, it should be investigated if this is approach could be of any use, if the anomalies consist of a hitherto unknown pattern.
 
 \subsection{Dataset}
-The dataset used was derived from the "Appliances Energy Prediction Dataset" available on the UCI Machine Learning Repository \parencite{Candanedo2015}. The dataset consists of 9 room temperatures (T1 to T9) and corresponding humidity levels, energy in use of light and appliances, two random variables for testing regression models as well as six variables containing weather information. The dataset consists of 19735 datapoints, where 6 datapoints are drawn per hour. Of the available variables only 10 variables were used for the anomaly detection task. The variables used for prediction are room temperatures T1 to T5, appliances energy use, outside temperature, air pressure and wind speed. The variables were selected because they show a dependency. For example, a high outside temperature and energy use result in high temperatures in the different rooms. Figure \ref{fig:temp_dataset} shows an extract from the used dataset.
+The dataset employed was derived from the "Appliances Energy Prediction Dataset" available on the UCI Machine Learning Repository \parencite{Candanedo2015}. The dataset consists of 9 room temperatures (T1 to T9) and corresponding humidity levels, energy in use of light and appliances, two random variables for testing regression models as well as six variables containing weather information. The dataset consists of 19735 datapoints, where 6 datapoints are drawn per hour. Of the available variables only 10 variables were used for the anomaly detection task. The variables used for prediction are room temperatures T1 to T5, appliances energy use, outside temperature, air pressure and wind speed. The variables were selected because they show a dependency. For example, a high outside temperature and energy use result in high temperatures in the different rooms. Figure \ref{fig:temp_dataset} shows an extract from the used dataset.
 
 
 \begin{figure}[h]
@@ -163,7 +161,7 @@ Since the RNN did not show sufficient results in Experiment 1 when given a class
 	\end{center}
 \end{table}
 
-Because of the complexity of the dataset, in the second experiment it was decided to use LSTM units instead of GRU in the RNN architecture. LSTM units generally provide more accurate results but use more memory and therefore more computation time \parencite{Lendave2021}. The designed neural network architecture consisted of 3 sequential layers of LSTM layers and one dense layer with four neurons. 
+Because of the complexity of the dataset, in the second experiment it was decided to use LSTM units instead of GRU in the RNN architecture. LSTM units generally provide more accurate results but need more memory and therefore more computation time \parencite{Lendave2021}. The designed neural network architecture consisted of 3 sequential layers of LSTM layers and one dense layer with four neurons. 
 %https://analyticsindiamag.com/lstm-vs-gru-in-recurrent-neural-network-a-comparative-study/  
 
 The CNN was designed as follows; three layers of one-dimensional convolutional layers were used. After the first layer, a max-pooling layer was added, to reduce the feature space and improve computation time. Since the CNN is expected to predict a time series, the feature space was not further reduced through max-pooling layers, since it would negatively affect the accuracy.  
@@ -229,11 +227,11 @@ Comparing these results to the performance of the RNN on the first test set show
 Further, as expected, both architecture types were unable to detect the variation change anomalies embedded in the variable appliances energy use. The anomaly was designed to occur when the same value was reported too many times. This anomaly type is, with the necessary domain knowledge, easy to discover.
 
 \section{Experiment 3}
-In the third experiment, a dataset that was dedicated to anomaly detection tasks was used. The achieved results can therefore be verified on previously achieved results.
+In the third experiment, a dataset specialized to anomaly detection tasks was employed. As a consequence, the acquired results can be validated against previously attained results. 
 
 \subsection{Dataset} \label{GHL_Dataset}
 %https://arxiv.org/pdf/1612.06676.pdf
-The dataset was introduced by Filonov, Lavrentyev and Vorontsov \parencite*{Filonov2016}. The data was created by modelling a gasoil plant heating loop The GHL (Gasoil Heating Loop) model has three reservoirs: a receiving tank (RT), a heating tank (HT), and a collection tank (CT). The technological challenge is to heat gasoil in the receiving tank to 60 degrees Celsius, resulting in a viscosity sufficient for transmission to the collection tank. In the model, the heating is done in stages. A fraction of gasoil is heated to 60 degrees Celsius in the heating tank and then pumped back into the receiving tank to relax for a while. This technique is done until the receiving tank temperature reaches 60 degrees Celsius. After that, the oil in the receiving tank is poured into the collection tank. Following that, the receiving tank is refilled from an infinite source.
+The dataset was introduced by Filonov, Lavrentyev and Vorontsov \parencite*{Filonov2016}. The data was created by modelling a gasoil plant heating loop. The GHL (Gasoil Heating Loop) model has three reservoirs: a receiving tank (RT), a heating tank (HT), and a collection tank (CT). The technological challenge is to heat gasoil in the receiving tank to 60 degrees Celsius, resulting in a viscosity sufficient for transmission to the collection tank. In the model, the heating is done in stages. A fraction of gasoil is heated to 60 degrees Celsius in the heating tank and then pumped back into the receiving tank to relax for a while. This technique is done until the receiving tank temperature reaches 60 degrees Celsius. After that, the oil in the receiving tank is poured into the collection tank. Following that, the receiving tank is refilled from an infinite source.
 
 The training dataset consists of 19 variables and around 1.5 million datapoints with no anomalies, the most important, according to Filonov, Lavrentyev and Vorontsov \parencite{Filonov2016} are shown in Figure \ref{fig:GHL_data}. The sensors for RT level, RT temperature, and HT temperature are the first three variables. The remaining two variables relate to control signals for turning on/off the gasoil supply and turning on/off the heater.
 
@@ -243,12 +241,12 @@ For testing the trained models, Filonov, Lavrentyev and Vorontsov \parencite*{Fi
 	\centering
 	\includegraphics[scale=0.6]{Figures/GHL_data}
 	\decoRule
-	\caption[Most important var]{Examples of Embedded Anomalies \parencite{Own}}
+	\caption[GHL: Most Important Variables]{Most Important Variables of the GHL Dataset \parencite{Own}}
 	\label{fig:GHL_data}
 \end{figure}
 
 \subsubsection{Sampling}
-The dataset intended for training contains 1.5 million data points, on top all 48 available test sets contain around 200'000 data points. The training of the neural networks and the evaluation of the test sets would therefore take a lot of time. Inspired by the work of Wen and Keyes \parencite*{Wen2019}, who took snapshots of length 50'000 and then downsampled them to a length of 1'024, the data should also be downsampled to save time. Downsampling  refers to reducing the number of data points in a time series. There are different techniques to achieve downsampling. The technique applied in this case is called decimation \parencite{Tan2018}. Since the data contains many repeating data points, which have the same value, only every 10th datapoint was kept, which corresponds to a decimation by a factor of 10. This greatly reduces the computation time, since the training dataset now contains only 150'000 data points while a test set contains 20'000 data points. On the downside, using this technique to downsample information is lost, which possibly effects the results of the chosen anomaly detection methods. Figure \ref{fig:downsample} shows how the variable RT Level behaves on 5'000 data points pre- and post-downsampling.
+The dataset intended for training contains 1.5 million data points, on top all 48 available test sets contain around 200'000 data points. The training of the neural networks and the evaluation of the test sets would therefore take a lot of time. Inspired by the work of Wen and Keyes \parencite*{Wen2019}, who took snapshots of length 50'000 and then downsampled them to a length of 1'024, the data should also be downsampled to save time. Downsampling  refers to reducing the number of data points in a time series. There are different techniques to achieve downsampling. The technique applied in this case is called decimation \parencite{Tan2018}. Since the data contains many repeating data points, which have the same value, only every 10th datapoint was kept, which corresponds to a decimation by a factor of 10. This greatly reduces the computation time, since the training dataset now contains only 150'000 data points while a test set contains 20'000 data points. On the downside, using this technique to downsample, information is lost, which possibly affects the results of the chosen anomaly detection methods. Figure \ref{fig:downsample} shows how the variable RT Level behaves on 5'000 data points pre- and post-downsampling.
 
 \begin{figure}[h]
 	\centering
@@ -260,7 +258,7 @@ The dataset intended for training contains 1.5 million data points, on top all 4
 
 \newpage
 \subsubsection{Anomalies} \label{GHL_Anomalies}
-As anomalies cyber-attacks were introduced \parencite{Filonov2016}. The anomalies each concern the variables RT Level and HT Temperature, which had been changed without authorisation. By setting the value for RT Level or HT Temperature to different levels and varying the time of attack 48 test sets were created. Each test set contains only one anomaly of either type. Figure \ref{fig:anomaly_max_RT_level} and Figure \ref{fig:anomaly_max_HT_temp} give an example of the anomalies look like. In red, the variable Danger, which is the control variable that indicates the anomaly, is shown \footnote{In Figure \ref{fig:anomaly_max_HT_temp} the variable Danger was artificially lifted to a base level of 300 instead of 0 and multiplied by 10 for better visibility}.
+As anomalies cyber-attacks were introduced \parencite{Filonov2016}. The anomalies each concern the variables RT Level and HT Temperature, which had been changed without authorisation. By setting the value for RT Level or HT Temperature to different levels and varying the time of attack 48 test sets were created. Each test set contains only one anomaly of either type. Figure \ref{fig:anomaly_max_RT_level} and Figure \ref{fig:anomaly_max_HT_temp} show how the anomalies look like. The variable Danger, which is the control variable that signals the anomaly, is highlighted in red \footnote{In Figure \ref{fig:anomaly_max_HT_temp} the variable Danger was artificially lifted to a base level of 300 instead of 0 and multiplied by 10 for better visibility}.
 
 \begin{figure}[h]
 	\centering
@@ -283,7 +281,7 @@ Since the anomalies affect only the two above shown variables, the task for the 
 \subsection{Neural Networks}
 As described in Section \ref{GHL_Dataset}, the provided training dataset does not contain any anomalies, therefore only unsupervised training approaches are used. Wen and Keyes \parencite*{Wen2019} used the GHL dataset, for a supervised approach, but used part of the test set for training, therefore making it impossible to compare the results to the works of Filonov, Lavrentyev and Vorontsov \parencite*{Filonov2016}.
 
-In Experiment 3, the chosen neural network architecture is again a LSTM. Since, Filonov, Lavrentyev and Vorontsov \parencite*{Filonov2016} use a LSTM network in their experiment, in order to be able to compare the experiments the same neural network architecture was chosen. However, Filonov, Lavrentyev and Vorontsov only report in their work, that two LSTM layers and a dropout layer were used. The exact configuration of the LSTM layers is not evident. Therefore, the number of units per layers was experimentally determined. Finally, 32 units and 24 units were used in the first and in the second layer respectively. The dropout layer, which was added to reduce overfitting, was configured with a dropout rate of 0.1, which was adapted from Filonov, Lavrentyev and Vorontsov \parencite*{Filonov2016} for this experiment. 
+In Experiment 3, the chosen neural network architecture is again a LSTM. Since, Filonov, Lavrentyev and Vorontsov \parencite*{Filonov2016} use a LSTM network in their experiment, in order to be able to compare the experiments the same neural network architecture was chosen. However, Filonov, Lavrentyev and Vorontsov only report in their work, that two LSTM layers and a dropout layer were used. The exact configuration of the LSTM layers is not evident. Therefore, the number of units per layers was experimentally determined. Finally, 32 units were employed in the first layer and 24 units in the second layer, respectively. The dropout layer, which was added to reduce overfitting, was configured with a dropout rate of 0.1, which was adapted from Filonov, Lavrentyev and Vorontsov \parencite*{Filonov2016} for this experiment. 
 
 \begin{table}[h]
 	\caption{Configuration of Unsupervised Learning in Exp. 3}
@@ -301,7 +299,7 @@ In Experiment 3, the chosen neural network architecture is again a LSTM. Since, 
 	\end{center}
 \end{table}
 
-Some early experiments with a two-layered CNN yielded in poor results. Therefore, an additional convolutional layer was added. Max-pooling layers were initially included in Experiment 2 but were found to have a negative impact on the ability to accurately predict the required time series, so they were removed entirely in Experiment 3.  Since the CNN now also had a tendency to overfit, two dropout layers were added. 
+Preliminary experiments with a two-layered CNN yielded poor results. Therefore, an additional convolutional layer was added. Max-pooling layers were initially included in Experiment 2 but were found to have a negative impact on the ability to accurately predict the required time series, so they were removed entirely in Experiment 3.  Since the CNN now also had a tendency to overfit, two dropout layers were added. 
 
 
 \subsubsection{Learning}
@@ -316,7 +314,7 @@ The generator function for this experiment was, therefore, configured as follows
 \end{itemize}
 
 \subsection{Results of Experiment 3}
-As in the previously described experiments, the anomaly score was calculated as the difference between predicted value and actual value. Figure \ref{fig:rollmean} shows that calculating the different results in a graph with many peaks where the anomaly is not clearly visible. Filonov, Lavrentyev and Vorontsov \parencite*{Filonov2016} experienced the same problem and applied a exponential rolling mean on the calculated difference to smooth the outliers. The same technique is used, to smooth the difference calculated in Experiment 3, although only a simple rolling mean is calculated. The lower graph of Figure \ref{fig:rollmean} shows the time series after the rolling mean was applied together with the Danger control variable in red and the applied threshold in blue.
+As in the previously described experiments, the anomaly score was calculated as the difference between predicted value and actual value. Figure \ref{fig:rollmean} shows that calculating the different results in a graph with many peaks, where the anomaly is not clearly visible. Filonov, Lavrentyev and Vorontsov \parencite*{Filonov2016} experienced the same problem and applied a exponential rolling mean on the calculated difference to smooth the outliers. The same technique is used to smooth the difference calculated in Experiment 3, although, only a simple rolling mean is calculated. The lower graph of Figure \ref{fig:rollmean} shows the time series after the rolling mean was applied together with the Danger control variable in red and the applied threshold in blue.
 
 \begin{figure}[h]
 	\centering

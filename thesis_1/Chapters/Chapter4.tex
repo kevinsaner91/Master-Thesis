@@ -11,8 +11,8 @@ All experiments are conducted on a HP Probook equipped with a Intel Core i7 with
 All necessary code is written in R (Version 4.1.0). To design the neural networks, the library Keras (Version 2.4.0) together with the Tensorflow (Version 2.5.0) backend is used.
 
 
-\section{Datasets}
-Following, it is motivated how and why the proposed data sets are used.
+\section{Datasets} \label{Datasets}
+Following, it is motivated how and why the proposed datasets are used.
 
 \subsection{Problems of Existing Benchmarks} \label{Problems of Existing Benchmarks}
 In order to find out, which neural network architecture is better suited for anomaly detection, first, suitable datasets have to be evaluated. Most of the papers on anomaly detection test on one of the popular benchmark datasets such as the ones created by Numenta, Yahoo,  which are used by Braei and Wagner \parencite{Braei2020}, NASA, or Pei's Lab. These benchmark datasets are, however, declared as flawed by Wu and Keogh \parencite*{Wu2020}. Wu and Keogh \parencite*{Wu2020} state that the benchmark datasets suffer from at least one of the following flaws:
@@ -24,7 +24,7 @@ In order to find out, which neural network architecture is better suited for ano
 	\item \textbf{Run-to-failure Bias:} Because many real-world systems are run-to-failure, there is often no data to the right of the last anomaly. Therefore, a naïve algorithm that labels the last point as an anomaly has a very good chance of being correct.
 \end{enumerate}
 
-In their work, Wu and Keogh \parencite*{Wu2020}, introduced the UCR Time Series Anomaly Datasets as new benchmark, that avoids the problems listed above. However, at the start of this research project the datasets were not publicly available. Because the search for a dataset, that does not suffer from the above mentioned flaws, would be too time-consuming, the decision was taken to partly engineer own datasets.
+In their work, Wu and Keogh \parencite*{Wu2020}, introduced the UCR Time Series Anomaly Datasets as new benchmark, that avoids the problems listed above. However, at the start of this research project the datasets were not publicly available. Because the search for a dataset, that does not suffer from the above mentioned flaws, would be too time-consuming, the decision was taken to partly engineer own datasets that try to avoid the described flaws.
 \newline
 \subsection{Anomalies}
 The neural networks should be used to detect various types of anomalies, in order to test their ability to recognize them. Foorthuis \parencite*{Foorthuis2021} compiled, in an extensive literature review, a study on the different types of anomalies. The anomalies were divided into different categories, of which foremost the quantitative multivariate aggregate anomalies are relevant for this research project, especially a) to f) (see figure \ref{fig:Anomaly_types}). These types of anomalies typically occur in time series data, that is composed by sensor data. Examples of such data could be temperature measurements or Electrocardiograms \parencite{Malhotra2015}.
@@ -48,7 +48,7 @@ The dataset, which should be used for the first experiment will be of synthetic 
 The second dataset, which is used for anomaly detection, consists of real sensor data. To make sure, that the requirements, mentioned in section \ref{Problems of Existing Benchmarks} are met as closely as possible, the anomalies are engineered and embedded manually into the dataset. 
 
 \subsubsection{3. Dataset}
-As third dataset, one of the existing benchmark datasets should be used. Despite their obvious flaws, it is still considered useful to validate the previously achieved results on an official benchmark. Further, this gives insights into the overall usefulness of the proposed neural network architectures as the achieved result can be compared to previous experiments.
+As third dataset, an existing benchmark datasets should be used. Despite their obvious flaws, it is still considered useful to validate the previously achieved results on an official benchmark. Further, this gives insights into the overall usefulness of the proposed neural network architectures as the achieved result can be compared to previous experiments.
 
 \subsection{Split of Datasets}
 The conventional train, validate, and test dataset technique is used with all datasets.
@@ -74,7 +74,7 @@ A unsupervised approach is the more reliable choice when trying to detect anomal
 The following Sections describe principles that will be used in the design of the neural networks. The described principles and their corresponding hyperparamters are used in all experiments. Parameters that are specific to the experiment are specified in the corresponding section in the Chapter \ref{Experiments}. 
 
 \subsubsection{Normalization}
-Before the data is fed into the neural network it is normalized. Normalization ensures that the magnitude of the values that a feature assumes are more or less the same. Therefore, the mean of each time series is subtracted of each time series and divided by the standard deviation \parencite{Stöttner2019}. As normalization parameters, the mean and standard deviation calculated on the training set was used for all, test, validation and training dataset.  
+Before the data is fed into the neural network it is normalized. Normalization ensures that the magnitude of the values that a feature assumes are more or less the same. Therefore, each data point is substracted with the mean of each time series and divided by the corresponding standard deviation \parencite{Stöttner2019}. As normalization parameters, the mean and standard deviation calculated on the training set were used for all, test, validation and training dataset.  
 %https://towardsdatascience.com/why-data-should-be-normalized-before-training-a-neural-network-c626b7f66c7d
 
 \subsubsection{Activation Function}
@@ -103,7 +103,7 @@ The second experiment is conducted on a more challenging dataset. Also, the embe
 In the third experiment, a dataset that has already been used in the field of anomaly detection should be used. The neural network architecture types, CNN and RNN, are applied to the chosen dataset. First, this shows which approach is better suited and second, the achieved results can be compared to already existent results to verify the overall performance of the chosen anomaly detection methods.
 
 \subsection{Results}
-As results three metrics are reported. First and most important, is the F1-Score which gives insight on the models ability to recognize anomalies. The F1-Score is preferred over the AUC, because it is more significant on imbalanced datasets \parencite{Forman2010}. The F1-Score provides a better estimate of how many anomalies are correctly identified. As it is assumed that a model properly classifies a significant number of true negatives. Therefore, AUC-Score of the models would be very high and similar and thus harder to compare. The other two metrics reported of each model are the training and inference time.
+As results three metrics are reported. First and most important, is the F1-Score which gives insight on the models ability to recognize anomalies. The F1-Score is preferred over the AUC, because it is more significant on imbalanced datasets \parencite{Forman2010}. The F1-Score provides a better estimate of how many anomalies are correctly identified. As it is assumed that a model properly classifies a significant number of true negatives. The other two metrics reported of each model are the training and inference time.
 
 
 

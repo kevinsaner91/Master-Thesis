@@ -16,12 +16,7 @@ A level-1 auxiliary file: Chapters/Chapter4.aux
 Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: Chapters/Chapter5.aux
 Case mismatch error between cite keys Own and own
----line 523 of file main.aux
- : \citation{Own
- :              }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Own and own
----line 526 of file main.aux
+---line 527 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
@@ -31,57 +26,62 @@ Case mismatch error between cite keys Own and own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 533 of file main.aux
+---line 534 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 549 of file main.aux
+---line 537 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 552 of file main.aux
+---line 553 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 564 of file main.aux
+---line 556 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 567 of file main.aux
+---line 568 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 575 of file main.aux
+---line 571 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 578 of file main.aux
+---line 579 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 581 of file main.aux
+---line 582 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 584 of file main.aux
+---line 585 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 611 of file main.aux
+---line 588 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Own and own
----line 614 of file main.aux
+---line 615 of file main.aux
+ : \citation{Own
+ :              }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Own and own
+---line 618 of file main.aux
  : \citation{Own
  :              }
 I'm skipping whatever remains of this command
@@ -163,7 +163,7 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 59 entries,
             6393 wiz_defined-function locations,
-            1665 strings with 48401 characters,
+            1665 strings with 48400 characters,
 and the built_in function-call counts, 354498 in all, are:
 = -- 23881
 > -- 6523

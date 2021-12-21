@@ -15,66 +15,66 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces CNN Architecture for Time Series}}{11}{figure.caption.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Architecture of the MC-DCNN}}{14}{figure.caption.64}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Architecture of the MC-DCNN}}{14}{figure.caption.63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces U-Net Architecture}}{15}{figure.caption.66}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces U-Net Architecture}}{15}{figure.caption.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Example ROC-Curve}}{16}{figure.caption.69}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Thesis Map}}{20}{figure.caption.76}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Example ROC-Curve}}{16}{figure.caption.68}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Quantitative Anomalies}}{24}{figure.caption.95}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Thesis Map}}{20}{figure.caption.75}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Synthetic Dataset}}{29}{figure.caption.117}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Synthetic Anomalies}}{30}{figure.caption.118}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Temperature Dataset}}{33}{figure.caption.128}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Temperature Dataset Anomalies}}{34}{figure.caption.131}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Most important var}}{37}{figure.caption.140}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Effect of Downsampling}}{38}{figure.caption.142}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Attack on max-RT-level set point}}{39}{figure.caption.145}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Unauthorized change of max HT temperature}}{39}{figure.caption.146}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Effect of Rolling Mean Calculation}}{41}{figure.caption.151}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Quantitative Anomalies}}{24}{figure.caption.94}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Behaviour of Anomaly in the GHL Dataset}}{44}{figure.caption.155}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Synthetic Dataset}}{29}{figure.caption.116}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Synthetic Anomalies}}{30}{figure.caption.117}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Temperature Dataset}}{33}{figure.caption.127}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Temperature Dataset Anomalies}}{34}{figure.caption.130}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces GHL: Most Important Variables}}{38}{figure.caption.139}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Effect of Downsampling}}{39}{figure.caption.141}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Attack on max-RT-level set point}}{40}{figure.caption.144}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Unauthorized change of max HT temperature}}{40}{figure.caption.145}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Effect of Rolling Mean Calculation}}{41}{figure.caption.150}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Behaviour of Anomaly in the GHL Dataset}}{44}{figure.caption.154}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Experiment 1: Summary of CNN for supervised learning}}{49}{figure.caption.166}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Experiment 1: Summary of CNN for supervised learning}}{49}{figure.caption.165}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Experiment 1: Summary of GRU for supervised learning}}{50}{figure.caption.167}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Experiment 1: Summary of GRU for supervised learning}}{50}{figure.caption.166}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Experiment 1: Summary of CNN for unsupervised learning}}{51}{figure.caption.169}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Experiment 1: Summary of CNN for unsupervised learning}}{51}{figure.caption.168}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Experiment 1: Summary of GRU for unsupervised learning}}{52}{figure.caption.170}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Experiment 1: Summary of GRU for unsupervised learning}}{52}{figure.caption.169}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Experiment 2: Summary of CNN for supervised learning}}{53}{figure.caption.173}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Experiment 2: Summary of CNN for supervised learning}}{53}{figure.caption.172}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Experiment 2: Summary of CNN for unsupervised learning}}{54}{figure.caption.175}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Experiment 2: Summary of CNN for unsupervised learning}}{54}{figure.caption.174}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Experiment 2: Summary of LSTM for unsupervised learning}}{55}{figure.caption.176}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Experiment 2: Summary of LSTM for unsupervised learning}}{55}{figure.caption.175}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Experiment 3: Summary of CNN for unsupervised learning}}{56}{figure.caption.179}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Experiment 3: Summary of CNN for unsupervised learning}}{56}{figure.caption.178}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.9}{\ignorespaces Experiment 3: Summary of LSTM for unsupervised learning}}{57}{figure.caption.180}%
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Experiment 3: Summary of LSTM for unsupervised learning}}{57}{figure.caption.179}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Logistic Regression Curve}}{59}{figure.caption.183}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Logistic Regression Curve}}{59}{figure.caption.182}%
